@@ -5,6 +5,10 @@ export default function constructD20Term({ actor, minRoll, rollMode }) {
     d20Term = '2d20';
   }
 
+  if ([CONFIG.A5E.ROLL_MODE.PASSIVE].includes(rollMode)) {
+    d20Term = '10';
+  }
+
   if (actor?.flags?.a5e?.halflingLuck) d20Term += 'r1';
 
   if (minRoll > 1) d20Term += `min${minRoll}`;
