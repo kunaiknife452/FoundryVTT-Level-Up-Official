@@ -10,6 +10,8 @@
         [1, "Advantage"],
         [0, "Normal"],
         [-1, "Disadvantage"],
+        [2, "Passive"],
+
     ];
 
     const expertiseDice = [

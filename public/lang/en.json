@@ -1916,6 +1916,7 @@
   "A5E.RollModeNormal": "Normal",
   "A5E.RollModeAdvantage": "Advantage",
   "A5E.RollModeDisadvantage": "Disadvantage",
+  "A5E.RollModePassive": "Passive",
   "A5E.RollAbilityCheck": "Roll Ability Check",
   "A5E.RollInitiative": "Roll Initiative",
   "A5E.RollSavingThrow": "Roll Saving Throw",
