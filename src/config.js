@@ -96,7 +96,8 @@ A5E.PREPARED_STATES = {
 A5E.ROLL_MODE = {
   NORMAL: 0,
   ADVANTAGE: 1,
-  DISADVANTAGE: -1
+  DISADVANTAGE: -1,
+  PASSIVE: 2
 };
 
 /**
@@ -694,7 +695,8 @@ A5E.resourceRecoveryOptions = {
 A5E.rollModes = {
   normal: 'A5E.RollModeNormal',
   advantage: 'A5E.RollModeAdvantage',
-  disadvantage: 'A5E.RollModeDisadvantage'
+  disadvantage: 'A5E.RollModeDisadvantage',
+  passive: 'A5E.RollModePassive'
 };
 
 // TODO: Add localizations for these roll types.

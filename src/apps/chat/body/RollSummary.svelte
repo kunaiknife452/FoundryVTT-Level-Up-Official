@@ -36,11 +36,10 @@
     function getRollModeLabel({ rollMode }) {
         if (!rollMode) return null;
 
-        return localize(
-            rollMode === 1
-                ? "A5E.RollModeAdvantage"
-                : "A5E.RollModeDisadvantage",
-        );
+      return localize(
+          rollMode === 1 ? "A5E.RollModeAdvantage" :
+          (rollMode === 2 ? "A5E.RollModePassive" : "A5E.RollModeDisadvantage")
+      );
     }
 
     function getExpertiseLabel({ expertiseDice }) {
