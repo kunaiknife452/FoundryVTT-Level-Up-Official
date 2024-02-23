@@ -70,11 +70,7 @@
 		"description": "<p dir=\"ltr\">You curse the language of your foes, casting them into disarray.</p>\n<p dir=\"ltr\">Each creature in the spell&rsquo;s area that fails its save immediately begins speaking a brand-new language unique to itself. The creature perceives itself as speaking the language it has always spoken, but in reality is instead speaking an entirely new tongue with its own vocabulary and grammar. This extends even to writing and sign language. The only way to communicate with affected creatures is via the tongues spell (or a comprehend languages spell for writing) or telepathy. An affected creature can repeat the saving throw every hour, ending the effect for itself on a success.</p>\n<p dir=\"ltr\">A creature that succeeds on its saving throw has disadvantage on all Intelligence ability checks and saves for one minute instead.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -115,12 +111,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

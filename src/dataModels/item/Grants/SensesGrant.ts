@@ -54,7 +54,8 @@ export default class SensesGrant extends BaseGrant {
       itemUuid: this.parent.uuid,
       grantId: this._id,
       bonusId,
-      type: this.#type
+      type: this.#type,
+      grantType: 'bonus'
     };
 
     return {
@@ -83,7 +84,7 @@ export default class SensesGrant extends BaseGrant {
   }
 
   requiresConfig() {
-    return this.senses.length !== this.senses.total;
+    return this.senses.options.length;
   }
 
   override async configureGrant() {

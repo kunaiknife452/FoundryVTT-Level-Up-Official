@@ -50,11 +50,7 @@
 		"description": "<p>You magically shore up and smooth the ground. Any non-magical difficult terrain in the spell&rsquo;s area ceases to be difficult terrain; mud dries, uneven ground flattens, vegetation withers away, ice melts, slippery liquids like oil absorb or dissipate, etc. In addition, if any horizontal surfaces in the area look solid but cannot actually bear the weight of a normal medium-sized or smaller creature, they are magically reinforced making them safe to walk across for the next hour. This spell even solidifies pressure plates and trap doors, keeping them from activating for the next hour without deliberate effort. (For example, you could open a trap door that opens in by grasping the handle and opening it, but not by stepping on it.)</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -95,12 +91,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

@@ -92,7 +92,7 @@
 		"description": "<p>The target is invisible. Anything the target is carrying or wearing is also invisible as long as it remains in the target's possession.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -134,12 +134,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

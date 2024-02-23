@@ -1,0 +1,69 @@
+{
+	"name": "Refugee",
+	"type": "feature",
+	"img": "icons/environment/settlement/wagon-black.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>By great misfortune, you and many others left your homeland so that you might survive. You are proficient in Survival, and when in an urban environment can roll Survival checks when using Intimidation or Persuasion.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"csweeMKOMdfmHPzf": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Shadow Exile",
+				"keys": {
+					"base": [],
+					"options": [
+						"dec",
+						"ste"
+					],
+					"total": 1
+				},
+				"proficiencyType": "skill"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "6gb8z7oyd2prqzy0"
+}

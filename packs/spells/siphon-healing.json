@@ -59,11 +59,7 @@
 		"description": "<p dir=\"ltr\">You siphon healing from one creature and give it to another.</p>\n<p dir=\"ltr\">You may cast this spell when a creature you can see within range would regain hit points via any means including spells, spending hit dice, regeneration, and so on.</p>\n<p dir=\"ltr\">The target must make a saving throw against your spell save DC or you may redirect as many hit points as you want to another target within range. You may choose yourself or another creature within range to receive the difference in hit points.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -105,12 +101,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

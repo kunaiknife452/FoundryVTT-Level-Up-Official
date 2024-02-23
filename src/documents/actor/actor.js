@@ -7,6 +7,7 @@ import ActorGrantsManager from '../../managers/ActorGrantsManager';
 import BonusesManager from '../../managers/BonusesManager';
 import MigrationRunnerBase from '../../migration/MigrationRunnerBase';
 import RestManager from '../../managers/RestManager';
+import RollOverrideManager from '../../managers/RollOverrideManager';
 import RollPreparationManager from '../../managers/RollPreparationManager';
 
 import AbilityBonusConfigDialog from '../../apps/dialogs/AbilityBonusConfigDialog.svelte';
@@ -16,20 +17,12 @@ import ActorHpConfigDialog from '../../apps/dialogs/ActorHpConfigDialog.svelte';
 import ActorInitConfigDialog from '../../apps/dialogs/ActorInitConfigDialog.svelte';
 import ActorManueverConfigDialog from '../../apps/dialogs/ActorManueverConfigDialog.svelte';
 import ActorSpellConfigDialog from '../../apps/dialogs/ActorSpellConfigDialog.svelte';
-import ActorTerrainConfigDialog from '../../apps/dialogs/ActorTerrainConfigDialog.svelte';
-import ArmorProfConfigDialog from '../../apps/dialogs/ArmorProfConfigDialog.svelte';
 import ArmorClassConfigDialog from '../../apps/dialogs/ArmorClassConfigDialog.svelte';
 import AttackBonusConfigDialog from '../../apps/dialogs/AttackBonusConfigDialog.svelte';
-import ConditionImmunitiesConfigDialog from '../../apps/dialogs/ConditionImmunitiesConfigDialog.svelte';
-import CreatureSizeConfigDialog from '../../apps/dialogs/CreatureSizeConfigDialog.svelte';
-import CreatureTypeConfigDialog from '../../apps/dialogs/CreatureTypeConfigDialog.svelte';
 import DamageBonusConfigDialog from '../../apps/dialogs/DamageBonusConfigDialog.svelte';
-import DamageImmunitiesConfigDialog from '../../apps/dialogs/DamageImmunitiesConfigDialog.svelte';
-import DamageResistancesConfigDialog from '../../apps/dialogs/DamageResistancesConfigDialog.svelte';
-import DamageVulnerabilitiesConfigDialog from '../../apps/dialogs/DamageVulnerabilitiesConfigDialog.svelte';
+import DetailsConfigDialog from '../../apps/dialogs/DetailsConfigDialog.svelte';
 import InitiativeBonusConfigDialog from '../../apps/dialogs/InitiativeBonusConfigDialog.svelte';
 import HealingBonusConfigDialog from '../../apps/dialogs/HealingBonusConfigDialog.svelte';
-import LanguagesConfigDialog from '../../apps/dialogs/LanguagesConfigDialog.svelte';
 import MovementBonusConfigDialog from '../../apps/dialogs/bonuses/MovementBonusConfigDialog.svelte';
 import MovementConfigDialog from '../../apps/dialogs/MovementConfigDialog.svelte';
 import RestDialog from '../../apps/dialogs/RestDialog.svelte';
@@ -39,17 +32,14 @@ import SensesConfigDialog from '../../apps/dialogs/SensesConfigDialog.svelte';
 import SkillBonusConfigDialog from '../../apps/dialogs/SkillBonusConfigDialog.svelte';
 import SkillCheckRollDialog from '../../apps/dialogs/SkillCheckRollDialog.svelte';
 import SkillConfigDialog from '../../apps/dialogs/SkillConfigDialog.svelte';
-import ToolProfConfigDialog from '../../apps/dialogs/ToolProfConfigDialog.svelte';
-import WeaponProfConfigDialog from '../../apps/dialogs/WeaponProfConfigDialog.svelte';
 
 import GenericConfigDialog from '../../apps/dialogs/initializers/GenericConfigDialog';
 import GenericRollDialog from '../../apps/dialogs/initializers/GenericRollDialog';
 
 import automateHpConditions from '../activeEffect/utils/automateHpConditions';
+import automateMultiLevelConditions from '../activeEffect/utils/automateMultiLevelConditions';
 import getDeterministicBonus from '../../dice/getDeterministicBonus';
 import getRollFormula from '../../utils/getRollFormula';
-import overrideRollMode from '../../utils/overrideRollMode';
-import automateMultiLevelConditions from '../activeEffect/utils/automateMultiLevelConditions';
 
 export default class ActorA5e extends Actor {
   #configDialogMap;
@@ -68,32 +58,33 @@ export default class ActorA5e extends Actor {
     this.#configDialogMap = {
       ability: AbilityCheckConfigDialog,
       abilityBonus: AbilityBonusConfigDialog,
-      armor: ArmorProfConfigDialog,
+      armor: DetailsConfigDialog,
       armorClass: ArmorClassConfigDialog,
       attackBonus: AttackBonusConfigDialog,
-      conditionImmunities: ConditionImmunitiesConfigDialog,
+      conditionImmunities: DetailsConfigDialog,
       damageBonus: DamageBonusConfigDialog,
-      damageImmunities: DamageImmunitiesConfigDialog,
-      damageResistances: DamageResistancesConfigDialog,
-      damageVulnerabilities: DamageVulnerabilitiesConfigDialog,
+      damageImmunities: DetailsConfigDialog,
+      damageResistances: DetailsConfigDialog,
+      damageVulnerabilities: DetailsConfigDialog,
       healingBonus: HealingBonusConfigDialog,
       health: ActorHpConfigDialog,
       initiative: ActorInitConfigDialog,
       initiativeBonus: InitiativeBonusConfigDialog,
-      languages: LanguagesConfigDialog,
+      languages: DetailsConfigDialog,
       maneuvers: ActorManueverConfigDialog,
+      maneuverTraditions: DetailsConfigDialog,
       movement: MovementConfigDialog,
       movementBonus: MovementBonusConfigDialog,
       senses: SensesConfigDialog,
       sensesBonus: SensesBonusConfigDialog,
-      size: CreatureSizeConfigDialog,
+      size: DetailsConfigDialog,
       skill: SkillConfigDialog,
       skillBonus: SkillBonusConfigDialog,
       spells: ActorSpellConfigDialog,
-      terrain: ActorTerrainConfigDialog,
-      tools: ToolProfConfigDialog,
-      types: CreatureTypeConfigDialog,
-      weapons: WeaponProfConfigDialog
+      terrain: DetailsConfigDialog,
+      tools: DetailsConfigDialog,
+      types: DetailsConfigDialog,
+      weapons: DetailsConfigDialog
     };
   }
 
@@ -166,6 +157,7 @@ export default class ActorA5e extends Actor {
 
     if ((this.system.schemaVersion?.version ?? this.system.schema?.version) < 0.005) return;
     this.prepareArmorClass();
+    this.RollOverrideManager.initialize();
   }
 
   /**
@@ -175,7 +167,8 @@ export default class ActorA5e extends Actor {
   prepareBaseData() {
     // Register Managers
     this.BonusesManager = new BonusesManager(this);
-    this.GrantsManager = new ActorGrantsManager(this);
+    this.grants = new ActorGrantsManager(this);
+    this.RollOverrideManager = new RollOverrideManager(this);
 
     // Add AC data to the actor.
     if ((this.system.schemaVersion?.version ?? this.system.schema?.version) >= 0.005) {
@@ -188,16 +181,16 @@ export default class ActorA5e extends Actor {
     }
 
     // Add base bonuses for abilities
-    Object.entries(this.system.abilities).forEach(([abilityKey, ability]) => {
-      const value = getDeterministicBonus(
-        [
-          ability.value,
-          this.BonusesManager.getAbilityBonusesFormula(abilityKey, 'base').trim()
-        ].filter(Boolean).join(' + ')
-      );
+    // Object.entries(this.system.abilities).forEach(([abilityKey, ability]) => {
+    //   const value = getDeterministicBonus(
+    //     [
+    //       ability.value,
+    //       this.BonusesManager.getAbilityBonusesFormula(abilityKey, 'base').trim()
+    //     ].filter(Boolean).join(' + ')
+    //   );
 
-      ability.value = value ?? ability.value;
-    });
+    //   ability.value = value ?? ability.value;
+    // });
 
     const actorType = this.type;
     if (actorType === 'character') {
@@ -273,6 +266,18 @@ export default class ActorA5e extends Actor {
    */
   prepareDerivedData() {
     const actorData = this.system;
+
+    // Add base bonuses for abilities
+    Object.entries(actorData.abilities).forEach(([abilityKey, ability]) => {
+      const value = getDeterministicBonus(
+        [
+          ability.value,
+          this.BonusesManager.getAbilityBonusesFormula(abilityKey, 'base').trim()
+        ].filter(Boolean).join(' + ')
+      );
+
+      ability.value = value ?? ability.value;
+    });
 
     // Calculate the base ability modifier for each ability score.
     Object.values(actorData.abilities).forEach((ability) => {
@@ -549,6 +554,12 @@ export default class ActorA5e extends Actor {
       const bonusFormula = this.BonusesManager.getSensesBonusFormula(type);
       if (!bonusFormula) continue;
 
+      if (bonusFormula === 'unlimited') {
+        this.system.attributes.senses[type].distance = 0;
+        this.system.attributes.senses[type].unit = 'unlimited';
+        continue;
+      }
+
       const bonus = getDeterministicBonus(bonusFormula, this.getRollData());
       if (!bonus) continue;
       this.system.attributes.senses[type].distance = distance + bonus;
@@ -567,21 +578,6 @@ export default class ActorA5e extends Actor {
       (change) => game.a5e.activeEffects.options[this.type]
         .allOptions[change.key]?.phase === 'afterDerived'
     );
-  }
-
-  /**
-   * {@deprecated}
-   */
-  async applyPermanentEffects() {
-    const effects = Array.from(this.items).flatMap((i) => i.effects.contents)
-      .filter((e) => e.flags?.a5e?.transferType === 'permanent');
-
-    const overrides = ActiveEffectA5e.getPermanentEffectChanges(this.toObject(), effects);
-    // FIXME: Store theses updates somewhere so they can be undone and so
-    // that the next run can figure out what changed
-
-    // TODO: Add warning
-    await this.update(overrides);
   }
 
   /** @inheritdoc */
@@ -649,13 +645,19 @@ export default class ActorA5e extends Actor {
     }
 
     // Update prototype token sizes to reflect the actor's token size
-    if (foundry.utils.getProperty(changed, 'system.traits.size')) {
-      const newSize = changed.system.traits.size;
+    const automateTokenSize = this.flags?.a5e?.automatePrototypeTokenSize
+      ?? game.settings.get('a5e', 'automatePrototypeTokenSize')
+      ?? true;
 
-      // If titanic token is already larger than 5, don't change it
-      if (newSize !== 'titan' || this.prototypeToken.width < 5) {
-        foundry.utils.setProperty(changed, 'prototypeToken.height', CONFIG.A5E.tokenDimensions[newSize]);
-        foundry.utils.setProperty(changed, 'prototypeToken.width', CONFIG.A5E.tokenDimensions[newSize]);
+    if (automateTokenSize) {
+      if (foundry.utils.getProperty(changed, 'system.traits.size')) {
+        const newSize = changed.system.traits.size;
+
+        // If titanic token is already larger than 5, don't change it
+        if (newSize !== 'titan' || this.prototypeToken.width < 5) {
+          foundry.utils.setProperty(changed, 'prototypeToken.height', CONFIG.A5E.tokenDimensions[newSize]);
+          foundry.utils.setProperty(changed, 'prototypeToken.width', CONFIG.A5E.tokenDimensions[newSize]);
+        }
       }
     }
   }
@@ -835,18 +837,41 @@ export default class ActorA5e extends Actor {
     this.#configure('ability', title, data, options);
   }
 
+  configureArmorClass(data = {}, options = {}) {
+    const title = localize('A5E.ACConfigurationPrompt', { name: this.name });
+    this.#configure('armorClass', title, data, options);
+  }
+
   configureArmorProficiencies(data = {}, options = {}) {
     const title = localize('A5E.ArmorProficienciesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.ArmorProficiencies';
+    data.propertyKey ??= 'system.proficiencies.armor';
+    data.configObject ??= CONFIG.A5E.armor;
+    data.type ??= 'armorTypes';
+
     this.#configure('armor', title, data, options);
   }
 
   configureConditionImmunities(data = {}, options = {}) {
     const title = localize('A5E.ConditionImmunitiesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.ConditionImmunities';
+    data.configObject ??= CONFIG.A5E.conditions;
+    data.propertyKey ??= 'system.traits.conditionImmunities';
+    data.type ??= 'conditionImmunities';
+
     this.#configure('conditionImmunities', title, data, options);
   }
 
   configureCreatureTypes(data = {}, options = {}) {
     const title = localize('A5E.CreatureTypesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.CreatureTypePlural';
+    data.configObject ??= CONFIG.A5E.creatureTypes;
+    data.propertyKey ??= 'system.details.creatureTypes';
+    data.type ??= 'creatureTypes';
+
     this.#configure('types', title, data, options);
   }
 
@@ -858,23 +883,45 @@ export default class ActorA5e extends Actor {
     this.#configure(dialogKey, dialogName, { bonusID });
   }
 
-  configureArmorClass(data = {}, options = {}) {
-    const title = localize('A5E.ACConfigurationPrompt', { name: this.name });
-    this.#configure('armorClass', title, data, options);
+  configureCreatureTerrains(data = {}, options = {}) {
+    data.heading ??= 'A5E.CreatureTerrains';
+    data.configObject ??= CONFIG.A5E.terrainTypes;
+    data.propertyKey ??= 'system.details.terrain';
+    data.type ??= 'creatureTerrains';
+
+    this.#configure('terrain', `${this.name}: Configure Creature Terrains`, data, options);
   }
 
   configureDamageImmunities(data = {}, options = {}) {
     const title = localize('A5E.DamageImmunitiesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.DamageTypePlural';
+    data.configObject ??= CONFIG.A5E.damageTypes;
+    data.propertyKey ??= 'system.traits.damageImmunities';
+    data.type ??= 'damageImmunities';
+
     this.#configure('damageImmunities', title, data, options);
   }
 
   configureDamageResistances(data = {}, options = {}) {
     const title = localize('A5E.DamageResistancesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.DamageTypePlural';
+    data.configObject ??= CONFIG.A5E.damageTypes;
+    data.propertyKey ??= 'system.traits.damageResistances';
+    data.type ??= 'damageResistances';
+
     this.#configure('damageResistances', title, data, options);
   }
 
   configureDamageVulnerabilities(data = {}, options = {}) {
     const title = localize('A5E.DamageVulnerabilitiesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.DamageTypePlural';
+    data.configObject ??= CONFIG.A5E.damageTypes;
+    data.propertyKey ??= 'system.traits.damageVulnerabilities';
+    data.type ??= 'damageVulnerabilities';
+
     this.#configure('damageVulnerabilities', title, data, options);
   }
 
@@ -891,12 +938,29 @@ export default class ActorA5e extends Actor {
 
   configureLanguages(data = {}, options = {}) {
     const title = localize('A5E.LanguagesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.Languages';
+    data.configObject ??= CONFIG.A5E.languages;
+    data.propertyKey ??= 'system.proficiencies.languages';
+    data.type ??= 'languages';
+
     this.#configure('languages', title, data, options);
   }
 
   configureMovement(data = {}, options = {}) {
     const title = localize('A5E.MovementConfigurationPrompt', { name: this.name });
     this.#configure('movement', title, data, options);
+  }
+
+  configureManeuverTraditions(data = {}, options = {}) {
+    const title = localize('A5E.ManeuverTraditionsConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.ManeuverTraditionPlural';
+    data.configObject ??= CONFIG.A5E.maneuverTraditions;
+    data.propertyKey ??= 'system.proficiencies.traditions';
+    data.type ??= 'maneuverTraditions';
+
+    this.#configure('maneuverTraditions', title, data, options);
   }
 
   configureSenses(data = {}, options = {}) {
@@ -906,6 +970,12 @@ export default class ActorA5e extends Actor {
 
   configureSizeCategory(data = {}, options = {}) {
     const title = localize('A5E.SizeCategoryConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.SizeCategory';
+    data.configObject ??= CONFIG.A5E.actorSizes;
+    data.propertyKey ??= 'system.traits.size';
+    data.type ??= 'size';
+
     this.#configure('size', title, data, options);
   }
 
@@ -918,17 +988,25 @@ export default class ActorA5e extends Actor {
     this.#configure('skill', title, data, options);
   }
 
-  configureCreatureTerrains(data = {}, options = {}) {
-    this.#configure('terrain', `${this.name}: Configure Creature Terrains`, data, options);
-  }
-
   configureToolProficiencies(data = {}, options = {}) {
     const title = localize('A5E.ToolProficienciesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.ToolProficiencies';
+    data.configObject ??= CONFIG.A5E.tools;
+    data.propertyKey ??= 'system.proficiencies.tools';
+    data.type ??= 'tools';
+
     this.#configure('tools', title, data, options);
   }
 
   configureWeaponProficiencies(data = {}, options = {}) {
     const title = localize('A5E.WeaponProficienciesConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.WeaponPlural';
+    data.configObject ??= CONFIG.A5E.weapons;
+    data.propertyKey ??= 'system.proficiencies.weapons';
+    data.type ??= 'weapons';
+
     this.#configure('weapons', title, data, options);
   }
 
@@ -1088,10 +1166,9 @@ export default class ActorA5e extends Actor {
     const defaultRollMode = options?.rollMode ?? CONFIG.A5E.ROLL_MODE.NORMAL;
     const expertiseDie = options.expertiseDice ?? ability.check.expertiseDice;
 
-    const rollMode = overrideRollMode(
-      this,
-      defaultRollMode,
-      { ability: abilityKey, type: 'check' }
+    const rollMode = this.RollOverrideManager.getRollOverride(
+      `system.abilities.${abilityKey}.check`,
+      defaultRollMode
     );
 
     const rollFormula = getRollFormula(this, {
@@ -1265,11 +1342,8 @@ export default class ActorA5e extends Actor {
     const defaultRollMode = options?.rollMode ?? CONFIG.A5E.ROLL_MODE.NORMAL;
     const expertiseDie = options.expertiseDice ?? ability?.save.expertiseDice ?? 0;
 
-    const rollMode = overrideRollMode(
-      this,
-      defaultRollMode,
-      { ability: abilityKey, deathSave: abilityKey === null, type: 'save' }
-    );
+    const rollOverrideKey = abilityKey ? `system.abilities.${abilityKey}.save` : 'deathSave';
+    const rollMode = this.RollOverrideManager.getRollOverride(rollOverrideKey, defaultRollMode);
 
     const rollFormula = getRollFormula(this, {
       ability: abilityKey,
@@ -1391,11 +1465,8 @@ export default class ActorA5e extends Actor {
     const defaultRollMode = options?.rollMode ?? CONFIG.A5E.ROLL_MODE.NORMAL;
     const expertiseDie = options.expertiseDice ?? skill.expertiseDice;
 
-    const rollMode = overrideRollMode(
-      this,
-      defaultRollMode,
-      { ability: abilityKey, skill: skillKey, type: 'skill' }
-    );
+    const rollMode = this.RollOverrideManager
+      .getRollOverride(`system.skills.${skillKey}`, defaultRollMode, { ability: abilityKey });
 
     const rollFormula = getRollFormula(this, {
       ability: abilityKey,

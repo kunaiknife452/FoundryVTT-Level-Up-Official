@@ -44,7 +44,7 @@
 		"description": "<p>You wind your power up like a spring. You gain advantage on the next melee attack roll you make before the end of the spell's duration, after which the spell ends.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -86,12 +86,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

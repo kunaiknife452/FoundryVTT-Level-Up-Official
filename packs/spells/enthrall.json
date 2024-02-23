@@ -92,7 +92,7 @@
 		"description": "<p>You weave a compelling stream of words that captivates your targets. Any target that can't be charmed automatically succeeds on its saving throw, and targets fighting you or creatures friendly to you have advantage on the saving throw.</p><p>Until the spell ends or a target can no longer hear you, it has disadvantage on Perception checks made to perceive any creature other than you. The spell ends if you are incapacitated or can no longer speak.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -131,12 +131,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

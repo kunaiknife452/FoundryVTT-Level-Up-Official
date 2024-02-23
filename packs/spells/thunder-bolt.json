@@ -88,7 +88,7 @@
 		"description": "<p>A peal of thunder ripples from a point you can see within range. Each creature in the area takes 8d6 thunder damage and is deafened until the end of its next turn. If the area contains Large or larger nonmagical wood or stone objects, the objects take 8d6 thunder damage and creatures in the area that fail their saving throw take an additional 2d6 slashing damage from flying splinters. The thunderclap can be heard from 600 feet away.</p>\n<p><em><strong>Cast at Higher Levels.</strong></em> For every slot level above 4th, the thunder and slashing damage increase by 1d6, and the thunderclap can be heard from an additional 100 feet away.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "dungeonDelversGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -133,12 +133,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

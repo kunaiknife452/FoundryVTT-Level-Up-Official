@@ -56,7 +56,8 @@ export default class AttackGrant extends BaseGrant {
       itemUuid: this.parent.uuid,
       grantId: this._id,
       bonusId,
-      type: 'attacks'
+      type: 'attacks',
+      grantType: 'bonus'
     };
 
     return {
@@ -84,7 +85,7 @@ export default class AttackGrant extends BaseGrant {
   }
 
   requiresConfig(): boolean {
-    return this.attackTypes.base.length !== this.attackTypes.total;
+    return this.attackTypes.options.length;
   }
 
   override async configureGrant() {

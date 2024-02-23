@@ -60,11 +60,7 @@
 		"description": "<p>You respond to being struck with a blast of cold that freezes their weapon to you.</p>\n<p>You may only cast this spell in response to being damaged by a melee weapon attack. The creature that attacked you takes 2d6 points of cold damage. If the creature struck you did so with a wielded weapon, the weapon freezes to your body for one minute. The creature can free the weapon with a Strength saving throw as an action on its turn or it can let go of the weapon if it wishes (no action required). You and the creature are considered grappling each other as long as it retains its hold on the weapon and the weapon remains stuck to you.</p>\n<p>If the creature instead struck you with an unarmed strike or a natural weapon such as a bite or claw attack, it takes an additional d6 of cold damage, but is not frozen to you.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -106,12 +102,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

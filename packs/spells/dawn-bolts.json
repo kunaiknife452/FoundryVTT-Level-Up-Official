@@ -76,11 +76,7 @@
 		"description": "<p dir=\"ltr\">You bless the ammunition giving it the power to pierce the darkness. When you make a ranged weapon attack with one of the pieces of ammunition drawn from the container, it deals an additional 1d6 points of radiant damage. Then, hit or miss, the magic on that piece of ammunition dissipates.</p>\n<p dir=\"ltr\"><strong>Cast at Higher Levels.</strong> For each spell level above third, you may bless an additional 2 pieces of ammunition. If you use at least a 5th-level spell slot, all of the damage done by the ammunition is radiant rather than its normal type, and being hit with one of the pieces of ranged ammunition counts as spending a round in natural sunlight.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -121,12 +117,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

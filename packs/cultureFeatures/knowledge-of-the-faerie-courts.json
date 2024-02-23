@@ -1,0 +1,74 @@
+{
+	"name": "Knowledge of the Faerie Courts",
+	"type": "feature",
+	"img": "icons/magic/nature/tree-twisted-glow-yellow.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You are proficient in one of the following skills: Arcana, Culture, Deception, History, Insight, Persuasion, Survival.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"HzkoMcDOGc4QzIHL": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Knowledge of the Faerie Courts",
+				"keys": {
+					"base": [],
+					"options": [
+						"arc",
+						"cul",
+						"dec",
+						"his",
+						"ins",
+						"per",
+						"sur"
+					],
+					"total": 1
+				},
+				"proficiencyType": "skill"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "rv34qxh59k8b6989"
+}

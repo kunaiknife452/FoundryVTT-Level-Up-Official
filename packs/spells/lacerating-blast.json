@@ -72,11 +72,7 @@
 		"description": "<p>Razor-sharp shards of volcanic glass blast from your outstretched hand. Each creature in the area takes 4d4 slashing damage. A creature that fails its save also takes 1d4 ongoing slashing damage for one minute or until an action is used to stanch the bleeding.</p>\n<p><strong>Cast at Higher Levels. </strong>The initial and ongoing damage each increase by 1d4 for each spell slot level above 2nd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -117,12 +113,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

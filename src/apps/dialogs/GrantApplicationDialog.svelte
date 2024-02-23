@@ -41,10 +41,13 @@
     }
 
     function onSubmit() {
-        const updateData = prepareGrantsApplyData(actor, grants, applyData);
+        const { updateData, documentData } =
+            prepareGrantsApplyData(actor, grants, applyData) ?? {};
+
         dialog.submit({
             success: true,
             updateData,
+            documentData,
         });
     }
 
@@ -99,5 +102,6 @@
 <style lang="scss">
     article {
         padding: 0.75rem;
+        max-height: 70vh;
     }
 </style>

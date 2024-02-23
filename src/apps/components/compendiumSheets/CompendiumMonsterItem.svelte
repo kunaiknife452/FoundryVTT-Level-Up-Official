@@ -1,7 +1,11 @@
 <script>
     import { getContext } from "svelte";
 
+    import prepareXP from "../../dataPreparationHelpers/prepareXP";
+
     import ImportButton from "../ImportButton.svelte";
+
+    import getDocumentSourceTooltip from "../../../utils/getDocumentSourceTooltip";
 
     export let document;
 
@@ -71,17 +75,6 @@
         return event.dataTransfer.setData("text/plain", JSON.stringify(data));
     }
 
-    function prepareXP(monster) {
-        const cr = parseFloat(monster?.system?.details?.cr || 0);
-        let baseXp = 0;
-        if (cr === 0.125) baseXp = CONFIG.A5E.CR_EXP_LEVELS["1/8"];
-        else if (cr === 0.25) baseXp = CONFIG.A5E.CR_EXP_LEVELS["1/4"];
-        else if (cr === 0.5) baseXp = CONFIG.A5E.CR_EXP_LEVELS["1/2"];
-        else baseXp = CONFIG.A5E.CR_EXP_LEVELS[parseInt(cr, 10) > 30 ? 30 : cr];
-
-        return monster?.system?.details?.elite ? baseXp * 2 : baseXp;
-    }
-
     const collection = getContext("collection");
     const { actorSizes, creatureTypes } = CONFIG.A5E;
 
@@ -133,9 +126,7 @@
                 class="a5e-item__source-tag"
                 href={monsterSource?.url}
                 target="_blank"
-                data-tooltip={monsterSource.affiliate
-                    ? `${monsterSource?.title} (Affiliate Link)`
-                    : monsterSource?.title}
+                data-tooltip={getDocumentSourceTooltip(monsterSource)}
                 on:click|stopPropagation
             >
                 {monsterSource?.abbreviation}

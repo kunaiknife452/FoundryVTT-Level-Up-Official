@@ -46,12 +46,12 @@
         "prerequisite": "",
         "requiresBloodied": false,
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -151,12 +151,12 @@
         "prerequisite": "",
         "requiresBloodied": false,
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -322,12 +322,12 @@
         "prerequisite": "",
         "requiresBloodied": false,
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -422,12 +422,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -525,12 +525,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -619,12 +619,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -713,12 +713,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -807,12 +807,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -901,12 +901,12 @@
         "prerequisite": "",
         "tradition": "",
         "schemaVersion": {
-          "version": 0.011,
+          "version": 0.013,
           "lastMigration": {
             "version": {
-              "schema": 0.01,
+              "schema": 0.011,
               "foundry": "11.315",
-              "system": "0.16.37"
+              "system": "0.16.49"
             }
           }
         }
@@ -922,7 +922,7 @@
   "effects": [],
   "flags": {
     "a5e": {
-      "sheetIsLocked": false,
+      "sheetIsLocked": true,
       "availableSpellLevels": [],
       "showSpellSlots": false,
       "showSpellPoints": false
@@ -934,101 +934,88 @@
         "value": 15,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       },
       "dex": {
         "value": 12,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       },
       "con": {
         "value": 13,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       },
       "int": {
         "value": 14,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       },
       "wis": {
         "value": 11,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       },
       "cha": {
         "value": 13,
         "check": {
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         },
         "save": {
           "proficient": false,
           "expertiseDice": 0,
-          "bonus": "",
-          "notes": {}
+          "bonus": ""
         }
       }
     },
     "schemaVersion": {
-      "version": 0.011,
+      "version": 0.013,
       "lastMigration": {
         "version": {
-          "schema": 0.01,
+          "schema": 0.011,
           "foundry": "11.315",
-          "system": "0.16.37"
+          "system": "0.16.49"
         }
       }
     },
     "skills": {
       "acr": {
         "ability": "dex",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1040,7 +1027,6 @@
       },
       "ani": {
         "ability": "wis",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1052,7 +1038,6 @@
       },
       "arc": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1064,7 +1049,6 @@
       },
       "ath": {
         "ability": "str",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1076,7 +1060,6 @@
       },
       "cul": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1088,7 +1071,6 @@
       },
       "dec": {
         "ability": "cha",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1100,7 +1082,6 @@
       },
       "eng": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1112,7 +1093,6 @@
       },
       "his": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1124,7 +1104,6 @@
       },
       "ins": {
         "ability": "wis",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1136,7 +1115,6 @@
       },
       "itm": {
         "ability": "cha",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1148,7 +1126,6 @@
       },
       "inv": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1160,7 +1137,6 @@
       },
       "med": {
         "ability": "wis",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1172,7 +1148,6 @@
       },
       "nat": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1184,7 +1159,6 @@
       },
       "prc": {
         "ability": "wis",
-        "value": 0,
         "proficient": true,
         "specialties": [],
         "expertiseDice": 0,
@@ -1196,7 +1170,6 @@
       },
       "prf": {
         "ability": "cha",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1208,7 +1181,6 @@
       },
       "per": {
         "ability": "cha",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1220,7 +1192,6 @@
       },
       "rel": {
         "ability": "int",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1232,7 +1203,6 @@
       },
       "slt": {
         "ability": "dex",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1244,7 +1214,6 @@
       },
       "ste": {
         "ability": "dex",
-        "value": 0,
         "proficient": true,
         "specialties": [],
         "expertiseDice": 0,
@@ -1256,7 +1225,6 @@
       },
       "sur": {
         "ability": "wis",
-        "value": 0,
         "proficient": false,
         "specialties": [],
         "expertiseDice": 0,
@@ -1418,7 +1386,10 @@
       "damage": {},
       "healing": {},
       "skills": {},
-      "attacks": {}
+      "attacks": {},
+      "initiative": {},
+      "movement": {},
+      "senses": {}
     },
     "currency": {
       "pp": 0,
@@ -1493,7 +1464,7 @@
         }
       }
     },
-    "source": "",
+    "source": "monstrousMenagerie",
     "traits": {
       "size": "med",
       "conditionImmunities": [],
@@ -1502,7 +1473,8 @@
       ],
       "damageResistances": [],
       "damageVulnerabilities": []
-    }
+    },
+    "grants": {}
   },
   "prototypeToken": {
     "name": "Copper Dragon Wyrmling",

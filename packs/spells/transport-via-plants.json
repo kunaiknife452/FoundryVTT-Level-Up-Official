@@ -44,7 +44,7 @@
 		"description": "<p>You create a magical pathway between the target and a second plant that you've seen or touched before that is on the same plane of existence. Any creature can step into the target and exit from the second plant by using 5 feet of movement.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -84,12 +84,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

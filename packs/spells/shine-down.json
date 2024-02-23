@@ -73,11 +73,7 @@
 		"description": "<p dir=\"ltr\">Light falls upon you from above, protecting you and lighting your path.</p>\n<p dir=\"ltr\">Until the beginning of your next turn any creature that attempts to harm you takes a 1d4 penalty to the attack roll, and any creature that ends their turn within 5ft of you takes 1d6 cold damage, if you are a warlock, fire damage, if you are a druid, or radiant damage, if you are a cleric. If you are none or more than one of these classes, you choose which type of damage the spell does when you cast it. This damage increases to 2d6 at level 5, 3d6 at level 11, and 4d6 at level 17.</p>\n<p dir=\"ltr\">In addition, you shed bright light to a range of 10 feet and dim light to a range 20 feet until the beginning of your next turn.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -119,12 +115,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

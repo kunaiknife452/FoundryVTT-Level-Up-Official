@@ -1,0 +1,69 @@
+{
+	"name": "Eladrin Weapon Training",
+	"type": "feature",
+	"img": "icons/magic/nature/tree-twisted-glow-yellow.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You have proficiency with longswords and rapiers.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"hhjwYkRp2RvT0yD2": {
+				"grantType": "trait",
+				"level": 0,
+				"optional": false,
+				"label": "Eladrin Weapon Training",
+				"traits": {
+					"base": [
+						"longsword",
+						"rapier"
+					],
+					"options": [],
+					"total": 0,
+					"traitType": "weapons"
+				}
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "ij1niq25zjq1dl18"
+}

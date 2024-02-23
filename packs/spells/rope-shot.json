@@ -39,11 +39,7 @@
 		"description": "<p>As part of the action used to cast this spell, make a ranged weapon attack against a target within range of the weapon you are wielding. On a hit, the ammunition from your shot leaves a sturdy cord behind it. It has the stats of a silk rope of its length. If the target was a creature, you may make an opposed Strength check as an action while holding the rope to pull the creature 10 feet toward you. If the target is a solid object or surface, the rope is securely anchored in it, and can be climbed (provided the surface or object can support the weight of the climbing creature). The rope persists indefinitely, but vanishes if you cast this spell again.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Arcane Sniper",
-			"link": "https://bit.ly/3bHQT5T",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "arcaneSniper",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -83,12 +79,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

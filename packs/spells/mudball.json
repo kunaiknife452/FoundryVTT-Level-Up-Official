@@ -72,11 +72,7 @@
 		"description": "<p dir=\"ltr\">You conjure up a ball of densely-packed, rock-filled mud and sling it at a point within range. The mud explodes, doing 4d4 points of bludgeoning damage, extinguishing unattended non-magical fires, and creating an area of difficult terrain that persists for one minute. Creatures in the area that fail their save are also blinded until the end of their next turn.</p>\n<p dir=\"ltr\"><strong>Cast At Higher Levels.</strong> The damage increases by 1d4 for each slot level above 2nd. In addition, if the spell is cast with a 4th-level or higher slot, the area increases to 20 feet.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -118,12 +114,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

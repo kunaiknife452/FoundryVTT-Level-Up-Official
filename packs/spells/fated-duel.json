@@ -54,11 +54,7 @@
 		"description": "<p dir=\"ltr\">As you sing or play a rousing and recognizable leitmotif, your targets feel themselves drawn to one another, and they feel compelled to battle. Attacks made against the fated pair by other creatures are made with disadvantage. And the fated pair has disadvantage to strike anyone other than the other target of this spell. However, both members of the fated pair land a critical hit on an 18, 19, or 20 on any target so long as your concentration is maintained. Either target may choose to end this effect by surrendering to the other, and the effect also ends when one of the targets reaches 0 hit points or is otherwise incapacitated.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-a962d442-7fff-80e3-4d1b-9e54a7fb5885\">Cast at Higher Levels.</strong> When cast at 4th, 6th, or 8th level you may designate an additional fated pair to battle.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -95,12 +91,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

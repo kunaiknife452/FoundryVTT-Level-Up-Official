@@ -73,11 +73,7 @@
 		"description": "<p dir=\"ltr\">A high-pressure stream of water blasts forth from your outstretched hand. Creatures must make a Strength saving throw or take 6d6 points of bludgeoning damage, be pushed 20 feet away from you and knocked prone. A creature that succeeds takes half damage and is not pushed or knocked prone.</p>\n<p dir=\"ltr\">In addition, the water douses any unattended flames and scours any clinging substances such as slime, oil, or contact poisons from the surface of every creature in the stream.</p>\n<p dir=\"ltr\"><strong>Cast at Higher Levels.</strong> The damage increases by 1d6 for every spell slot level above 3rd. The push distance increases by an additional 5 feet for every two spell slot levels above 3rd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -119,12 +115,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

@@ -77,11 +77,7 @@
 		"description": "<p dir=\"ltr\">You summon a powerful sacred stone measuring 4 feet tall and 2 feet wide to protect and restore your allies. It hovers a foot off the ground.</p>\n<p dir=\"ltr\">The stone radiates a soft glow of the color of your choosing, shedding dim light in a 10-foot radius. It is large enough to provide half cover. A creature in a space adjacent to the stone may spend a bonus action to touch the stone, regaining 3d6 hit points. A creature may only receive this healing once per casting of the spell. Once the stone has healed three creatures this way, it crumbles to dust. On your turn, you may use your bonus action to move the stone up to 20 feet to an empty space you can see.</p>\n<p dir=\"ltr\">The stone has an AC of 17 and 50 hit points. It is immune to acid, cold, fire, lightning, necrotic, poison, psychic, and radiant damage. It is resistant to slashing and piercing damage. If the stone is destroyed, the spell ends.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-e73afd77-7fff-8d14-acf3-733ac0051b8e\">Cast at Higher Levels.</strong> The stone can heal an additional creature for each spell slot level above 2nd. In addition, if you cast the spell with at least a 4th-level spell slot, it provides 3/4th cover. If you use at least a 6th-level slot, it provides full cover.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -123,12 +119,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

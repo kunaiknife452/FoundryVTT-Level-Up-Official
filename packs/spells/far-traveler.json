@@ -44,11 +44,7 @@
 		"description": "<p>When you cast this spell, choose a number of additional creatures equal to your spellcasting modifier (minimum 1). You and each of these creatures can travel at a normal pace and still use stealth. Additionally, you make Constitution saves related to forced marching with advantage.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Arcane Sniper",
-			"link": "https://bit.ly/3bHQT5T",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "arcaneSniper",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -89,12 +85,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

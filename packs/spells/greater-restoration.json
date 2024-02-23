@@ -44,7 +44,7 @@
 		"description": "<p>Healing energy rejuvenates a creature you touch and undoes a debilitating effect. You can remove one of:</p><ul><li>a level of fatigue.</li><li>a level of strife.</li><li>a charm or petrification effect.</li><li>a curse or cursed item attunement.</li><li>any reduction to a single ability score.</li><li>an effect that has reduced the target's hit point maximum.</li></ul></p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -86,12 +86,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

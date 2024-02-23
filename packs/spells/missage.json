@@ -48,11 +48,7 @@
 		"description": "<p dir=\"ltr\">You point and whisper your message at the target. It alone hears the message and may reply in a whisper audible only to you. However the voice that your message is delivered in sounds like a creature of your choosing that you have heard at least once.</p>\n<p dir=\"ltr\">You may cast this spell through solid objects even if you cannot see your target. However it is blocked by 3ft of soil, 1ft of stone, or 1 inch of metal. It passes through doors and around corners with ease.</p>\n<p dir=\"ltr\">Deception and Perform checks made to trick the target of the Missage spell gain advantage.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -93,12 +89,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

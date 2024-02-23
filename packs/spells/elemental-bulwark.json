@@ -52,11 +52,7 @@
 		"description": "<p>As a reaction to a damaging spell or area of effect targeting you or an ally within 10ft, you raise a barrier of air, earth, fire, or water to protect yourself and your allies. Roll 3d6. Reduce the damage you and any creature within 10ft of you takes from the incoming spell by the same value.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -105,12 +101,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

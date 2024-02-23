@@ -44,7 +44,7 @@
 		"description": "<p>You remove all poison and disease from a number of Supply equal to your proficiency bonus.</p><p><strong><em>Cast at Higher Levels.</em></strong> Remove all poison and disease from an additional Supply for each slot level above 1st.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -88,12 +88,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

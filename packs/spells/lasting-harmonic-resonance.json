@@ -85,7 +85,7 @@
 		"description": "<p>You harmonize with the rhythm of those around you until you're perfectly in sync. You may take the Help action as a bonus action. Additionally, when a creature within 30 feet uses a Bardic Inspiration die, you may choose to reroll the die after it is rolled but before the outcome is determined.</p><p>You cannot cast another spell through your spellcasting focus while concentrating on this spell.</p><hr class=\"a5e-rule u-my-md\"><p><strong>Rare: Lasting Harmonic Resonance.</strong> The spell’s effects continue for 1 round after its duration ends.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -121,12 +121,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

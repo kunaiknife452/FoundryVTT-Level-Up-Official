@@ -96,7 +96,7 @@
 		"description": "<p>You and allies within the area gain advantage and an expertise die on Dexterity (Stealth) checks as an aura of secrecy enshrouds you. Creatures in the area leave behind no evidence of their passage.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -135,12 +135,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

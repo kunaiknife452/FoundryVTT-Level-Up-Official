@@ -51,11 +51,7 @@
 		"description": "<p dir=\"ltr\">You call up a magical fortification to repel an oncoming hostile force. The spell creates eight 10-foot high, 5-foot square stone pillars, one at each of the compass rose points (N, NE, E, SE, S, SW, W, NW). Each of these is large enough to provide full cover for a medium creature. A flare appears above the position shedding bright light to a distance of 100 feet and dim light a further 100 feet past that. The spell also creates a healing pool in the center. A creature can spend its action to drink from the pool or splash water from it on another creature. The drinking or splashed creature regains 1d4 hit points, which cannot bring the creature above 25% of its hit point maximum.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-2449b514-7fff-9854-cbb3-d3f4ccbe03ed\">Cast at Higher Level.</strong> If you cast this spell with a spell slot of at least 6th level, it creates an area of difficult terrain that stretches 30 feet away from the edge of the central 25-foot square in every direction. If you cast it with a spell slot of at least 7th level, Invisible creatures entering the area of bright light must make a Charisma save or become visible for as long as they remain in the bright light.<strong id=\"docs-internal-guid-2449b514-7fff-9854-cbb3-d3f4ccbe03ed\"> </strong></p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -96,12 +92,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

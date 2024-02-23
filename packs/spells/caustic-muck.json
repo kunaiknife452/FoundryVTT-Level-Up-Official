@@ -106,11 +106,7 @@
 		"description": "<p dir=\"ltr\">You soften a patch of dry ground you can see within range into a horrible caustic mire. The spell&rsquo;s area becomes difficult terrain. A creature that enters the area for the first time on its turn or begins its turn in the area must make a Strength saving throw or be grappled (escape DC equal to your spell save DC) and take 2d6 points of acid damage. A creature that begins its turn grappled by the spell also takes 2d6 points of acid damage.&nbsp;</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-fec4f85f-7fff-f8f5-0d13-3d645accc826\">Cast at Higher Levels. </strong>The acid damage increases by 1d6 for each spell slot level above 3rd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -153,12 +149,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

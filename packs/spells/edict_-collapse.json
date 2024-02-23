@@ -67,11 +67,7 @@
 		"description": "<p dir=\"ltr\">Your targets fall to the ground, babbling in tongues. Chains of radiant gold or nebulous shadow rise up to bind your targets and hold them fast. Starting with the target with the lowest hit points (ignoring unconscious creatures), targets become prone and have a movement speed of 0 while the spell persists. In addition they cannot cast spells which require a verbal component. At the end of each of the creature&rsquo;s turns they may attempt a charisma save to end the effect.</p>\n<p dir=\"ltr\">As each collapses, subtract its hit points from the total before moving on to the next target. A target&rsquo;s hit points must be equal to or less than the total remaining for the spell to have any effect.</p>\n<p dir=\"ltr\">If the spell affects no creatures, the creature in the area with the lowest hit point total is rattled until the beginning of its next turn.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-baf92998-7fff-3d15-974a-95674d41d617\">Cast at Higher Levels.</strong> The spell affects an additional 2d10 hit points worth of creatures for each slot level above 3rd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -113,12 +109,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

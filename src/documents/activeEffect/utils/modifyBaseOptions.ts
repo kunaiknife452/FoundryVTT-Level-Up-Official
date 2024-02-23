@@ -1,4 +1,3 @@
-// @ts-nocheck
 import MODES from './effectModes';
 
 // const [sampleValue, modes, effectOpts, componentType, phase] = specialOptions[key];
@@ -29,17 +28,19 @@ export default function modifyBaseOptions(options: Object) {
   options['system.details.creatureTypes'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.creatureTypes), 'TAG_GROUP'];
 
   // Add options for traits
-  options['system.traits.conditionImmunities'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.conditions), 'TAG_GROUP'];
-  options['system.traits.damageImmunities'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
-  options['system.traits.damageResistances'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
-  options['system.traits.damageVulnerabilities'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
+  options['system.traits.conditionImmunities'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.conditions), 'TAG_GROUP'];
+  options['system.traits.damageImmunities'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
+  options['system.traits.damageResistances'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
+  options['system.traits.damageVulnerabilities'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
   options['system.traits.size'] = ['', MODES.OVERRIDE_ONLY, Object.entries(CONFIG.A5E.actorSizes), 'RADIO'];
 
   // Add options for proficiencies
-  options['system.proficiencies.armor'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.armor), 'TAG_GROUP'];
-  options['system.proficiencies.languages'] = ['', MODES.DEFAULT_MODES, Object.entries(CONFIG.A5E.languages), 'TAG_GROUP'];
-  options['system.proficiencies.tools'] = ['', MODES.DEFAULT_MODES, Object.values(CONFIG.A5E.tools).flatMap((c) => Object.entries(c)), 'TAG_GROUP'];
-  options['system.proficiencies.weapons'] = ['', MODES.DEFAULT_MODES, Object.values(CONFIG.A5E.weapons).flatMap((c) => Object.entries(c)), 'TAG_GROUP'];
+  options['system.proficiencies.armor'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.armor), 'TAG_GROUP'];
+  options['system.proficiencies.languages'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.languages), 'TAG_GROUP'];
+  // @ts-ignore
+  options['system.proficiencies.tools'] = ['', MODES.DEFAULT_STRING_MODES, Object.values(CONFIG.A5E.tools).flatMap((c) => Object.entries(c)), 'TAG_GROUP'];
+  // @ts-ignore
+  options['system.proficiencies.weapons'] = ['', MODES.DEFAULT_STRING_MODES, Object.values(CONFIG.A5E.weapons).flatMap((c) => Object.entries(c)), 'TAG_GROUP'];
 
   // Proficiency is prepared in base data so we add it here.
   options['system.attributes.prof'] = [0, MODES.DEFAULT_MODES];
@@ -62,11 +63,20 @@ export default function modifyBaseOptions(options: Object) {
   delete options['system.bonuses.rangedSpellAttack'];
   delete options['system.attributes.initiative.bonus'];
 
-  // Delete derived values
+  // Delete bonus associated values
   Object.keys(CONFIG.A5E.abilities).forEach((a) => {
     delete options[`system.abilities.${a}.check.mod`];
+    delete options[`system.abilities.${a}.check.bonus`];
     delete options[`system.abilities.${a}.save.mod`];
+    delete options[`system.abilities.${a}.save.bonus`];
   });
+
+  Object.keys(CONFIG.A5E.skills).forEach((s) => {
+    delete options[`system.skills.${s}.mod`];
+    delete options[`system.skills.${s}.bonus`];
+  });
+
+  delete options['system.attributes.initiative.bonus'];
 
   delete options['system.attributes.ac.baseFormula'];
   delete options['system.attributes.ac.value'];
@@ -108,6 +118,8 @@ export default function modifyBaseOptions(options: Object) {
   delete options['system.bonuses.damage'];
   delete options['system.bonuses.healing'];
   delete options['system.bonuses.initiative'];
+  delete options['system.bonuses.movement'];
+  delete options['system.bonuses.senses'];
   delete options['system.bonuses.skills'];
 
   // Delete schema information

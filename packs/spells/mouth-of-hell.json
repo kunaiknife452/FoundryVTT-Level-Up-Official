@@ -89,11 +89,7 @@
 		"description": "<p dir=\"ltr\">The ground explodes with hellfire and shards of rock. Creatures in the spell&rsquo;s area must make a Dexterity save or suffer 2d6 bludgeoning, 2d6 fire, and 2d6 necrotic damage. A creature that successfully saves takes half damage. The spell&rsquo;s area then becomes difficult terrain for the next hour. In addition a creature that enters the spell&rsquo;s area for the first time on a turn or starts its turn there takes 1d6 points of fire damage.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-7e258158-7fff-a49e-7cbb-970c13f41ed2\">Cast at Higher Levels.</strong> The spell&rsquo;s area increases by 5 feet for every spell slot level above 3rd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -135,12 +131,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

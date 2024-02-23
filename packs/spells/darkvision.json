@@ -90,7 +90,7 @@
 		"description": "<p>The target gains darkvision out to a range of 60 feet.</p><p><strong><em>Cast at Higher Levels.</em></strong> The range of the target's darkvision increases to 120 feet. In addition, for each slot level above 3rd you may choose an additional target.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -132,12 +132,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}
