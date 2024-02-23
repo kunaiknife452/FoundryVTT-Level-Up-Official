@@ -385,6 +385,7 @@ export default function registerEffectLocalizationConfig(A5E) {
     'system.spellResources.slots.9.current': 'A5E.effects.keys.spellResources.currentLevel9Slots',
     'system.spellResources.slots.9.max': 'A5E.effects.keys.spellResources.maxLevel9Slots',
     'system.supply': 'A5E.effects.keys.supply',
+    'system.gear': 'A5E.effects.keys.gear',
     'system.traits.conditionImmunities': 'A5E.effects.keys.traits.conditionImmunities',
     'system.traits.damageImmunities': 'A5E.effects.keys.traits.damageImmunities',
     'system.traits.damageResistances': 'A5E.effects.keys.traits.damageResistances',

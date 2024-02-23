@@ -27,13 +27,15 @@ export default function calculateInventoryWeight(actor) {
     0
   );
 
-  const excessSupplyWeight = 2 * Math.abs(
-    Math.min(actorData.abilities.str.value - (actorData.supply ?? 0), 0)
+  const excessSupplyWeight = Math.abs(
+    Math.min(0 - (actorData.supply ?? 0), 0)
   );
-
+  const excessGearWeight = Math.abs(
+    Math.min(0 - (actorData.gear ?? 0), 0)
+  );
   const trackCurrencyWeight = actor.flags?.a5e?.trackCurrencyWeight ?? game.settings.get('a5e', 'currencyWeight');
 
   return trackCurrencyWeight
-    ? totalItemWeight + excessSupplyWeight + (coinWeight * 0.02)
-    : totalItemWeight + excessSupplyWeight;
+    ? totalItemWeight + excessSupplyWeight + excessGearWeight + (coinWeight * 0.02)
+    : totalItemWeight + excessSupplyWeight + excessGearWeight;
 }

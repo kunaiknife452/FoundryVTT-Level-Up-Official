@@ -21,14 +21,27 @@
 
     function getSupplyTooltip(actor) {
         const { supply } = actor.system;
-        const freeSupplyLimit = actor.system.abilities.str.value;
+        const SupplyLimit = actor.system.abilities.str.value;
 
-        const excessSupply = Math.abs(Math.min(freeSupplyLimit - supply, 0));
+        const excessSupply = Math.abs(Math.min(SupplyLimit - supply, 0));
 
         if (excessSupply) {
-            return `Free Supply: ${freeSupplyLimit} &nbsp;&nbsp;|&nbsp;&nbsp; Additional Supply: ${excessSupply}`;
+            return `Max Supply: ${SupplyLimit} (Str) &nbsp;&nbsp;|&nbsp;&nbsp; Exceeding Max!`;
         } else {
-            return `Free Supply: ${supply} &nbsp;&nbsp;|&nbsp;&nbsp; Additional Supply: 0`;
+            return `Max Supply: ${SupplyLimit} (Str)`;
+        }
+    }
+
+    function getGearTooltip(actor) {
+        const { gear } = actor.system;
+        const GearLimit = actor.system.abilities.wis.value;
+
+        const excessGear = Math.abs(Math.min(GearLimit - gear, 0));
+
+        if (excessGear) {
+            return `Max Gear: ${GearLimit} (Wis) &nbsp;&nbsp;|&nbsp;&nbsp; Exceeding Max!`;
+        } else {
+            return `Max Gear: ${GearLimit} (Wis)`;
         }
     }
 
@@ -45,7 +58,9 @@
     $: bulkyTooltip = getBulkyTooltip($actor);
     $: currency = $actor.system.currency;
     $: supply = $actor.system.supply;
+    $: gear = $actor.system.gear;
     $: supplyTooltip = getSupplyTooltip($actor);
+    $: gearTooltip = getGearTooltip($actor);
 </script>
 
 <section class="shield-container">
@@ -97,6 +112,32 @@
                 type="number"
                 name="system.supply"
                 value={supply}
+                placeholder="0"
+                min="0"
+                on:change={({ target }) =>
+                    updateDocumentDataFromField(
+                        $actor,
+                        target.name,
+                        Number(target.value),
+                    )}
+            />
+        </div>
+        <!-- Gear -->
+        <div class="shield">
+            <h3
+                class="footer-shield-header"
+                data-tooltip={gearTooltip}
+                data-tooltip-direction="UP"
+            >
+                {localize("A5E.Gear")}
+            </h3>
+
+            <input
+                class="shield-input a5e-footer-group__input"
+                class:disable-pointer-events={!$actor.isOwner}
+                type="number"
+                name="system.gear"
+                value={gear}
                 placeholder="0"
                 min="0"
                 on:change={({ target }) =>
@@ -209,7 +250,7 @@
         gap: 0.25rem;
 
         &--attunement {
-            width: 5rem;
+            width: 7rem;
         }
     }
 

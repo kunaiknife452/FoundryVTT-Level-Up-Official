@@ -801,7 +801,8 @@
       "recoverExertionOnShortRest": "Recover Exertion On Short Rest",
       "spellcastingAbility": "Spellcasting Ability",
       "strife": "Strife",
-      "supply": "Supply"
+      "supply": "Supply",
+      "gear": "Gear"
     },
     "toggleActiveState": "Toggle Active State",
     "types": {
@@ -2260,6 +2261,7 @@
   "A5E.Supply": "Supply",
   "A5E.SupplyFatigueStrifePrompt": "Recover Fatigue and Strife",
   "A5E.SupplyConsume": "Consume Supply?",
+  "A5E.Gear": "Gear",
   "A5E.UIClearAll": "Clear All",
   "A5E.TabAbilityCheck": "Ability Check",
   "A5E.TabActions": "Actions",
