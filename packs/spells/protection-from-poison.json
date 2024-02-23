@@ -90,7 +90,7 @@
 		"description": "<p>The target has advantage on saving throws against being poisoned and resistance to poison damage.</p><p>Additionally, if the target is poisoned, you negate one poison affecting it. If more than one poison affects the target, you negate one poison you know is present (otherwise you negate one at random).</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -133,12 +133,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

@@ -520,7 +520,7 @@
     "materialProperties": [],
     "objectType": "miscellaneous",
     "plotItem": false,
-    "price": 0,
+    "price": "0 gp",
     "proficient": true,
     "quantity": 1,
     "rarity": "artifact",
@@ -549,8 +549,8 @@
       "changes": [
         {
           "key": "system.abilities.int.value",
-          "value": "{\"comparisonOperator\":\"<=\",\"comparisonValue\":\"20\",\"positiveValue\":\"20\",\"negativeValue\":\"\"}",
-          "mode": 7,
+          "value": "20",
+          "mode": 5,
           "priority": null
         },
         {

@@ -54,7 +54,8 @@ export default class MovementGrant extends BaseGrant {
       itemUuid: this.parent.uuid,
       grantId: this._id,
       bonusId,
-      type: this.#type
+      type: this.#type,
+      grantType: 'bonus'
     };
 
     return {
@@ -83,7 +84,7 @@ export default class MovementGrant extends BaseGrant {
   }
 
   requiresConfig() {
-    return this.movementTypes.length !== this.movementTypes.total;
+    return this.movementTypes.options.length;
   }
 
   override async configureGrant() {

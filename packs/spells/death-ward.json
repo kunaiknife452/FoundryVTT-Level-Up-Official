@@ -83,7 +83,7 @@
 		"description": "<p>The first time damage would reduce the target to 0 hit points, it instead drops to 1 hit point. If the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is negated. The spell ends immediately after either of these conditions occur.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -122,12 +122,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

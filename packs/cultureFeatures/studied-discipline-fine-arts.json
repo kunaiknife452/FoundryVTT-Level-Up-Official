@@ -1,0 +1,68 @@
+{
+	"name": "Studied Discipline - Fine Arts",
+	"type": "feature",
+	"img": "icons/environment/settlement/city-hall.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You gain proficiency in Performance. In addition, choose one artisan's tool you are proficient with. You gain an expertise die on checks made using that tool.</p><p>You always choose which ability score to use for rolls (Intelligence, Wisdom, or Charisma).</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"LU9ca4F4zq5spnrS": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Studied Discipline",
+				"keys": {
+					"base": [
+						"prf"
+					],
+					"options": [],
+					"total": 0
+				},
+				"proficiencyType": "skill"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "b2ol3j57gxv670iw"
+}

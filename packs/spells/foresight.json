@@ -102,7 +102,7 @@
 		"description": "<p>You impart the ability to see flashes of the immediate future. The target can't be surprised and has advantage on ability checks, attack rolls, and saving throws. Other creatures have disadvantage on attack rolls against the target.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -144,12 +144,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

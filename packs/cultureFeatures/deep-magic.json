@@ -1,0 +1,53 @@
+{
+	"name": "Deep Magic",
+	"type": "feature",
+	"img": "icons/environment/settlement/watchtower-lit-orange.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You know the @UUID[Compendium.a5e.a5e-spells.Item.86re3h2jgfr45ml4]{Resistance} cantrip. Once you reach 3rd level, you can cast @UUID[Compendium.a5e.a5e-spells.Item.ieyjztbqemom7ups]{Jump} once per long rest. At 5th level, you can cast @UUID[Compendium.a5e.a5e-spells.Item.ap6klied8mqbclvn]{Enlarge/Reduce} once per long rest. You don&rsquo;t need material components for these spells, but you can&rsquo;t cast them while you&rsquo;re in direct sunlight (although sunlight has no effect on them once cast). Intelligence is your spellcasting ability for these spells.&nbsp;</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "ctdtfi2v6o6qviwx"
+}

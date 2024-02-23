@@ -35,11 +35,7 @@
 		"description": "<p dir=\"ltr\">You call upon magical trickery to create one of the following effects within range:</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You change up to 100gp of coins into a different mix of coins of the same value. For example, you could turn 10 copper pieces into a silver piece or vice versa. This can never increase or decrease the value of the currency.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You cause an object no larger than the palm of your hand that you touch to teleport to one of your pockets or up your sleeve.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You create a simple repeating sound such as the sound of a metronome or a simple drumbeat. The sound repeats for up to 10 minutes.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You instantly end the effects of recreational intoxicants that you voluntarily consumed (such as alcohol) on yourself, sobering up immediately.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You perfume yourself with a scent of your choosing. The smell lasts for an hour or until you cast this spell again.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You change the color and/or pattern of a single article of clothing you are wearing to a different one. The change is permanent.</p>\n</li>\n</ul>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -77,12 +73,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

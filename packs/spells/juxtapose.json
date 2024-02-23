@@ -49,11 +49,7 @@
 		"description": "<p>Raising the mirror to your adversary you crush it in your hand. In the next moment you are looking at yourself from across the battlefield. When you cast Juxtapose you and your target teleport into each other&rsquo;s squares to swap position. In addition, if the target fails its save, an illusion falls over each of you, recreating the sight, scent, and sound of the other. This spell grants advantage on charisma checks to convince creatures you are your target, and your target gains disadvantage on charisma checks to convince creatures that it is not you.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -91,12 +87,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

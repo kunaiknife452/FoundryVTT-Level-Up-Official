@@ -100,7 +100,7 @@
     "materialProperties": [],
     "objectType": "container",
     "plotItem": false,
-    "price": 0,
+    "price": "0 gp",
     "proficient": true,
     "quantity": 1,
     "rarity": "legendary",

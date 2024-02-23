@@ -5,7 +5,7 @@
 	"effects": [
 		{
 			"icon": "icons/weapons/polearms/halberd-engraved-black.webp",
-			"origin": "Item.gsiq64sk0xqukym2",
+			"origin": "Item.pvbZGBKaamWSiy9t",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -168,41 +168,6 @@
 						"quantity": 1
 					}
 				}
-			},
-			"AMqKuTLmwtsVI3xd": {
-				"name": "Attack With Shield",
-				"activation": {
-					"type": "bonusAction",
-					"cost": 1
-				},
-				"consumers": {},
-				"rolls": {
-					"PIrw82rB4OXOwLTp": {
-						"type": "attack",
-						"default": true,
-						"attackType": "meleeWeaponAttack",
-						"proficient": false,
-						"ability": "none",
-						"label": "Improvised Weapon"
-					},
-					"liKyWako9ZBgGHin": {
-						"type": "damage",
-						"default": true,
-						"formula": "1d4",
-						"damageType": "bludgeoning"
-					}
-				},
-				"prompts": {},
-				"uses": {
-					"value": 0,
-					"max": "",
-					"per": "",
-					"recharge": {
-						"formula": "1d6",
-						"threshold": 6
-					}
-				},
-				"img": "icons/weapons/polearms/halberd-engraved-black.webp"
 			},
 			"JtplYF8JKilBpP4f": {
 				"name": "AC +1",
@@ -375,7 +340,7 @@
 				"img": "icons/weapons/polearms/halberd-engraved-black.webp"
 			}
 		},
-		"description": "<p><em>Breaker (Wood), Defensive (Heavy), Dual-Wielding, Simple, Thrown (20/60), Versatile (1d8)</em></p>\n<p>&nbsp;</p>\n<p>This @UUID[Compendium.a5e.a5e-adventuring-gear.Item.ehrht446maas96sf]{Spear} and @UUID[Compendium.a5e.a5e-adventuring-gear.Item.h7r1ogzu9fairy71]{Axe} double weapon can be used as either.</p>",
+		"description": "<p><em>Breaker (Wood), Defensive (Heavy), Dual-Wielding, Simple, Thrown (20/60), Versatile (1d8)</em></p>\n<p>This @UUID[Compendium.a5e.a5e-adventuring-gear.Item.ehrht446maas96sf]{Spear} and @UUID[Compendium.a5e.a5e-adventuring-gear.Item.h7r1ogzu9fairy71]{Axe} double weapon can be used as either.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "",

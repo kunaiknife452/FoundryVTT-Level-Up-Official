@@ -63,11 +63,7 @@
 		"description": "<p dir=\"ltr\">With a snarl of anger you cast out a claw of darkness that grips your target&rsquo;s throat with ruthless talons.</p>\n<p dir=\"ltr\">As a reaction to a creature within range casting a spell you attempt to interrupt the spell before it is cast. Make a ranged spell attack against your target to deal 2d6 necrotic damage. On a successful hit, the target must succeed at a concentration check in order to complete the spell that they are currently casting. If they fail, the spell slot is not expended, and they may choose to do something with the same action cost as the spell.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -107,12 +103,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

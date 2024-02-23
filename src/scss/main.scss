@@ -38,12 +38,16 @@
 @import './old/utils/scale';
 
 @import "./base/variables";
+@import "./base/base";
 @import "./base/typography";
 
 @import "./components/ability-score";
 @import "./components/compendium-filter-button";
 @import "./components/compendium-search-field";
 @import "./components/condition-interface";
+@import './components/document-id-link';
+@import './components/document-source-link';
+@import './components/document-source-tooltip';
 @import "./components/field-wrapper";
 @import "./components/import-from-compendium-button";
 @import "./components/item";
@@ -60,3 +64,4 @@
 
 @import "./vendor/chat-message";
 @import "./vendor/range-slider";
+@import "./vendor/window-title";

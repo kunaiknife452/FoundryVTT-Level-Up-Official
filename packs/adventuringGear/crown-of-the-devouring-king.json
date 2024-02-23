@@ -313,7 +313,7 @@
     "materialProperties": [],
     "objectType": "jewelry",
     "plotItem": false,
-    "price": 0,
+    "price": "0 gp",
     "proficient": true,
     "quantity": 1,
     "rarity": "artifact",
@@ -329,7 +329,7 @@
   "effects": [
     {
       "icon": "icons/commodities/treasure/horn-spiral-pink.webp",
-      "origin": "Item.jws75ZV7SkGEBDUl",
+      "origin": "Item.8j5c3hyrp1f31sna",
       "flags": {
         "a5e": {
           "sort": 0,
@@ -342,8 +342,8 @@
       "changes": [
         {
           "key": "system.abilities.str.value",
-          "value": "{\"comparisonOperator\":\"<=\",\"comparisonValue\":\"20\",\"positiveValue\":\"20\",\"negativeValue\":\"\"}",
-          "mode": 7,
+          "value": "20",
+          "mode": 5,
           "priority": null
         }
       ],
@@ -364,7 +364,7 @@
     },
     {
       "icon": "icons/commodities/treasure/horn-spiral-pink.webp",
-      "origin": "Item.jws75ZV7SkGEBDUl",
+      "origin": "Item.8j5c3hyrp1f31sna",
       "flags": {
         "a5e": {
           "sort": 0,
@@ -399,7 +399,7 @@
     },
     {
       "icon": "icons/commodities/treasure/horn-spiral-pink.webp",
-      "origin": "Item.jws75ZV7SkGEBDUl",
+      "origin": "Item.8j5c3hyrp1f31sna",
       "flags": {
         "a5e": {
           "sort": 0,
@@ -434,7 +434,7 @@
     },
     {
       "icon": "icons/commodities/treasure/horn-spiral-pink.webp",
-      "origin": "Item.jws75ZV7SkGEBDUl",
+      "origin": "Item.8j5c3hyrp1f31sna",
       "flags": {
         "a5e": {
           "sort": 0,

@@ -51,7 +51,7 @@
 					"BDdkUQiu53R9572Z": {
 						"canCrit": true,
 						"damageType": "slashing",
-						"formula": "1d8 + 1 +@@str.mod",
+						"formula": "1d8 + 1 +@str.mod",
 						"name": "Clawed Gauntlets",
 						"type": "damage"
 					}
@@ -104,12 +104,12 @@
 		"weaponProperties": [],
 		"weight": 55,
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

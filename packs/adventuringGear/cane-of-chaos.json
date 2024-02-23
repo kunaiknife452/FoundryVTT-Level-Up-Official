@@ -70,7 +70,7 @@
 				{
 					"key": "system.abilities.str.value",
 					"value": "18",
-					"mode": 6,
+					"mode": 5,
 					"priority": null
 				}
 			],
@@ -109,7 +109,7 @@
 				{
 					"key": "system.abilities.dex.value",
 					"value": "18",
-					"mode": 6,
+					"mode": 5,
 					"priority": null
 				}
 			],
@@ -147,8 +147,8 @@
 			"changes": [
 				{
 					"key": "system.abilities.con.value",
-					"value": "18",
-					"mode": 6,
+					"value": "{\"context\":{\"abilities\":[\"con\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"18\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-ornate-blue-jewel.webp\",\"default\":true}",
+					"mode": 0,
 					"priority": null
 				}
 			],
@@ -187,7 +187,7 @@
 				{
 					"key": "system.abilities.int.value",
 					"value": "18",
-					"mode": 6,
+					"mode": 5,
 					"priority": null
 				}
 			],
@@ -226,7 +226,7 @@
 				{
 					"key": "system.abilities.wis.value",
 					"value": "18",
-					"mode": 6,
+					"mode": 5,
 					"priority": null
 				}
 			],
@@ -265,7 +265,7 @@
 				{
 					"key": "system.abilities.cha.value",
 					"value": "18",
-					"mode": 6,
+					"mode": 5,
 					"priority": null
 				}
 			],
@@ -1116,12 +1116,12 @@
 		],
 		"weight": 4,
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

@@ -262,7 +262,7 @@
 		"description": "<p>Until the spell ends, the target has resistance to one of the following damage types: acid, cold, fire, lightning, thunder.</p><p><strong><em>Cast at Higher Levels.</em></strong> For each slot level above 2nd, the target gains resistance to one additional type of damage listed above, with a maximum number equal to your spellcasting ability modifier.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -309,12 +309,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

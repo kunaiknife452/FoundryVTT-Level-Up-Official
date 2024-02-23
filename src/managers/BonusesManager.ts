@@ -102,11 +102,15 @@ export default class BonusesManager {
   getAbilityBonusesFormula(
     abilityKey: string,
     type: 'base' | 'check' | 'save' = 'check'
-    // selectedBonuses: { enabled: boolean, ids: string[] } = { enabled: false, ids: [] }
   ): string {
-    // const parts = this.getAbilityBonuses(abilityKey, type, selectedBonuses);
     const bonuses = this.prepareAbilityBonuses(abilityKey, type);
-    const parts = bonuses.map(([, bonus]) => bonus.formula);
+    const parts = bonuses.map(([, bonus]) => {
+      const original: number = this.#actor._source.system.abilities[abilityKey]?.value ?? 0;
+      const formula = bonus.formula.trim().replace('@original', original.toString());
+
+      return formula;
+    });
+
     return parts.join(' + ').trim();
   }
 
@@ -152,13 +156,42 @@ export default class BonusesManager {
 
   getMovementBonusFormula(type: string): string {
     const bonuses = this.prepareMovementBonuses(type);
-    const parts = bonuses.map(([, bonus]) => bonus.formula);
+    const parts = bonuses.map(([, bonus]) => {
+      const original: number = this.#actor._source.system.attributes.movement[type]?.distance ?? 0;
+      const formula = bonus.formula.trim().replace('@original', original.toString());
+
+      // if (bonus.context.valueIfOriginalIsZero && original === 0) {
+      //   formula = bonus.context.valueIfOriginalIsZero;
+      // } else {
+      //   formula = bonus.formula;
+      // }
+
+      return formula;
+    });
+
     return parts.join(' + ').trim();
   }
 
   getSensesBonusFormula(type: string): string {
     const bonuses = this.prepareSensesBonuses(type);
-    const parts = bonuses.map(([, bonus]) => bonus.formula);
+    let isUnlimited = false;
+
+    const parts = bonuses.map(([, bonus]) => {
+      const original: number = this.#actor._source.system.attributes.senses[type]?.distance ?? 0;
+      if (bonus.unit === 'unlimited') isUnlimited = true;
+      const formula = bonus.formula.trim().replace('@original', original.toString());
+
+      // if (bonus.context.valueIfOriginalIsZero && original === 0) {
+      //   formula = bonus.context.valueIfOriginalIsZero;
+      // } else {
+      //   formula = bonus.formula;
+      // }
+
+      return formula;
+    });
+
+    if (isUnlimited) return 'unlimited';
+
     return parts.join(' + ').trim();
   }
 
@@ -178,7 +211,12 @@ export default class BonusesManager {
     includeAbilityBonuses: boolean = false
   ): string {
     const bonuses = this.prepareSkillBonuses(skillKey, abilityKey, type, includeAbilityBonuses);
-    const parts = bonuses.map(([, bonus]) => bonus.formula);
+    const parts = bonuses.map(([, bonus]) => {
+      const original: number = this.#actor._source.system.skills[skillKey]?.value ?? 0;
+      const formula = bonus.formula.trim().replace('@original', original.toString());
+
+      return formula;
+    });
 
     // Expertise bonus addition for passive skills
     const skill = this.#actor.system.skills[skillKey];
@@ -219,7 +257,8 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { abilities, requiresProficiency, types } = context ?? {};
+        const { abilities, requiresProficiency, types } = context
+          ?? { abilities: [], requiresProficiency: false, types: [] };
 
         if (!abilities?.includes(ablKey)) return false;
         if (!types?.includes(type)) return false;
@@ -252,7 +291,8 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { abilities, requiresProficiency, types } = context ?? {};
+        const { abilities, requiresProficiency, types } = context
+          ?? { abilities: [], requiresProficiency: false, types: [] };
 
         if (!types?.includes(type)) return false;
         if (requiresProficiency) return false;
@@ -287,10 +327,10 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { attackTypes, spellLevels } = context ?? {};
+        const { attackTypes, spellLevels } = context ?? { attackTypes: [], spellLevels: [] };
 
         if (!attackTypes?.includes(type)) return false;
-        if (spellLevel !== null && spellLevels.length && !spellLevels.includes(`${spellLevel}`)) return false;
+        if (spellLevel !== null && spellLevels?.length && !spellLevels?.includes(`${spellLevel}`)) return false;
 
         return true;
       }
@@ -335,7 +375,7 @@ export default class BonusesManager {
     const damageBonuses = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { attackTypes, spellLevels } = context;
+        const { attackTypes, spellLevels } = context ?? { attackTypes: [], spellLevels: [] };
         const damageTypes = new Set(context.damageTypes ?? []);
 
         if (attackTypes?.length && !attackTypes.includes((attackType || 'meleeWeaponAttack'))) return false;
@@ -380,7 +420,7 @@ export default class BonusesManager {
       ([, { context, formula }]) => {
         if (!formula) return false;
 
-        const { spellLevels } = context;
+        const { spellLevels } = context ?? { spellLevels: [] };
         const healingTypes = new Set(context.healingTypes ?? []);
 
         if (healingTypes.size && !healingTypes.intersects(heals)) return false;
@@ -418,7 +458,7 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { abilities, skills } = context ?? {};
+        const { abilities, skills } = context ?? { abilities: [], skills: [] };
 
         if (abilityKey && abilities?.length && !abilities.includes(abilityKey)) return false;
         if (skillKey && skills?.length && !skills.includes(skillKey)) return false;
@@ -445,7 +485,7 @@ export default class BonusesManager {
       ([, { context, formula }]) => {
         if (!formula) return false;
 
-        const { movementTypes } = context ?? {};
+        const { movementTypes } = context ?? { movementTypes: [] };
         if (!movementTypes?.includes(type)) return false;
 
         return true;
@@ -469,10 +509,10 @@ export default class BonusesManager {
     const bonuses = this.#bonuses.senses;
 
     const parts = Object.entries(bonuses).filter(
-      ([, { context, formula }]) => {
-        if (!formula) return false;
+      ([, { context, formula, unit }]) => {
+        if (!formula && unit !== 'unlimited') return false;
 
-        const { senses } = context ?? {};
+        const { senses } = context ?? { senses: [] };
         if (!senses?.includes(type)) return false;
 
         return true;
@@ -508,7 +548,7 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { skills, passiveOnly } = context ?? {};
+        const { skills, passiveOnly } = context ?? { skills: [], passiveOnly: false };
 
         if (!skills.includes(skillKey)) return false;
         if (type !== 'passive' && passiveOnly) return false;
@@ -546,7 +586,8 @@ export default class BonusesManager {
     const parts = Object.entries(bonuses).filter(
       ([, { context, formula }]) => {
         if (!formula) return false;
-        const { passiveOnly, requiresProficiency } = context ?? {};
+        const { passiveOnly, requiresProficiency } = context
+          ?? { passiveOnly: false, requiresProficiency: false };
 
         if (requiresProficiency) return false;
         if (type !== 'passive' && passiveOnly) return false;

@@ -35,11 +35,7 @@
 		"description": "<p dir=\"ltr\">You call up a small, but impressive, show of magical power. Choose one of the following:</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Your hair and clothing billow in a wind that only affects you.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Your body crackles or sizzles with harmless, but colorful magical energy with an appearance of your choosing. This grants you an expertise die to Intimidation, Performance, or Persuasion checks relating to your magical abilities with anyone who witnessed the display.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You telekinetically grab an unattended item weighing no more than a pound located no more than 5 feet away and pull it to your hand.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">You hover a foot off the ground and gain a fly speed of 5 feet until the end of your turn. You cannot hover more than 5 feet above any solid or liquid surface. If you cast this spell again next turn, you may remain aloft, allowing you to slowly cross liquids or move over hazards without falling in.</p>\n</li>\n</ul>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -78,12 +74,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

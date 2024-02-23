@@ -84,7 +84,7 @@
 		"description": "<p>Dozens of skeletal hands reach from a wall or other vertical surface to grasp a creature within 5 feet of the surface. Make a melee spell attack. On a hit, the target takes 1d8 necrotic damage and is restrained until the spell ends. A creature restrained by the hands can use a bonus action to make a Strength saving throw to escape, ending the spell early on a success. On a failure, the target takes 1d8 necrotic damage. When the spell ends, the hands withdraw into the wall.</p>\n<p><em><strong>Cast at Higher Levels.</strong></em> The spell&rsquo;s initial damage and damage on a failed escape attempt increase by 1d8 per slot level above 1st.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "dungeonDelversGuide",
 		"uses": {
 			"value": null,
 			"max": "",

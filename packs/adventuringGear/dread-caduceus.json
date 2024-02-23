@@ -792,7 +792,7 @@
     "materialProperties": [],
     "objectType": "miscellaneous",
     "plotItem": false,
-    "price": 0,
+    "price": "0 gp",
     "proficient": true,
     "quantity": 1,
     "rarity": "artifact",
@@ -898,21 +898,21 @@
           "priority": null
         },
         {
-          "key": "system.abilities.int.value",
-          "value": "6",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"int\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"6\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {
-          "key": "system.abilities.wis.value",
-          "value": "8",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"wis\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"8\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {
-          "key": "system.abilities.cha.value",
-          "value": "5",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"cha\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"5\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {
@@ -1096,21 +1096,21 @@
           "priority": null
         },
         {
-          "key": "system.abilities.int.value",
-          "value": "3",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"int\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"3\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {
-          "key": "system.abilities.wis.value",
-          "value": "8",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"wis\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"8\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {
-          "key": "system.abilities.cha.value",
-          "value": "5",
-          "mode": 6,
+          "key": "flags.a5e.effects.bonuses.abilities",
+          "value": "{\"context\":{\"abilities\":[\"cha\"],\"types\":[\"base\"],\"requiresProficiency\":false},\"formula\":\"5\",\"label\":\"Ability Bonus\",\"img\":\"icons/weapons/staves/staff-metal-mask.webp\",\"default\":true}",
+          "mode": 0,
           "priority": null
         },
         {

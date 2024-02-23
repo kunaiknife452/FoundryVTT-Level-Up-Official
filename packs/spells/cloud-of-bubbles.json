@@ -54,11 +54,7 @@
 		"description": "<p dir=\"ltr\">You conjure a cloud of soap bubbles to obscure yourself.</p>\n<p dir=\"ltr\">The cloud of bubbles fills a 10-foot square and remains there, drifting peacefully, for one minute unless dispersed by a strong wind. While the bubbles are present, objects within the square or objects with the square between them and the viewer are lightly obscured. A creature with eyes that enters a square of bubbles or begins its turn in one square must make a Constitution saving throw against your spell save DC or&nbsp; suffer disadvantage on Perception checks and ranged attacks until the beginning of its next turn. Beginning at 5th level, the bubbles become caustic, and a creature that fails its save also takes 1d4 acid damage. This increases to 2d4 at level 11 and 3d4 at level 17. Moving to a separate square of bubbles from the same caster does not impose a new save.</p>\n<p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -102,12 +98,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

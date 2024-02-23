@@ -94,7 +94,7 @@
 		"description": "<p>The target gains the ability to walk on walls and upside down on ceilings, as well as a climbing speed equal to its base Speed.</p><p><strong><em>Cast at Higher Levels.</em></strong> You can affect one additional target for each slot level above 2nd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -137,12 +137,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

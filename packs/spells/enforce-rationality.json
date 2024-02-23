@@ -60,11 +60,7 @@
 		"description": "<p>With a shout to be still, you blast the area with cold rationality. Creatures in the area that fail their saves immediately stop feeling strong emotions and experience a flash of clarity. This ends the Charmed, Confused, Frightened, and Rattled conditions, immediately ends a berserker&rsquo;s rage, and stops any sort of rage or frenzy that a creature may be feeling. The effect makes all affected creatures indifferent to each other and you if their attitude was friendly or hostile. It also suppresses other extreme emotions, shutting off intense anger, sorrow, or joy. Persuasion checks based on rationality and calm reasoning have advantage against affected creatures for one round after this spell is cast; it is sometimes used to peacefully deter angry mobs for that reason. Finally, affected creatures have advantage on Intelligence checks and disadvantage on Charisma checks for one minute.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -106,12 +102,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

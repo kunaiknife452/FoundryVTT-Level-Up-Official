@@ -37,7 +37,7 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
 
     map.push(
       {
-        heading: 'Count',
+        heading: 'Selectable Options Count',
         selectedProperty: 'abilities.total',
         component: 'Number'
       },
@@ -84,7 +84,7 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
 
     map.push(
       {
-        heading: 'Count',
+        heading: 'Selectable Options Count',
         selectedProperty: 'attackTypes.total',
         component: 'Number'
       },
@@ -193,11 +193,15 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
 
     map.push(
       {
-        heading: 'Count',
+        heading: 'Selectable Options Count',
         selectedProperty: 'movementTypes.total',
         component: 'Number'
       },
-
+      // {
+      //   heading: 'Value If Original Is Zero',
+      //   selectedProperty: 'context.valueIfOriginalIsZero',
+      //   component: 'String'
+      // },
       {
         heading: 'Is Hover For Flying Speed',
         selectedProperty: 'context.isHover',
@@ -225,8 +229,8 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
           component: 'TagGroup'
         },
         {
-          heading: 'Movement Type Choices',
-          options: Object.entries(CONFIG.A5E.movementAbbreviations),
+          heading: 'Senses Type Choices',
+          options: Object.entries(CONFIG.A5E.senses),
           selectedProperty: 'senses.options',
           component: 'TagGroup'
         }
@@ -235,11 +239,15 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
 
     map.push(
       {
-        heading: 'Count',
+        heading: 'Selectable Options Count',
         selectedProperty: 'senses.total',
         component: 'Number'
       },
-
+      // {
+      //   heading: 'Value If Original Is Zero',
+      //   selectedProperty: 'context.valueIfOriginalIsZero',
+      //   component: 'String'
+      // },
       {
         heading: 'Is Blind Beyond Vision Range',
         selectedProperty: 'context.otherwiseBlind',
@@ -277,7 +285,7 @@ export default function getContextsMap(type: 'bonus' | 'grant', contextType: str
 
     map.push(
       {
-        heading: 'Count',
+        heading: 'Selectable Options Count',
         selectedProperty: 'skills.total',
         component: 'Number'
       },

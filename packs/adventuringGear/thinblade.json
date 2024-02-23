@@ -5,7 +5,7 @@
 	"effects": [
 		{
 			"icon": "icons/weapons/swords/greatsword-crossguard-flanged.webp",
-			"origin": "Item.zq4a3c2e8tl327o5",
+			"origin": "Item.Liy3CWw9o71aUxV4",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -95,41 +95,6 @@
 				},
 				"consumers": {}
 			},
-			"CwpJ5mBJWGPki1I7": {
-				"name": "Attack With Shield",
-				"activation": {
-					"type": "bonusAction",
-					"cost": 1
-				},
-				"consumers": {},
-				"rolls": {
-					"PIrw82rB4OXOwLTp": {
-						"type": "attack",
-						"default": true,
-						"attackType": "meleeWeaponAttack",
-						"proficient": false,
-						"ability": "none",
-						"label": "Improvised Weapon"
-					},
-					"liKyWako9ZBgGHin": {
-						"type": "damage",
-						"default": true,
-						"formula": "1d4",
-						"damageType": "bludgeoning"
-					}
-				},
-				"prompts": {},
-				"uses": {
-					"value": 0,
-					"max": "",
-					"per": "",
-					"recharge": {
-						"formula": "1d6",
-						"threshold": 6
-					}
-				},
-				"img": "icons/weapons/swords/greatsword-crossguard-flanged.webp"
-			},
 			"jE0oGbW4c91H4L9s": {
 				"name": "AC +1",
 				"activation": {
@@ -181,7 +146,7 @@
 				"img": "icons/weapons/swords/greatsword-crossguard-flanged.webp"
 			}
 		},
-		"description": "<p><em>Defensive (Light), Finesse, Vicious</em></p>\n<p>&nbsp;</p>\n<p>This weapon&nbsp;uses the statistics of a @UUID[Compendium.a5e.a5e-adventuring-gear.Item.l6qdjqzvk3sddr2i]{Rapier} but is so sharp&nbsp;that it has the vicious property.</p>",
+		"description": "<p><em>Defensive (Light), Finesse, Vicious</em></p>\n<p>This weapon uses the statistics of a @UUID[Compendium.a5e.a5e-adventuring-gear.Item.l6qdjqzvk3sddr2i]{Rapier} but is so sharp that it has the vicious property.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "",

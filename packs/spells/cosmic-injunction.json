@@ -82,11 +82,7 @@
 		"description": "<p>You forbid a creature to take a specific action until the end of its next turn. Valid choices are melee attacks, ranged attacks, casting spells, or a specific, known action particular to the creature such as a dragon&rsquo;s breath weapon. If the creature can perform the prohibited action with a bonus action, reaction, or legendary action, the spell&rsquo;s effects apply to those as well. The creature is aware of your prohibition and the potential consequences for disobeying it regardless of any language barriers between you and it.</p>\n<p>On its next turn, if the creature decides to defy your forbiddance and perform the action anyway, it must make a Charisma saving throw against your spell save DC. On a success, it suffers no ill effects and can perform the action as normal. On a failure, it can perform the action as normal, but if it does, it suffers 4d8 points of psychic damage and is slowed until the end of its next turn.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -129,12 +125,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

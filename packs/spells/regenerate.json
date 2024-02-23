@@ -44,7 +44,7 @@
 		"description": "<p>You touch a creature, causing its body to spontaneously heal itself. The target immediately regains 4d8 + 15 hit points and regains 10 hit points per minute (1 hit point at the start of each of its turns).</p><p>If the target is missing any body parts, the lost parts are restored after 2 minutes. If a severed part is held against the stump, the limb instantaneously reattaches itself.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -86,12 +86,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

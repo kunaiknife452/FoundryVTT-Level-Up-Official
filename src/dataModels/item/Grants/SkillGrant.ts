@@ -56,7 +56,8 @@ export default class SkillGrant extends BaseGrant {
       itemUuid: this.parent.uuid,
       grantId: this._id,
       bonusId,
-      type: 'skills'
+      type: 'skills',
+      grantType: 'bonus'
     };
 
     return {
@@ -84,7 +85,7 @@ export default class SkillGrant extends BaseGrant {
   }
 
   requiresConfig() {
-    return this.skills.base.length !== this.skills.total;
+    return this.skills.options.length;
   }
 
   override async configureGrant() {

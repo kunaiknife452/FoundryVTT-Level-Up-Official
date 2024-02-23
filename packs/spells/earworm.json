@@ -49,11 +49,7 @@
 		"description": "<p dir=\"ltr\">You conjure up the hint of a memory of a catchy tune, irritating your target and impeding their focus.</p>\n<p dir=\"ltr\">On a failed save, if the target was concentrating, they immediately lose concentration. At level 5, the target also takes 1d4 points of psychic damage. This increases to 1d6 at level 11 and 1d8 at level 17.</p>\n<p dir=\"ltr\">Creatures with an Intelligence score less than 6 are immune to this spell.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -92,12 +88,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

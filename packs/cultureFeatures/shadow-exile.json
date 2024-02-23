@@ -1,0 +1,120 @@
+{
+	"name": "Shadow Exile",
+	"type": "feature",
+	"img": "icons/environment/settlement/wagon-black.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You left your country under mysterious circumstances. Are you a wanted criminal, a spy, or a self-exile? Only you know your motivation. You are proficient in Deception or Stealth. If you pick Stealth, once between rests you can make a Stealth check to replace a Perception check. If you pick Deception, once between rests you can make a Deception check to replace an Insight check.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"Mekeu4UphDWCbLGW": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Skill Proficiency",
+				"keys": {
+					"base": [],
+					"options": [
+						"acr",
+						"ani",
+						"arc",
+						"ath",
+						"cul",
+						"dec",
+						"eng",
+						"his",
+						"ins",
+						"itm",
+						"inv",
+						"med",
+						"nat",
+						"prc",
+						"prf",
+						"per",
+						"rel",
+						"slt",
+						"ste",
+						"sur"
+					],
+					"total": 1
+				},
+				"proficiencyType": "skill",
+				"_id": "Mekeu4UphDWCbLGW",
+				"default": true,
+				"img": ""
+			},
+			"On5f49Yrhxs9VlIS": {
+				"grantType": "trait",
+				"level": 0,
+				"optional": false,
+				"traits": {
+					"base": [],
+					"options": [
+						"alchemistsSupplies",
+						"bookbindersKit",
+						"brewersSupplies",
+						"calligraphersSupplies",
+						"carpentersTools",
+						"cartographersTools",
+						"cobblersTools",
+						"cooksUtensils",
+						"glassblowersTools",
+						"jewelersTools",
+						"leatherworkersTools",
+						"masonsTools",
+						"paintersSupplies",
+						"pottersTools",
+						"tinkersTools",
+						"weaversTools",
+						"woodcarversTools"
+					],
+					"total": 1,
+					"traitType": "tools"
+				},
+				"label": "Artisan's Tool Proficiency"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "ysjlpdenqr4tluz9"
+}

@@ -96,11 +96,7 @@
 		"description": "<p>You create a gate of swirling flame and step through, pulling the flames in behind you. You reappear on any space you can see in range and creatures within 10 feet of your arrival location must make a Dexterity save or suffer 3d6 points of fire damage and 1d6 ongoing fire damage for the next minute unless an action is spent to douse the flames. Creatures that succeed on their save take half damage and do not suffer ongoing damage.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -143,12 +139,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

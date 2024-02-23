@@ -59,11 +59,7 @@
 		"description": "<p dir=\"ltr\">You create a deep hole in a horizontal space you can see within range. The hole drops down 30 feet onto a floor of solid stone. If the surface the hole is created on isn&rsquo;t 30 feet thick (such as a floor over a basement), it simply bores a hole of the same size through the surface instead. Creatures on one of the spaces of the newly-created hole must make a Dexterity save or fall in, taking falling damage as usual. A creature that succeeds on its save is relocated to a space of its choice adjacent to the hole.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-f2dc74d6-7fff-3ee0-298b-b23cd730593d\">Cast at Higher Levels.</strong> For each spell slot level above 3rd, you may select one of the following enhancements: you may widen the hole by 5 feet. You may deepen the hole by 10 feet. You may grease the sides of the hole, imposing disadvantage on checks to climb out of the hole. You may place acid, fire, and/or spikes (1 spell slot level for each) at the bottom, doing an additional 1d6 acid, fire, or piercing damage to creatures that fall into the hole.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -102,12 +98,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

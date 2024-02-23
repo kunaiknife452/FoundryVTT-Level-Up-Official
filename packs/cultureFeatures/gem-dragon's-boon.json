@@ -1,0 +1,53 @@
+{
+	"name": "Gem Dragon’s Boon",
+	"type": "feature",
+	"img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>Gem dragons ensure their agents&rsquo; missions go undetected by bestowing upon them subterfuge magic. You know the @UUID[Compendium.a5e.a5e-spells.Item.4gcxix2l4zvy9kdu]{Message} cantrip. Once you reach 3rd level, you can cast @UUID[Compendium.a5e.a5e-spells.Item.hq8bkkiar9tfk0sh]{Illusory Script} once per long rest. At 5th level, you can cast @UUID[Compendium.a5e.a5e-spells.Item.4eidicv0lyqevtwd]{Invisibility} once per long rest. You don&rsquo;t need material components for these spells, and when casting them your spellcasting ability is Intelligence or Charisma (whichever is highest).</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "t72b7hwfunejkwrw"
+}

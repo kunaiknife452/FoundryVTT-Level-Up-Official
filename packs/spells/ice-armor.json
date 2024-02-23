@@ -62,11 +62,7 @@
 		"description": "<p dir=\"ltr\">You form a suit of ice around your body.</p>\n<p dir=\"ltr\">When you cast the spell, you gain 3d6 temporary hit points. While you have any of these temporary hit points remaining, you have resistance to cold damage, your AC increases by +1, and creatures grappled by or grappling you take 1d6 points of cold damage at the start of their turn.</p>\n<p dir=\"ltr\"><strong>Cast at Higher Levels.</strong> If you cast this spell with at least a 3rd-level spell slot, you gain an additional 1d6 temporary hit points for each spell slot level above 2nd.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -108,12 +104,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

@@ -44,7 +44,7 @@
 		"description": "<p>Until the spell ends, a bubble of silence envelops the area, and no sound can travel in or out of it.</p><p>While in the area a creature is deafened and immune to thunder damage. Casting a spell that requires a vocalized component is impossible while within the area.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -86,12 +86,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

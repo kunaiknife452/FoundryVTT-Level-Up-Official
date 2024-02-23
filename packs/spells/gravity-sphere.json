@@ -68,11 +68,7 @@
 		"description": "<p>You summon up a small ball of dark, incredibly-dense matter with a prodigious gravitational field just long enough to wreak havoc on your enemies.</p>\n<p>When you cast this spell, all creatures in the area must make a Strength saving throw or be pulled immediately to the middle of the area, knocked prone, and take 4d8 force damage. All creatures moved this way are packed into the smallest number of open spaces as close to the center of the effect as possible. Exact positioning is up to the Narrator. A creature that succeeds on its save takes half damage and is not moved or knocked prone.</p>\n<p>The area of the spell then becomes difficult terrain. At the Narrator&rsquo;s discretion, this may damage or destroy objects or structures as well.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -114,12 +110,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

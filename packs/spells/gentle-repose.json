@@ -44,7 +44,7 @@
 		"description": "<p>The target can't become undead and doesn't decay. Days spent under the influence of this spell don't count towards the time limit of spells which raise the dead.</p><p><strong><em>Cast at Higher Levels.</em></strong> The spell's duration is 1 year when using a 3rd-level spell slot, or permanent until dispelled when using a 4th-level spell slot.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -85,12 +85,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

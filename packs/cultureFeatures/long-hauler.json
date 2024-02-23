@@ -1,0 +1,68 @@
+{
+	"name": "Long Hauler",
+	"type": "feature",
+	"img": "icons/environment/settlement/wagon.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You have proficiency in&nbsp;Survival. In addition, you have advantage&nbsp;on checks made to avoid fatigue from a&nbsp;forced march.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"VIGVRc9iElaMJS3h": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Long Hauler",
+				"keys": {
+					"base": [
+						"sur"
+					],
+					"options": [],
+					"total": 0
+				},
+				"proficiencyType": "skill"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "je43l1ph0qq42lpu"
+}

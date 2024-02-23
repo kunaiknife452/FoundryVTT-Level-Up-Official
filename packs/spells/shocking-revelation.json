@@ -65,11 +65,7 @@
 		"description": "<p dir=\"ltr\">You jolt the target into alertness.</p>\n<p dir=\"ltr\">The target must make a Constitution save or take 3d6 lightning damage and be rattled until the end of its next turn. A creature that succeeds takes half damage and is not rattled.</p>\n<p dir=\"ltr\">Regardless of whether the creature makes its save or not, it has advantage on Perception checks and Intelligence checks for the next minute.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -111,12 +107,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

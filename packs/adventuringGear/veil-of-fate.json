@@ -74,7 +74,7 @@
     "materialProperties": [],
     "objectType": "clothing",
     "plotItem": false,
-    "price": 0,
+    "price": "0 gp",
     "proficient": true,
     "quantity": 1,
     "rarity": "artifact",

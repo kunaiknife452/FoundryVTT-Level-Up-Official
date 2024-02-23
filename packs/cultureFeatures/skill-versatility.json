@@ -1,0 +1,89 @@
+{
+	"name": "Skill Versatility",
+	"type": "feature",
+	"img": "icons/environment/settlement/palast.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>In the big city, you never know what skills you’ll need to get by. You gain proficiency in Culture and one other skill of your choice.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"vQ9YcI7QApE3ORT7": {
+				"grantType": "proficiency",
+				"level": 0,
+				"optional": false,
+				"label": "Skill Versatility",
+				"keys": {
+					"base": [
+						"cul"
+					],
+					"options": [
+						"acr",
+						"ani",
+						"arc",
+						"ath",
+						"cul",
+						"dec",
+						"eng",
+						"his",
+						"ins",
+						"itm",
+						"inv",
+						"med",
+						"nat",
+						"prc",
+						"prf",
+						"per",
+						"rel",
+						"slt",
+						"ste",
+						"sur"
+					],
+					"total": 1
+				},
+				"proficiencyType": "skill"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "i74twfpijpdsenka"
+}

@@ -4,10 +4,8 @@
     import { getContext, setContext } from "svelte";
     import { ApplicationShell } from "#runtime/svelte/component/core";
 
-    import BackgroundCultureDetailsTab from "../components/pages/BackgroundCultureDetailsTab.svelte";
-    import BackgroundCultureFeaturesTab from "../components/pages/BackgroundCultureFeaturesTab.svelte";
-    import BackgroundCultureEquipmentTab from "../components/pages/BackgroundCultureEquipmentTab.svelte";
     import ItemDescriptionTab from "../components/pages/ItemDescriptionTab.svelte";
+    import ItemGrantsTab from "../components/pages/ItemGrantsTab.svelte";
     import ItemSheetHeader from "../components/itemSheetsHeader/ItemSheetHeader.svelte";
     import NavigationBar from "../components/navigation/NavigationBar.svelte";
 
@@ -27,19 +25,9 @@
             component: ItemDescriptionTab,
         },
         {
-            name: "details",
-            label: "A5E.TabDetails",
-            component: BackgroundCultureDetailsTab,
-        },
-        {
-            name: "features",
-            label: "A5E.TabFeatures",
-            component: BackgroundCultureFeaturesTab,
-        },
-        {
-            name: "equipment",
-            label: "A5E.Equipment",
-            component: BackgroundCultureEquipmentTab,
+            name: "grants",
+            label: "A5E.TabGrants",
+            component: ItemGrantsTab,
         },
     ];
 

@@ -76,10 +76,10 @@
 					}
 				},
 				"area": {
-					"shape": "circle",
+					"shape": "emanation",
 					"quantity": 1,
-					"radius": 5,
-					"placeTemplate": true
+					"placeTemplate": true,
+					"radius": 5
 				},
 				"target": {
 					"type": "creature",
@@ -98,11 +98,7 @@
 		"description": "<p dir=\"ltr\">You create a shard of superheated volcanic glass and fire it at your target. On a hit, the target takes 1d10 points of piercing damage. Then, hit or miss, the shard explodes in a blast of razor-sharp, superheated obsidian. The target and all creatures within 5 feet of it must make a Dexterity saving throw or take 1d6 piercing and 1d6 fire damage.</p>\n<p dir=\"ltr\"><strong id=\"docs-internal-guid-e8043721-7fff-d006-7f90-fc5bef90fabe\">Cast At Higher Levels. </strong>The fire damage increases by 1d6 for each spell slot level above 1st. If you cast the spell with at least a 3rd-level spell slot, creatures that succeed on their save take half damage from the blast rather than avoiding it entirely.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -146,12 +142,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

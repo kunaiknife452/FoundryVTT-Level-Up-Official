@@ -1,0 +1,85 @@
+{
+	"name": "Practiced Artisan",
+	"type": "feature",
+	"img": "icons/environment/settlement/city-hall.webp",
+	"effects": [],
+	"flags": {},
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>You are proficient with calligrapher’s supplies and two other artisan's tools.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "",
+		"uses": {
+			"value": null,
+			"max": "",
+			"per": null,
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"schema": {
+			"version": null,
+			"lastMigration": null
+		},
+		"concentration": false,
+		"featureType": "culture",
+		"grants": {
+			"reCtx4feUzL4D19p": {
+				"grantType": "trait",
+				"level": 0,
+				"optional": false,
+				"traits": {
+					"base": [
+						"calligraphersSupplies"
+					],
+					"options": [
+						"alchemistsSupplies",
+						"bookbindersKit",
+						"brewersSupplies",
+						"carpentersTools",
+						"cartographersTools",
+						"cobblersTools",
+						"cooksUtensils",
+						"glassblowersTools",
+						"jewelersTools",
+						"leatherworkersTools",
+						"masonsTools",
+						"paintersSupplies",
+						"pottersTools",
+						"tinkersTools",
+						"weaversTools",
+						"woodcarversTools"
+					],
+					"total": 2,
+					"traitType": "tools"
+				},
+				"label": "Practiced Artisan"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.013,
+			"lastMigration": {
+				"version": {
+					"schema": 0.011,
+					"foundry": "11.315",
+					"system": "0.16.49"
+				}
+			}
+		}
+	},
+	"folder": null,
+	"_id": "62lu225mcdgqoqfd"
+}

@@ -91,11 +91,7 @@
 		"description": "<p>You conjure up a cloud of searing-hot, heavily-mineralized steam. The spell&rsquo;s area is lightly obscured, and a creature that enters the area for the first time on its turn or begins its turn there takes 3d6 points of fire damage. A creature that saves takes half damage.</p>\n<p>The steam is also highly-conductive, rendering creatures inside the spell&rsquo;s area vulnerable to lightning damage.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -140,12 +136,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

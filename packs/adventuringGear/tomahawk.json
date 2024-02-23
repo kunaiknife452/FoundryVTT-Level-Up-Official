@@ -5,7 +5,7 @@
 	"effects": [
 		{
 			"icon": "icons/weapons/axes/shortaxe-tribal.webp",
-			"origin": "Item.xrqc448uoxjmigv9",
+			"origin": "Item.1SOSZ2dp49DOEuEQ",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -260,40 +260,6 @@
 					}
 				}
 			},
-			"4CleyiiZtiD7g10y": {
-				"name": "Attack With Shield",
-				"activation": {
-					"type": "bonusAction",
-					"cost": 1
-				},
-				"consumers": {},
-				"rolls": {
-					"PIrw82rB4OXOwLTp": {
-						"type": "attack",
-						"default": true,
-						"attackType": "meleeWeaponAttack",
-						"proficient": false,
-						"ability": "none",
-						"label": "Improvised Weapon"
-					},
-					"liKyWako9ZBgGHin": {
-						"type": "damage",
-						"default": true,
-						"formula": "1d4",
-						"damageType": "bludgeoning"
-					}
-				},
-				"prompts": {},
-				"uses": {
-					"value": 0,
-					"max": "",
-					"per": "",
-					"recharge": {
-						"formula": "1d6",
-						"threshold": 6
-					}
-				}
-			},
 			"Wj2wEtEOK3ej6uIH": {
 				"name": "AC +1",
 				"activation": {
@@ -324,7 +290,7 @@
 				}
 			}
 		},
-		"description": "<p><em>Breaker (Wood), Defensive (Light), Dual-Wielding, Simple, Thrown (20/60)</em></p>\n<p>&nbsp;</p>\n<p>A&nbsp;tomahawk uses the statistics of a @UUID[Compendium.a5e.a5e-adventuring-gear.Item.h7r1ogzu9fairy71]{Handaxe}.</p>",
+		"description": "<p><em>Breaker (Wood), Defensive (Light), Dual-Wielding, Simple, Thrown (20/60)</em></p>\n<p>A tomahawk uses the statistics of a @UUID[Compendium.a5e.a5e-adventuring-gear.Item.h7r1ogzu9fairy71]{Handaxe}.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "",

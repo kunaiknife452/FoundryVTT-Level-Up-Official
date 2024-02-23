@@ -26,7 +26,7 @@
 
 <Section
     heading="Contexts"
-    hint="The context determines when the damage bonus applies"
+    hint="The context determines when the bonus applies"
     --a5e-section-body-gap="0.75rem"
 >
     {#each contextMap as context}
@@ -63,6 +63,21 @@
                             context.selectedProperty,
                             Number(target.value),
                         );
+                    }}
+                />
+            </FieldWrapper>
+        {:else if context.component === "String"}
+            <FieldWrapper
+                heading={context.heading}
+                --background="none"
+                --padding="0"
+                --margin="0 0 0.5rem 0 "
+            >
+                <input
+                    type="text"
+                    value={getProperty(grant, context.selectedProperty) || ""}
+                    on:change={({ target }) => {
+                        onUpdateValue(context.selectedProperty, target.value);
                     }}
                 />
             </FieldWrapper>

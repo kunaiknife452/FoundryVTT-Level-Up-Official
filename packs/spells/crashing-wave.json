@@ -68,11 +68,7 @@
 		"description": "<p>You summon a short-lived portal to some primeval ocean which surges forth with terrible force. Every creature in the area must make a Dexterity save or take 5d8 bludgeoning damage and be knocked prone. A creature that succeeds takes half damage and is not knocked prone. The water also deals the same damage to structures in the area, douses open flames, waterlogs paper and cloth and generally makes a mess. It spreads out to a distance of 300 feet beyond the spell&rsquo;s area in all directions, then disappears. If you cast the spell from a space included in its area, you may choose to ride the wave, ending your turn in any other open space in the spell&rsquo;s area. If you ride the wave this way, you are unaffected by its effects, take no damage from the spell, and do not need to make a save.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -115,12 +111,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

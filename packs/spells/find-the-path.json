@@ -44,7 +44,7 @@
 		"description": "<p>Name a specific, immovable location that you have visited before. If no such location is within range, the spell fails. For the duration, you know the location's direction and distance. While you are traveling there, you have advantage on ability checks made to determine the shortest path.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -85,12 +85,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

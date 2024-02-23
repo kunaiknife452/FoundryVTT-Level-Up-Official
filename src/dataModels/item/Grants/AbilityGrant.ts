@@ -55,7 +55,8 @@ export default class AbilityGrant extends BaseGrant {
       itemUuid: this.parent.uuid,
       grantId: this._id,
       bonusId,
-      type: 'abilities'
+      type: 'abilities',
+      grantType: 'bonus'
     };
 
     return {
@@ -83,7 +84,7 @@ export default class AbilityGrant extends BaseGrant {
   }
 
   requiresConfig() {
-    return this.abilities.base.length !== this.abilities.total;
+    return this.abilities.options.length;
   }
 
   override async configureGrant() {

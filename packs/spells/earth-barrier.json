@@ -47,7 +47,7 @@
 		"description": "<p>Choose an unoccupied space between you and the source of the attack which triggers the spell. You call forth a pillar of earth or stone (3 feet diameter, 20 feet tall, AC 10, 20 hit points) in that space that provides you with three-quarters cover (+5 to AC, Dexterity saving throws, and ability checks made to hide).</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -86,12 +86,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

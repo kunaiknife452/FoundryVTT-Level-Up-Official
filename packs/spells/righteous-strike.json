@@ -56,11 +56,7 @@
 		"description": "<p dir=\"ltr\">You infuse your weapon with divine power and strike with it.</p>\n<p dir=\"ltr\">As part of the action to cast this spell, make an attack with your weapon. On a hit, the target is rattled and takes a point of radiant damage. This damage increases to 1d4 at level 5, 2d4 at level 11, and 3d4 at level 17.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -101,12 +97,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

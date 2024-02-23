@@ -46,11 +46,7 @@
 		"description": "<p dir=\"ltr\">You summon up a torrential downpour.</p>\n<p dir=\"ltr\">When you cast this spell, select an area as small as 100 feet across or as large as a mile within range. The area becomes affected by the Heavy Precipitation (rain) encounter element for the duration of the spell. When the spell ends, all water created by it magically dissipates, making it useless as a source of drinking water or for watering crops.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": {
-			"name": "Spells from the Forgotten Vault",
-			"link": "https://bit.ly/3nyQbOt",
-			"publisher": "purpleMartinGames"
-		},
+		"source": "spellsFromTheForgottenVault",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -93,12 +89,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}

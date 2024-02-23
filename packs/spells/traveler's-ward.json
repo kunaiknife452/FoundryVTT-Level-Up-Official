@@ -44,7 +44,7 @@
 		"description": "<p>Until the spell ends, creatures have disadvantage on Sleight of Hand checks made against the target.</p>\n<p>If a creature fails a Sleight of Hand check to steal from the target, the ward creates a loud noise and a flash of bright light easily heard and seen by creatures within 100 feet.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "adventurersGuide",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -85,12 +85,12 @@
 			]
 		},
 		"schemaVersion": {
-			"version": 0.011,
+			"version": 0.013,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.011,
 					"foundry": "11.315",
-					"system": "0.16.37"
+					"system": "0.16.49"
 				}
 			}
 		}
