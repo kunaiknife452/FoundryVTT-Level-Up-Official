@@ -58,6 +58,7 @@ export default class ActorA5e extends Actor {
     this.#configDialogMap = {
       ability: AbilityCheckConfigDialog,
       abilityBonus: AbilityBonusConfigDialog,
+      alignment: DetailsConfigDialog,
       armor: DetailsConfigDialog,
       armorClass: ArmorClassConfigDialog,
       attackBonus: AttackBonusConfigDialog,
@@ -837,6 +838,17 @@ export default class ActorA5e extends Actor {
     this.#configure('ability', title, data, options);
   }
 
+  configureAlignment(data = {}, options = {}) {
+    const title = localize('A5E.AlignmentConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.Alignments';
+    data.propertyKey ??= 'system.traits.alignment';
+    data.configObject ??= CONFIG.A5E.alignments;
+    data.type ??= 'alignment';
+
+    this.#configure('alignment', title, data, options);
+  }
+
   configureArmorClass(data = {}, options = {}) {
     const title = localize('A5E.ACConfigurationPrompt', { name: this.name });
     this.#configure('armorClass', title, data, options);
@@ -884,7 +896,7 @@ export default class ActorA5e extends Actor {
   }
 
   configureCreatureTerrains(data = {}, options = {}) {
-    data.heading ??= 'A5E.CreatureTerrains';
+    data.heading ??= 'A5E.CreatureTerrainsLabel';
     data.configObject ??= CONFIG.A5E.terrainTypes;
     data.propertyKey ??= 'system.details.terrain';
     data.type ??= 'creatureTerrains';

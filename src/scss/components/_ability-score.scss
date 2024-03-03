@@ -90,6 +90,7 @@
     font-family: inherit;
     font-size: var(--a5e-text-size-sm);
 
+    &:focus,
     &:hover {
       box-shadow: none;
     }
@@ -112,11 +113,23 @@
       }
     }
 
+    &--no-click {
+      cursor: default;
+    }
+
     &--save {
       grid-area: save;
 
       &::after {
         content: "\f132";
+      }
+    }
+
+    &--proficient {
+      color: #f6f2eb;
+
+      &::after {
+        color: #425f65;
       }
     }
   }
