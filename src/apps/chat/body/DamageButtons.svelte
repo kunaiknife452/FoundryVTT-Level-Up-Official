@@ -1,5 +1,5 @@
 <script>
-    function applyDamage(multiplier = 1, temp = false) {
+    function applyDamage(damageType = null, multiplier = 1, temp = false) {
         if (multiplier < 0) {
             applyHealing(temp ? "temp" : "healing");
             return;
@@ -10,8 +10,10 @@
         const damage = roll.total * multiplier;
 
         if (selectedTokens.length)
-            selectedTokens.forEach((t) => t.actor.applyDamage(damage));
-        else if (character) character.applyDamage(damage);
+            selectedTokens.forEach((token) =>
+                token.actor.applyDamage(damage, { damageType }),
+            );
+        else if (character) character.applyDamage(damage, { damageType });
         else ui.notifications.warn("No tokens selected");
     }
 
@@ -20,8 +22,8 @@
         const selectedTokens = canvas.tokens.controlled;
 
         if (selectedTokens.length) {
-            selectedTokens.forEach((t) => {
-                t.actor.applyHealing(roll.total, {
+            selectedTokens.forEach((token) => {
+                token.actor.applyHealing(roll.total, {
                     temp: healingType !== "healing",
                 });
             });
@@ -83,7 +85,7 @@
                     class="damage-buttons__item"
                     role="button"
                     on:click|stopPropagation={() =>
-                        applyDamage(multiplier, temp)}
+                        applyDamage(rollData.damageType, multiplier, temp)}
                 >
                     <span>{label}</span>
                     <i class="fa-solid {icon} button__icon" />

@@ -678,10 +678,11 @@ export default class ActorA5e extends Actor {
    * Negative damage values will have no effect.
    *
    * @param {number} damage  An amount of damage to apply to the actor.
+   * @param {string} damageType A key indicating the type of damage the actor is taking.
    *
    * @returns {Promise<Actor5e>}  A Promise which resolves once the damage has been applied
    */
-  async applyDamage(damage) {
+  async applyDamage(damage, options = { damageType: null }) {
     const updates = {};
     const { value, temp } = this.system.attributes.hp;
     // eslint-disable-next-line no-param-reassign
@@ -694,6 +695,15 @@ export default class ActorA5e extends Actor {
       };
     } else {
       updates['system.attributes.hp.value'] = Math.clamped(value - damage, 0, value);
+    }
+
+    if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
+      const token = await this.getActiveTokens()?.[0];
+      canvas.interface.createScrollingText(
+        token?.center,
+        `-${damage}`,
+        { fill: CONFIG.A5E.damageColors[options.damageType] ?? '#c02a2a' }
+      );
     }
 
     Hooks.callAll('a5e.actorDamaged', this, { prevHp: { value, temp }, damage });
@@ -731,6 +741,13 @@ export default class ActorA5e extends Actor {
       updates['system.attributes.hp.temp'] = healing;
     } else {
       updates['system.attributes.hp.value'] = Math.clamped(value + healing, value, max);
+    }
+
+    if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
+      const token = await this.getActiveTokens()?.[0];
+      const fill = CONFIG.A5E.healingColors[options.temp ? 'temporaryHealing' : 'healing'] ?? '#eeee9b';
+
+      canvas.interface.createScrollingText(token?.center, `+${healing}`, { fill });
     }
 
     Hooks.callAll('a5e.actorHealed', this, { prevHp: { value, temp }, healingData: { healing, options } });
