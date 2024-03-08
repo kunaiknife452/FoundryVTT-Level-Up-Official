@@ -354,6 +354,7 @@ export default class RollPreparationManager {
       userLabel: _roll.label,
       roll,
       rollMode: _roll.rollMode ?? defaultData._rollMode,
+      skillKey: _roll?.skill,
       type: 'skillCheck'
     };
   }

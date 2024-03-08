@@ -313,6 +313,7 @@ A5E.chatCardTypes = [
   'abilityCheck',
   'hitDice',
   'item',
+  'rollTableOutput',
   'savingThrow',
   'skillCheck'
 ];
@@ -418,19 +419,19 @@ A5E.damageTypes = {
 };
 
 A5E.damageColors = {
-  acid: '#c02a2a',
-  bludgeoning: '#c02a2a',
-  cold: '#c02a2a',
-  fire: '#c02a2a',
-  force: '#c02a2a',
-  lightning: '#c02a2a',
-  necrotic: '#c02a2a',
-  piercing: '#c02a2a',
-  poison: '#c02a2a',
-  psychic: '#c02a2a',
-  radiant: '#c02a2a',
-  slashing: '#c02a2a',
-  thunder: '#c02a2a'
+  acid: '#a9b920',
+  bludgeoning: '#b9a137',
+  cold: '#99d9d9',
+  fire: '#f18131',
+  force: '#6f599a',
+  lightning: '#f9d130',
+  necrotic: '#7a7e88',
+  piercing: '#c13129',
+  poison: '#a140a1',
+  psychic: '#f95889',
+  radiant: '#dfa6df',
+  slashing: '#b8b8d0',
+  thunder: '#e2c269'
 };
 
 A5E.equippedStates = {
@@ -1001,49 +1002,49 @@ A5E.skills = {
 };
 
 A5E.skillCriticalTables = {
-  acr: 'Compendium.a5e.a5e-roll-tables.RollTable.dsjim2st1rh232bp',
-  ani: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  arc: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  ath: 'Compendium.a5e.a5e-roll-tables.RollTable.dsjim2st1rh232bp',
-  cul: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  dec: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  eng: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  his: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  ins: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  itm: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  inv: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  med: 'Compendium.a5e.a5e-roll-tables.RollTable.i8hy7hrmfliuhe8y',
-  nat: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  prc: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  prf: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  per: 'Compendium.a5e.a5e-roll-tables.RollTable.zhl6y7kfe5ilrmhw',
-  rel: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l',
-  slt: 'Compendium.a5e.a5e-roll-tables.RollTable.dsjim2st1rh232bp',
-  ste: 'Compendium.a5e.a5e-roll-tables.RollTable.dsjim2st1rh232bp',
-  sur: 'Compendium.a5e.a5e-roll-tables.RollTable.yxycigxwdndble0l'
+  acr: 'Compendium.a5e.a5e-roll-tables.RollTable.8q8hhm2qxxpzqety',
+  ani: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  arc: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  ath: 'Compendium.a5e.a5e-roll-tables.RollTable.8q8hhm2qxxpzqety',
+  cul: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  dec: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  eng: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  his: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  ins: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  itm: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  inv: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  med: 'Compendium.a5e.a5e-roll-tables.RollTable.66wtmckaxsjl2cay',
+  nat: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  prc: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  prf: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  per: 'Compendium.a5e.a5e-roll-tables.RollTable.vmf9w8gtsdi2h45n',
+  rel: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz',
+  slt: 'Compendium.a5e.a5e-roll-tables.RollTable.8q8hhm2qxxpzqety',
+  ste: 'Compendium.a5e.a5e-roll-tables.RollTable.8q8hhm2qxxpzqety',
+  sur: 'Compendium.a5e.a5e-roll-tables.RollTable.27u8uhi0v7x4dxwz'
 };
 
 A5E.skillFumbleTables = {
-  acr: 'Compendium.a5e.a5e-roll-tables.RollTable.fbdtbkmo3pqiq9nd',
-  ani: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  arc: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  ath: 'Compendium.a5e.a5e-roll-tables.RollTable.fbdtbkmo3pqiq9nd',
-  cul: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  dec: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  eng: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  his: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  ins: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  itm: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  inv: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  med: 'Compendium.a5e.a5e-roll-tables.RollTable.dck8sm08th7getoy',
-  nat: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  prc: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  prf: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  per: 'Compendium.a5e.a5e-roll-tables.RollTable.w1ayiri2u1g73yos',
-  rel: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4',
-  slt: 'Compendium.a5e.a5e-roll-tables.RollTable.fbdtbkmo3pqiq9nd',
-  ste: 'Compendium.a5e.a5e-roll-tables.RollTable.fbdtbkmo3pqiq9nd',
-  sur: 'Compendium.a5e.a5e-roll-tables.RollTable.cdnvq7mx4og0c8q4'
+  acr: 'Compendium.a5e.a5e-roll-tables.RollTable.sckaut8fmaq8l120',
+  ani: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  arc: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  ath: 'Compendium.a5e.a5e-roll-tables.RollTable.sckaut8fmaq8l120',
+  cul: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  dec: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  eng: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  his: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  ins: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  itm: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  inv: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  med: 'Compendium.a5e.a5e-roll-tables.RollTable.ihsspmdmmpj8cyk8',
+  nat: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  prc: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  prf: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  per: 'Compendium.a5e.a5e-roll-tables.RollTable.3m0vyh75nnlj42ja',
+  rel: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng',
+  slt: 'Compendium.a5e.a5e-roll-tables.RollTable.sckaut8fmaq8l120',
+  ste: 'Compendium.a5e.a5e-roll-tables.RollTable.sckaut8fmaq8l120',
+  sur: 'Compendium.a5e.a5e-roll-tables.RollTable.jbjp515vtjmolbng'
 };
 
 A5E.skillDefaultAbilities = {

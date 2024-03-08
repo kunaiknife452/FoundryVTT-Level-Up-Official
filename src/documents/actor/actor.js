@@ -40,6 +40,7 @@ import automateHpConditions from '../activeEffect/utils/automateHpConditions';
 import automateMultiLevelConditions from '../activeEffect/utils/automateMultiLevelConditions';
 import getDeterministicBonus from '../../dice/getDeterministicBonus';
 import getRollFormula from '../../utils/getRollFormula';
+import displayCascadingNumbers from '../../utils/displayCascadingNumbers';
 
 export default class ActorA5e extends Actor {
   #configDialogMap;
@@ -673,6 +674,41 @@ export default class ActorA5e extends Actor {
     if (applyUnconscious) automateHpConditions(this, changed, userId, 'unconscious');
   }
 
+  async applyBulkDamage(damageRolls) {
+    const updates = {};
+    const { value, temp } = this.system.attributes.hp;
+
+    const totalDamage = damageRolls.reduce(
+      (cumulativeDamage, [damage]) => cumulativeDamage + Math.floor(damage),
+      0
+    );
+
+    if (temp) {
+      updates['system.attributes.hp'] = {
+        temp: Math.clamped(temp - totalDamage, 0, temp),
+        value: Math.clamped(value + temp - totalDamage, 0, value)
+      };
+    } else {
+      updates['system.attributes.hp.value'] = Math.clamped(value - totalDamage, 0, value);
+    }
+
+    if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
+      const actor = this;
+      let delay = 0;
+
+      damageRolls.forEach(([damage, damageType]) => {
+        setTimeout(async () => {
+          await displayCascadingNumbers(actor, 'damage', `-${damage}`, damageType);
+        }, delay);
+
+        delay += 300;
+      });
+    }
+
+    Hooks.callAll('a5e.actorDamaged', this, { prevHp: { value, temp }, damageRolls });
+    return this.update(updates);
+  }
+
   /**
    * Apply a certain amount of damage to the health pool for Actor, prioritizing temporary hp.
    * Negative damage values will have no effect.
@@ -682,7 +718,7 @@ export default class ActorA5e extends Actor {
    *
    * @returns {Promise<Actor5e>}  A Promise which resolves once the damage has been applied
    */
-  async applyDamage(damage, options = { damageType: null }) {
+  async applyDamage(damage, damageType = null) {
     const updates = {};
     const { value, temp } = this.system.attributes.hp;
     // eslint-disable-next-line no-param-reassign
@@ -698,15 +734,10 @@ export default class ActorA5e extends Actor {
     }
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
-      const token = await this.getActiveTokens()?.[0];
-      canvas.interface.createScrollingText(
-        token?.center,
-        `-${damage}`,
-        { fill: CONFIG.A5E.damageColors[options.damageType] ?? '#c02a2a' }
-      );
+      displayCascadingNumbers(this, 'damage', `-${damage}`, damageType);
     }
 
-    Hooks.callAll('a5e.actorDamaged', this, { prevHp: { value, temp }, damage });
+    Hooks.callAll('a5e.actorDamaged', this, { prevHp: { value, temp }, damage, damageType });
     return this.update(updates);
   }
 
@@ -720,19 +751,18 @@ export default class ActorA5e extends Actor {
    * Negative healing value are ignored.
    *
    * @param {number} healing        An amount of damage to apply to the actor.
-   * @param {Object} options
-   * @param {Boolean} options.temp    A flag for indicating whether the healing being applied is
-   *                                  temporary.
+   * @param {string} healingType    A flag for indicating whether the healing being applied is
+   *                                temporary.
    *
    * @returns {Promise<Actor5e>}  A Promise which resolves once the damage has been applied
    */
-  async applyHealing(healing, options = { temp: false }) {
+  async applyHealing(healing, healingType) {
     const updates = {};
     const { value, max, temp } = this.system.attributes.hp;
     // eslint-disable-next-line no-param-reassign
     healing = Math.floor(healing);
 
-    if (options.temp) {
+    if (healingType === 'temporaryHealing') {
       if (healing <= temp) {
         ui.notifications.warn('A5E.ActionWarningTempHpNotOverwritten', { localize: true });
         return this;
@@ -744,13 +774,10 @@ export default class ActorA5e extends Actor {
     }
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
-      const token = await this.getActiveTokens()?.[0];
-      const fill = CONFIG.A5E.healingColors[options.temp ? 'temporaryHealing' : 'healing'] ?? '#eeee9b';
-
-      canvas.interface.createScrollingText(token?.center, `+${healing}`, { fill });
+      displayCascadingNumbers(this, 'healing', `+${healing}`, healingType);
     }
 
-    Hooks.callAll('a5e.actorHealed', this, { prevHp: { value, temp }, healingData: { healing, options } });
+    Hooks.callAll('a5e.actorHealed', this, { prevHp: { value, temp }, healing, healingType });
     return this.update(updates);
   }
 
