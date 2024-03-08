@@ -14,12 +14,15 @@
     const restTypeOptions = {
         short: "A5E.RestShort",
         long: "A5E.RestLong",
+        extended: "A5E.RestExtended",
     };
 
     let restType = "short";
     let haven = true;
     let recoverStrifeAndFatigue = true;
-    let consumeSupply = false;
+    let recoverSetStrifeAndFatigue = 0;
+    let consumeSupply = true;
+    let diceRemaining = $actor.system.attributes.prof;
 
     async function rollHitDie(dieSize) {
         try {
@@ -37,6 +40,8 @@
             haven,
             restType,
             recoverStrifeAndFatigue,
+            recoverSetStrifeAndFatigue,
+            diceRemaining,
         });
     }
 
@@ -51,7 +56,62 @@
         on:updateSelection={({ detail }) => (restType = detail)}
     />
 
+    {#if restType === "extended"}
+        <FormSection heading="A5E.RestExtendedDays" --direction="column">
+            <span class="a5e-hit-die__quantity">
+                {recoverSetStrifeAndFatigue}
+            </span>
+            <div class="u-flex u-gap-md u-text-md">
+                {#each ["1", "2", "3", "4", "5", "6"] as die}
+                    <div class="a5e-hit-die-wrapper">
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <!-- svelte-ignore a11y-no-static-element-interactions -->
+                        <div
+                            class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
+                            on:click={() => (recoverSetStrifeAndFatigue = die)}
+                        >
+                            <span class="a5e-hit-die__label">{die}</span>
+                        </div>
+                    </div>
+                {/each}
+            </div>
+        </FormSection>
+
+        {#if $actor.type === "character"}
+            <FormSection>
+                <Checkbox
+                    label="A5E.SupplyConsume"
+                    checked={!consumeSupply}
+                    on:updateSelection={({ detail }) => {
+                        consumeSupply = detail;
+                    }}
+                />
+            </FormSection>
+        {/if}
+    {/if}
+
     {#if restType === "long"}
+        <FormSection heading="A5E.HitDiceLabel" --direction="column">
+            <div class="u-flex u-gap-md u-text-md">
+                {#each ["d6", "d8", "d10", "d12"] as die}
+                    <div class="a5e-hit-die-wrapper">
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <!-- svelte-ignore a11y-no-static-element-interactions -->
+                        <div
+                            class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
+                            class:disabled={hitDice[die].current === 0}
+                            on:click={() => rollHitDie(die)}
+                        >
+                            <span class="a5e-hit-die__label">{die}</span>
+                        </div>
+
+                        <span class="a5e-hit-die__quantity">
+                            {hitDice[die].current}
+                        </span>
+                    </div>
+                {/each}
+            </div>
+        </FormSection>
         <FormSection>
             <Checkbox
                 label="A5E.HavenPrompt"
@@ -87,6 +147,9 @@
 
     {#if restType === "short"}
         <FormSection heading="A5E.HitDiceLabel" --direction="column">
+            <span class="a5e-hit-die__quantity">
+                {diceRemaining}
+            </span>
             <div class="u-flex u-gap-md u-text-md">
                 {#each ["d6", "d8", "d10", "d12"] as die}
                     <div class="a5e-hit-die-wrapper">
@@ -95,7 +158,12 @@
                         <div
                             class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
                             class:disabled={hitDice[die].current === 0}
-                            on:click={() => rollHitDie(die)}
+                            on:click={() => {
+                                if (diceRemaining > 0) {
+                                    rollHitDie(die);
+                                    diceRemaining = diceRemaining - 1;
+                                }
+                            }}
                         >
                             <span class="a5e-hit-die__label">{die}</span>
                         </div>

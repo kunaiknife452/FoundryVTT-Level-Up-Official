@@ -712,6 +712,7 @@ A5E.rangeValues = {
 A5E.resourceRecoveryOptions = {
   shortRest: 'A5E.RestShort',
   longRest: 'A5E.RestLong',
+  extendedRest: 'A5E.RestExtended',
   recharge: 'A5E.ItemRecharge',
   round: 'A5E.DurationRound',
   turn: 'A5E.DurationTurn',
