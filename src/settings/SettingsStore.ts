@@ -431,6 +431,18 @@ class A5eGameSettings extends TJSGameSettings {
       },
       {
         namespace,
+        key: 'hideSkillCriticalPrompt',
+        options: {
+          name: 'A5E.settings.hideSkillCriticalPrompt',
+          hint: 'A5E.settings.hints.hideSkillCriticalPrompt',
+          scope: scope.world,
+          config: true,
+          default: false,
+          type: Boolean
+        }
+      },
+      {
+        namespace,
         key: 'replaceFatigueAndStrife',
         options: {
           name: 'A5E.settings.replaceFatigueAndStrife',
@@ -499,6 +511,18 @@ class A5eGameSettings extends TJSGameSettings {
           config: true,
           default: true,
           type: Boolean
+        }
+      },
+      {
+        namespace,
+        key: 'cascadingDamageAndHealingDelay',
+        options: {
+          name: 'A5E.settings.cascadingDamageAndHealingDelay',
+          hint: 'A5E.settings.hints.cascadingDamageAndHealingDelay',
+          scope: scope.client,
+          config: true,
+          default: 350,
+          type: Number
         }
       },
       {

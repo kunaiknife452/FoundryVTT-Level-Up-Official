@@ -1,8 +1,8 @@
 {
+	"folder": null,
+	"name": "Blueheart Potion",
 	"type": "object",
-	"img": "icons/equipment/finger/ring-cabochon-silver-gold-red.webp",
-	"name": "Ring of Protection",
-	"flags": {},
+	"img": "icons/consumables/potions/bottle-conical-corked-labeled-shell-cyan.webp",
 	"system": {
 		"ac": {
 			"baseFormula": "",
@@ -14,33 +14,11 @@
 			"requiresNoShield": false,
 			"requiresUnarmored": false
 		},
-		"actions": {
-			"3p2ZtBMz1AL60sHx": {
-				"activation": {
-					"cost": null,
-					"type": "",
-					"reactionTrigger": ""
-				},
-				"duration": {
-					"unit": "",
-					"value": ""
-				},
-				"target": {
-					"quantity": null,
-					"type": "self"
-				},
-				"name": "Use Ring of Protection",
-				"ranges": {
-					"IEwwRd3971MJtDI3": {
-						"range": "self"
-					}
-				}
-			}
-		},
-		"description": "<p><em>(Requires attunement)</em></p>\n<p>You gain a +1 bonus to AC and saving throws while wearing this ring.</p>",
+		"actions": {},
+		"description": "<p>Made from the rare blueheart flower found only on the coastal cliffs near the Festung, this cyan potion uses the rare plant to counteract the fiendish influences of hellspore blight. When properly prepared the plant (said to have been wrought by unusual magic exposed to the sea) rapidly consumes hellspores in a creature&rsquo;s body and grants a refreshing boost of energy.</p>\n<p>When you drink this potion, you are automatically cured of hellspore blight and recover from one level of fatigue.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "toSaveAKingdom",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -51,7 +29,7 @@
 			}
 		},
 		"schema": {
-			"version": 0.01,
+			"version": null,
 			"lastMigration": null
 		},
 		"ammunitionProperties": [],
@@ -59,19 +37,19 @@
 		"armorProperties": [],
 		"attuned": false,
 		"bulky": false,
-		"craftingComponents": "",
+		"craftingComponents": "10 (4d4) blueheart flowers",
 		"containerId": "",
 		"damagedState": 0,
 		"equippedState": 0,
 		"items": {},
 		"materialProperties": [],
-		"objectType": "miscellaneous",
+		"objectType": "consumable",
 		"plotItem": false,
-		"price": "3500gp",
+		"price": "500 gp",
 		"proficient": true,
 		"quantity": 1,
-		"rarity": "rare",
-		"requiresAttunement": true,
+		"rarity": "uncommon",
+		"requiresAttunement": false,
 		"shieldCategory": "",
 		"shieldProperties": [],
 		"unidentified": false,
@@ -81,6 +59,6 @@
 		"weight": 0
 	},
 	"effects": [],
-	"folder": null,
-	"_id": "j1nccjvetel2zvm4"
+	"flags": {},
+	"_id": "ovoo5489x2l2k3ws"
 }

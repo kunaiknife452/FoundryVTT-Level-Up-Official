@@ -1,8 +1,8 @@
 {
+	"folder": null,
+	"name": "Dragonvenom Arrow",
 	"type": "object",
-	"img": "icons/equipment/finger/ring-cabochon-silver-gold-red.webp",
-	"name": "Ring of Protection",
-	"flags": {},
+	"img": "icons/weapons/ammunition/arrow-simple-brown.webp",
 	"system": {
 		"ac": {
 			"baseFormula": "",
@@ -14,33 +14,11 @@
 			"requiresNoShield": false,
 			"requiresUnarmored": false
 		},
-		"actions": {
-			"3p2ZtBMz1AL60sHx": {
-				"activation": {
-					"cost": null,
-					"type": "",
-					"reactionTrigger": ""
-				},
-				"duration": {
-					"unit": "",
-					"value": ""
-				},
-				"target": {
-					"quantity": null,
-					"type": "self"
-				},
-				"name": "Use Ring of Protection",
-				"ranges": {
-					"IEwwRd3971MJtDI3": {
-						"range": "self"
-					}
-				}
-			}
-		},
-		"description": "<p><em>(Requires attunement)</em></p>\n<p>You gain a +1 bonus to AC and saving throws while wearing this ring.</p>",
+		"actions": {},
+		"description": "<p>An arrow enchanted with dragonvenom deals an extra 21 (6d6) poison damage. When you hit a dragon with a dragonvenom arrow, the attack becomes a critical hit and the dragon makes a DC 14 Wisdom saving throw. On a failure, attacks against the dragon have advantage until the start of its next turn.</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+		"source": "toSaveAKingdom",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -51,7 +29,7 @@
 			}
 		},
 		"schema": {
-			"version": 0.01,
+			"version": null,
 			"lastMigration": null
 		},
 		"ammunitionProperties": [],
@@ -59,19 +37,19 @@
 		"armorProperties": [],
 		"attuned": false,
 		"bulky": false,
-		"craftingComponents": "",
+		"craftingComponents": "Unique (uncraftable)",
 		"containerId": "",
 		"damagedState": 0,
 		"equippedState": 0,
 		"items": {},
 		"materialProperties": [],
-		"objectType": "miscellaneous",
+		"objectType": "ammunition",
 		"plotItem": false,
-		"price": "3500gp",
+		"price": 0,
 		"proficient": true,
 		"quantity": 1,
-		"rarity": "rare",
-		"requiresAttunement": true,
+		"rarity": "artifact",
+		"requiresAttunement": false,
 		"shieldCategory": "",
 		"shieldProperties": [],
 		"unidentified": false,
@@ -81,6 +59,6 @@
 		"weight": 0
 	},
 	"effects": [],
-	"folder": null,
-	"_id": "j1nccjvetel2zvm4"
+	"flags": {},
+	"_id": "tfjjr9882jk6lb0k"
 }

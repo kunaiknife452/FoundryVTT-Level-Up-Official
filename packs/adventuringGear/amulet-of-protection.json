@@ -1,11 +1,11 @@
 {
-	"name": "Ring of Protection",
+	"name": "Amulet of Protection",
 	"type": "object",
-	"img": "icons/equipment/finger/ring-faceted-grey.webp",
+	"img": "icons/equipment/neck/necklace-faceted-gold-green.webp",
 	"effects": [
 		{
 			"icon": "https://assets.forge-vtt.com/bazaar/core/icons/svg/aura.svg",
-			"origin": "Item.FSjG2252DthIqklK",
+			"origin": "Item.ZQJBimsjo8FGFyVb",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -55,7 +55,7 @@
 		"description": "<p><strong>Crafting Components:</strong> Diamond dust</p><hr class=\"a5e-rule u-my-md\"><p>While wearing this ring, you gain a +1 bonus to Armor Class and saving throws</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "adventurersGuide",
+		"source": "toSaveAKingdom",
 		"uses": {
 			"value": null,
 			"max": "",
@@ -106,5 +106,5 @@
 		}
 	},
 	"folder": null,
-	"_id": "uu67m6vxlnd1xnvw"
+	"_id": "1xgvwtodhqlfppy7"
 }

@@ -694,6 +694,7 @@ export default class ActorA5e extends Actor {
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
       const actor = this;
+      const delayDelta = game.settings.get('a5e', 'cascadingDamageAndHealingDelay');
       let delay = 0;
 
       damageRolls.forEach(([damage, damageType]) => {
@@ -701,7 +702,7 @@ export default class ActorA5e extends Actor {
           await displayCascadingNumbers(actor, 'damage', `-${damage}`, damageType);
         }, delay);
 
-        delay += 300;
+        delay += delayDelta;
       });
     }
 
@@ -738,6 +739,50 @@ export default class ActorA5e extends Actor {
     }
 
     Hooks.callAll('a5e.actorDamaged', this, { prevHp: { value, temp }, damage, damageType });
+    return this.update(updates);
+  }
+
+  async applyBulkHealing(healingRolls) {
+    const updates = {};
+    const { value, max, temp } = this.system.attributes.hp;
+    let showCascadingTemp = true;
+
+    const { healing: healingTotal, temp: tempTotal } = healingRolls.reduce(
+      (totalHealing, [healing, healingType]) => {
+        if (healingType === 'temporaryHealing') totalHealing.temp += healing;
+        else totalHealing.healing += healing;
+
+        return totalHealing;
+      },
+      { healing: 0, temp: 0 }
+    );
+
+    if (tempTotal && tempTotal <= temp) {
+      ui.notifications.warn('A5E.ActionWarningTempHpNotOverwritten', { localize: true });
+      showCascadingTemp = false;
+    } else {
+      updates['system.attributes.hp.temp'] = tempTotal;
+    }
+
+    updates['system.attributes.hp.value'] = Math.clamped(value + healingTotal, value, max);
+
+    if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
+      const actor = this;
+      const delayDelta = game.settings.get('a5e', 'cascadingDamageAndHealingDelay');
+      let delay = 0;
+
+      healingRolls.forEach(([healing, healingType]) => {
+        if (!showCascadingTemp && healingType === 'temporaryHealing') return;
+
+        setTimeout(async () => {
+          await displayCascadingNumbers(actor, 'healing', `+${healing}`, healingType);
+        }, delay);
+
+        delay += delayDelta;
+      });
+    }
+
+    Hooks.callAll('a5e.actorHealed', this, { prevHp: { value, temp }, healingRolls });
     return this.update(updates);
   }
 
