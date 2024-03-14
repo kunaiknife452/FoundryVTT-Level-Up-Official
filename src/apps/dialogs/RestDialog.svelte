@@ -23,6 +23,8 @@
     let recoverSetStrifeAndFatigue = 0;
     let consumeSupply = true;
     let diceRemaining = $actor.system.attributes.prof;
+    let hitDiceMultiplier = 1;
+    let diceRemainingShort = $actor.system.attributes.prof * hitDiceMultiplier;
 
     async function rollHitDie(dieSize) {
         try {
@@ -42,6 +44,7 @@
             recoverStrifeAndFatigue,
             recoverSetStrifeAndFatigue,
             diceRemaining,
+            hitDiceMultiplier,
         });
     }
 
@@ -100,7 +103,7 @@
                         <div
                             class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
                             class:disabled={hitDice[die].current === 0}
-                            on:click={() => rollHitDie(die)}
+                            on:click={() => if (hitDice[die].current > 0) rollHitDie(die)}
                         >
                             <span class="a5e-hit-die__label">{die}</span>
                         </div>
@@ -146,9 +149,33 @@
     {/if}
 
     {#if restType === "short"}
+        <FormSection heading="A5E.RestShortHours" --direction="column">
+            <span class="a5e-hit-die__quantity">
+                {hitDiceMultiplier}
+            </span>
+            <div class="u-flex u-gap-md u-text-md">
+                {#each ["1", "2", "3", "4"] as die2}
+                    <div class="a5e-hit-die-wrapper">
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <!-- svelte-ignore a11y-no-static-element-interactions -->
+                        <div
+                            class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die2}"
+                            on:click={() => {
+                                hitDiceMultiplier = die2;
+                                diceRemainingShort =
+                                    $actor.system.attributes.prof *
+                                    hitDiceMultiplier;
+                            }}
+                        >
+                            <span class="a5e-hit-die__label">{die2}</span>
+                        </div>
+                    </div>
+                {/each}
+            </div>
+        </FormSection>
         <FormSection heading="A5E.HitDiceLabel" --direction="column">
             <span class="a5e-hit-die__quantity">
-                {diceRemaining}
+                {diceRemainingShort}
             </span>
             <div class="u-flex u-gap-md u-text-md">
                 {#each ["d6", "d8", "d10", "d12"] as die}
@@ -159,9 +186,12 @@
                             class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
                             class:disabled={hitDice[die].current === 0}
                             on:click={() => {
-                                if (diceRemaining > 0) {
+                                if (
+                                    diceRemainingShort > 0 &&
+                                    hitDice[die].current > 0
+                                ) {
                                     rollHitDie(die);
-                                    diceRemaining = diceRemaining - 1;
+                                    diceRemainingShort = diceRemainingShort - 1;
                                 }
                             }}
                         >

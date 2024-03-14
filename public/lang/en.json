@@ -2072,6 +2072,7 @@
   "A5E.Rest": "Rest",
   "A5E.RestConfigurationPrompt": "{name}: Configure Rest",
   "A5E.RestShort": "Short Rest",
+  "A5E.RestShortHours": "Hours of Rest",
   "A5E.RestLong": "Long Rest",
   "A5E.RestExtended": "Extended Rest",
   "A5E.RestExtendedDays": "Days of Rest",
