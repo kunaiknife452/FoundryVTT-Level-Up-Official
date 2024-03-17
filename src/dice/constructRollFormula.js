@@ -16,10 +16,10 @@ export default function constructRollFormula({ actor, formula, modifiers }) {
     ...(modifiers ?? []).map(({ label, value }) => {
       if (!value || value === 0) return null;
 
-      const modifier = new Roll(value.toString());
+      const modifier = new Roll(value.toString(), rollData);
 
       modifier.terms.forEach((m) => {
-        if (m.constructor.name !== 'OperatorTerm') m.options.flavor ??= label;
+        if (!['OperatorTerm', 'StringTerm'].includes(m.constructor.name)) m.options.flavor ??= label;
       });
 
       return modifier.formula;

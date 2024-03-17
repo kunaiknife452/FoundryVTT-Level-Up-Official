@@ -34,6 +34,20 @@
         return "$color-dark-text";
     }
 
+    function prepareRollColor(rollData) {
+        if (!game.settings.get("a5e", "enableDamageRollColors")) return null;
+
+        const { damageColors, healingColors } = CONFIG.A5E;
+
+        if (rollData.type === "damage") {
+            return damageColors[rollData.damageType];
+        } else if (rollData.type === "healing") {
+            return healingColors[rollData.healingType];
+        }
+
+        return null;
+    }
+
     async function toggleExpertiseDice(rollIndex, expertiseDice) {
         const { rollData } = $message?.flags?.a5e ?? {};
         const [originalRoll, originalRollData] = rolls[rollIndex];
@@ -373,6 +387,7 @@
                     <RollSummary
                         {roll}
                         {rollData}
+                        --a5e-roll-color={prepareRollColor(rollData)}
                         on:toggleRollMode={({ detail }) =>
                             toggleRollMode(i, detail)}
                         on:toggleExpertiseDice={({ detail }) =>
