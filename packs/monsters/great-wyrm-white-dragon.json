@@ -16,6 +16,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -28,33 +29,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -77,6 +74,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -89,33 +87,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -138,6 +132,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -201,33 +196,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -246,6 +237,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -302,33 +294,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -347,6 +335,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -403,33 +392,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -437,7 +422,7 @@
 		},
 		{
 			"_id": "LcsncSG0v72AnXoV",
-			"name": "Tail Attack (Reaction)",
+			"name": "Tail Attack",
 			"type": "feature",
 			"img": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
 			"effects": [],
@@ -452,6 +437,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -460,7 +446,7 @@
 				},
 				"actions": {
 					"BzOiBkwsYQUOnJwV": {
-						"name": "Tail Attack (Reaction)",
+						"name": "Tail Attack",
 						"activation": {
 							"cost": 1,
 							"type": "reaction",
@@ -508,33 +494,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -542,7 +524,7 @@
 		},
 		{
 			"_id": "9Rq4BiK8eMSDGF34",
-			"name": "Roar (Legendary Action)",
+			"name": "Roar",
 			"type": "feature",
 			"img": "icons/magic/sonic/scream-wail-shout-teal.webp",
 			"effects": [],
@@ -557,6 +539,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -565,7 +548,7 @@
 				},
 				"actions": {
 					"bfMUm5whSEYWDblE": {
-						"name": "Roar (Legendary Action)",
+						"name": "Roar",
 						"activation": {
 							"cost": 1,
 							"type": "legendaryAction",
@@ -605,33 +588,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "other",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -639,7 +618,7 @@
 		},
 		{
 			"_id": "f2FrNF7toyEqWdgY",
-			"name": "Wing Attack (Legendary Action)",
+			"name": "Wing Attack",
 			"type": "feature",
 			"img": "icons/svg/item-bag.svg",
 			"effects": [],
@@ -654,6 +633,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -662,7 +642,7 @@
 				},
 				"actions": {
 					"BF828w6uLjvFg6kC": {
-						"name": "Wing Attack (Legendary Action)",
+						"name": "Wing Attack",
 						"activation": {
 							"cost": 1,
 							"type": "legendaryAction",
@@ -702,33 +682,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "other",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -747,6 +723,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -759,33 +736,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "other",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -804,6 +777,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -864,33 +838,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -913,6 +883,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -977,25 +948,21 @@
 						"threshold": 5
 					}
 				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
-				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1003,7 +970,7 @@
 		},
 		{
 			"_id": "HcudkJ6gE27GSpKV",
-			"name": "Raging Storm (Legendary Action)",
+			"name": "Raging Storm",
 			"type": "feature",
 			"img": "icons/svg/item-bag.svg",
 			"effects": [],
@@ -1014,6 +981,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1022,7 +990,7 @@
 				},
 				"actions": {
 					"aZ3eTLwbw40LaLKe": {
-						"name": "Raging Storm (Legendary Action)",
+						"name": "Raging Storm",
 						"activation": {
 							"cost": 1,
 							"type": "legendaryAction",
@@ -1082,28 +1050,24 @@
 					"per": "day",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1122,6 +1086,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1134,33 +1099,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1179,6 +1140,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1191,33 +1153,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1240,6 +1198,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1275,33 +1234,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1324,6 +1279,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1370,33 +1326,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1419,6 +1371,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1454,33 +1407,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1503,6 +1452,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -1538,33 +1488,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": true,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -1637,17 +1583,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1656,12 +1598,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1740,17 +1682,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1759,12 +1697,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1834,17 +1772,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1853,12 +1787,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1928,17 +1862,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1947,12 +1877,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -2022,17 +1952,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -2041,12 +1967,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -2116,17 +2042,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -2135,12 +2057,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -2171,7 +2093,9 @@
 			"showSpellSlots": false,
 			"showSpellPoints": false,
 			"sheetIsLocked": true,
-			"showSpellTab": false
+			"showSpellTab": false,
+			"sortMode": {},
+			"filters": {}
 		}
 	},
 	"system": {
@@ -2250,12 +2174,12 @@
 			}
 		},
 		"schemaVersion": {
-			"version": 0.013,
+			"version": 0.014,
 			"lastMigration": {
 				"version": {
-					"schema": 0.011,
+					"schema": 0.013,
 					"foundry": "11.315",
-					"system": "0.16.49"
+					"system": "0.17.17"
 				}
 			}
 		},
@@ -2654,7 +2578,9 @@
 			"elite": true,
 			"privateNotes": "",
 			"notes": "",
-			"terrain": []
+			"terrain": [
+				"tundra"
+			]
 		},
 		"proficiencies": {
 			"armor": [],
@@ -2719,9 +2645,21 @@
 				"cold"
 			],
 			"damageResistances": [],
-			"damageVulnerabilities": []
+			"damageVulnerabilities": [],
+			"alignment": []
 		},
-		"grants": {}
+		"grants": {},
+		"spellBooks": {
+			"nz7B9vA5PTXew0bj": {
+				"_id": "nz7B9vA5PTXew0bj",
+				"name": "New Spell Book",
+				"img": "icons/svg/book.svg",
+				"ability": "default",
+				"disableSpellConsumers": false,
+				"showSpellPoints": false,
+				"showSpellSlots": true
+			}
+		}
 	},
 	"prototypeToken": {
 		"name": "Great Wyrm White Dragon",

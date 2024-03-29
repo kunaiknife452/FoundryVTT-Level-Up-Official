@@ -16,6 +16,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -28,33 +29,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "heritage",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -78,6 +75,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -129,17 +127,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"ammunitionProperties": [],
 				"armorCategory": "",
@@ -170,14 +164,13 @@
 					"finesse"
 				],
 				"weight": 2,
-				"broken": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -199,6 +192,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -267,17 +261,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"ammunitionProperties": [],
 				"armorCategory": "",
@@ -292,7 +282,7 @@
 				"materialProperties": [],
 				"objectType": "weapon",
 				"plotItem": false,
-				"price": 0,
+				"price": "0",
 				"proficient": true,
 				"quantity": 1,
 				"rarity": "common",
@@ -307,14 +297,13 @@
 					"range"
 				],
 				"weight": 0,
-				"broken": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -390,17 +379,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -409,12 +394,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -493,17 +478,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -512,12 +493,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -587,17 +568,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -606,12 +583,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -681,17 +658,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -700,12 +673,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -775,17 +748,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -794,12 +763,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -869,17 +838,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -888,12 +853,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -969,17 +934,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -987,11 +948,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": true,
 				"level": 1,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1003,15 +963,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "FhtrIMIzm6jTL11n"
 			},
 			"_id": "z3HsyfNLDS9Vte4k",
 			"ownership": {
@@ -1072,17 +1033,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1090,11 +1047,10 @@
 					"seen": false,
 					"material": true
 				},
-				"concentration": true,
 				"level": 2,
 				"materials": "bat fur and a drop of pitch or piece of coal",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1106,15 +1062,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "FhtrIMIzm6jTL11n"
 			},
 			"_id": "S8WF36dNyoxU1Cmd",
 			"ownership": {
@@ -1179,17 +1136,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1197,11 +1150,10 @@
 					"seen": false,
 					"material": true
 				},
-				"concentration": false,
 				"level": 0,
 				"materials": "small tinder box",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1213,15 +1165,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "FhtrIMIzm6jTL11n"
 			},
 			"_id": "rvdEfZfAGexyECL1",
 			"ownership": {
@@ -1234,7 +1187,9 @@
 	"effects": [],
 	"flags": {
 		"a5e": {
-			"sheetIsLocked": true
+			"sheetIsLocked": true,
+			"sortMode": {},
+			"filters": {}
 		}
 	},
 	"system": {
@@ -1313,12 +1268,12 @@
 			}
 		},
 		"schemaVersion": {
-			"version": 0.013,
+			"version": 0.014,
 			"lastMigration": {
 				"version": {
-					"schema": 0.011,
+					"schema": 0.013,
 					"foundry": "11.315",
-					"system": "0.16.49"
+					"system": "0.17.17"
 				}
 			}
 		},
@@ -1717,7 +1672,11 @@
 			"elite": false,
 			"privateNotes": "",
 			"notes": "",
-			"terrain": []
+			"terrain": [
+				"caverns",
+				"theBleakGate",
+				"theDreaming"
+			]
 		},
 		"proficiencies": {
 			"armor": [],
@@ -1779,9 +1738,21 @@
 			"conditionImmunities": [],
 			"damageImmunities": [],
 			"damageResistances": [],
-			"damageVulnerabilities": []
+			"damageVulnerabilities": [],
+			"alignment": []
 		},
-		"grants": {}
+		"grants": {},
+		"spellBooks": {
+			"FhtrIMIzm6jTL11n": {
+				"_id": "FhtrIMIzm6jTL11n",
+				"name": "New Spell Book",
+				"img": "icons/svg/book.svg",
+				"ability": "default",
+				"disableSpellConsumers": false,
+				"showSpellPoints": false,
+				"showSpellSlots": true
+			}
+		}
 	},
 	"prototypeToken": {
 		"name": "Shadow Elf Warrior",
@@ -1818,7 +1789,7 @@
 		"disposition": -1,
 		"displayBars": 0,
 		"bar1": {
-			"attribute": null
+			"attribute": "attributes.hp"
 		},
 		"bar2": {
 			"attribute": null

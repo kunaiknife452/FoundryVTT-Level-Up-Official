@@ -16,6 +16,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -28,33 +29,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -62,7 +59,7 @@
 		},
 		{
 			"_id": "5mdimMZ7zSdJuj20",
-			"name": "Acid Glob (Legendary Action)",
+			"name": "Acid Glob",
 			"type": "feature",
 			"img": "icons/magic/acid/projectile-smoke-glowing.webp",
 			"effects": [],
@@ -73,6 +70,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -81,9 +79,9 @@
 				},
 				"actions": {
 					"6E0FxGkh2vp80KHX": {
-						"name": "Acid Glob (Legendary Action)",
+						"name": "Acid Glob",
 						"activation": {
-							"cost": null,
+							"cost": 1,
 							"type": "legendaryAction",
 							"reactionTrigger": ""
 						},
@@ -129,33 +127,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
-					"max": null,
+					"value": 0,
+					"max": "",
 					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -174,6 +168,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -214,32 +209,28 @@
 				"source": "",
 				"uses": {
 					"value": 1,
-					"max": 1,
+					"max": "1",
 					"per": "day",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -262,6 +253,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -318,33 +310,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -367,6 +355,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -423,33 +412,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "naturalWeapon",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -457,7 +442,7 @@
 		},
 		{
 			"_id": "uiaioQp8q7sOegRY",
-			"name": "Acid Spray (Recharge 6)",
+			"name": "Acid Spray",
 			"type": "feature",
 			"img": "icons/magic/acid/projectile-faceted-glob.webp",
 			"effects": [],
@@ -472,6 +457,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -480,7 +466,7 @@
 				},
 				"actions": {
 					"EIcy8Vw8Zkjg494S": {
-						"name": "Acid Spray (Recharge 6)",
+						"name": "Acid Spray",
 						"activation": {
 							"cost": "",
 							"type": "action",
@@ -519,7 +505,13 @@
 								"type": "savingThrow"
 							}
 						},
-						"consumers": {}
+						"consumers": {
+							"hBXpu8tLTbm7iKg2": {
+								"type": "itemUses",
+								"default": true,
+								"quantity": 1
+							}
+						}
 					}
 				},
 				"description": "<p>The ankheg spits a 30-foot-long, 5-foot-wide stream of acid. Each creature in the area makes a DC 13 Dexterity saving throw, taking 14 (4d6) acid damage on a failure or half damage on a success. If the ankheg is grappling a target, it instead bathes the target in acid, dealing 14 (4d6) acid damage with no saving throw only to that target.</p>",
@@ -527,33 +519,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
-					"max": "",
-					"per": null,
+					"value": 1,
+					"max": "1",
+					"per": "recharge",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -626,17 +614,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -645,12 +629,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -729,17 +713,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -748,12 +728,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -823,17 +803,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -842,12 +818,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -917,17 +893,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -936,12 +908,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1011,17 +983,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1030,12 +998,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1105,17 +1073,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -1124,12 +1088,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -1145,7 +1109,9 @@
 	"effects": [],
 	"flags": {
 		"a5e": {
-			"sheetIsLocked": true
+			"sheetIsLocked": true,
+			"sortMode": {},
+			"filters": {}
 		}
 	},
 	"system": {
@@ -1224,12 +1190,12 @@
 			}
 		},
 		"schemaVersion": {
-			"version": 0.013,
+			"version": 0.014,
 			"lastMigration": {
 				"version": {
-					"schema": 0.011,
+					"schema": 0.013,
 					"foundry": "11.315",
-					"system": "0.16.49"
+					"system": "0.17.17"
 				}
 			}
 		},
@@ -1628,7 +1594,12 @@
 			"elite": false,
 			"privateNotes": "",
 			"notes": "",
-			"terrain": []
+			"terrain": [
+				"desert",
+				"grassland",
+				"hills",
+				"settlement"
+			]
 		},
 		"proficiencies": {
 			"armor": [],
@@ -1690,9 +1661,21 @@
 			"damageResistances": [
 				"acid"
 			],
-			"damageVulnerabilities": []
+			"damageVulnerabilities": [],
+			"alignment": []
 		},
-		"grants": {}
+		"grants": {},
+		"spellBooks": {
+			"jjPKRoGlgsESiSmO": {
+				"_id": "jjPKRoGlgsESiSmO",
+				"name": "New Spell Book",
+				"img": "icons/svg/book.svg",
+				"ability": "default",
+				"disableSpellConsumers": false,
+				"showSpellPoints": false,
+				"showSpellSlots": true
+			}
+		}
 	},
 	"prototypeToken": {
 		"name": "Ankheg Queen",

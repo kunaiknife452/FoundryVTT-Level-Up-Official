@@ -220,9 +220,9 @@ export default class RestManager {
 
   #restoreUses() {
     const items = Array.from(this.#actor.items);
-    const rollData = this.#actor.getRollData();
 
     items.forEach((item) => {
+      const rollData = this.#actor.getRollData(item);
       const { uses } = item.system;
       const updates = { _id: item.id };
 

@@ -20,6 +20,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -32,17 +33,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"ammunitionProperties": [],
 				"armorCategory": "heavy",
@@ -71,14 +68,13 @@
 				"unidentifiedName": "",
 				"weaponProperties": [],
 				"weight": 55,
-				"broken": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -104,6 +100,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -154,17 +151,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"ammunitionProperties": [],
 				"armorCategory": "",
@@ -194,14 +187,13 @@
 					"simple"
 				],
 				"weight": 4,
-				"broken": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -227,6 +219,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -239,33 +232,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"ownership": {
 				"default": 0
@@ -280,6 +269,7 @@
 				"ac": {
 					"baseFormula": "",
 					"formula": "",
+					"grantsDisadvantage": false,
 					"maxDex": 0,
 					"minStr": 0,
 					"mode": 1,
@@ -292,33 +282,29 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
-					"max": null,
+					"value": 0,
+					"max": "",
 					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"featureType": "",
 				"grants": {},
 				"prerequisite": "",
-				"requiresBloodied": false,
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"requiresBlooded": false
 			},
 			"effects": [],
 			"folder": null,
@@ -398,17 +384,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -417,12 +399,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -500,17 +482,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -519,12 +497,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -593,17 +571,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -612,12 +586,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -686,17 +660,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -705,12 +675,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -779,17 +749,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -798,12 +764,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -872,17 +838,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "1d6",
-						"threshold": "6"
+						"threshold": 6
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"concentration": false,
 				"degree": 0,
@@ -891,12 +853,12 @@
 				"prerequisite": "",
 				"tradition": "",
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
 				}
@@ -953,17 +915,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -971,11 +929,10 @@
 					"seen": true,
 					"material": false
 				},
-				"concentration": true,
 				"level": 0,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -987,15 +944,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "PWBKFXe70PgnUsCt",
 			"folder": null,
@@ -1049,17 +1007,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1067,11 +1021,10 @@
 					"seen": true,
 					"material": false
 				},
-				"concentration": false,
 				"level": 0,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1083,15 +1036,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "Wiv80SLdi0J2YV75",
 			"folder": null,
@@ -1145,17 +1099,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1163,11 +1113,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": false,
 				"level": 0,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1179,15 +1128,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "lf96n8UzdPdfx9Re",
 			"folder": null,
@@ -1259,17 +1209,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1277,11 +1223,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 1,
 				"materials": "red ribbon",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1294,15 +1239,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "msdwlmkJykm7f8hK",
 			"folder": null,
@@ -1363,17 +1309,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1381,11 +1323,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 1,
 				"materials": "25 gold worth of incense, consumed by the spell",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": true,
@@ -1396,15 +1337,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "EEwv7Q3NKvT0PRd0",
 			"folder": null,
@@ -1465,17 +1407,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1483,11 +1421,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": true,
 				"level": 1,
 				"materials": "yew leaf",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": true,
@@ -1500,15 +1437,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "uNEh2rDdLBF1Dgty",
 			"folder": null,
@@ -1569,17 +1507,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1587,11 +1521,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 2,
 				"materials": "divinatory items worth at least 25 gold",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1604,15 +1537,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "KxmJf86RPaFDb1Oj",
 			"folder": null,
@@ -1673,17 +1607,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1691,11 +1621,10 @@
 					"seen": true,
 					"material": false
 				},
-				"concentration": false,
 				"level": 2,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1708,15 +1637,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "7N8hJcYa3fjGQ0uj",
 			"folder": null,
@@ -1794,17 +1724,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1812,11 +1738,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": true,
 				"level": 2,
 				"materials": "spiderweb",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1829,15 +1754,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "WjqqM0bCoJPkOL7S",
 			"folder": null,
@@ -1909,17 +1835,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -1927,11 +1849,10 @@
 					"seen": true,
 					"material": false
 				},
-				"concentration": true,
 				"level": 3,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -1945,15 +1866,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "0BipccuEAYQBNeYK",
 			"folder": null,
@@ -2014,17 +1936,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2032,11 +1950,10 @@
 					"seen": true,
 					"material": false
 				},
-				"concentration": false,
 				"level": 3,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2049,15 +1966,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "Mm2zZJSjgoDIBMMw",
 			"folder": null,
@@ -2118,17 +2036,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2136,11 +2050,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 4,
 				"materials": "incense and sacrificial offering worth at least 25 gold appropriate to the higher power, consumed by the spell",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": true,
@@ -2153,15 +2066,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "vs4DpppJDXLegCuh",
 			"folder": null,
@@ -2222,17 +2136,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2240,11 +2150,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 4,
 				"materials": "grease",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2258,15 +2167,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "BoBWKDe7VRNkAKRg",
 			"folder": null,
@@ -2324,17 +2234,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2342,11 +2248,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": false,
 				"level": 4,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2355,15 +2260,16 @@
 					"secondary": []
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"effects": [],
 			"flags": {
@@ -2430,17 +2336,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2448,11 +2350,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 5,
 				"materials": "100 gold of diamond dust, consumed by the spell",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2464,15 +2365,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "9DpG4sJikjpjSE29",
 			"folder": null,
@@ -2557,17 +2459,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2575,11 +2473,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": true,
 				"level": 5,
 				"materials": "dead insect",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2592,15 +2489,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "3OBATqqODiqG7src",
 			"folder": null,
@@ -2661,17 +2559,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2679,11 +2573,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": false,
 				"level": 5,
 				"materials": "diamond worth at least 500 gold, consumed by the spell",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2695,15 +2588,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "BqmtnLWDZ48seHFF",
 			"folder": null,
@@ -2764,17 +2658,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2782,11 +2672,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": false,
 				"level": 6,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": true,
+				"prepared": 1,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2798,15 +2687,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "w90uKWkLItrsyJ1G",
 			"folder": null,
@@ -2860,17 +2750,13 @@
 				"secretDescription": "",
 				"source": "",
 				"uses": {
-					"value": null,
+					"value": 0,
 					"max": "",
-					"per": null,
+					"per": "",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2878,11 +2764,10 @@
 					"seen": true,
 					"material": true
 				},
-				"concentration": true,
 				"level": 0,
 				"materials": "bit of phosphorus or wychwood, or a glowworm",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2894,15 +2779,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "384lAimwrOtdZuF9",
 			"folder": null,
@@ -2961,12 +2847,8 @@
 					"per": "longRest",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -2974,11 +2856,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": true,
 				"level": 2,
 				"materials": "bat fur and a drop of pitch or piece of coal",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -2990,15 +2871,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "2Q9kX8cBw9Ysw9Jv",
 			"folder": null,
@@ -3069,12 +2951,8 @@
 					"per": "longRest",
 					"recharge": {
 						"formula": "",
-						"threshold": ""
+						"threshold": 0
 					}
-				},
-				"schema": {
-					"version": null,
-					"lastMigration": null
 				},
 				"classes": [],
 				"components": {
@@ -3082,11 +2960,10 @@
 					"seen": false,
 					"material": false
 				},
-				"concentration": true,
 				"level": 1,
 				"materials": "",
 				"materialsConsumed": false,
-				"prepared": false,
+				"prepared": 0,
 				"prerequisite": "",
 				"rare": false,
 				"ritual": false,
@@ -3098,15 +2975,16 @@
 					]
 				},
 				"schemaVersion": {
-					"version": 0.013,
+					"version": 0.014,
 					"lastMigration": {
 						"version": {
-							"schema": 0.011,
+							"schema": 0.013,
 							"foundry": "11.315",
-							"system": "0.16.49"
+							"system": "0.17.17"
 						}
 					}
-				}
+				},
+				"spellBook": "0X5FsXDMVsFj11J9"
 			},
 			"_id": "O6UWf9eSKv2FmqKv",
 			"folder": null,
@@ -3130,7 +3008,9 @@
 			],
 			"showSpellSlots": true,
 			"showSpellPoints": false,
-			"sheetIsLocked": true
+			"sheetIsLocked": true,
+			"sortMode": {},
+			"filters": {}
 		}
 	},
 	"system": {
@@ -3209,12 +3089,12 @@
 			}
 		},
 		"schemaVersion": {
-			"version": 0.013,
+			"version": 0.014,
 			"lastMigration": {
 				"version": {
-					"schema": 0.011,
+					"schema": 0.013,
 					"foundry": "11.315",
-					"system": "0.16.49"
+					"system": "0.17.17"
 				}
 			}
 		},
@@ -3613,7 +3493,12 @@
 			"elite": false,
 			"privateNotes": "",
 			"notes": "",
-			"terrain": []
+			"terrain": [
+				"desert",
+				"hills",
+				"settlement",
+				"temple"
+			]
 		},
 		"proficiencies": {
 			"armor": [],
@@ -3675,9 +3560,21 @@
 			"conditionImmunities": [],
 			"damageImmunities": [],
 			"damageResistances": [],
-			"damageVulnerabilities": []
+			"damageVulnerabilities": [],
+			"alignment": []
 		},
-		"grants": {}
+		"grants": {},
+		"spellBooks": {
+			"0X5FsXDMVsFj11J9": {
+				"_id": "0X5FsXDMVsFj11J9",
+				"name": "New Spell Book",
+				"img": "icons/svg/book.svg",
+				"ability": "default",
+				"disableSpellConsumers": false,
+				"showSpellPoints": false,
+				"showSpellSlots": true
+			}
+		}
 	},
 	"prototypeToken": {
 		"name": "Shadow Elf High Priest",

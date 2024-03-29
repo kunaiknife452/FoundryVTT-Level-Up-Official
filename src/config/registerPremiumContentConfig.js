@@ -460,6 +460,13 @@ export default function registerPremiumContentConfig(A5E) {
       title: 'Mysterious and Marvelous Miscellanea',
       url: 'https://bit.ly/42fLLM8'
     },
+    paradigmsOfSkill: {
+      abbreviation: 'PoS',
+      affiliate: true,
+      publisher: 'plantWitchPress',
+      title: 'Paradigms of Skill',
+      url: 'https://bit.ly/3TvtZRl'
+    },
     secretsOfTheSelkies: {
       abbreviation: 'SotS',
       affiliate: true,
@@ -600,6 +607,13 @@ export default function registerPremiumContentConfig(A5E) {
       title: 'The Spellbreaker',
       url: 'https://ravine.itch.io/a5e-subclass04-spellbreaker'
     },
+    toilAndTrouble: {
+      abbreviation: 'TaT',
+      affiliate: true,
+      publisher: 'plantWitchPress',
+      title: 'Toil and Trouble',
+      url: 'https://bit.ly/3HE10VQ'
+    },
     toSaveAKingdom: {
       abbreviation: 'TSaK',
       affiliate: true,
@@ -613,6 +627,13 @@ export default function registerPremiumContentConfig(A5E) {
       publisher: 'enPublishing',
       title: 'Level Up: Trials and Treasures',
       url: 'https://bit.ly/3w8ha7b'
+    },
+    ventureForth: {
+      abbreviation: 'VF',
+      affiliate: true,
+      publisher: 'speaksAndSpells',
+      title: 'Venture Forth',
+      url: ''
     }
   };
 }

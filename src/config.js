@@ -858,6 +858,26 @@ A5E.shieldBaseACBonus = {
   tower: 2
 };
 
+// A5E.spellBookModes = {
+//   none: 'A5E.None',
+//   fullCaster: 'A5E.spellBook.modes.fullCaster',
+//   halfCaster: 'A5E.spellBook.modes.halfCaster',
+//   tertiaryCaster: 'A5E.spellBook.modes.tertiaryCaster',
+//   quaternaryCaster: 'A5E.spellBook.modes.quaternaryCaster',
+//   artificer: 'A5E.spellBook.modes.artificer',
+//   warlock5e: 'A5E.spellBook.modes.warlock5e',
+//   warlockA5e: 'A5E.spellBook.modes.warlockA5e',
+//   wielder: 'A5E.spellBook.modes.wielder'
+// };
+
+A5E.spellBookTypes = {
+  innate: 'A5E.spellBook.types.innate',
+  prepared: 'A5E.spellBook.types.prepared',
+  pact: 'A5E.spellBook.types.pact',
+  points: 'A5E.spellBook.types.points',
+  ritual: 'A5E.spellBook.types.ritual'
+};
+
 A5E.spellComponents = {
   vocalized: 'A5E.SpellComponentVocalized',
   seen: 'A5E.SpellComponentSeen',
@@ -1114,6 +1134,7 @@ A5E.skillSpecialties = {
     courtlyManners: 'A5E.skillSpecialties.courtlyManners',
     cuisine: 'A5E.skillSpecialties.cuisine',
     etiquette: 'A5E.skillSpecialties.etiquette',
+    fencingProtocol: 'A5E.skillSpecialties.fencingProtocol',
     laws: 'A5E.skillSpecialties.laws',
     linguistics: 'A5E.skillSpecialties.linguistics',
     regionalGoods: 'A5E.skillSpecialties.regionalGoods',
