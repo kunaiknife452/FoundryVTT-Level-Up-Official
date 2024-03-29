@@ -103,7 +103,9 @@
                         <div
                             class="a5e-hit-die a5e-hit-die--rollable a5e-hit-die--{die}"
                             class:disabled={hitDice[die].current === 0}
-                            on:click={() => if (hitDice[die].current > 0) rollHitDie(die)}
+                            on:click={() => {
+                                if (hitDice[die].current > 0) rollHitDie(die);
+                            }}
                         >
                             <span class="a5e-hit-die__label">{die}</span>
                         </div>
