@@ -43,7 +43,6 @@ export default class RestManager {
     if (this.#type === 'long') {
       this.#adjustStrifeAndFatigueLR();
       this.#restoreHitDiceLR();
-      this.#restoreHitPoints();
       await this.#removeTemporaryActiveEffects();
     }
     // Optionally consume supply

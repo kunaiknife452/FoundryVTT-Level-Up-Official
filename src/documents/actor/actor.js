@@ -1650,7 +1650,7 @@ export default class ActorA5e extends Actor {
    * @param {Boolean} restOptions.consumeSupply
    * @param {Boolean} restOptions.haven
    * @param {Boolean} restOptions.recoverStrifeAndFatigue
-   * @param {'long' | 'short'} restOptions.restType
+   * @param {'long' | 'extended' | 'short'} restOptions.restType
    * @returns
    */
   async triggerRest(restOptions = {}) {
