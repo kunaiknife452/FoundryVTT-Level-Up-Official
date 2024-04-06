@@ -677,7 +677,7 @@ export default class ActorA5e extends Actor {
     const applyUnconscious = game.settings.get('a5e', 'automateUnconsciousApplication') ?? true;
 
     if (applyBloodied) automateHpConditions(this, changed, userId, 'bloodied');
-    if (applyUnconscious) automateHpConditions(this, changed, userId, 'unconscious');
+    if (applyUnconscious) automateHpConditions(this, changed, userId, 'defeated');
   }
 
   async applyBulkDamage(damageRolls) {

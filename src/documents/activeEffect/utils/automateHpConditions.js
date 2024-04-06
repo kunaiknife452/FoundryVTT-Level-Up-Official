@@ -13,7 +13,7 @@ export default async function automateHpConditions(actor, changes, userId, condi
   if (game.user.id !== userId) return;
 
   // eslint-disable-next-line no-param-reassign
-  conditionId = actor.type === 'npc' && conditionId === 'unconscious' ? 'dead' : conditionId;
+  conditionId = actor.type === 'npc' && conditionId === 'defeated' ? 'dead' : conditionId;
 
   // Guard for non hp changes.
   if (!changes?.system?.attributes?.hp) return;
@@ -25,8 +25,8 @@ export default async function automateHpConditions(actor, changes, userId, condi
   const isApplicable = conditionId === 'bloodied'
     ? (value <= (max / 2)) && (value > 0)
     : (value <= 0);
-  const overlay = ['unconscious', 'dead'].includes(conditionId);
-  const hasCondition = actor.statuses.has(conditionId);
+  const overlay = ['defeated', 'dead'].includes();
+  const hasCondition = actor.statuses.has(conditionId); conditionId
 
   // TODO: Call hook to recharge uses on bloodied
   // Handle Application of Condition

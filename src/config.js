@@ -328,6 +328,7 @@ A5E.conditions = {
   charmed: 'A5E.ConditionCharmed',
   confused: 'A5E.ConditionConfused',
   deafened: 'A5E.ConditionDeafened',
+  defeated: 'A5E.ConditionDefeated',
   doomed: 'A5E.ConditionDoomed',
   encumbered: 'A5E.ConditionEncumbered',
   fatigue: 'A5E.ConditionFatigue',
