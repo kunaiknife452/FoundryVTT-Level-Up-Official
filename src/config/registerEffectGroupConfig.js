@@ -92,6 +92,8 @@ export default function registerEffectGroupConfig(A5E) {
       label: 'A5E.effects.groups.creatureTraits',
       items: [
         'system.traits.size',
+        'system.traits.height',
+        'system.traits.weight',
         'system.details.creatureTypes',
         'system.details.isSwarm'
       ]

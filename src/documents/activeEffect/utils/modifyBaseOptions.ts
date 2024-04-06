@@ -33,6 +33,8 @@ export default function modifyBaseOptions(options: Object) {
   options['system.traits.damageResistances'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
   options['system.traits.damageVulnerabilities'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.damageTypes), 'TAG_GROUP'];
   options['system.traits.size'] = ['', MODES.OVERRIDE_ONLY, Object.entries(CONFIG.A5E.actorSizes), 'RADIO'];
+  options['system.traits.height'] = ['', MODES.OVERRIDE_ONLY, Object.entries(CONFIG.A5E.actorHeights), 'RADIO'];
+  options['system.traits.weight'] = ['', MODES.OVERRIDE_ONLY, Object.entries(CONFIG.A5E.actorWeights), 'RADIO'];
 
   // Add options for proficiencies
   options['system.proficiencies.armor'] = ['', MODES.DEFAULT_STRING_MODES, Object.entries(CONFIG.A5E.armor), 'TAG_GROUP'];

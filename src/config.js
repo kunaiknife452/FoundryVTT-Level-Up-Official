@@ -182,6 +182,32 @@ A5E.actorSizes = {
   grg: 'A5E.SizeGargantuan',
   titan: 'A5E.SizeTitanic'
 };
+/**
+ * The set of possible creature heights in the system.
+ * @enum {string}
+ */
+A5E.actorHeights = {
+  mini: 'A5E.SizeMiniture',
+  short: 'A5E.SizeShort',
+  avg: 'A5E.SizeAverage',
+  tall: 'A5E.SizeTall',
+  giant: 'A5E.SizeGiant',
+  tower: 'A5E.SizeTowering',
+  colo: 'A5E.SizeColossal'
+};
+/**
+ * The set of possible creature weights in the system.
+ * @enum {string}
+ */
+A5E.actorWeights = {
+  feat: 'A5E.SizeFeather',
+  light: 'A5E.SizeLight',
+  moderate: 'A5E.SizeModerate',
+  heavy: 'A5E.SizeHeavy',
+  hulk: 'A5E.SizeHulking',
+  massive: 'A5E.SizeMassive',
+  mountain: 'A5E.SizeMountain'
+};
 
 A5E.originItemTypes = [
   'background',

@@ -396,6 +396,8 @@ export default function registerEffectLocalizationConfig(A5E) {
     'system.traits.damageResistances': 'A5E.effects.keys.traits.damageResistances',
     'system.traits.damageVulnerabilities': 'A5E.effects.keys.traits.damageVulnerabilities',
     'system.traits.size': 'A5E.effects.keys.traits.size',
+    'system.traits.height': 'A5E.effects.keys.traits.height',
+    'system.traits.weight': 'A5E.effects.keys.traits.weight',
     '@token.light.alpha': 'A5E.effects.keys.token.light.alpha',
     '@token.light.angle': 'A5E.effects.keys.token.light.angle',
     '@token.light.animation.intensity': 'A5E.effects.keys.token.light.animation.intensity',

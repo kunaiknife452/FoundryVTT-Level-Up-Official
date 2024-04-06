@@ -81,6 +81,8 @@ export default class ActorA5e extends Actor {
       senses: SensesConfigDialog,
       sensesBonus: SensesBonusConfigDialog,
       size: DetailsConfigDialog,
+      height: DetailsConfigDialog,
+      weight: DetailsConfigDialog,
       skill: SkillConfigDialog,
       skillBonus: SkillBonusConfigDialog,
       spells: ActorSpellConfigDialog,
@@ -1094,6 +1096,28 @@ export default class ActorA5e extends Actor {
     data.type ??= 'size';
 
     this.#configure('size', title, data, options);
+  }
+
+  configureWeightCategory(data = {}, options = {}) {
+    const title = localize('A5E.WeightCategoryConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.WeightCategory';
+    data.configObject ??= CONFIG.A5E.actorWeights;
+    data.propertyKey ??= 'system.traits.weight';
+    data.type ??= 'weight';
+
+    this.#configure('weight', title, data, options);
+  }
+
+  configureHeightCategory(data = {}, options = {}) {
+    const title = localize('A5E.HeightCategoryConfigurationPrompt', { name: this.name });
+
+    data.heading ??= 'A5E.HeightCategory';
+    data.configObject ??= CONFIG.A5E.actorHeights;
+    data.propertyKey ??= 'system.traits.height';
+    data.type ??= 'height';
+
+    this.#configure('height', title, data, options);
   }
 
   configureSkill(data = {}, options = { width: 440 }) {

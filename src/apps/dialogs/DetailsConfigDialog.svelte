@@ -29,7 +29,7 @@
 
     const actor = document;
     const options = Object.entries(configObject);
-    const isRadioGroup = ["size"].includes(type);
+    const isRadioGroup = ["size", "height", "weight"].includes(type);
     const { weaponCategories, toolCategories } = CONFIG.A5E;
 
     $: selected = foundry.utils.getProperty($actor, propertyKey);

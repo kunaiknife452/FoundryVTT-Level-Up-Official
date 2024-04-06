@@ -10,6 +10,8 @@ export default function registerPreLocalizationProperties(A5E) {
     'abilityActivationTypesPlural',
     'actionOptions',
     'actorSizes',
+    'actorHeights',
+    'actorWeights',
     'ammunitionProperties',
     'areaTypes',
     'armor',

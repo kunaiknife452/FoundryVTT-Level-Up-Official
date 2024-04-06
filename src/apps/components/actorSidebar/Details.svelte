@@ -12,6 +12,8 @@
     import prepareCreatureTerrains from "../../dataPreparationHelpers/prepareCreatureTerrains";
     import prepareCreatureTypes from "../../dataPreparationHelpers/prepareCreatureTypes";
     import prepareCreatureSize from "../../dataPreparationHelpers/prepareCreatureSize";
+    import prepareCreatureWeight from "../../dataPreparationHelpers/prepareCreatureWeight";
+    import prepareCreatureHeight from "../../dataPreparationHelpers/prepareCreatureHeight";
     import prepareDamageImmunities from "../../dataPreparationHelpers/prepareDamageImmunities";
     import prepareDamageResistances from "../../dataPreparationHelpers/prepareDamageResistances";
     import prepareDamageVulnerabilities from "../../dataPreparationHelpers/prepareDamageVulnerabilities";
@@ -118,6 +120,20 @@
             dialogMethod: "configureSizeCategory",
             propertyKey: "system.traits.size",
             tooltip: "Configure Size Category",
+        },
+        {
+            heading: localize("A5E.Height"),
+            values: prepareCreatureHeight($actor),
+            dialogMethod: "configureHeightCategory",
+            propertyKey: "system.traits.height",
+            tooltip: "Configure Height Category",
+        },
+        {
+            heading: localize("A5E.Weight"),
+            values: prepareCreatureWeight($actor),
+            dialogMethod: "configureWeightCategory",
+            propertyKey: "system.traits.Weight",
+            tooltip: "Configure Weight Category",
         },
         {
             heading: localize("A5E.CreatureTypesLabel"),

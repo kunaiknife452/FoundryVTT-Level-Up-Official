@@ -285,6 +285,8 @@ export default class BaseActorData extends A5EDataModel.mixin(SchemaDataModel) {
       ),
       traits: new fields.SchemaField({
         size: new fields.StringField({ required: true, initial: 'med' }),
+        height: new fields.StringField({ required: true, initial: 'avg' }),
+        weight: new fields.StringField({ required: true, initial: 'moderate' }),
         alignment: new fields.ArrayField(
           new fields.StringField({ required: true, initial: '' }),
           { required: true, initial: [] }
