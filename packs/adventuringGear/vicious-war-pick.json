@@ -8,6 +8,7 @@
 		"ac": {
 			"baseFormula": "",
 			"formula": "",
+			"grantsDisadvantage": false,
 			"maxDex": 0,
 			"minStr": 0,
 			"mode": 1,
@@ -55,22 +56,18 @@
 				"consumers": {}
 			}
 		},
-		"description": "<p><em>Breaker (Stone)</em></p>\n<p><strong>Vicious Weapon:&nbsp;</strong>When you roll a natural 20 on an attack roll using this weapon it deals an extra 2d6 damage of the weapon&rsquo;s type (this extra damage does not double).</p>",
+		"description": "\n<p><strong>Vicious Weapon:&nbsp;</strong>When you roll a natural 20 on an attack roll using this weapon it deals an extra 2d6 damage of the weapon&rsquo;s type (this extra damage does not double).</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "",
 		"uses": {
-			"value": null,
+			"value": 0,
 			"max": "",
-			"per": null,
+			"per": "",
 			"recharge": {
 				"formula": "1d6",
 				"threshold": 6
 			}
-		},
-		"schema": {
-			"version": null,
-			"lastMigration": null
 		},
 		"ammunitionProperties": [],
 		"armorCategory": "",
@@ -101,15 +98,22 @@
 		],
 		"weight": 2,
 		"schemaVersion": {
-			"version": 0.013,
+			"version": 0.015,
 			"lastMigration": {
 				"version": {
-					"schema": 0.011,
+					"schema": 0.013,
 					"foundry": "11.315",
-					"system": "0.16.49"
+					"system": "0.17.24"
 				}
 			}
-		}
+		},
+		"breakerProperties": [
+			"stone"
+		],
+		"defensiveProperties": "",
+		"flaws": [],
+		"versatile": "",
+		"mounted": []
 	},
 	"folder": null,
 	"_id": "8v699sbdo7tfjmzz"

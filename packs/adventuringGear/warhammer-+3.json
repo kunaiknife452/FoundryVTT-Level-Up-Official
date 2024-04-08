@@ -8,6 +8,7 @@
 		"ac": {
 			"baseFormula": "",
 			"formula": "",
+			"grantsDisadvantage": false,
 			"maxDex": 0,
 			"minStr": 0,
 			"mode": 1,
@@ -70,17 +71,13 @@
 		"secretDescription": "",
 		"source": "",
 		"uses": {
-			"value": null,
+			"value": 0,
 			"max": "",
-			"per": null,
+			"per": "",
 			"recharge": {
 				"formula": "1d6",
 				"threshold": 6
 			}
-		},
-		"schema": {
-			"version": null,
-			"lastMigration": null
 		},
 		"ammunitionProperties": [],
 		"armorCategory": "",
@@ -119,7 +116,11 @@
 					"system": "0.16.49"
 				}
 			}
-		}
+		},
+		"breakerProperties": [],
+		"defensiveProperties": "",
+		"flaws": [],
+		"versatile": "d10"
 	},
 	"folder": null,
 	"_id": "f5lhya20shnxpd4s"

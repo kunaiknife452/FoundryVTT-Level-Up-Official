@@ -5,7 +5,7 @@
 	"effects": [
 		{
 			"icon": "icons/weapons/polearms/spear-flared-wrapped.webp",
-			"origin": "Item.8s2y64wf7vba1zp1",
+			"origin": "Item.V1O2UrTd9fmK7Ysk",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -49,6 +49,7 @@
 		"ac": {
 			"baseFormula": "",
 			"formula": "",
+			"grantsDisadvantage": false,
 			"maxDex": 0,
 			"minStr": 0,
 			"mode": 1,
@@ -173,22 +174,18 @@
 				}
 			}
 		},
-		"description": "<p><em>Defensive (Heavy), Simple, Thrown (20/60), Versatile (1d8)</em></p>\n<p><strong>Vicious Weapon:&nbsp;</strong>When you roll a natural 20 on an attack roll using this weapon it deals an extra 2d6 damage of the weapon&rsquo;s type (this extra damage does not double).</p>",
+		"description": "\n<p><strong>Vicious Weapon:&nbsp;</strong>When you roll a natural 20 on an attack roll using this weapon it deals an extra 2d6 damage of the weapon&rsquo;s type (this extra damage does not double).</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "",
 		"uses": {
 			"value": 1,
 			"max": "1",
-			"per": null,
+			"per": "",
 			"recharge": {
 				"formula": "1d6",
 				"threshold": 6
 			}
-		},
-		"schema": {
-			"version": null,
-			"lastMigration": null
 		},
 		"ammunitionProperties": [],
 		"armorCategory": "",
@@ -230,7 +227,12 @@
 					"system": "0.16.49"
 				}
 			}
-		}
+		},
+		"breakerProperties": [],
+		"defensiveProperties": "heavy",
+		"flaws": [],
+		"versatile": "d8",
+		"mounted": []
 	},
 	"folder": null,
 	"_id": "8s2y64wf7vba1zp1"
