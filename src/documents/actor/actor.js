@@ -496,7 +496,8 @@ export default class ActorA5e extends Actor {
     const jackOfAllTrades = this.flags.a5e?.jackOfAllTrades;
 
     Object.values(actorData.skills).forEach((skill) => {
-      if (skill.proficient) skill.mod = proficiencyBonus;
+      if (skill.proficient === 2) skill.mod = proficiencyBonus * 2;
+      else if (skill.proficient) skill.mod = proficiencyBonus;
       else if (jackOfAllTrades) skill.mod = Math.floor(proficiencyBonus / 2);
       else skill.mod = 0;
 
@@ -1680,6 +1681,7 @@ export default class ActorA5e extends Actor {
    */
   async triggerRest(restOptions = {}) {
     let restData;
+
     if (foundry.utils.isEmpty(restOptions)) {
       const title = localize('A5E.RestConfigurationPrompt', { name: this.name });
       const dialog = new GenericConfigDialog(this, title, RestDialog);

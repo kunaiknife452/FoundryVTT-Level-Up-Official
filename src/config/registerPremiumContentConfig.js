@@ -467,10 +467,18 @@ export default function registerPremiumContentConfig(A5E) {
       title: 'Paradigms of Skill',
       url: 'https://bit.ly/3TvtZRl'
     },
+    planestridersJournal: {
+      abbreviation: 'PJ',
+      affiliate: true,
+      publisher: 'enPublishing',
+      title: "Planestrider's Journal",
+      url: ''
+    },
     ridingParsnip: {
       abbreviation: 'RP',
       affiliate: true,
       publisher: 'purpleMartinGames',
+      title: 'Riding Parsnip',
       url: 'https://bit.ly/3xh28Nk'
     },
     secretsOfTheSelkies: {

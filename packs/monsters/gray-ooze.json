@@ -1,5 +1,5 @@
 {
-	"name": "Grey Ooze",
+	"name": "Gray Ooze",
 	"type": "npc",
 	"img": "systems/a5e/assets/black-pudding.webp",
 	"items": [
@@ -1111,7 +1111,8 @@
 				"save": {
 					"proficient": false,
 					"expertiseDice": 0,
-					"bonus": ""
+					"bonus": "",
+					"concentrationBonus": ""
 				}
 			},
 			"int": {
@@ -1556,7 +1557,15 @@
 			"elite": false,
 			"privateNotes": "",
 			"notes": "",
-			"terrain": []
+			"terrain": [
+				"caverns",
+				"mountains",
+				"planeOfEarth",
+				"ruin",
+				"sewer",
+				"water"
+			],
+			"isSquad": false
 		},
 		"proficiencies": {
 			"armor": [],
@@ -1710,5 +1719,5 @@
 		"prependAdjective": false
 	},
 	"folder": null,
-	"_id": "3q84ln31c59yphmh"
+	"_id": "sbllaxo7dnd5cto4"
 }

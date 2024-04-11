@@ -12,12 +12,14 @@
 
     let deathSaves = settings.getStore("5eStyleDeathSaves");
     let exhaustion = settings.getStore("replaceFatigueAndStrife");
+    let expertise = settings.getStore("5eStyleExpertise");
     let hideA5eSkills = settings.getStore("hideA5eSkills");
     let hideBrokenAndDamaged = settings.getStore("hideBrokenAndDamaged");
     let hideExpertiseDice = settings.getStore("hideExpertiseDice");
     let hideSkillCriticalPrompt = settings.getStore("hideSkillCriticalPrompt");
     let hideSkillSpecialties = settings.getStore("hideSkillSpecialties");
     let simpleInitiative = settings.getStore("simpleInitiative");
+    let simpleRests = settings.getStore("simpleRests");
 </script>
 
 <Section
@@ -30,6 +32,17 @@
             checked={updates.get("5eStyleDeathSaves") ?? $deathSaves ?? false}
             on:updateSelection={({ detail }) => {
                 updates.set("5eStyleDeathSaves", detail);
+            }}
+        />
+    </FieldWrapper>
+
+    <FieldWrapper hint="A5E.settings.hints.5eStyleExpertise">
+        <Checkbox
+            label="A5E.settings.5eStyleExpertise"
+            checked={updates.get("5eStyleExpertise") ?? $expertise ?? false}
+            on:updateSelection={({ detail }) => {
+                updates.set("5eStyleExpertise", detail);
+                reload = true;
             }}
         />
     </FieldWrapper>
@@ -105,6 +118,17 @@
                 false}
             on:updateSelection={({ detail }) => {
                 updates.set("simpleInitiative", detail);
+                reload = true;
+            }}
+        />
+    </FieldWrapper>
+
+    <FieldWrapper hint="A5E.settings.hints.simpleRests">
+        <Checkbox
+            label="A5E.settings.simpleRests"
+            checked={updates.get("simpleRests") ?? $simpleRests ?? false}
+            on:updateSelection={({ detail }) => {
+                updates.set("simpleRests", detail);
                 reload = true;
             }}
         />
