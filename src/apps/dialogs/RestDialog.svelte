@@ -131,26 +131,6 @@
                     {/each}
                 </div>
             </FieldWrapper>
-            <FieldWrapper>
-                <Checkbox
-                    label="A5E.HavenPrompt"
-                    checked={haven}
-                    on:updateSelection={({ detail }) => {
-                        haven = detail;
-                    }}
-                />
-            </FieldWrapper>
-
-            <FieldWrapper>
-                <Checkbox
-                    label="A5E.SupplyFatigueStrifePrompt"
-                    checked={recoverStrifeAndFatigue}
-                    on:updateSelection={({ detail }) => {
-                        recoverStrifeAndFatigue = detail;
-                    }}
-                />
-            </FieldWrapper>
-
             {#if $actor.type === "character"}
                 <FieldWrapper>
                     <Checkbox
@@ -161,7 +141,6 @@
                         }}
                     />
                 </FieldWrapper>
-
                 <FieldWrapper>
                     <Checkbox
                         label="A5E.SupplyFatigueStrifePrompt"

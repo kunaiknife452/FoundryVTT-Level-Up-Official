@@ -132,7 +132,7 @@
             heading: localize("A5E.Weight"),
             values: prepareCreatureWeight($actor),
             dialogMethod: "configureWeightCategory",
-            propertyKey: "system.traits.Weight",
+            propertyKey: "system.traits.weight",
             tooltip: "Configure Weight Category",
         },
         {
