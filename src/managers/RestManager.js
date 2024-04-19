@@ -117,7 +117,7 @@ export default class RestManager {
   }
 
   #restoreGenericResources() {
-    ['primary', 'secondary', 'tertiary', 'quaternary'].forEach((r) => {
+    ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'senary', 'septenary', 'octonary'].forEach((r) => {
       const resource = this.#actor.system.resources[r];
       if (!this.restTypes.includes(resource.per) || !resource.max) return;
 

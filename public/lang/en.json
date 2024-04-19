@@ -519,6 +519,42 @@
           "rechargeFormula": "Resource 4 Recharge Formula",
           "rechargeThreshold": "Resource 4 Recharge Threshold",
           "value": "Resource 4 Values"
+        },
+        "quinary": {
+          "hideMax": "Resource 5 Hide Max Uses",
+          "label": "Resource 5 Label",
+          "max": "Resource 5 Max Uses",
+          "per": "Resource 5 Recovery",
+          "rechargeFormula": "Resource 5 Recharge Formula",
+          "rechargeThreshold": "Resource 5 Recharge Threshold",
+          "value": "Resource 5 Values"
+        },
+        "senary": {
+          "hideMax": "Resource 6 Hide Max Uses",
+          "label": "Resource 6 Label",
+          "max": "Resource 6 Max Uses",
+          "per": "Resource 6 Recovery",
+          "rechargeFormula": "Resource 6 Recharge Formula",
+          "rechargeThreshold": "Resource 6 Recharge Threshold",
+          "value": "Resource 6 Values"
+        },
+        "septenary": {
+          "hideMax": "Resource 7 Hide Max Uses",
+          "label": "Resource 7 Label",
+          "max": "Resource 7 Max Uses",
+          "per": "Resource 7 Recovery",
+          "rechargeFormula": "Resource 7 Recharge Formula",
+          "rechargeThreshold": "Resource 7 Recharge Threshold",
+          "value": "Resource 7 Values"
+        },
+        "octonary": {
+          "hideMax": "Resource 8 Hide Max Uses",
+          "label": "Resource 8 Label",
+          "max": "Resource 8 Max Uses",
+          "per": "Resource 8 Recovery",
+          "rechargeFormula": "Resource 8 Recharge Formula",
+          "rechargeThreshold": "Resource 8 Recharge Threshold",
+          "value": "Resource 8 Values"
         }
       },
       "skills": {
@@ -2099,6 +2135,10 @@
   "A5E.ResourcesSecondary": "Resource 2",
   "A5E.ResourcesTertiary": "Resource 3",
   "A5E.ResourcesQuaternary": "Resource 4",
+  "A5E.ResourcesQuinary": "Resource 5",
+  "A5E.ResourcesSenary": "Resource 6",
+  "A5E.ResourcesSeptenary": "Resource 7",
+  "A5E.ResourcesOctonary": "Resource 8",
   "A5E.Rest": "Rest",
   "A5E.RestConfigurationPrompt": "{name}: Configure Rest",
   "A5E.RestShort": "Short Rest",

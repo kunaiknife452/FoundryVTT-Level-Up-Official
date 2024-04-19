@@ -116,6 +116,10 @@ export default function modifyBaseOptions(options: Object) {
   delete options['system.resources.secondary.hideMax'];
   delete options['system.resources.tertiary.hideMax'];
   delete options['system.resources.quaternary.hideMax'];
+  delete options['system.resources.quinary.hideMax'];
+  delete options['system.resources.senary.hideMax'];
+  delete options['system.resources.septenary.hideMax'];
+  delete options['system.resources.octonary.hideMax'];
 
   // Temporarily delete bonus fields
   delete options['system.bonuses.abilities'];

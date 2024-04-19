@@ -226,7 +226,7 @@ export default class BaseActorData extends A5EDataModel.mixin(SchemaDataModel) {
         weapons: new fields.ArrayField(new fields.StringField({ required: true, initial: '' }), { required: true, initial: [] })
       }),
       resources: new fields.SchemaField(
-        ['primary', 'secondary', 'tertiary', 'quaternary'].reduce((acc, res) => {
+        ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'senary', 'septenary', 'octonary'].reduce((acc, res) => {
           acc[res] = new fields.SchemaField({
             label: new fields.StringField({ required: true, initial: '' }),
             value: new fields.NumberField({ required: true, initial: 0, integer: true }),

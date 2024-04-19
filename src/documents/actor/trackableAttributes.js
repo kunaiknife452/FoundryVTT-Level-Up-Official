@@ -12,7 +12,7 @@ const base = {
 export default {
   base,
   character: {
-    bar: [...base.bar, 'resources.primary', 'resources.secondary', 'resources.tertiary', 'resources.quaternary'],
+    bar: [...base.bar, 'resources.primary', 'resources.secondary', 'resources.tertiary', 'resources.quaternary', 'resources.quinary', 'resources.senary', 'resources.septenary', 'resources.octonary'],
     value: [...base.value]
   },
   npc: {
