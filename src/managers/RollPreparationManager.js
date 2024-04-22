@@ -211,7 +211,7 @@ export default class RollPreparationManager {
 
     const { rollFormula } = constructRollFormula({
       actor: this.#actor,
-      formula: this.#applyDamageOrHealingScaling(_roll),
+      formula: this.#applyScaling(_roll),
       item: this.#item,
       modifiers
     });
@@ -267,12 +267,15 @@ export default class RollPreparationManager {
 
   async #prepareGenericRoll(_roll) {
     const { rollFormula } = constructRollFormula({
-      actor: this.#actor, formula: _roll.formula, item: this.#item
+      actor: this.#actor,
+      formula: this.#applyScaling(_roll),
+      item: this.#item
     });
 
     if (!rollFormula) return null;
 
-    const roll = await new Roll(rollFormula).evaluate({ async: true });
+    const r = await new Roll(rollFormula).evaluate({ async: true });
+    const roll = Roll.fromTerms(simplifyDiceTerms(r.terms));
     const label = _roll.label || localize('A5E.GenericRoll');
 
     return {
@@ -285,7 +288,7 @@ export default class RollPreparationManager {
   async #prepareHealingRoll(_roll) {
     const { rollFormula } = constructRollFormula({
       actor: this.#actor,
-      formula: this.#applyDamageOrHealingScaling(_roll),
+      formula: this.#applyScaling(_roll),
       item: this.#item
     });
 
@@ -423,7 +426,7 @@ export default class RollPreparationManager {
     };
   }
 
-  #applyDamageOrHealingScaling(roll) {
+  #applyScaling(roll) {
     const scalingMode = roll.scaling?.mode;
 
     if (!scalingMode) return roll?.formula ?? 0;
