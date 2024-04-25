@@ -52,11 +52,23 @@ export default function registerModuleIncompatibilities(A5E) {
       reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
       priority: 'low'
     },
+    'a5e-thematic-toolkit-burning-gloom': {
+      reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
+      priority: 'low'
+    },
+    'a5e-thematic-toolkit-carry-the-darkness': {
+      reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
+      priority: 'low'
+    },
     'a5e-thematic-toolkit-cultist': {
       reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
       priority: 'low'
     },
     'a5e-thematic-toolkit-hazardous-knowledge': {
+      reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
+      priority: 'low'
+    },
+    'a5e-thematic-toolkit-itinerant': {
       reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
       priority: 'low'
     },
@@ -81,6 +93,10 @@ export default function registerModuleIncompatibilities(A5E) {
       priority: 'low'
     },
     'a5e-thematic-toolkit-venomous-shadow': {
+      reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
+      priority: 'low'
+    },
+    'a5e-toil-and-trouble': {
       reason: 'The content from this module is included in the core system packs, and the module is no longer necessary.',
       priority: 'low'
     },
