@@ -3,6 +3,7 @@ import {
   getAttackBonusContext,
   getDamageBonusContext,
   getHealingBonusContext,
+  getHitPointsBonusContext,
   getInitiativeBonusContext,
   getMovementBonusContext,
   getSensesBonusContext,
@@ -43,12 +44,32 @@ export function getDamageBonusData() {
   };
 }
 
+export function getExertionBonusData() {
+  const { fields } = foundry.data;
+  return {
+    formula: new fields.StringField({ required: true, initial: '' }),
+    label: new fields.StringField({ required: true, initial: '' }),
+    img: new fields.StringField({ required: true, initial: 'icons/svg/upgrade.svg' })
+  };
+}
+
 export function getHealingBonusData() {
   const { fields } = foundry.data;
   return {
     context: new fields.SchemaField(getHealingBonusContext('bonus')),
     default: new fields.BooleanField({ required: true, initial: true }),
     healingType: new fields.StringField({ required: true, initial: 'healing' }),
+    formula: new fields.StringField({ required: true, initial: '' }),
+    label: new fields.StringField({ required: true, initial: '' }),
+    img: new fields.StringField({ required: true, initial: 'icons/svg/upgrade.svg' })
+  };
+}
+
+export function getHitPointBonusData() {
+  const { fields } = foundry.data;
+  return {
+    context: new fields.SchemaField(getHitPointsBonusContext('bonus')),
+    default: new fields.BooleanField({ required: true, initial: true }),
     formula: new fields.StringField({ required: true, initial: '' }),
     label: new fields.StringField({ required: true, initial: '' }),
     img: new fields.StringField({ required: true, initial: 'icons/svg/upgrade.svg' })

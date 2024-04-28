@@ -9,11 +9,16 @@
     import Section from "../Section.svelte";
     import FieldWrapper from "../FieldWrapper.svelte";
 
+    function getClassSummary() {
+        const parentClass = $item.system.classes;
+
+        return localize(classes[parentClass] ?? classes5e[parentClass]);
+    }
+
     const item = getContext("item");
+    const { classes, classes5e, featureTypes } = CONFIG.A5E;
 
     let editMode = false;
-
-    const featureTypes = CONFIG.A5E.featureTypes;
 </script>
 
 <Section
@@ -33,6 +38,7 @@
             heading="A5E.FeatureTypePrompt"
             options={Object.entries(featureTypes)}
             selected={$item.system.featureType}
+            allowDeselect={true}
             on:updateSelection={(event) =>
                 updateDocumentDataFromField(
                     $item,
@@ -40,6 +46,35 @@
                     event.detail,
                 )}
         />
+
+        {#if ["class", "knack"].includes($item.system.featureType)}
+            <RadioGroup
+                heading="A5E Classes"
+                options={Object.entries(classes)}
+                selected={$item.system.classes}
+                allowDeselect={true}
+                on:updateSelection={({ detail }) => {
+                    updateDocumentDataFromField(
+                        $item,
+                        "system.classes",
+                        detail,
+                    );
+                }}
+            />
+
+            <RadioGroup
+                heading="5E Classes"
+                options={Object.entries(classes5e)}
+                selected={$item.system.classes}
+                on:updateSelection={({ detail }) => {
+                    updateDocumentDataFromField(
+                        $item,
+                        "system.classes",
+                        detail,
+                    );
+                }}
+            />
+        {/if}
 
         <FieldWrapper>
             <Checkbox
@@ -74,11 +109,19 @@
                 <dt class="u-text-bold">
                     {localize("A5E.FeatureTypePrompt")}:
                 </dt>
+
                 <dd class="u-m-0 u-p-0">
                     {featureTypes[$item.system.featureType] ??
                         localize("A5E.None")}
                 </dd>
             </div>
+
+            {#if ["class", "knack"].includes($item.system.featureType) && $item.system.classes}
+                <div class="u-flex u-gap-md">
+                    <dt class="u-text-bold">Class:</dt>
+                    <dd class="u-m-0 u-p-0">{getClassSummary()}</dd>
+                </div>
+            {/if}
         </dl>
     {/if}
 </Section>

@@ -6,6 +6,7 @@
     },
     "Item": {
       "background": "Background",
+      "class": "Class",
       "culture": "Culture",
       "destiny": "Destiny",
       "heritage": "Heritage",
@@ -83,11 +84,23 @@
         "defaultName": "Damage Bonus",
         "dialogName": "Damage Bonus Configuration"
       },
+      "exertion": {
+        "sectionHeader": "Exertion Bonuses",
+        "addButton": "+ Add Exertion Bonus",
+        "defaultName": "Exertion Bonus",
+        "dialogName": "Exertion Bonus Configuration"
+      },
       "healing": {
         "sectionHeader": "Healing Bonuses",
         "addButton": "+ Add Healing Bonus",
         "defaultName": "Healing Bonus",
         "dialogName": "Healing Bonus Configuration"
+      },
+      "hitPoint": {
+        "sectionHeader": "Hit Point Bonuses",
+        "addButton": "+ Add Hit Point Bonus",
+        "defaultName": "Hit Point Bonus",
+        "dialogName": "Hit Point Bonus Configuration"
       },
       "initiative": {
         "sectionHeader": "Initiative Bonuses",
@@ -127,6 +140,7 @@
     "adept": "Adept",
     "artificer": "Artificer",
     "bard": "Bard",
+    "barbarian": "Barbarian",
     "berserker": "Berserker",
     "cleric": "Cleric",
     "druid": "Druid",
@@ -140,6 +154,8 @@
     "fighter": "Fighter",
     "herald": "Herald",
     "marshal": "Marshal",
+    "monk": "Monk",
+    "paladin": "Paladin",
     "ranger": "Ranger",
     "rogue": "Rogue",
     "savant": "Savant",
@@ -149,6 +165,35 @@
     "wielder": "Wielder",
     "witch": "Witch",
     "wizard": "Wizard"
+  },
+  "A5E.classes": {
+    "casterTypes": {
+      "fullCaster": "Full Caster",
+      "halfCaster": "Half Caster",
+      "tertiaryCaster": "Tertiary Caster",
+      "quaternaryCaster": "Quaternary Caster",
+      "artificerA5e": "Artificer A5e",
+      "artificer5e": "Artificer 5e",
+      "elementalist": "Elementalist",
+      "warlock5e": "Warlock 5e",
+      "warlockA5e": "Warlock A5E",
+      "wielder": "Wielder"
+    },
+    "exertionPoolTypes": {
+      "none": "None",
+      "prof": "Prof",
+      "double": "Double Prof"
+    },
+    "hpTypes": {
+      "average": "Average",
+      "roll": "Roll",
+      "custom": "Custom"
+    },
+    "levelType": "Level Type",
+    "levelTypes": {
+      "character": "Character Level",
+      "class": "Class Level"
+    }
   },
   "A5E.contexts": {
     "abilities": "Abilities",
@@ -166,6 +211,7 @@
     "check": "Check",
     "passive": "Passive",
     "passiveOnly": "Passive Only",
+    "perLevel": "Per Level",
     "save": "Save",
     "valueIfOriginalIsZero": "Value if Original is Zero"
   },
@@ -884,28 +930,36 @@
       "ability": "Ability Grant",
       "attack": "Attack Grant",
       "damage": "Damage Grant",
+      "exertion": "Exertion Grant",
+      "expertiseDice": "Expertise Dice Grant",
       "feature": "Feature Grant",
       "healing": "Healing Grant",
+      "hitPoint": "HP Grant",
       "initiative": "Initiative Grant",
       "item": "Item Grant",
       "movement": "Movement Grant",
       "proficiency": "Proficiency Grant",
       "senses": "Senses Grant",
       "skill": "Skill Grant",
+      "skillSpecialty": "Skill Specialty Grant",
       "trait": "Trait Grant"
     },
     "headingsPlural": {
       "ability": "Ability Grants",
       "attack": "Attack Grants",
       "damage": "Damage Grants",
+      "exertion": "Exertion Grants",
+      "expertiseDice": "Expertise Dice Grants",
       "feature": "Feature Grants",
       "healing": "Healing Grants",
+      "hitPoint": "HP Grants",
       "initiative": "Initiative Grants",
       "item": "Item Grants",
       "movement": "Movement Grants",
       "proficiency": "Proficiency Grants",
       "senses": "Senses Grants",
       "skill": "Skill Grants",
+      "skillSpecialty": "Skill Specialty Grants",
       "trait": "Trait Grants"
     }
   },
@@ -1132,7 +1186,8 @@
       "simpleRests": "When enabled, long rests will automatically recover a level of Fatigue, Strife, and Exhaustion as applicable, and users will not be prompted as to whether they rested in a haven or consumed supply.",
       "skillListFlowDirection": "Setting this option to 'Row' causes the skills to flow alphabetically left to right, row by row. Setting this option 'Column' causes the skills to flow alphabetically top to bottom, column by column.",
       "terseRollFormulae": "The system provides detailed roll annotations in chat card roll formulae. Enabling this setting removes all roll annotations in this formula display, providing a cleaner aesthetic at the expense of clarity.",
-      "trackCurrencyWeight": "Each coin will add 0.02lbs to the weight being carried."
+      "trackCurrencyWeight": "Each coin will add 0.02lbs to the weight being carried.",
+      "useNPCExpertisePassiveRulesForCharacters": "When enabled, characters will use the NPC expertise passive rules for skills."
     },
     "navigation": {
       "actor": "Actor",
@@ -1154,6 +1209,8 @@
     "alwaysShowActionDescription": "Always show action description",
     "autoApplyFancySheets": "Automatically Apply Fancy Sheets to Compendia",
     "automateBloodiedApplication": "Automatically apply Bloodied condition",
+    "automateHitDice": "Automatically calculate Hit Dice",
+    "automateSpellResources": "Automatically calculate Spell Resources",
     "automatePrototypeTokenSize": "Automate Default Prototype Token Size",
     "automateUnconsciousApplication": "Automatically apply Unconscious condition",
     "automateVisionRules": "Automate Vision Rules for Tokens",
@@ -1218,7 +1275,8 @@
     "skillListFlowDirection": "Skill List Flow Direction",
     "terseRollFormulae": "Hide system roll annotations",
     "trackCurrencyWeight": "Track currency weight",
-    "trackInventoryWeight": "Track inventory weight"
+    "trackInventoryWeight": "Track inventory weight",
+    "useNPCExpertisePassiveRulesForCharacters": "Use NPC expertise passive rules for characters"
   },
   "A5E.shieldProperties": {
     "handsFree": "Hands-Free",

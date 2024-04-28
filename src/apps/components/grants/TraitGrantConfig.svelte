@@ -1,18 +1,19 @@
 <script>
-    import { getContext, onDestroy } from "svelte";
+    import { getContext, onDestroy, setContext } from "svelte";
     import { TJSDocument } from "#runtime/svelte/store/fvtt/document";
     import { localize } from "#runtime/svelte/helper";
 
     import prepareTraitGrantConfigObject from "../../../utils/prepareTraitGrantConfigObject";
     import updateDocumentDataFromField from "../../../utils/updateDocumentDataFromField";
 
-    import Checkbox from "../Checkbox.svelte";
     import FieldWrapper from "../FieldWrapper.svelte";
     import Section from "../Section.svelte";
     import CheckboxGroup from "../CheckboxGroup.svelte";
     import ComplexDetailEmbed from "../ComplexDetailEmbed.svelte";
+    import GrantConfig from "./GrantConfig.svelte";
 
-    export let { document, grantId } = getContext("#external").application;
+    export let { document, grantId, grantType } =
+        getContext("#external").application;
 
     function updateImage() {
         const current = grant?.img;
@@ -47,10 +48,13 @@
 
     const item = new TJSDocument(document);
     const configObject = prepareTraitGrantConfigObject();
-    const { weaponCategories, toolCategories } = CONFIG.A5E;
 
     $: grant = $item.system.grants[grantId];
     $: traitType = grant?.traits?.traitType || "armorTypes";
+
+    setContext("item", item);
+    setContext("grantId", grantId);
+    setContext("grantType", grantType);
 </script>
 
 <form>
@@ -96,73 +100,28 @@
         </FieldWrapper>
     </Section>
 
-    <!-- Keep this else it breaks when switching from tools to weapons -->
-    {#key traitType}
-        {#if ["tools", "weapons"].includes(traitType)}
-            <Section
-                heading="Base Options"
-                --a5e-section-margin="0.25rem 0"
-                --a5e-section-body-gap="0.75rem"
-            >
-                <ComplexDetailEmbed
-                    configObject={configObject[traitType]?.config}
-                    existingProperties={grant?.traits?.base}
-                    headings={traitType === "tools"
-                        ? toolCategories
-                        : weaponCategories}
-                    on:updateSelection={({ detail }) => {
-                        onUpdateValue("traits.base", detail);
-                    }}
-                />
-            </Section>
+    <GrantConfig>
+        <CheckboxGroup
+            heading="Base Options"
+            options={configObject[traitType]?.config}
+            selected={grant?.traits?.base}
+            disabledOptions={grant?.traits?.options}
+            showToggleAllButton={true}
+            on:updateSelection={({ detail }) => {
+                onUpdateValue("traits.base", detail);
+            }}
+        />
 
-            <Section
-                heading="Optional Choices"
-                --a5e-section-margin="0.25rem 0"
-                --a5e-section-body-gap="0.75rem"
-            >
-                <ComplexDetailEmbed
-                    configObject={configObject[traitType]?.config}
-                    existingProperties={grant?.traits?.options}
-                    headings={traitType === "tools"
-                        ? toolCategories
-                        : weaponCategories}
-                    on:updateSelection={({ detail }) => {
-                        onUpdateValue("traits.options", detail);
-                    }}
-                />
-            </Section>
-        {/if}
-    {/key}
-
-    <Section
-        heading="Grant Config"
-        --a5e-section-margin="0.25rem 0"
-        --a5e-section-body-gap="0.75rem"
-    >
-        {#if !["weapons", "tools"].includes(traitType)}
-            <CheckboxGroup
-                heading="Base Options"
-                options={configObject[traitType]?.config}
-                selected={grant?.traits?.base}
-                disabledOptions={grant?.traits?.options}
-                showToggleAllButton={true}
-                on:updateSelection={({ detail }) => {
-                    onUpdateValue("traits.base", detail);
-                }}
-            />
-
-            <CheckboxGroup
-                heading="Optional Choices"
-                options={configObject[traitType]?.config}
-                selected={grant?.traits?.options}
-                disabledOptions={grant?.traits?.base}
-                showToggleAllButton={true}
-                on:updateSelection={({ detail }) => {
-                    onUpdateValue("traits.options", detail);
-                }}
-            />
-        {/if}
+        <CheckboxGroup
+            heading="Optional Choices"
+            options={configObject[traitType]?.config}
+            selected={grant?.traits?.options}
+            disabledOptions={grant?.traits?.base}
+            showToggleAllButton={true}
+            on:updateSelection={({ detail }) => {
+                onUpdateValue("traits.options", detail);
+            }}
+        />
 
         <FieldWrapper heading="Selectable Options Count">
             <input
@@ -172,14 +131,7 @@
                     onUpdateValue("traits.total", Number(target.value))}
             />
         </FieldWrapper>
-
-        <Checkbox
-            label="Mark grant as optional"
-            checked={grant.optional ?? false}
-            on:updateSelection={({ detail }) =>
-                onUpdateValue("optional", detail)}
-        />
-    </Section>
+    </GrantConfig>
 </form>
 
 <style lang="scss">

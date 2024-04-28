@@ -6,6 +6,21 @@ export default class BaseGrant extends A5EDataModel {
 
   #configComponent = null;
 
+  // Schema values
+  declare _id: string;
+
+  declare img: string;
+
+  declare grantType: string;
+
+  declare label: string;
+
+  declare level: number;
+
+  declare levelType: string;
+
+  declare optional: boolean;
+
   constructor(data: any, options: any = {}) {
     // @ts-ignore
     super(data, options);
@@ -16,10 +31,11 @@ export default class BaseGrant extends A5EDataModel {
 
     return {
       _id: new fields.DocumentIdField({ initial: () => foundry.utils.randomID() }),
-      default: new fields.BooleanField({ required: true, initial: true }),
       img: new fields.StringField({ required: true, initial: '' }),
       grantType: new fields.StringField({ required: true, initial: '' }),
       label: new fields.StringField({ required: true, initial: '' }),
+      level: new fields.NumberField({ nullable: false, initial: 1, min: 1 }),
+      levelType: new fields.StringField({ required: true, initial: 'character' }),
       optional: new fields.BooleanField({ required: true, initial: false })
     };
   }

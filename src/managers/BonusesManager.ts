@@ -4,6 +4,7 @@ import type {
   AbilityBonus,
   DamageBonus,
   HealingBonus,
+  HitPointsBonus,
   AttackBonus,
   InitiativeBonus,
   SkillBonus,
@@ -140,6 +141,44 @@ export default class BonusesManager {
     return parts.join(' + ').trim();
   }
 
+  getExertionBonusFormula(): string {
+    const bonuses = this.#bonuses.exertion ?? {};
+    const parts = Object.values(bonuses).reduce((acc: string[], bonus) => {
+      const formula = bonus.formula.trim();
+      if (!formula) return acc;
+
+      acc.push(formula);
+      return acc;
+    }, []);
+
+    return parts.join(' + ').trim();
+  }
+
+  getHitPointsBonusFormula(): string {
+    const bonuses = this.prepareHitPointsBonuses();
+
+    const parts = bonuses.map(([, bonus]) => {
+      let { formula } = bonus;
+
+      if (bonus.context.perLevel) formula = `(${formula}) * @level`;
+      return formula;
+    });
+
+    return parts.join(' + ').trim();
+  }
+
+  getHitPointsBonusPerLevelFormula(): string {
+    const bonuses = this.prepareHitPointsBonuses();
+
+    const parts = bonuses.reduce((acc, [, bonus]) => {
+      const { formula } = bonus;
+      if (bonus.context.perLevel) acc.push(formula);
+      return acc;
+    }, [] as string[]);
+
+    return parts.join(' + ').trim();
+  }
+
   /**
    * Wrapper for {@link getInitiativeBonuses} that returns a formula string instead of an array.
    * @param ablKey
@@ -221,7 +260,11 @@ export default class BonusesManager {
     // Expertise bonus addition for passive skills
     const skill = this.#actor.system.skills[skillKey];
     if (type === 'passive' && skill?.expertiseDice) {
-      if (this.#actor.type === 'character') {
+      const useNPCExpertise = game.settings.storage
+        .get('world')
+        .getItem('a5e.useNPCExpertisePassiveRulesForCharacters') ?? false;
+
+      if (this.#actor.type === 'character' && !useNPCExpertise) {
         parts.push('3');
       } else {
         const diceFace = CONFIG.A5E.expertiseDiceSidesMap[skill.expertiseDice ?? 0];
@@ -350,6 +393,19 @@ export default class BonusesManager {
 
       return [key, bonus];
     });
+  }
+
+  prepareHitPointsBonuses(): [string, HitPointsBonus][] {
+    const bonuses = this.#bonuses.hitPoint ?? {};
+
+    return Object.entries(bonuses)
+      .reduce((acc: [string, HitPointsBonus][], [key, bonus]) => {
+        if (!bonus.formula) return acc;
+        bonus.formula = bonus.formula.trim();
+
+        acc.push([key, bonus]);
+        return acc;
+      }, []);
   }
 
   /**

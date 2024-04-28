@@ -1,6 +1,7 @@
+import type { SchemaSchema } from '../template/SchemaDataModel';
+
 import A5EDataModel from '../A5EDataModel';
 import SchemaDataModel from '../template/SchemaDataModel';
-import type { SchemaSchema } from '../template/SchemaDataModel';
 
 type BackgroundSchema = {
   description: string;
@@ -43,8 +44,8 @@ export default class BackgroundDataModel extends A5EDataModel.mixin(SchemaDataMo
           },
           // Trait Proficiency
           [foundry.utils.randomID()]: {
-            grantType: 'trait',
-            traits: { traitType: 'tools' },
+            grantType: 'proficiency',
+            proficiencyType: 'tool',
             label: 'Tool Proficiencies'
           }
         })

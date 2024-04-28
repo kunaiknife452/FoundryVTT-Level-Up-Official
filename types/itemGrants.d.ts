@@ -4,6 +4,8 @@ export interface BaseGrant {
   img: string;
   grantType: string;
   label: string;
+  level: number;
+  levelType: 'character' | 'class';
   optional: boolean;
 
   getApplyData(actor: Actor, data?: any): Record<string, any>;
@@ -55,6 +57,24 @@ export interface DamageGrant extends BaseGrant {
     spellLevels: string[],
     isCritBonus: boolean
   }
+}
+
+export interface ExertionGrant extends BaseGrant {
+  grantType: 'exertion';
+  exertionType: 'bonus' | 'pool';
+  bonus: string;
+  poolType: 'none' | 'prof' | 'doubleProf';
+}
+
+export interface ExpertiseDiceGrant extends BaseGrant {
+  grantType: 'expertiseDice';
+  keys: {
+    base: string[],
+    options: string[],
+    total: number,
+  };
+  expertiseCount: number;
+  expertiseType: string;
 }
 
 export interface FeatureGrant extends BaseGrant {
@@ -149,6 +169,16 @@ export interface SkillGrant extends BaseGrant {
   bonus: string;
 }
 
+export interface SkillSpecialtyGrant extends BaseGrant {
+  grantType: 'skillSpecialty';
+  skill: string;
+  specialties: {
+    base: string[],
+    options: string[],
+    total: number,
+  };
+}
+
 export interface TraitGrant extends BaseGrant {
   grantType: 'trait';
   traits: {
@@ -163,6 +193,8 @@ export type Grant = AbilityGrant
   | AttackGrant
   | DamageGrant
   | HealingGrant
+  | ExertionGrant
+  | ExpertiseDiceGrant
   | FeatureGrant
   | InitiativeGrant
   | ItemGrant
@@ -170,4 +202,5 @@ export type Grant = AbilityGrant
   | ProficiencyGrant
   | SensesGrant
   | SkillGrant
+  | SkillSpecialtyGrant
   | TraitGrant;

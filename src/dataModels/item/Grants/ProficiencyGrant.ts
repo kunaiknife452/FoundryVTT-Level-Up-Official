@@ -2,6 +2,7 @@ import BaseGrant from './BaseGrant';
 
 import ProficiencyGrantConfig from '../../../apps/components/grants/ProficiencyGrantConfig.svelte';
 import ProficiencyGrantSelection from '../../../apps/components/grants/ProficiencyGrantSelection.svelte';
+import prepareProficiencyConfigObject from '../../../utils/prepareProficiencyConfigObject';
 
 export default class ProficiencyGrant extends BaseGrant {
   #component = ProficiencyGrantSelection;
@@ -9,6 +10,17 @@ export default class ProficiencyGrant extends BaseGrant {
   #configComponent = ProficiencyGrantConfig;
 
   #type = 'proficiency';
+
+  // Define schema variables
+  declare keys: {
+    base: string[];
+    options: string[];
+    total: number;
+  };
+
+  declare proficiencyType: 'armor' | 'savingThrow' | 'skill' | 'tradition' | 'tool' | 'weapon';
+
+  declare isExpertise: boolean;
 
   static defineSchema() {
     const { fields } = foundry.data;
@@ -26,7 +38,8 @@ export default class ProficiencyGrant extends BaseGrant {
         ),
         total: new fields.NumberField({ required: true, initial: 0, integer: true })
       }),
-      proficiencyType: new fields.StringField({ required: false, initial: 'ability' }),
+      proficiencyType: new fields.StringField({ required: false, initial: 'armor' }),
+      isExpertise: new fields.BooleanField({ required: false, initial: false }),
       label: new fields.StringField({ required: true, initial: 'New Proficiency Grant' })
     });
   }
@@ -47,7 +60,8 @@ export default class ProficiencyGrant extends BaseGrant {
       },
       itemUuid: this.parent.uuid,
       grantId: this._id,
-      grantType: this.#type
+      grantType: this.#type,
+      level: this.level
     };
 
     updates['system.grants'] = {
@@ -56,16 +70,26 @@ export default class ProficiencyGrant extends BaseGrant {
     };
 
     // Construct proficiency update
-    if (this.proficiencyType === 'ability') {
+    if (this.proficiencyType === 'savingThrow') {
       selected.forEach((key: string) => {
         updates[`system.abilities.${key}.save.proficient`] = true;
       });
     } else if (this.proficiencyType === 'skill') {
       selected.forEach((key: string) => {
-        updates[`system.skills.${key}.proficient`] = 1;
+        updates[`system.skills.${key}.proficient`] = this.isExpertise ? 2 : 1;
       });
     } else {
-      return {};
+      const configObject = prepareProficiencyConfigObject();
+      const { propertyKey } = configObject[this.proficiencyType] ?? {};
+      if (!propertyKey) return {};
+      if (!selected.length) return {};
+
+      const proficiencies = new Set([
+        ...selected,
+        ...(foundry.utils.getProperty(actor, propertyKey) as string[] ?? [])
+      ]);
+
+      updates[propertyKey] = [...proficiencies];
     }
 
     return updates;
@@ -85,7 +109,7 @@ export default class ProficiencyGrant extends BaseGrant {
   }
 
   requiresConfig(): boolean {
-    return this.keys.options.length;
+    return !!this.keys.options.length;
   }
 
   override async configureGrant() {

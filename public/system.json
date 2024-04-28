@@ -3,7 +3,7 @@
   "name": "a5e",
   "title": "Level Up: Advanced 5th Edition (Official)",
   "description": "An official implementation of the Level Up: Advanced 5th Edition system for FoundryVTT.",
-  "version": "0.17.41",
+  "version": "0.18.0",
   "manifestPlusVersion": "1.2.0",
   "authors": [
     {
@@ -241,6 +241,24 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": null,
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {}
+    },
+    "Item": {
+      "feature": {},
+      "maneuver": {},
+      "object": {},
+      "spell": {},
+
+      "background": {},
+      "class": {},
+      "culture": {},
+      "destiny": {},
+      "heritage": {}
+    }
+  },
   "compatibility": {
     "minimum": "11.315",
     "verified": "11.315",
@@ -248,5 +266,5 @@
   },
   "url": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official",
   "manifest": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official/releases/latest/download/system.json",
-  "download": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official/releases/download/0.17.41/a5e.zip"
+  "download": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official/releases/download/0.18.0/a5e.zip"
 }

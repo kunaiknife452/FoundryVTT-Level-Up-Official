@@ -10,6 +10,14 @@ export default class ItemGrant extends BaseGrant {
 
   #type = 'item';
 
+  // Variables for the schema
+
+  declare items: {
+    base: { uuid: string; quantityOverride: number }[];
+    options: { uuid: string; quantityOverride: number }[];
+    total: number;
+  };
+
   static defineSchema() {
     const { fields } = foundry.data;
 
@@ -42,7 +50,8 @@ export default class ItemGrant extends BaseGrant {
     const grantData = {
       itemUuid: this.parent.uuid,
       grantId: this._id,
-      grantType: this.#type
+      grantType: this.#type,
+      level: this.level
     };
 
     return {
@@ -67,7 +76,7 @@ export default class ItemGrant extends BaseGrant {
   }
 
   requiresConfig() {
-    return this.items.options.length;
+    return !!this.items.options.length;
   }
 
   override async configureGrant() {

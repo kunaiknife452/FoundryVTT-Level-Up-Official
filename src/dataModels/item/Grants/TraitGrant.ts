@@ -27,7 +27,7 @@ export default class TraitGrant extends BaseGrant {
           { required: true, initial: [] }
         ),
         total: new fields.NumberField({ required: true, initial: 0, integer: true }),
-        traitType: new fields.StringField({ required: true, initial: 'armorTypes' })
+        traitType: new fields.StringField({ required: true, initial: 'conditionImmunities' })
       }),
       label: new fields.StringField({ required: true, initial: 'New Trait Grant' })
     });
@@ -47,7 +47,8 @@ export default class TraitGrant extends BaseGrant {
       },
       itemUuid: this.parent.uuid,
       grantId: this._id,
-      grantType: this.#type
+      grantType: this.#type,
+      level: this.level
     };
 
     // Construct trait update
