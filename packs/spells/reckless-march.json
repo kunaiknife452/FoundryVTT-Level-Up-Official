@@ -28,8 +28,12 @@
 					"value": 8
 				},
 				"target": {
-					"type": "other",
-					"quantity": 1
+					"type": "creature",
+					"quantity": 4,
+					"scaling": {
+						"mode": "spellLevel",
+						"formula": "1"
+					}
 				},
 				"ranges": {
 					"bgZnsTy0k1CKOs2S": {
