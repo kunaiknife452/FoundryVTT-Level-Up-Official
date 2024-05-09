@@ -85,7 +85,8 @@ export default function registerEffectGroupConfig(A5E) {
         'system.currency.ep',
         'system.currency.gp',
         'system.currency.pp',
-        'system.currency.sp'
+        'system.currency.sp',
+        'system.currency.sc'
       ]
     },
     creatureTraits: {

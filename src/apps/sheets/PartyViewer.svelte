@@ -229,6 +229,7 @@
 
                 wealthData.cp += currency?.cp ?? 0;
                 wealthData.sp += currency?.sp ?? 0;
+                wealthData.sp += currency?.sc ?? 0;
                 wealthData.ep += currency?.ep ?? 0;
                 wealthData.gp += currency?.gp ?? 0;
                 wealthData.pp += currency?.pp ?? 0;

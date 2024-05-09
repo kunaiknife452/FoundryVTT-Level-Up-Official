@@ -25,6 +25,10 @@
             grid-area: sp;
         }
 
+        &--sc {
+            grid-area: sc;
+        }
+
         &--ep {
             grid-area: ep;
         }

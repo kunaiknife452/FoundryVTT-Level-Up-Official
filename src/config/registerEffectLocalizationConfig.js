@@ -173,6 +173,7 @@ export default function registerEffectLocalizationConfig(A5E) {
     'system.currency.gp': 'A5E.effects.keys.currency.gp',
     'system.currency.pp': 'A5E.effects.keys.currency.pp',
     'system.currency.sp': 'A5E.effects.keys.currency.sp',
+    'system.currency.sc': 'A5E.effects.keys.currency.sc',
     'system.details.creatureTypes': 'A5E.effects.keys.details.creatureTypes',
     'system.details.cr': 'A5E.effects.keys.details.cr',
     'system.details.elite': 'A5E.effects.keys.details.elite',

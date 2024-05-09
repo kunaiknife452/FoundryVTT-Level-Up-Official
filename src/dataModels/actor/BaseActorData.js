@@ -213,6 +213,7 @@ export default class BaseActorData extends A5EDataModel.mixin(SchemaDataModel) {
       currency: new fields.SchemaField({
         cp: new fields.NumberField({ required: true, initial: 0, integer: true }),
         sp: new fields.NumberField({ required: true, initial: 0, integer: true }),
+        sc: new fields.NumberField({ required: true, initial: 0, integer: true }),
         ep: new fields.NumberField({ required: true, initial: 0, integer: true }),
         gp: new fields.NumberField({ required: true, initial: 0, integer: true }),
         pp: new fields.NumberField({ required: true, initial: 0, integer: true })
