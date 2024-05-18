@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-b2a93081-7fff-b7e2-1379-a088986db8b3\">Also at 2nd level you gain access to your first Innovative Knack. This feature allows you to take Arcane Innovations from the Sorcerer class or Exploration Knacks from the Ranger Class. You gain additional innovative knacks at 3rd, 4th, 6th, and 8th level.</span></p>",
+		"description": "<p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "motifClasses",
@@ -33,15 +33,16 @@
 		"prerequisite": "Spellslinger Level 2",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-577b3661-7fff-dbf0-8fcc-e74122d2e380\">Your armor now protects your allies as well as you and has anti-magic countermeasures incorporated. Friendly creatures your size or smaller can use you to provide 3/4ths cover. Your armor is also immune to magical spells and effects that target it specifically such as the @UUID[Compendium.a5e.a5e-spells.Item.p647d38olyr3pr52]{Heat Metal}</span> spell or a @UUID[Compendium.a5e.a5e-monsters.Actor.ij6vscpo52mumjt2]{Rust Monster}&rsquo;s antennae.</p>",
+		"description": "<p> spell or a @UUID[Compendium.a5e.a5e-monsters.Actor.ij6vscpo52mumjt2]{Rust Monster}&rsquo;s antennae.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "Advanced Armor",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

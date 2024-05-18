@@ -58,7 +58,7 @@
 				]
 			}
 		},
-		"description": "<p dir=\"ltr\">At 2nd level when you select this archetype, you gain the blessing of the tongue of fire. You become proficient with the Primordial language and its Ignan dialect, and can read, speak, and sign them. You also gain proficiency in the Insight skill.</p>\n<p dir=\"ltr\">You also gain the power to burn through misunderstandings. You may cast tongues without using a spell slot and without components. Once you have used this feature, you may not do so again until you have finished a long rest. At 8th level, you may use this feature after finishing a short or long rest, and at 14th level, you are considered to have tongues active at all times.</p>",
+		"description": "<p dir=\"ltr\">At 2nd level when you select this archetype, you gain the blessing of the tongue of fire. You become proficient with the Primordial language and its Ignan dialect, and can read, speak, and sign them. You also gain proficiency in the Insight skill.</p><p dir=\"ltr\">You also gain the power to burn through misunderstandings. You may cast tongues without using a spell slot and without components. Once you have used this feature, you may not do so again until you have finished a long rest. At 8th level, you may use this feature after finishing a short or long rest, and at 14th level, you are considered to have tongues active at all times.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -112,12 +112,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

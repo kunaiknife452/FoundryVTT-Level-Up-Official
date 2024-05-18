@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You mix some inherent psionic power with the supernatural power granted by a higher, divine being such as a god. You gain the following benefits:</p>\n<ul>\n<li>Your Wisdom score or your Intelligence score increases by +1, to a maximum of 20.</li>\n<li>While you have <em>Psychic Focus</em> active, you may roll a die equal to one of your psionic dice and add the result to the hit points healed by spells of the <em>Healing</em> school you cast.</li>\n<li>Half your <em>Cleric</em> levels count as <em>Esper</em> levels for the purpose of gaining access to the <em>Psychometry</em> feature.</li>\n</ul>",
+		"description": "<p>You mix some inherent psionic power with the supernatural power granted by a higher, divine being such as a god. You gain the following benefits:</p><ul><li>Your Wisdom score or your Intelligence score increases by +1, to a maximum of 20.</li><li>While you have <em>Psychic Focus</em> active, you may roll a die equal to one of your psionic dice and add the result to the hit points healed by spells of the <em>Healing</em> school you cast.</li><li>Half your <em>Cleric</em> levels count as <em>Esper</em> levels for the purpose of gaining access to the <em>Psychometry</em> feature.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitItinerant",
@@ -33,15 +33,16 @@
 		"prerequisite": "3 levels in Cleric, 3 levels in Esper",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

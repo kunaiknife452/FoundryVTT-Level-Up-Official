@@ -34,7 +34,7 @@
 				}
 			}
 		},
-		"description": "<p>At level 17, when you are in darkness or magical darkness you become semi-intangible and can walk through solid objects. You cannot exit into a space in bright or dim light, and if you end your turn inside a solid object you take 1d10 force damage and are shunted into the nearest empty space within 10 feet that is in darkness or magical darkness. If no eligible spaces exist, you take 4d10 force damage and 2d10 radiant damage instead and are ejected into the nearest empty space. If you use this feature while Gloombringer is active, you use the adjusted light level from Gloombringer to determine the validity of the exit point (effectively allowing you to exit anywhere there is not bright light).</p>\n<p>In addition, while you are in darkness or magical darkness, you are invisible.&nbsp;</p>",
+		"description": "<p>At level 17, when you are in darkness or magical darkness you become semi-intangible and can walk through solid objects. You cannot exit into a space in bright or dim light, and if you end your turn inside a solid object you take 1d10 force damage and are shunted into the nearest empty space within 10 feet that is in darkness or magical darkness. If no eligible spaces exist, you take 4d10 force damage and 2d10 radiant damage instead and are ejected into the nearest empty space. If you use this feature while Gloombringer is active, you use the adjusted light level from Gloombringer to determine the validity of the exit point (effectively allowing you to exit anywhere there is not bright light).</p><p>In addition, while you are in darkness or magical darkness, you are invisible.&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitBurningGloom",
@@ -53,15 +53,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

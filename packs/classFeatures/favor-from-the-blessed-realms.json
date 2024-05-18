@@ -71,7 +71,7 @@
 					"type": "creature"
 				},
 				"img": "icons/magic/light/projectile-beam-yellow.webp",
-				"description": "<p>The target is bombarded with a fraction of energy stolen from some slumbering, deific source, immediately taking 40 radiant damage. This spell ignores resistances but does not ignore immunities. A creature killed by this spell does not decay and cannot become undead for the spell's duration. Days spent under the influence of this spell don't count against the time limit of spells such as <em>raise dead</em>. This effect ends early if the corpse takes necrotic damage.</p>\n<p>&nbsp;</p>",
+				"description": "<p>The target is bombarded with a fraction of energy stolen from some slumbering, deific source, immediately taking 40 radiant damage. This spell ignores resistances but does not ignore immunities. A creature killed by this spell does not decay and cannot become undead for the spell's duration. Days spent under the influence of this spell don't count against the time limit of spells such as <em>raise dead</em>. This effect ends early if the corpse takes necrotic damage.</p><p>&nbsp;</p>",
 				"descriptionOutputs": [
 					"action"
 				]
@@ -121,7 +121,7 @@
 					"type": "none"
 				},
 				"img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-				"description": "<p>You summon a creature from the realms celestial.</p>\n<p>This creature uses the statistics of a celestial creature (detailed below) with certain traits determined by your choice of its type: an angel of battle, angel of protection, or angel of vengeance.</p>\n<p>The creature is friendly to you and your companions and takes its turn immediately after yours.</p>\n<p>It obeys your verbal commands. Without such commands, the creature only defends itself.</p>\n<p>The creature disappears when reduced to 0 hit points. If your concentration is broken before the spell ends, you lose control of the celestial creature, which becomes hostile and might attack you and your companions. An uncontrolled creature disappears 1 hour after you summoned it.</p>\n<p>&nbsp;</p>",
+				"description": "<p>You summon a creature from the realms celestial.</p><p>This creature uses the statistics of a celestial creature (detailed below) with certain traits determined by your choice of its type: an angel of battle, angel of protection, or angel of vengeance.</p><p>The creature is friendly to you and your companions and takes its turn immediately after yours.</p><p>It obeys your verbal commands. Without such commands, the creature only defends itself.</p><p>The creature disappears when reduced to 0 hit points. If your concentration is broken before the spell ends, you lose control of the celestial creature, which becomes hostile and might attack you and your companions. An uncontrolled creature disappears 1 hour after you summoned it.</p><p>&nbsp;</p>",
 				"descriptionOutputs": [
 					"action"
 				]
@@ -146,15 +146,16 @@
 		"prerequisite": "Level 14 Empyreal Sage archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -48,7 +48,7 @@
 				}
 			}
 		},
-		"description": "<p>Starting at 3rd level, you can spend 1 exertion to hold a melee weapon and concentrate on the future as a bonus action. You gain a prophecy die, which starts as a d6 and only applies to the weapon you used as a focus. You can add your prophecy die to your attack rolls or damage rolls, which you choose at the beginning of your turn.</p>\n<p>If you choose to add it to an attack roll and miss, the prophecy is still unfolding and the die&rsquo;s size increases by one step (to a maximum of d8). On a hit, or if you choose to add it to a damage roll, the die&rsquo;s size decreases by one step (to a minimum of d4) as you leverage the forces of fate.</p>\n<p>Your prophecy die lasts for a number of rounds equal to your proficiency bonus.</p>",
+		"description": "<p>Starting at 3rd level, you can spend 1 exertion to hold a melee weapon and concentrate on the future as a bonus action. You gain a prophecy die, which starts as a d6 and only applies to the weapon you used as a focus. You can add your prophecy die to your attack rolls or damage rolls, which you choose at the beginning of your turn.</p><p>If you choose to add it to an attack roll and miss, the prophecy is still unfolding and the die&rsquo;s size increases by one step (to a maximum of d8). On a hit, or if you choose to add it to a damage roll, the die&rsquo;s size decreases by one step (to a minimum of d4) as you leverage the forces of fate.</p><p>Your prophecy die lasts for a number of rounds equal to your proficiency bonus.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -67,15 +67,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

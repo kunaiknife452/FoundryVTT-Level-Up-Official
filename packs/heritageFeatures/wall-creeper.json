@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You&rsquo;ve drank from the cup of the blood lords, but your powers are only just awakening. You gain the following benefits:</p>\n<p><strong><em>Wall Creeper</em></strong>. You have a climbing speed equal to your walking speed. At 3rd level, you are under a constant @UUID[Compendium.a5e.a5e-spells.Item.kz3xe6ems34f2ubo]{Spider Climb} effect, which cannot be detected or dispelled by means short of a <em>wish </em>spell.</p>",
+		"description": "<p>You&rsquo;ve drank from the cup of the blood lords, but your powers are only just awakening. You gain the following benefits:</p><p><strong><em>Wall Creeper</em></strong>. You have a climbing speed equal to your walking speed. At 3rd level, you are under a constant @UUID[Compendium.a5e.a5e-spells.Item.kz3xe6ems34f2ubo]{Spider Climb} effect, which cannot be detected or dispelled by means short of a <em>wish </em>spell.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

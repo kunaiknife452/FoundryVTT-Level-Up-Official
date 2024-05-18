@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<div class=\"page\" title=\"Page 21\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Once you hear a noise, including when you hear a creature speak, you can mimic it perfectly. You gain an expertise die on checks made for vocal or auditory impersonation, and creatures have disadvantage on their Insight checks against them.</p>\n</div>\n</div>\n</div>\n</div>",
+		"description": "<p>Once you hear a noise, including when you hear a creature speak, you can mimic it perfectly. You gain an expertise die on checks made for vocal or auditory impersonation, and creatures have disadvantage on their Insight checks against them.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

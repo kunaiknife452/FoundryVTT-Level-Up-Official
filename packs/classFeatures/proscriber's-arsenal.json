@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<blockquote>\n<p>You receive training in some additional armaments.</p>\n</blockquote>\n<p>You gain proficiency with <em>light armor</em>, <em>battle books</em>, and two <em>one-handed martial melee weapons</em> of your choice.</p>",
+		"description": "<blockquote><p>You receive training in some additional armaments.</p></blockquote><p>You gain proficiency with <em>light armor</em>, <em>battle books</em>, and two <em>one-handed martial melee weapons</em> of your choice.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitHazardousKnowledge",
@@ -34,15 +34,16 @@
 		"prerequisite": "Wizard level 2, Proscriber archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

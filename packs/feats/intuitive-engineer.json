@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your mixing of general study and engineering continues to bear fruit.&nbsp;You gain the following benefits:</p>\n<ul>\n<li>If you fail the Engineering check to craft a schematic, you recover half of the materials spent on the failed check.</li>\n<li>Your Savant levels count as artificer levels for the purpose of acquiring field discoveries.</li>\n<li>When you use Analyzed Need, you can choose a tool proficiency instead of a skill proficiency.</li>\n</ul>",
+		"description": "<p>Your mixing of general study and engineering continues to bear fruit.&nbsp;You gain the following benefits:</p><ul><li>If you fail the Engineering check to craft a schematic, you recover half of the materials spent on the failed check.</li><li>Your Savant levels count as artificer levels for the purpose of acquiring field discoveries.</li><li>When you use Analyzed Need, you can choose a tool proficiency instead of a skill proficiency.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitHazardousKnowledge",
@@ -34,15 +34,16 @@
 		"prerequisite": "Genius Inventor feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -40,7 +40,7 @@
 				}
 			}
 		},
-		"description": "<p dir=\"ltr\">At 2nd level, you have learned to rely on your faith to aid you in a wide variety of situations. As a bonus action, you can temporary proficiency with a skill or tool you are not proficient with. This effect persists until you begin a long rest. Once you have used this feature a number of times equal to half your proficiency modifier, you can&rsquo;t do so again until you finish a long rest.</p>\n<p>&nbsp;</p>",
+		"description": "<p dir=\"ltr\">At 2nd level, you have learned to rely on your faith to aid you in a wide variety of situations. As a bonus action, you can temporary proficiency with a skill or tool you are not proficient with. This effect persists until you begin a long rest. Once you have used this feature a number of times equal to half your proficiency modifier, you can&rsquo;t do so again until you finish a long rest.</p><p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitItinerant",
@@ -59,15 +59,16 @@
 		"prerequisite": "Archetype Shepherd, Cleric 2",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

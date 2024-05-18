@@ -44,7 +44,7 @@
 				}
 			}
 		},
-		"description": "<p>Starting at 6th level, when a creature you have granted Bardic Inspiration to fails an attack roll, ability check, or saving throw, you can spend your reaction to declare that isn&rsquo;t how the story goes and allow it to roll again, including your Bardic Inspiration die, taking the higher result. This reroll spends the Bardic Inspiration die, even if the creature did not spend it on the first roll.</p>\n<p>Once you have used this feature a number of times equal to your proficiency bonus, you cannot do so again until you finish a long rest.</p>",
+		"description": "<p>Starting at 6th level, when a creature you have granted Bardic Inspiration to fails an attack roll, ability check, or saving throw, you can spend your reaction to declare that isn&rsquo;t how the story goes and allow it to roll again, including your Bardic Inspiration die, taking the higher result. This reroll spends the Bardic Inspiration die, even if the creature did not spend it on the first roll.</p><p>Once you have used this feature a number of times equal to your proficiency bonus, you cannot do so again until you finish a long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -63,15 +63,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

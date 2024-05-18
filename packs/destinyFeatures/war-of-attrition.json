@@ -42,7 +42,7 @@
 				}
 			}
 		},
-		"description": "<p>You gain Inspiration whenever you strike a blow against an especially powerful creature related to your destiny (but not necessarily your specific destined foe).</p>\n<p><em>Force the powerful enemy&rsquo;s retreat, obtain an item important to their defeat, gain a significant insight into their location or intentions, defeat one of their trusted lieutenants.</em></p>",
+		"description": "<p>You gain Inspiration whenever you strike a blow against an especially powerful creature related to your destiny (but not necessarily your specific destined foe).</p><p><em>Force the powerful enemy&rsquo;s retreat, obtain an item important to their defeat, gain a significant insight into their location or intentions, defeat one of their trusted lieutenants.</em></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg2",
@@ -61,15 +61,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

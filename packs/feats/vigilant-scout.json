@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have come to rely on the combination of survival training, combat skill, and psionic power that you have cultivated. You gain the following benefits:</p>\n<ul>\n<li>You gain access to the <em>Awakened Mind</em> combat tradition if you do not already have it, or a combat tradition available to the Ranger class if you do. You learn a maneuver from the <em>Awakened Mind</em> tradition of a level you could learn. It does not count against your maneuvers known.</li>\n<li>The bonus damage from <em>Trained Accuracy</em> may be psychic damage if you wish. If you choose this option while your <em>Psychic Focus</em> is active, the dice increase to d8s.</li>\n<li>Your <em>Esper</em> levels count as <em>Ranger</em> levels for the purpose of gaining the <em>Wilderness Mystique</em> feature, and when you do, you may select a second option.</li>\n</ul>",
+		"description": "<p>You have come to rely on the combination of survival training, combat skill, and psionic power that you have cultivated. You gain the following benefits:</p><ul><li>You gain access to the <em>Awakened Mind</em> combat tradition if you do not already have it, or a combat tradition available to the Ranger class if you do. You learn a maneuver from the <em>Awakened Mind</em> tradition of a level you could learn. It does not count against your maneuvers known.</li><li>The bonus damage from <em>Trained Accuracy</em> may be psychic damage if you wish. If you choose this option while your <em>Psychic Focus</em> is active, the dice increase to d8s.</li><li>Your <em>Esper</em> levels count as <em>Ranger</em> levels for the purpose of gaining the <em>Wilderness Mystique</em> feature, and when you do, you may select a second option.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitItinerant",
@@ -33,15 +33,16 @@
 		"prerequisite": "Hinterlands Consciousness feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

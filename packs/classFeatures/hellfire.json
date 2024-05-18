@@ -40,7 +40,7 @@
 				}
 			}
 		},
-		"description": "<p dir=\"ltr\">When you deal fire damage or necrotic damage, at your option you can have that damage dealt be half fire damage and half necrotic damage.</p>\n<p dir=\"ltr\">In addition, you may have your flames burn away the life essence of creatures. When you deal fire damage to a creature, you can use this feature (no action required) to decrease the creature&rsquo;s maximum hit points by an amount equal to the fire damage it dealt. You can use this feature a number of times per day equal to half your proficiency bonus, and you regain all uses upon finishing a long rest.</p>",
+		"description": "<p dir=\"ltr\">When you deal fire damage or necrotic damage, at your option you can have that damage dealt be half fire damage and half necrotic damage.</p><p dir=\"ltr\">In addition, you may have your flames burn away the life essence of creatures. When you deal fire damage to a creature, you can use this feature (no action required) to decrease the creature&rsquo;s maximum hit points by an amount equal to the fire damage it dealt. You can use this feature a number of times per day equal to half your proficiency bonus, and you regain all uses upon finishing a long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -59,8 +59,14 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
-			"lastMigration": null
+			"version": 0.019,
+			"lastMigration": {
+				"version": {
+					"schema": 0.018,
+					"foundry": "11.315",
+					"system": "0.18.11"
+				}
+			}
 		},
 		"classes": "druid"
 	},

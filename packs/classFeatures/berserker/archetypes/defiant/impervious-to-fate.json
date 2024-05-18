@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Starting at 3rd level, you have advantage on saving throws against divination spells and effects, as well as immunity to any effect that would force you to reroll a die, though you may choose to accept beneficial rerolls.</p>\n<p>This feature does not apply to rolling with disadvantage, as that calls for 2 separate rolls.</p>",
+		"description": "<p>Starting at 3rd level, you have advantage on saving throws against divination spells and effects, as well as immunity to any effect that would force you to reroll a die, though you may choose to accept beneficial rerolls.</p><p>This feature does not apply to rolling with disadvantage, as that calls for 2 separate rolls.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

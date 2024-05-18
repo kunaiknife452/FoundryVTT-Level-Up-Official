@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p ><span class=\"fontstyle1\" style=\"box-sizing: border-box; user-select: text;\">The range of your Eldritch Ray increases to 300 feet.</span></p>",
+		"description": "<p>The range of your Eldritch Ray increases to 300 feet.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "Eldritch Ray feature",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

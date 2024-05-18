@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p class=\"a-b-r-La\">At 17th level you can use the Stunning Strike and Paralyzing Strike focus features with ranged weapon attacks. If you do not already possess both of these focus features, you gain one of them, which does not count against your number of focus features known. If you already possess both of them, you learn a different focus feature of your choice.</p>",
+		"description": "<p>At 17th level you can use the Stunning Strike and Paralyzing Strike focus features with ranged weapon attacks. If you do not already possess both of these focus features, you gain one of them, which does not count against your number of focus features known. If you already possess both of them, you learn a different focus feature of your choice.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "mysteriousAndMarvelousMiscellanea",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

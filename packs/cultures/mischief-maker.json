@@ -5,16 +5,16 @@
 	"img": "icons/creatures/mammals/rodent-rat-green.webp",
 	"system": {
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.01,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},
-		"description": "<p>Characters raised in the mischief maker culture share a variety of traits in common with one another.</p>\n<p><strong>Follow My Lead.&nbsp;</strong>When you are&nbsp;involved in a group skill check, you are&nbsp;treated as proficient in the skill if anyone&nbsp;in the group is proficient in the skill.</p>\n<p><strong>Sudden Retreat. </strong>When a creature&nbsp;makes an opportunity attack against you,&nbsp;it does so with disadvantage.</p>\n<p><strong>Table for One. </strong>If you are Small, you can&nbsp;make a Deception check or use a disguise&nbsp;kit to appear to be Medium while standing&nbsp;on another Small humanoid&rsquo;s shoulders.&nbsp;</p>\n<p><strong>Tricks of the Trade. </strong>You are proficient&nbsp;in Deception, Performance, or Sleight of&nbsp;Hand, or with disguise kits (your choice).&nbsp;</p>\n<p><strong>Languages. </strong>You can speak, read, write,&nbsp;and sign Common and two other&nbsp;languages.</p>",
+		"description": "<p>Characters raised in the mischief maker culture share a variety of traits in common with one another.</p><p><strong>Follow My Lead.&nbsp;</strong>When you are&nbsp;involved in a group skill check, you are&nbsp;treated as proficient in the skill if anyone&nbsp;in the group is proficient in the skill.</p><p><strong>Sudden Retreat. </strong>When a creature&nbsp;makes an opportunity attack against you,&nbsp;it does so with disadvantage.</p><p><strong>Table for One. </strong>If you are Small, you can&nbsp;make a Deception check or use a disguise&nbsp;kit to appear to be Medium while standing&nbsp;on another Small humanoid&rsquo;s shoulders.&nbsp;</p><p><strong>Tricks of the Trade. </strong>You are proficient&nbsp;in Deception, Performance, or Sleight of&nbsp;Hand, or with disguise kits (your choice).&nbsp;</p><p><strong>Languages. </strong>You can speak, read, write,&nbsp;and sign Common and two other&nbsp;languages.</p>",
 		"grants": {
 			"ZnBOJ9zWJHq7xzCT": {
 				"grantType": "feature",
@@ -26,10 +26,26 @@
 				"label": "Traits",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-culture-features.Item.vgy1d2zp9pog9h10",
-						"Compendium.a5e.a5e-culture-features.Item.srisbnhmcxrag10b",
-						"Compendium.a5e.a5e-culture-features.Item.typ8hij4tm9w8izs",
-						"Compendium.a5e.a5e-culture-features.Item.qjhahwh6lfmur2cx"
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.vgy1d2zp9pog9h10",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.srisbnhmcxrag10b",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.typ8hij4tm9w8izs",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.qjhahwh6lfmur2cx",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0

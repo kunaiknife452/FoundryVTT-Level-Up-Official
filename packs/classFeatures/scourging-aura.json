@@ -143,15 +143,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{
@@ -178,7 +179,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-14c74b2e-7fff-50f7-57bc-daeb8173f9d6\">Cannot benefit from any effect that would allow you to recover hit points or gain temporary hit points while Scourging Aura is active, and it ends immediately if you fall unconscious or die.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -206,7 +207,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-14c74b2e-7fff-50f7-57bc-daeb8173f9d6\">Cannot benefit from any effect that would allow you to recover hit points or gain temporary hit points while Scourging Aura is active, and it ends immediately if you fall unconscious or die.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		}

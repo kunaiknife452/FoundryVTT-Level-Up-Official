@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<blockquote>\n<p>You undergo a hardening of your soul.</p>\n</blockquote>\n<p>Your soul cannot be trapped, imprisoned, or destroyed. Any effects that would normally do one of these things simply fail. When you die, your soul goes directly and immediately to its final judgment, preventing <em>Speak with Dead</em> from functioning on your corpse. If you are returned to life with the <em>Reincarnate</em> spell, you return as the same individual you were before the spell was cast, down to scars, tattoos, and other distinguishing marks.&nbsp;</p>",
+		"description": "<blockquote><p>You undergo a hardening of your soul.</p></blockquote><p>Your soul cannot be trapped, imprisoned, or destroyed. Any effects that would normally do one of these things simply fail. When you die, your soul goes directly and immediately to its final judgment, preventing <em>Speak with Dead</em> from functioning on your corpse. If you are returned to life with the <em>Reincarnate</em> spell, you return as the same individual you were before the spell was cast, down to scars, tattoos, and other distinguishing marks.&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitHazardousKnowledge",
@@ -34,15 +34,16 @@
 		"prerequisite": "Wizard level 2, Proscriber archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

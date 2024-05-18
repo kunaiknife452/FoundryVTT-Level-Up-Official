@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-e2fcade1-7fff-f9a1-09cc-38960ea6eddf\">Your armor now includes various measures to prevent you from succumbing to the worst that supernatural foes can dish out. You gain immunity to the petrified condition and make saving throws to avoid the confused, frightened, incapacitated, paralyzed, and slowed conditions with advantage.</span></p>",
+		"description": "<p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "Advanced Armor",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

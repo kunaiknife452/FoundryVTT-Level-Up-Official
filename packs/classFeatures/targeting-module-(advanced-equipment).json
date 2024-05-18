@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-f979e36c-7fff-2053-e44e-aed398318ec2\">On its turn as an action, the automaton can highlight a target within 30 feet, granting an expertise die to creatures targeting it with attacks.</span></p>",
+		"description": "<p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "Upgraded Automaton",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

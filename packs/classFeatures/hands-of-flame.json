@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p dir=\"ltr\">Also at 2nd level, you gain control over fire with a touch. You learn @UUID[Compendium.a5e.a5e-spells.Item.c1qq11be32b3s1qr]{Fire Bolt} as a bonus cantrip, and you gain resistance to fire damage.</p>\n<p dir=\"ltr\">You can also ignite flammable materials by touching them as a bonus action. You may also extinguish up to a 15-foot square of non-magical fire by spending an action to do so. You must be within 5 feet&nbsp; of the fire in order to do this. The area you can extinguish grows to 25-foot square at 8th level and 50-foot square at 14th level.</p>\n<p>&nbsp;</p>",
+		"description": "<p dir=\"ltr\">Also at 2nd level, you gain control over fire with a touch. You learn @UUID[Compendium.a5e.a5e-spells.Item.c1qq11be32b3s1qr]{Fire Bolt} as a bonus cantrip, and you gain resistance to fire damage.</p><p dir=\"ltr\">You can also ignite flammable materials by touching them as a bonus action. You may also extinguish up to a 15-foot square of non-magical fire by spending an action to do so. You must be within 5 feet&nbsp; of the fire in order to do this. The area you can extinguish grows to 25-foot square at 8th level and 50-foot square at 14th level.</p><p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -68,12 +68,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

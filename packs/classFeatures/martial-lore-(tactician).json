@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p id=\"docs-internal-guid-aed36b3c-7fff-45f1-3c6b-2a4c6894b4bd\" dir=\"ltr\">At 10th level, you gain proficiency with the History skill if you do not already have it or an expertise die if you do. You also gain the wars skill specialty for the History skill if you do not already have it, or a different History specialty if you do.</p>\n<p dir=\"ltr\">Finally, you learn an additional Sanguine Knot maneuver. It does not count against your maneuvers known.</p>",
+		"description": "<p id=\"docs-internal-guid-aed36b3c-7fff-45f1-3c6b-2a4c6894b4bd\" dir=\"ltr\">At 10th level, you gain proficiency with the History skill if you do not already have it or an expertise die if you do. You also gain the wars skill specialty for the History skill if you do not already have it, or a different History specialty if you do.</p><p dir=\"ltr\">Finally, you learn an additional Sanguine Knot maneuver. It does not count against your maneuvers known.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCarryTheDarkness",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

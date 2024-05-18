@@ -48,7 +48,7 @@
 				}
 			}
 		},
-		"description": "<p id=\"docs-internal-guid-6279ed4a-7fff-d888-30df-67572cca37e8\" dir=\"ltr\">Also at 18th level, when you score a critical hit, you can choose to spend two artifact charges to impose one of the following conditions on the target, based on your affliction:</p>\n<ul>\n<li dir=\"ltr\"><strong>Unmoored:</strong> Confused</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Paranoid:</strong> Frightened</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Troubled:</strong>&nbsp; Unconscious - the target is asleep and wakes if it takes any damage or an action is taken to shake it awake.</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Fettered:</strong> Encumbered</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Gravebound:</strong> Blinded</li>\n</ul>\n<p dir=\"ltr\" role=\"presentation\">The condition lasts for one minute, but the target can make a Constitution save against your spell save DC at the end of each of its turns, ending the condition early on a success.</p>",
+		"description": "<p id=\"docs-internal-guid-6279ed4a-7fff-d888-30df-67572cca37e8\" dir=\"ltr\">Also at 18th level, when you score a critical hit, you can choose to spend two artifact charges to impose one of the following conditions on the target, based on your affliction:</p><ul><li dir=\"ltr\"><strong>Unmoored:</strong> Confused</li><li dir=\"ltr\" role=\"presentation\"><strong>Paranoid:</strong> Frightened</li><li dir=\"ltr\" role=\"presentation\"><strong>Troubled:</strong>&nbsp; Unconscious - the target is asleep and wakes if it takes any damage or an action is taken to shake it awake.</li><li dir=\"ltr\" role=\"presentation\"><strong>Fettered:</strong> Encumbered</li><li dir=\"ltr\" role=\"presentation\"><strong>Gravebound:</strong> Blinded</li></ul><p dir=\"ltr\" role=\"presentation\">The condition lasts for one minute, but the target can make a Constitution save against your spell save DC at the end of each of its turns, ending the condition early on a success.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCarryTheDarkness",
@@ -67,15 +67,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

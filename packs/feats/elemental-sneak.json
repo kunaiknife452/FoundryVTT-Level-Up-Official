@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have combined a talent for misdirection and subterfuge with elemental magic. You gain the following benefits:</p>\n<ul>\n<li>Your Dexterity, Intelligence, Wisdom, or Charisma score increases by 1, to a maximum of 20.</li>\n<li>Half your elementalist levels count as rogue levels for the purpose of determining your Sneak Attack damage.</li>\n<li>Half your rogue levels count as elementalist levels for the purpose of determining your Elemental Blast damage.</li>\n<li>When you deal bonus damage with Sneak Attack, you can choose to have that bonus damage be of a type your Elemental Blast could deal.</li>\n</ul>",
+		"description": "<p>You have combined a talent for misdirection and subterfuge with elemental magic. You gain the following benefits:</p><ul><li>Your Dexterity, Intelligence, Wisdom, or Charisma score increases by 1, to a maximum of 20.</li><li>Half your elementalist levels count as rogue levels for the purpose of determining your Sneak Attack damage.</li><li>Half your rogue levels count as elementalist levels for the purpose of determining your Elemental Blast damage.</li><li>When you deal bonus damage with Sneak Attack, you can choose to have that bonus damage be of a type your Elemental Blast could deal.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitBurningGloom",
@@ -56,15 +56,16 @@
 		"prerequisite": "3 levels in Elementalist, 3 levels in Rogue",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your bloodline makes you immune to a&nbsp;single damage type.</p>\n<p><strong>Aasimar: </strong>You gain immunity to radiant damage.</p>\n<p><strong>Tiefling: </strong>You gain immunity to fire damage.</p>",
+		"description": "<p>Your bloodline makes you immune to a&nbsp;single damage type.</p><p><strong>Aasimar: </strong>You gain immunity to radiant damage.</p><p><strong>Tiefling: </strong>You gain immunity to fire damage.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,25 +37,35 @@
 				"label": "Ancestral Resistance",
 				"features": {
 					"options": [
-						"Compendium.a5e.a5e-paragon-gifts.Item.6bt39wd2gzfhnz9t",
-						"Compendium.a5e.a5e-paragon-gifts.Item.bs4t89bywwin495y"
+						{
+							"uuid": "Compendium.a5e.a5e-paragon-gifts.Item.6bt39wd2gzfhnz9t",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-paragon-gifts.Item.bs4t89bywwin495y",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
-					"total": 1
+					"total": 1,
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

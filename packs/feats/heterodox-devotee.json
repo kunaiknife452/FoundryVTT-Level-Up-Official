@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have accepted power from two different sources. In some cases, they may be different sides of the same entity, but often this represents a conflict of interest and a tightrope of devotion to walk and frequently a double life you must conceal.</p>\n<p>You gain the following benefits:</p>\n<ul>\n<li>\n<p>Your Wisdom score increases by 1, to a maximum of 20.</p>\n</li>\n<li>\n<p>You may change your warlock spellcasting ability to Wisdom if you desire. Once made, this choice is permanent.</p>\n</li>\n<li>\n<p>You gain proficiency with the Deception skill if you do not already have it and gain an expertise die if you do. You also make saves against effects that would force you to be truthful, prevent you from lying, or reveal your lies as the falsehoods they are at advantage.</p>\n</li>\n<li>\n<p>You may spend a use of Channel Divinity to gain 3 spell points.</p>\n</li>\n</ul>",
+		"description": "<p>You have accepted power from two different sources. In some cases, they may be different sides of the same entity, but often this represents a conflict of interest and a tightrope of devotion to walk and frequently a double life you must conceal.</p><p>You gain the following benefits:</p><ul><li><p>Your Wisdom score increases by 1, to a maximum of 20.</p></li><li><p>You may change your warlock spellcasting ability to Wisdom if you desire. Once made, this choice is permanent.</p></li><li><p>You gain proficiency with the Deception skill if you do not already have it and gain an expertise die if you do. You also make saves against effects that would force you to be truthful, prevent you from lying, or reveal your lies as the falsehoods they are at advantage.</p></li><li><p>You may spend a use of Channel Divinity to gain 3 spell points.</p></li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCultist",
@@ -35,15 +35,16 @@
 		"prerequisite": "3 levels in cleric, 3 levels in warlock",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "ihpc0cmobkaxuluh"

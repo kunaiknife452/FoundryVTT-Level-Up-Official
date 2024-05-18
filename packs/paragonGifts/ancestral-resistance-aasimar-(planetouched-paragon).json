@@ -58,7 +58,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your bloodline makes you immune to a single damage type.</p>\n<p>Aasimar: You gain immunity to radiant damage.</p>",
+		"description": "<p>Your bloodline makes you immune to a single damage type.</p><p>Aasimar: You gain immunity to radiant damage.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -77,15 +77,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "6bt39wd2gzfhnz9t"

@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You gain proficiency&nbsp;in Perception. Choose one of the&nbsp;following.</p>\n<p><em>Nightwalker:</em> You gain an expertise die&nbsp;on Investigation and Perception checks&nbsp;made in moonlight or starlight.&nbsp;</p>\n<p><em>Sunseeing: </em>You gain an expertise die&nbsp;on Investigation and Perception checks&nbsp;made in daylight.</p>",
+		"description": "<p>You gain proficiency&nbsp;in Perception. Choose one of the&nbsp;following.</p><p><em>Nightwalker:</em> You gain an expertise die&nbsp;on Investigation and Perception checks&nbsp;made in moonlight or starlight.&nbsp;</p><p><em>Sunseeing: </em>You gain an expertise die&nbsp;on Investigation and Perception checks&nbsp;made in daylight.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -56,25 +56,35 @@
 				"label": "Enhanced Vision",
 				"features": {
 					"options": [
-						"Compendium.a5e.a5e-culture-features.Item.ci0q3vjowjfrjf8n",
-						"Compendium.a5e.a5e-culture-features.Item.jiq7m0pw91nuql0n"
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.ci0q3vjowjfrjf8n",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-culture-features.Item.jiq7m0pw91nuql0n",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
-					"total": 1
+					"total": 1,
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "ggq3ca64y6ccuoxy"

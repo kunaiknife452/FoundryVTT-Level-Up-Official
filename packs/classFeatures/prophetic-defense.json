@@ -48,7 +48,7 @@
 				}
 			}
 		},
-		"description": "<p>Beginning at 15th level, as a reaction when you are hit by an attack, you can spend 1 exertion to add your prophecy die to your Armor Class (including against the triggering attack) until the beginning of your next turn.</p>\n<p>Additionally, your prophecy die now starts as a d10.</p>",
+		"description": "<p>Beginning at 15th level, as a reaction when you are hit by an attack, you can spend 1 exertion to add your prophecy die to your Armor Class (including against the triggering attack) until the beginning of your next turn.</p><p>Additionally, your prophecy die now starts as a d10.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -67,15 +67,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

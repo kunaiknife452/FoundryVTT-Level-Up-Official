@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-2280ca8b-7fff-6e03-34ec-46d607b6001f\">At level 3 when you select this archetype, you gain proficiency with medium armor, shields, martial weapons, and battle books.</span></p>\n<p><span id=\"docs-internal-guid-6de14b6c-7fff-e162-d8a6-c32207f8e8fd\">You also gain proficiency with the Sanguine Knot combat tradition in addition to the others you know and select a Sanguine Knot maneuver of a level you can learn. It does not count against your maneuvers known.</span></p>",
+		"description": "<p></p><p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCarryTheDarkness",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>As your power stems from your inherent aberrancy and force of personality, you must choose Charisma as your spellcasting ability for this class. In addition, when you choose your @UUID[Compendium.a5e.a5e-class-features.Item.9m8p73ihwnicm2zi]{Pact Boon} at 3rd level, you can only choose from @UUID[Compendium.a5e.a5e-class-features.Item.6co2rqjh9npjg3eb]{Pact of the Blade} or @UUID[Compendium.a5e.a5e-class-features.Item.2dp9b4a11fuxjwbc]{Pact of the Tome}, with the following alterations:</p>\n<p><strong>Pact of the Blade.</strong> When you summon your pact weapon it is infused into one of your hands and cannot be disarmed or removed until you dismiss it.</p>\n<p><strong>Pact of the Tome.</strong> You do not have a physical Book of Shadows but otherwise gain the benefits of this pact boon.</p>",
+		"description": "<p>As your power stems from your inherent aberrancy and force of personality, you must choose Charisma as your spellcasting ability for this class. In addition, when you choose your @UUID[Compendium.a5e.a5e-class-features.Item.9m8p73ihwnicm2zi]{Pact Boon} at 3rd level, you can only choose from @UUID[Compendium.a5e.a5e-class-features.Item.6co2rqjh9npjg3eb]{Pact of the Blade} or @UUID[Compendium.a5e.a5e-class-features.Item.2dp9b4a11fuxjwbc]{Pact of the Tome}, with the following alterations:</p><p><strong>Pact of the Blade.</strong> When you summon your pact weapon it is infused into one of your hands and cannot be disarmed or removed until you dismiss it.</p><p><strong>Pact of the Tome.</strong> You do not have a physical Book of Shadows but otherwise gain the benefits of this pact boon.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg2",
@@ -39,24 +39,34 @@
 				"features": {
 					"total": 1,
 					"options": [
-						"Compendium.a5e.a5e-class-features.Item.7gbchsf6gtq6lwkh",
-						"Compendium.a5e.a5e-class-features.Item.zyxhbi4zhh8q42j2"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.7gbchsf6gtq6lwkh",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.zyxhbi4zhh8q42j2",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

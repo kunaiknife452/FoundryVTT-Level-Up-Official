@@ -39,7 +39,7 @@
 				"consumers": {}
 			}
 		},
-		"description": "<p dir=\"ltr\">At 1st level, your monotone speech and shrill wails can weaken the resolve of even the staunchest opponent. You gain a pool of Chant dice equal to your Intelligence modifier. These dice begin as d4s. These dice are expended when used and recharge at the end of a long rest.</p>\n<p dir=\"ltr\">When a creature you can see makes an initiative check, ability check, attack roll, or saving throw, you may use your reaction to expend one Chant die. This causes the creature to take a penalty to the check equal to one roll of the Chant die. To use this feature you must be within 60 feet of the target creature, you must be able to see it and it must be able to hear you, and you must not be surprised.</p>\n<p dir=\"ltr\">You may decide to use this feature after the d20 is rolled but before the Narrator announces the results of the check.</p>\n<p dir=\"ltr\">At 5th level your Chant die increases to d6, at 10th level it increases to d8, and at 15th level it increases to d10. You may combine your dirgesinger levels with bard or warlock levels when determining the die size of this feature.</p>",
+		"description": "<p dir=\"ltr\">At 1st level, your monotone speech and shrill wails can weaken the resolve of even the staunchest opponent. You gain a pool of Chant dice equal to your Intelligence modifier. These dice begin as d4s. These dice are expended when used and recharge at the end of a long rest.</p><p dir=\"ltr\">When a creature you can see makes an initiative check, ability check, attack roll, or saving throw, you may use your reaction to expend one Chant die. This causes the creature to take a penalty to the check equal to one roll of the Chant die. To use this feature you must be within 60 feet of the target creature, you must be able to see it and it must be able to hear you, and you must not be surprised.</p><p dir=\"ltr\">You may decide to use this feature after the d20 is rolled but before the Narrator announces the results of the check.</p><p dir=\"ltr\">At 5th level your Chant die increases to d6, at 10th level it increases to d8, and at 15th level it increases to d10. You may combine your dirgesinger levels with bard or warlock levels when determining the die size of this feature.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "motifClasses",
@@ -58,15 +58,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

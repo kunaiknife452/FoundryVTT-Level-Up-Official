@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p ><span class=\"fontstyle1\" style=\"box-sizing: border-box; user-select: text;\">When you fail a saving throw, you can spend 5 spell points to reroll it and take the second result.</span></p>",
+		"description": "<p>When you fail a saving throw, you can spend 5 spell points to reroll it and take the second result.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "15th level",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

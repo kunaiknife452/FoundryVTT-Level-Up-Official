@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p dir=\"ltr\">At 10th level, you have learned how to combine your magical gifts of nature, with your knowledge of undeath to strengthen your summoned friends.</p>\n<p dir=\"ltr\">Any plants or beasts you summon or awaken gain the undead creature type, while any undead you create or animate gain the plant creature type. These creatures gain a +2 bonus to their armour class and attack rolls.</p>",
+		"description": "<p dir=\"ltr\">At 10th level, you have learned how to combine your magical gifts of nature, with your knowledge of undeath to strengthen your summoned friends.</p><p dir=\"ltr\">Any plants or beasts you summon or awaken gain the undead creature type, while any undead you create or animate gain the plant creature type. These creatures gain a +2 bonus to their armour class and attack rolls.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "acesAdventuringGuideToNecromancy",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

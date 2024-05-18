@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span class=\"fontstyle3\" style=\"box-sizing: border-box; user-select: text; color: #191813; font-family: Signika, sans-serif; font-size: 14px;\">You can cast&nbsp;</span><span class=\"fontstyle1\" style=\"box-sizing: border-box; user-select: text; color: #191813; font-family: Signika, sans-serif; font-size: 14px;\">silent image&nbsp;</span><span class=\"fontstyle3\" style=\"box-sizing: border-box; user-select: text; color: #191813; font-family: Signika, sans-serif; font-size: 14px;\">without spending spell points or material components.</span></p>",
+		"description": "<p>You can cast&nbsp;silent image&nbsp;without spending spell points or material components.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

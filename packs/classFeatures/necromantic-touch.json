@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p dir=\"ltr\">At 2nd level, your intimate knowledge with necromancy has taught you many things that are normally forbidden.</p>\n<p dir=\"ltr\">Necromancy, Necrotic and Undead spells are treated as Wizard Spells for you.</p>\n<p dir=\"ltr\">You also learn the Chill Touch cantrip. This does not count against the number of cantrips known.</p>",
+		"description": "<p dir=\"ltr\">At 2nd level, your intimate knowledge with necromancy has taught you many things that are normally forbidden.</p><p dir=\"ltr\">Necromancy, Necrotic and Undead spells are treated as Wizard Spells for you.</p><p dir=\"ltr\">You also learn the Chill Touch cantrip. This does not count against the number of cantrips known.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "acesAdventuringGuideToNecromancy",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -65,7 +65,7 @@
 				]
 			}
 		},
-		"description": "<p>At 15th level when you smite a target or critically hit them with a weapon attack they must make a Wisdom saving throw against your spell save DC or be frightened until the end of their next turn. Whenever you reduce a creature to 0 hit points all hostile creatures within 30ft of the creature you felled must make a Wisdom saving throw or be frightened until the end of their next turn.</p>\n<p>In addition, when a creature within 5ft of you hits you with an attack you may use your reaction to attack them back, critically hitting on a 17-20 when you do so. You may do so a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.</p>",
+		"description": "<p>At 15th level when you smite a target or critically hit them with a weapon attack they must make a Wisdom saving throw against your spell save DC or be frightened until the end of their next turn. Whenever you reduce a creature to 0 hit points all hostile creatures within 30ft of the creature you felled must make a Wisdom saving throw or be frightened until the end of their next turn.</p><p>In addition, when a creature within 5ft of you hits you with an attack you may use your reaction to attack them back, critically hitting on a 17-20 when you do so. You may do so a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "heroesOldAndNew",
@@ -84,15 +84,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

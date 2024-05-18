@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have the following traits:</p>\n<p><strong>Swimmer. </strong>You have a swimming speed of 30 feet and you can hold your breath for up to 15 minutes at a time.</p>\n<p><strong>Deep Darkvision. </strong>You have darkvision to 60 feet. In addition, your eyes are perfectly adapted for spotting movement at depth, and the radius of your darkvision increases to 120 feet while underwater.</p>\n<p><strong>Hard to Hit. </strong>While you aren&rsquo;t wearing armor or your only armor is a shield, your AC is 12 + your Dexterity modifier.</p>",
+		"description": "<p>You have the following traits:</p><p><strong>Swimmer. </strong>You have a swimming speed of 30 feet and you can hold your breath for up to 15 minutes at a time.</p><p><strong>Deep Darkvision. </strong>You have darkvision to 60 feet. In addition, your eyes are perfectly adapted for spotting movement at depth, and the radius of your darkvision increases to 120 feet while underwater.</p><p><strong>Hard to Hit. </strong>While you aren&rsquo;t wearing armor or your only armor is a shield, your AC is 12 + your Dexterity modifier.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,25 +37,40 @@
 				"label": "Draconic Fins",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.1u46a72sa19ilkgs",
-						"Compendium.a5e.a5e-heritage-features.Item.l343nn8qxzon710l",
-						"Compendium.a5e.a5e-heritage-features.Item.bvrbfka9yecaayew"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.1u46a72sa19ilkgs",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.l343nn8qxzon710l",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.bvrbfka9yecaayew",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

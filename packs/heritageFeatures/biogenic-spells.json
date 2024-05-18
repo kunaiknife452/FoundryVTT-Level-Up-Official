@@ -138,7 +138,7 @@
 					"quantity": 1
 				},
 				"img": "icons/creatures/abilities/stinger-poison-green.webp",
-				"description": "<p dir=\"ltr\">You lash out with poisoned barbs which flood the target&rsquo;s body with toxins. Make a melee spell attack. On a hit, you deal 1d8 poison damage, and the target is poisoned until the start of your next turn.&nbsp;</p>\n<p dir=\"ltr\">This spell&rsquo;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+				"description": "<p dir=\"ltr\">You lash out with poisoned barbs which flood the target&rsquo;s body with toxins. Make a melee spell attack. On a hit, you deal 1d8 poison damage, and the target is poisoned until the start of your next turn.&nbsp;</p><p dir=\"ltr\">This spell&rsquo;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
 				"descriptionOutputs": [
 					"action"
 				]
@@ -163,15 +163,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

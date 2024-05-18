@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 17th level, when you drop to 0 hit points, you can roll your martial arts die. You regain that many hit points and lose that much exertion. Similarly, when your exertion pool reaches 0, you can roll your martial arts die. You regain that much exertion and lose that many hit points.</p>\n<p>Once you have regained hit points or exertion from this feature, you can&rsquo;t use this feature again until you finish a rest.</p>",
+		"description": "<p>At 17th level, when you drop to 0 hit points, you can roll your martial arts die. You regain that many hit points and lose that much exertion. Similarly, when your exertion pool reaches 0, you can roll your martial arts die. You regain that much exertion and lose that many hit points.</p><p>Once you have regained hit points or exertion from this feature, you can&rsquo;t use this feature again until you finish a rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,15 +35,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "ojfdp0drxxgo99io"

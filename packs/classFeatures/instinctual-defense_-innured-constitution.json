@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your training hunting down dangerous and unique quarry has caused you to develop targeted defenses against their abilities.</p>\n<p>You are immune to <em>poison</em> damage and the <em>poisoned</em> condition. &nbsp;This has also bolstered your general constitution, granting an expertise die on all saving throws against disease.</p>",
+		"description": "<p>Your training hunting down dangerous and unique quarry has caused you to develop targeted defenses against their abilities.</p><p>You are immune to <em>poison</em> damage and the <em>poisoned</em> condition. &nbsp;This has also bolstered your general constitution, granting an expertise die on all saving throws against disease.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "heroesOldAndNew",
@@ -33,15 +33,16 @@
 		"prerequisite": "Level 11 Hunter Ranger archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

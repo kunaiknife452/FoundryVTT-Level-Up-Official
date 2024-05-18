@@ -1,7 +1,7 @@
 {
 	"name": "Defense: Juggernaut",
 	"type": "feature",
-	"img": "icons/svg/item-bag.svg",
+	"img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
 	"effects": [],
 	"flags": {},
 	"system": {
@@ -31,19 +31,33 @@
 		},
 		"concentration": false,
 		"featureType": "class",
-		"grants": {},
+		"grants": {
+			"b9hxeuUtcSEGQER8": {
+				"grantType": "proficiency",
+				"level": 1,
+				"levelType": "character",
+				"optional": false,
+				"label": "Battle Defense",
+				"keys": {
+					"base": [
+						"heavy"
+					]
+				}
+			}
+		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": "berserker"
 	},
 	"folder": null,
 	"_id": "d1fxv8660imuyf1l"

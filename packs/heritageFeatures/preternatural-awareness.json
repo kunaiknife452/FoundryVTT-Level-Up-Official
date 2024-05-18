@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Elves with the gift of Preternatural Awareness have the following traits:</p>\n<p><strong>Keen Senses.</strong> You gain proficiency in Perception.</p>\n<p><strong>Prophetic Instincts. </strong>Your ability to&nbsp;detect danger is nearly supernatural. You&nbsp;gain a bonus to initiative rolls equal to&nbsp;your Wisdom modifier (minumum 1), and&nbsp;you can&rsquo;t be surprised while conscious&nbsp;(including during your Trance).</p>",
+		"description": "<p>Elves with the gift of Preternatural Awareness have the following traits:</p><p><strong>Keen Senses.</strong> You gain proficiency in Perception.</p><p><strong>Prophetic Instincts. </strong>Your ability to&nbsp;detect danger is nearly supernatural. You&nbsp;gain a bonus to initiative rolls equal to&nbsp;your Wisdom modifier (minumum 1), and&nbsp;you can&rsquo;t be surprised while conscious&nbsp;(including during your Trance).</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,24 +37,35 @@
 				"label": "Preternatural Awareness",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.n7drwrlv7idh1cvi",
-						"Compendium.a5e.a5e-heritage-features.Item.thgmsuwzkn7d9iko"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.n7drwrlv7idh1cvi",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.thgmsuwzkn7d9iko",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

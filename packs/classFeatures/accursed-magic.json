@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p id=\"docs-internal-guid-19e9565f-7fff-7d0a-3b2b-54f63902ccae\" dir=\"ltr\">Add the affliction school to the wielder spell list for you, and you learn two affliction cantrips of your choice.</p>\n<p dir=\"ltr\">You also have advantage on saves against spells of the Affliction school or any feature or effect with &ldquo;curse&rdquo; in its name.</p>",
+		"description": "<p id=\"docs-internal-guid-19e9565f-7fff-7d0a-3b2b-54f63902ccae\" dir=\"ltr\">Add the affliction school to the wielder spell list for you, and you learn two affliction cantrips of your choice.</p><p dir=\"ltr\">You also have advantage on saves against spells of the Affliction school or any feature or effect with &ldquo;curse&rdquo; in its name.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCarryTheDarkness",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

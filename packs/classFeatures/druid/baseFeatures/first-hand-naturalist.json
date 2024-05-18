@@ -14,10 +14,10 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You&rsquo;ve learned the intricacies of nature through firsthand experience rather than academic study.&nbsp;</p>\n<p>You gain an expertise die on Nature checks. In addition, you may always choose to use Wisdom when making Nature checks.&nbsp;</p>",
+		"description": "<p>You&rsquo;ve learned the intricacies of nature through firsthand experience rather than academic study.&nbsp;</p><p>You gain an expertise die on Nature checks. In addition, you may always choose to use Wisdom when making Nature checks.&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "",
+    "source": "adventurersGuide",
 		"uses": {
 			"value": 0,
 			"max": "",
@@ -49,8 +49,14 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
-			"lastMigration": null
+			"version": 0.019,
+			"lastMigration": {
+				"version": {
+					"schema": 0.018,
+					"foundry": "11.315",
+					"system": "0.18.11"
+				}
+			}
 		},
 		"classes": "druid"
 	},

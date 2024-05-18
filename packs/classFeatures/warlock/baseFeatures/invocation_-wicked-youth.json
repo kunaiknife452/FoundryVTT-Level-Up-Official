@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p ><span class=\"fontstyle1\" style=\"box-sizing: border-box; user-select: text;\"><span class=\"fontstyle2\" style=\"box-sizing: border-box; user-select: text;\"><span class=\"fontstyle2\" style=\"box-sizing: border-box; user-select: text;\"><span class=\"fontstyle2\" style=\"box-sizing: border-box; user-select: text;\">You are immune to necrotic damage, you are immune to disease, and you cannot be magically aged. When you kill a creature, you can either reduce your apparent age or extend your life span by a number of years equal to the creature&rsquo;s CR.</span>&nbsp;<span class=\"fontstyle0\" style=\"box-sizing: border-box; user-select: text;\">When you would die of old age, you instead become undead, gaining the skeleton or zombie template&nbsp;</span><span class=\"fontstyle0\" style=\"box-sizing: border-box; user-select: text;\">with no changes to your ability scores.</span></span></span></span></p>",
+		"description": "<p>You are immune to necrotic damage, you are immune to disease, and you cannot be magically aged. When you kill a creature, you can either reduce your apparent age or extend your life span by a number of years equal to the creature&rsquo;s CR.&nbsp;When you would die of old age, you instead become undead, gaining the skeleton or zombie template&nbsp;with no changes to your ability scores.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "15th level, Diabolist archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

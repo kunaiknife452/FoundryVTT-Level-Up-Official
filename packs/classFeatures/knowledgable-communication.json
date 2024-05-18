@@ -49,7 +49,7 @@
 				"description": "<p>In addition, once per long rest you may expend a hit die to send your thoughts great distances, conveying a brief message of no more than 5 words to another in their dreams, though doing so is mentally taxing and you must make a DC 20 Intelligence saving throw afterwords or gain a level of strife.</p>"
 			}
 		},
-		"description": "<p>At 17th level so deep is your knowledge and so great your skill at explaining it that you can do so without the need for words. If another creature is proficient in the same skill as you, you may carry on a conversation with them on a subject related to that skill without needing to speak aloud, speaking directly mind to mind or through significant looks and glances and subtle gestures.</p>\n<p>In addition, once per long rest you may expend a hit die to send your thoughts great distances, conveying a brief message of no more than 5 words to another in their dreams, though doing so is mentally taxing and you must make a DC 20 Intelligence saving throw afterwords or gain a level of strife.</p>",
+		"description": "<p>At 17th level so deep is your knowledge and so great your skill at explaining it that you can do so without the need for words. If another creature is proficient in the same skill as you, you may carry on a conversation with them on a subject related to that skill without needing to speak aloud, speaking directly mind to mind or through significant looks and glances and subtle gestures.</p><p>In addition, once per long rest you may expend a hit die to send your thoughts great distances, conveying a brief message of no more than 5 words to another in their dreams, though doing so is mentally taxing and you must make a DC 20 Intelligence saving throw afterwords or gain a level of strife.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -68,15 +68,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

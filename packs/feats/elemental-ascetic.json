@@ -44,7 +44,7 @@
 				]
 			}
 		},
-		"description": "<p>Your self-mastery and elemental mastery are now one and the same. You channel your element with the ease and frequency of breathing. You gain the following benefits:</p>\n<ul>\n<li>Your Dexterity, Intelligence, Wisdom, or Charisma score increases by 1, to a maximum of 20.</li>\n<li>Your elementalist levels count as adept levels for the purpose of determining what Focus Feature options you can select. You must have the Extra Attack feature to select Additional Attack, however.</li>\n<li>You can use exertion points interchangeably with spell points when casting elementalist spells. You cannot use spell points as a substitute for exertion, however.</li>\n<li>Your attacks with unarmed strikes and adept weapons deal an additional d4 damage of a type your Elemental Blast can deal. If you can deal multiple types of damage with Elemental Blast, you can choose the type of damage each attack deals when it hits.</li>\n</ul>",
+		"description": "<p>Your self-mastery and elemental mastery are now one and the same. You channel your element with the ease and frequency of breathing. You gain the following benefits:</p><ul><li>Your Dexterity, Intelligence, Wisdom, or Charisma score increases by 1, to a maximum of 20.</li><li>Your elementalist levels count as adept levels for the purpose of determining what Focus Feature options you can select. You must have the Extra Attack feature to select Additional Attack, however.</li><li>You can use exertion points interchangeably with spell points when casting elementalist spells. You cannot use spell points as a substitute for exertion, however.</li><li>Your attacks with unarmed strikes and adept weapons deal an additional d4 damage of a type your Elemental Blast can deal. If you can deal multiple types of damage with Elemental Blast, you can choose the type of damage each attack deals when it hits.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitBurningGloom",
@@ -84,15 +84,16 @@
 		"prerequisite": "Elemental Aspirant feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

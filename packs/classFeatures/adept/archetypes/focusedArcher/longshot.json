@@ -44,7 +44,7 @@
 				}
 			}
 		},
-		"description": "<p class=\"a-b-r-La\">At 6th level you can spend an exertion point to ignore long range penalties with your ranged weapon attacks.</p>",
+		"description": "<p>At 6th level you can spend an exertion point to ignore long range penalties with your ranged weapon attacks.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "mysteriousAndMarvelousMiscellanea",
@@ -63,15 +63,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Starting at 6th level, while making an attack with a whip, flail, or scythe, you can use your Wisdom modifier for attack and damage rolls in place of the usual Strength or Dexterity.</p>\n<p>When you hit with one of these attacks, your spells and attacks against the target ignore resistance to necrotic damage for 1 minute.</p>",
+		"description": "<p>Starting at 6th level, while making an attack with a whip, flail, or scythe, you can use your Wisdom modifier for attack and damage rolls in place of the usual Strength or Dexterity.</p><p>When you hit with one of these attacks, your spells and attacks against the target ignore resistance to necrotic damage for 1 minute.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "acesAdventuringGuideToNecromancy",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

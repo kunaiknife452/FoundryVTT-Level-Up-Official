@@ -89,7 +89,7 @@
 				"descriptionOutputs": [
 					"action"
 				],
-				"description": "<p>You create a wave of thunderous force, damaging creatures and pushing them back. Creatures in the area take 2d8 thunder damage and are pushed 10 feet away from you.</p>\n<p>Unsecured objects completely within the area are also pushed 10 feet away from you. The thunderous boom of the spell is audible out to 300 feet.</p>"
+				"description": "<p>You create a wave of thunderous force, damaging creatures and pushing them back. Creatures in the area take 2d8 thunder damage and are pushed 10 feet away from you.</p><p>Unsecured objects completely within the area are also pushed 10 feet away from you. The thunderous boom of the spell is audible out to 300 feet.</p>"
 			}
 		},
 		"description": "<p>Herbivorous titans like diplodocus and brontosaurus. You can use this trait to cast thunderwave once between long rests. Your spellcasting ability for this spell is your choice of Intelligence, Wisdom, or Charisma.</p>",
@@ -111,15 +111,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"_id": "xci06r00dxdb0qxw"
 }

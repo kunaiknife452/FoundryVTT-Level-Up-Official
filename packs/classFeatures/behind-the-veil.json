@@ -40,7 +40,7 @@
 				}
 			}
 		},
-		"description": "<p>At 3rd level, you gain proficiency in one of the&nbsp;following skill: Arcana, Nature or Religion. If you are&nbsp;already proficient in the chosen skill, you instead&nbsp;gain an expertise die.</p>\n<p>In addition, your affinity with divination and having been exposed to the truths of the universe allows you to ignore the first time you would gain a level of <em>strife</em>. Once you have used this feature, you can&rsquo;t use it again until you finish a long rest.</p>",
+		"description": "<p>At 3rd level, you gain proficiency in one of the&nbsp;following skill: Arcana, Nature or Religion. If you are&nbsp;already proficient in the chosen skill, you instead&nbsp;gain an expertise die.</p><p>In addition, your affinity with divination and having been exposed to the truths of the universe allows you to ignore the first time you would gain a level of <em>strife</em>. Once you have used this feature, you can&rsquo;t use it again until you finish a long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "theErrantSeer",
@@ -76,15 +76,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

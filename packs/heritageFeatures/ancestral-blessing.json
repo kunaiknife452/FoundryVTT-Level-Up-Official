@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have the following traits:</p>\n<p><strong>Divine Protection. </strong>You have resistance to radiant damage.</p>\n<p><strong>Touch of Divinity. </strong>You know the resistance cantrip. In addition, you can cast the shield spell once per long rest</p>",
+		"description": "<p>You have the following traits:</p><p><strong>Divine Protection. </strong>You have resistance to radiant damage.</p><p><strong>Touch of Divinity. </strong>You know the resistance cantrip. In addition, you can cast the shield spell once per long rest</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,24 +37,35 @@
 				"label": "Ancestral Blessing",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.bkuvinea5zrlgsk2",
-						"Compendium.a5e.a5e-heritage-features.Item.lq7hbcnr53clvm48"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.bkuvinea5zrlgsk2",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.lq7hbcnr53clvm48",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

@@ -20,7 +20,7 @@
 		"description": "<p>Whether backed into a corner or toying with a wounded foe, never forget that cats aren&rsquo;t truly tame. You gain the following benefits:</p>\n<p><strong>Feline Fury.</strong> When you or your intended target are bloodied, your melee weapon attacks deal bonus damage equal to your proficiency bonus. However, the sting of your fury lessens after the first blow, so after you deal this extra damage to a creature, this trait cannot deal extra damage to it during the same combat.</p>\n<p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
-		"source": "moarComplete",
+		"source": "",
 		"uses": {
 			"value": 0,
 			"max": "",
@@ -41,10 +41,11 @@
 				"version": {
 					"schema": 0.016,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.0"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"_id": "qjlj7kbyvwswq242"
 }

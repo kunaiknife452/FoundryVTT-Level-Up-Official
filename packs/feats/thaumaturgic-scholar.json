@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your mind is a towering citadel of scholarship and knowledge.&nbsp;You gain the following benefits:</p>\n<ul>\n<li>Your Intelligence increases by +1, to a maximum of 20. If it is already 20, you may increase your Wisdom or Charisma by +1 instead, also to a maximum of 20.</li>\n<li>You gain proficiency with your choice of <em>Alchemist&rsquo;s Supplies</em> or the <em>Herbalist&rsquo;s Kit</em>.</li>\n<li>Your Savant levels count as Wizard levels for the purpose of determining the spell slots you can get back with Arcane Recovery.</li>\n</ul>",
+		"description": "<p>Your mind is a towering citadel of scholarship and knowledge.&nbsp;You gain the following benefits:</p><ul><li>Your Intelligence increases by +1, to a maximum of 20. If it is already 20, you may increase your Wisdom or Charisma by +1 instead, also to a maximum of 20.</li><li>You gain proficiency with your choice of <em>Alchemist&rsquo;s Supplies</em> or the <em>Herbalist&rsquo;s Kit</em>.</li><li>Your Savant levels count as Wizard levels for the purpose of determining the spell slots you can get back with Arcane Recovery.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitHazardousKnowledge",
@@ -34,15 +34,16 @@
 		"prerequisite": "Thaumaturgic Student feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

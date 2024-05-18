@@ -66,7 +66,7 @@
 				}
 			}
 		},
-		"description": "<p>Starting at 10th level, when you take damage, you&nbsp;can use your reaction to exploit chaos to protect&nbsp;yourself.</p>\n<p>Roll 3d6 and check the individual values of the dice on the following table:</p>\n<table style=\"width: 100%; height: 100.781px;\" border=\"1\"><colgroup><col style=\"width: 22.8083%;\"><col style=\"width: 77.1917%;\"></colgroup>\n<tbody>\n<tr style=\"height: 16.7969px;\">\n<td style=\"height: 16.7969px;\"><strong>Result</strong></td>\n<td style=\"height: 16.7969px;\"><strong>Effect</strong></td>\n</tr>\n<tr style=\"height: 33.5938px;\">\n<td style=\"height: 33.5938px;\">distinct values</td>\n<td style=\"height: 33.5938px;\">You reduce the amount of damage by the&nbsp;result of the highest dice, plus your&nbsp;spellcasting modifier (minimum 1).</td>\n</tr>\n<tr style=\"height: 33.5938px;\">\n<td style=\"height: 33.5938px;\">2 of a kind</td>\n<td style=\"height: 33.5938px;\">You take half damage, and your assailant&nbsp;takes the other half of the damage.</td>\n</tr>\n<tr style=\"height: 16.7969px;\">\n<td style=\"height: 16.7969px;\">3 of a kind</td>\n<td style=\"height: 16.7969px;\">Your assailant takes that damage instead,&nbsp;and you take no damage.</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<p>Additionally, you gain temporary hit points equals to the highest die. Those temporary hit points last for 1 minute.</p>\n<p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>",
+		"description": "<p>Starting at 10th level, when you take damage, you&nbsp;can use your reaction to exploit chaos to protect&nbsp;yourself.</p><p>Roll 3d6 and check the individual values of the dice on the following table:</p><table style=\"width: 100%; height: 100.781px;\" border=\"1\"><colgroup><col style=\"width: 22.8083%;\"><col style=\"width: 77.1917%;\"></colgroup><tbody><tr style=\"height: 16.7969px;\"><td style=\"height: 16.7969px;\"><strong>Result</strong></td><td style=\"height: 16.7969px;\"><strong>Effect</strong></td></tr><tr style=\"height: 33.5938px;\"><td style=\"height: 33.5938px;\">distinct values</td><td style=\"height: 33.5938px;\">You reduce the amount of damage by the&nbsp;result of the highest dice, plus your&nbsp;spellcasting modifier (minimum 1).</td></tr><tr style=\"height: 33.5938px;\"><td style=\"height: 33.5938px;\">2 of a kind</td><td style=\"height: 33.5938px;\">You take half damage, and your assailant&nbsp;takes the other half of the damage.</td></tr><tr style=\"height: 16.7969px;\"><td style=\"height: 16.7969px;\">3 of a kind</td><td style=\"height: 16.7969px;\">Your assailant takes that damage instead,&nbsp;and you take no damage.</td></tr></tbody></table><p>&nbsp;</p><p>Additionally, you gain temporary hit points equals to the highest die. Those temporary hit points last for 1 minute.</p><p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "agentOfTheMagus",
@@ -85,15 +85,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

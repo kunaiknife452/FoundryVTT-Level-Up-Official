@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 1st level you know 3 cantrips of your choice from the Sorcerer spell list.</p>\n<p>Your spellcasting ability modifier for these cantrips and all Spellslinger spells is Charisma.</p>\n<p>The saving throw DC of your spells is 10 +[Proficiency Bonus] +[Charisma modifier]. However when used as a ranged weapon attack, or as part of a combat maneuver, you may use strength or dexterity as normal.</p>",
+		"description": "<p>At 1st level you know 3 cantrips of your choice from the Sorcerer spell list.</p><p>Your spellcasting ability modifier for these cantrips and all Spellslinger spells is Charisma.</p><p>The saving throw DC of your spells is 10 +[Proficiency Bonus] +[Charisma modifier]. However when used as a ranged weapon attack, or as part of a combat maneuver, you may use strength or dexterity as normal.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "motifClasses",
@@ -33,15 +33,16 @@
 		"prerequisite": "Spellslinger Level 1",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

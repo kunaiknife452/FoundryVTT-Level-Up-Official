@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span id=\"docs-internal-guid-d95c3e4b-7fff-339c-7706-85675db69e5c\">The armor now includes a helmet with a protective breathing mask. You have advantage on saves against inhaled poisons and toxins and may hold your breath for an additional minute before you begin suffocating.</span></p>",
+		"description": "<p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "Upgraded Armor",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 3rd level when you choose this archetype, you gain the following two Channel Divinity options.</p>\n<p><strong>Second Chance.</strong> When a friendly creature (including yourself) is suffering effects as result of a failed saving throw, you can spend your reaction to allow it to attempt that saving throw again.</p>\n<p><strong>Choose to Succeed.</strong> When a friendly creature (including yourself) fails an ability check, you can spend your reaction to allow it to roll the check again with an expertise die.</p>",
+		"description": "<p>At 3rd level when you choose this archetype, you gain the following two Channel Divinity options.</p><p><strong>Second Chance.</strong> When a friendly creature (including yourself) is suffering effects as result of a failed saving throw, you can spend your reaction to allow it to attempt that saving throw again.</p><p><strong>Choose to Succeed.</strong> When a friendly creature (including yourself) fails an ability check, you can spend your reaction to allow it to roll the check again with an expertise die.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -38,24 +38,35 @@
 				"label": "Channel Divinity",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.24ug4h1p7cfhunpk",
-						"Compendium.a5e.a5e-class-features.Item.5hr6rv9v28lg4489"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.24ug4h1p7cfhunpk",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.5hr6rv9v28lg4489",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

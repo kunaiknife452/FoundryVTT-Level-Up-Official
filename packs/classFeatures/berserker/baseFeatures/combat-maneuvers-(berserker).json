@@ -31,19 +31,52 @@
 		},
 		"concentration": false,
 		"featureType": "class",
-		"grants": {},
+		"grants": {
+			"3avlJ3wb6AUwi3hb": {
+				"grantType": "proficiency",
+				"level": 1,
+				"levelType": "character",
+				"optional": false,
+				"label": "Combat Traditions",
+				"keys": {
+					"base": [],
+					"options": [
+						"adamantMountain",
+						"mirrorsGlint",
+						"rapidCurrent",
+						"temperedIron",
+						"toothAndClaw"
+					],
+					"total": 2
+				},
+				"proficiencyType": "tradition",
+				"_id": "3avlJ3wb6AUwi3hb",
+				"img": "",
+				"isExpertise": false
+			},
+			"1ANpA23UX9UgP3ws": {
+				"grantType": "exertion",
+				"level": 1,
+				"levelType": "character",
+				"optional": false,
+				"label": "Exertion Pool",
+				"exertionType": "pool",
+				"poolType": "doubleProf"
+			}
+		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": "berserker"
 	},
 	"folder": null,
 	"_id": "zrs8vkf574mvulkg"

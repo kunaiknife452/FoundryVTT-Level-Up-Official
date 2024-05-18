@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<ul>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Fire Priest. Immunity to fire damage and effects.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Ice Priest. Immunity to cold damage and effects.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Plant Priest. Immune to poison damage, the poisoned condition, as well as spells and effects from the plant school.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Stone Priest. Immune to force damage and effects.&nbsp;</p>\n</li>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Storm Priest. Immune to lightning and thunder damage, and storm effects.&nbsp;</p>\n</li>\n<li dir=\"ltr\" aria-level=\"2\">\n<p dir=\"ltr\" role=\"presentation\">Water Priest. Immune to acid damage and water effects. You also can also breathe underwater, and you gain a swim speed equal to your base walking speed. If you already have a swim speed, it instead increases by 30 feet.</p>\n</li>\n</ul>",
+		"description": "<ul><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Fire Priest. Immunity to fire damage and effects.</p></li><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Ice Priest. Immunity to cold damage and effects.</p></li><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Plant Priest. Immune to poison damage, the poisoned condition, as well as spells and effects from the plant school.</p></li><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Stone Priest. Immune to force damage and effects.&nbsp;</p></li><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Storm Priest. Immune to lightning and thunder damage, and storm effects.&nbsp;</p></li><li dir=\"ltr\" aria-level=\"2\"><p dir=\"ltr\" role=\"presentation\">Water Priest. Immune to acid damage and water effects. You also can also breathe underwater, and you gain a swim speed equal to your base walking speed. If you already have a swim speed, it instead increases by 30 feet.</p></li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,8 +34,14 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
-			"lastMigration": null
+			"version": 0.019,
+			"lastMigration": {
+				"version": {
+					"schema": 0.018,
+					"foundry": "11.315",
+					"system": "0.18.11"
+				}
+			}
 		},
 		"classes": "cleric"
 	},

@@ -5,7 +5,7 @@
 	"effects": [
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -42,7 +42,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -79,7 +79,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -116,7 +116,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -153,7 +153,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -190,7 +190,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -227,7 +227,7 @@
 		},
 		{
 			"icon": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-			"origin": "Item.uRVQGkLnSGprwgvl",
+			"origin": "Item.cmpu5ulgmrnpa0wx",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -366,7 +366,7 @@
 				}
 			}
 		},
-		"description": "<p>At 20th level, your secret inner divinity is finally revealed. You can use your @UUID[Compendium.a5e.a5e-class-features.s4iiatrup3e3virw]{Channel Divinity} to become a conduit of the divine, flooding the world around you with the unfettered power of the Moral Planes. Once you have used either of these options, you cannot use that option again until you finish a long rest.</p>\n<h2>Channel Negative Energy</h2>\n<p>You can use an action to evoke baleful energy from the Lower Planes to harm creatures you are able to see. You choose the creatures. Each creature makes a Charisma saving throw or takes 5d10 damage force damage and 5d10 necrotic damage, or half damage on a success.</p>\n<p>When you use this feature, you also choose one of the following conditions: blinded, confused, deafened, frightened, poisoned, rattled, or slowed. A creature that failed its saving throw also gains the chosen condition. At the end of each of its turns, a creature can repeat the saving throw to end the effect on itself.</p>\n<p>In addition, you can choose any number of creatures you can see that have the Evil alignment trait. Each regains 5d10 hit points.</p>\n<h2>Channel Positive Energy</h2>\n<p>You can use an action to evoke energy from the Upper Planes to heal creatures you are able to see. You choose the creatures and divide 200 hit points of healing among them.</p>\n<p>A creature that regains hit points from this feature is also healed of one level of fatigue and one level of strife, and if it is blinded, charmed, confused, deafened, doomed, frightened, paralyzed, petrified, poisoned, rattled, slowed, or stunned those conditions end for it. This feature cannot be used on undead or constructs.</p>",
+		"description": "<p>At 20th level, your secret inner divinity is finally revealed. You can use your @UUID[Compendium.a5e.a5e-class-features.s4iiatrup3e3virw]{Channel Divinity} to become a conduit of the divine, flooding the world around you with the unfettered power of the Moral Planes. Once you have used either of these options, you cannot use that option again until you finish a long rest.</p><h2>Channel Negative Energy</h2><p>You can use an action to evoke baleful energy from the Lower Planes to harm creatures you are able to see. You choose the creatures. Each creature makes a Charisma saving throw or takes 5d10 damage force damage and 5d10 necrotic damage, or half damage on a success.</p><p>When you use this feature, you also choose one of the following conditions: blinded, confused, deafened, frightened, poisoned, rattled, or slowed. A creature that failed its saving throw also gains the chosen condition. At the end of each of its turns, a creature can repeat the saving throw to end the effect on itself.</p><p>In addition, you can choose any number of creatures you can see that have the Evil alignment trait. Each regains 5d10 hit points.</p><h2>Channel Positive Energy</h2><p>You can use an action to evoke energy from the Upper Planes to heal creatures you are able to see. You choose the creatures and divide 200 hit points of healing among them.</p><p>A creature that regains hit points from this feature is also healed of one level of fatigue and one level of strife, and if it is blinded, charmed, confused, deafened, doomed, frightened, paralyzed, petrified, poisoned, rattled, slowed, or stunned those conditions end for it. This feature cannot be used on undead or constructs.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -385,12 +385,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

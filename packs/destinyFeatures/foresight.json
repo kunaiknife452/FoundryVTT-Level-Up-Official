@@ -42,7 +42,7 @@
 				}
 			}
 		},
-		"description": "<p>You know in your very being that all things follow naturally from one another in a deterministic pattern, and that by planning in the present you secure the future.</p>\n<p><em>Make a plan that snatches victory from the jaws of defeat, make a fool of a foe by remaining one step ahead of them, supply your allies with vital information, sow false or deceptive information among your foes, lay the groundwork for something that won&rsquo;t pay off until potentially well after the end of your life.</em></p>",
+		"description": "<p>You know in your very being that all things follow naturally from one another in a deterministic pattern, and that by planning in the present you secure the future.</p><p><em>Make a plan that snatches victory from the jaws of defeat, make a fool of a foe by remaining one step ahead of them, supply your allies with vital information, sow false or deceptive information among your foes, lay the groundwork for something that won&rsquo;t pay off until potentially well after the end of your life.</em></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -61,15 +61,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>This heritage of planetouched is created through some sort of divine intervention.&nbsp;You have the following traits:</p>\n<p><strong>Celestial Legacy.</strong> You know the&nbsp;guidance cantrip. In addition, once&nbsp;between long rests you can use an action&nbsp;to touch a willing creature and restore a&nbsp;number of hit points equal to your level.&nbsp;</p>\n<p><strong>Divine Protection. </strong>You have resistance to radiant damage.</p>\n<p><strong>Language.</strong> You have an innate ability to&nbsp;recognize Celestial, and are able to&nbsp;speak, read, write, and sign it.</p>",
+		"description": "<p>This heritage of planetouched is created through some sort of divine intervention.&nbsp;You have the following traits:</p><p><strong>Celestial Legacy.</strong> You know the&nbsp;guidance cantrip. In addition, once&nbsp;between long rests you can use an action&nbsp;to touch a willing creature and restore a&nbsp;number of hit points equal to your level.&nbsp;</p><p><strong>Divine Protection. </strong>You have resistance to radiant damage.</p><p><strong>Language.</strong> You have an innate ability to&nbsp;recognize Celestial, and are able to&nbsp;speak, read, write, and sign it.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,8 +37,16 @@
 				"label": "Aasimar",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.d19n2n37zicsatgc",
-						"Compendium.a5e.a5e-heritage-features.Item.bkuvinea5zrlgsk2"
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.d19n2n37zicsatgc",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.bkuvinea5zrlgsk2",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -65,15 +73,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

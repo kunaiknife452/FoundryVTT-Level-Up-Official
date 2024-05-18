@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 15th level the thrill of danger drives you to new heights. While bloodied can grant yourself advantage on weapon attack rolls until the start of your next turn. If you do so, all attack rolls against you have advantage for the same duration. Also while bloodied your chance to critically hit with weapon attacks is 19-20. If you already critically hit on better than a natural 20 you instead increase your critical hit range by 1 to a maximum of 17-20.</p>\n<p>In addition, if you die all allies within 60 feet that see you fall gain inspiration.</p>",
+		"description": "<p>At 15th level the thrill of danger drives you to new heights. While bloodied can grant yourself advantage on weapon attack rolls until the start of your next turn. If you do so, all attack rolls against you have advantage for the same duration. Also while bloodied your chance to critically hit with weapon attacks is 19-20. If you already critically hit on better than a natural 20 you instead increase your critical hit range by 1 to a maximum of 17-20.</p><p>In addition, if you die all allies within 60 feet that see you fall gain inspiration.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "heroesOldAndNew",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

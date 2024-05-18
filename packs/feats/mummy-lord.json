@@ -99,7 +99,7 @@
 				}
 			}
 		},
-		"description": "<p>You have tapped into the full potential of your new undead form, and you are powerful indeed.&nbsp;You gain the following benefits:</p>\n<ul>\n<li>You can extinguish ongoing fire damage on yourself or a creature within 5 feet of you as a reaction.</li>\n<li>You are immune to necrotic damage.</li>\n<li>You are immune to the charmed and frightened conditions</li>\n<li>When you hit with a melee attack, you may spend a point of exertion to deal an additional 1d6 points of necrotic damage to the target. If you do, the target must make a constitution saving throw with a DC of 8 + your Constitution or Wisdom modifier (choose when you take this feat) + your proficiency bonus.&nbsp;If it fails, it cannot regain hit points for an hour or until @UUID[Compendium.a5e.a5e-spells.Item.l16wg9h1z9s16exb]{Remove Curse} is cast on it.&nbsp;You may combine this with the similar benefit from Embalmed to spend 2 points of exertion and deal 2d6 points of damage in total.</li>\n</ul>",
+		"description": "<p>You have tapped into the full potential of your new undead form, and you are powerful indeed.&nbsp;You gain the following benefits:</p><ul><li>You can extinguish ongoing fire damage on yourself or a creature within 5 feet of you as a reaction.</li><li>You are immune to necrotic damage.</li><li>You are immune to the charmed and frightened conditions</li><li>When you hit with a melee attack, you may spend a point of exertion to deal an additional 1d6 points of necrotic damage to the target. If you do, the target must make a constitution saving throw with a DC of 8 + your Constitution or Wisdom modifier (choose when you take this feat) + your proficiency bonus.&nbsp;If it fails, it cannot regain hit points for an hour or until @UUID[Compendium.a5e.a5e-spells.Item.l16wg9h1z9s16exb]{Remove Curse} is cast on it.&nbsp;You may combine this with the similar benefit from Embalmed to spend 2 points of exertion and deal 2d6 points of damage in total.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -152,12 +152,12 @@
 		"prerequisite": "Mummified feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.017,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},
@@ -166,7 +166,7 @@
 	"effects": [
 		{
 			"icon": "icons/commodities/cloth/ribbon-worn-yellow.webp",
-			"origin": "Item.a5TSe1CaDUDj7eqd",
+			"origin": "Item.syhsytt9kgrzp3bl",
 			"flags": {
 				"a5e": {
 					"sort": 0,

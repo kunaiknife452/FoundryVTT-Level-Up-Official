@@ -45,7 +45,7 @@
 				}
 			}
 		},
-		"description": "<p>You gain a third aura that is active alongside your <em>Sacred Aura</em> and has the same range.</p>\n<h3>Aura of Necrosis</h3>\n<p>Any time a creature within your aura takes <em>necrotic</em> damage, you may choose to increase the <em>necrotic</em> damage dealt by an amount equal to your Charisma modifier.</p>\n<p>&nbsp;</p>",
+		"description": "<p>You gain a third aura that is active alongside your <em>Sacred Aura</em> and has the same range.</p><h3>Aura of Necrosis</h3><p>Any time a creature within your aura takes <em>necrotic</em> damage, you may choose to increase the <em>necrotic</em> damage dealt by an amount equal to your Charisma modifier.</p><p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "acesAdventuringGuideToNecromancy",
@@ -64,15 +64,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

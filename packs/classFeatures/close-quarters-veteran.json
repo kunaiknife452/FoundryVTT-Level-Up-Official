@@ -39,7 +39,7 @@
 				"img": "icons/magic/earth/barrier-stone-explosion-spiked.webp"
 			}
 		},
-		"description": "<p>Starting at 15th level, you have mastered the art of fighting in cramped environments both offensively and defensively.</p>\n<ul>\n<li>If you selected Back to the Wall as your Close-Quarters Fighting feature, your damage bonus increases to 2 + your proficiency bonus.</li>\n<li>If you selected Tunnel Guardian as your Close-Quarters Fighting feature, your bonus to AC increases to +3.</li>\n<li>You gain the Close-Quarters Fighting feature you did not select at level 3.</li>\n</ul>",
+		"description": "<p>Starting at 15th level, you have mastered the art of fighting in cramped environments both offensively and defensively.</p><ul><li>If you selected Back to the Wall as your Close-Quarters Fighting feature, your damage bonus increases to 2 + your proficiency bonus.</li><li>If you selected Tunnel Guardian as your Close-Quarters Fighting feature, your bonus to AC increases to +3.</li><li>You gain the Close-Quarters Fighting feature you did not select at level 3.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "dungeonDelversGuide",
@@ -58,15 +58,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

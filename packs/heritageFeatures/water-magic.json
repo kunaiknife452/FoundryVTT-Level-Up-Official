@@ -78,7 +78,7 @@
 					"type": "creature"
 				},
 				"img": "icons/magic/acid/projectile-smoke-glowing.webp",
-				"description": "<p>The target is up to two creatures within 5 feet of each other.</p>\n<p>A stinking bubble of acid is conjured out of thin air to fly at the targets, dealing 1d6 acid damage.</p>\n<p>This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+				"description": "<p>The target is up to two creatures within 5 feet of each other.</p><p>A stinking bubble of acid is conjured out of thin air to fly at the targets, dealing 1d6 acid damage.</p><p>This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
 				"descriptionOutputs": [
 					"action"
 				]
@@ -145,7 +145,7 @@
 					"type": "creature"
 				},
 				"img": "icons/magic/acid/projectile-smoke-glowing.webp",
-				"description": "<p>The target is up to two creatures within 5 feet of each other.</p>\n<p>A stinking bubble of acid is conjured out of thin air to fly at the targets, dealing 1d6 acid damage.</p>\n<p>This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+				"description": "<p>The target is up to two creatures within 5 feet of each other.</p><p>A stinking bubble of acid is conjured out of thin air to fly at the targets, dealing 1d6 acid damage.</p><p>This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
 				"descriptionOutputs": [
 					"action"
 				]
@@ -211,7 +211,7 @@
 				]
 			}
 		},
-		"description": "<div class=\"page\" title=\"Page 13\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>You know the acid splash cantrip. Once you reach 3rd level, you can cast create or destroy water once per long rest. Your spellcasting ability for these spells is your choice of Constitution, Intelligence, Wisdom, or Charisma.</p>\n</div>\n</div>\n</div>\n</div>",
+		"description": "<p>You know the acid splash cantrip. Once you reach 3rd level, you can cast create or destroy water once per long rest. Your spellcasting ability for these spells is your choice of Constitution, Intelligence, Wisdom, or Charisma.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -230,15 +230,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -77,7 +77,7 @@
 						"threshold": 6
 					}
 				},
-				"description": "<p id=\"docs-internal-guid-2958e2a4-7fff-ac28-d54b-be169050da83\" dir=\"ltr\">Also at 2nd level, you may magically imbue the food and drink you craft with your magic, granting you or your allies the benefits of your magical intention and bolstering them physically or mentally. If you spend an hour preparing a meal/drink using your cook&rsquo;s utensils or brewer&rsquo;s supplies, choose one of the following effects (this action may be performed as part of a short or long rest). Creatures who consume this dish benefit from the chosen effect for the next 8 hours:</p>\n<p dir=\"ltr\"><strong>Athleticism.</strong> This rich meal bolsters the body, giving you energy for the coming day. You gain an expertise die to both Athletics and Acrobatics checks for the duration.</p>\n<p dir=\"ltr\"><strong>Endurance.</strong> This light meal fills you with energy to burn without weighing you down. Whenever you would make a Constitution saving throw to resist the fatigue from a forced march, add an expertise die to the roll.</p>\n<p dir=\"ltr\"><strong>Memory.</strong> This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</p>\n<p dir=\"ltr\">You may impart these benefits to a number of creatures (including yourself) equal to your proficiency bonus per short rest, though you need enough Supply to account for each individual. A creature may only benefit from one of these effects at a time.</p>",
+				"description": "<p id=\"docs-internal-guid-2958e2a4-7fff-ac28-d54b-be169050da83\" dir=\"ltr\">Also at 2nd level, you may magically imbue the food and drink you craft with your magic, granting you or your allies the benefits of your magical intention and bolstering them physically or mentally. If you spend an hour preparing a meal/drink using your cook&rsquo;s utensils or brewer&rsquo;s supplies, choose one of the following effects (this action may be performed as part of a short or long rest). Creatures who consume this dish benefit from the chosen effect for the next 8 hours:</p><p dir=\"ltr\"><strong>Athleticism.</strong> This rich meal bolsters the body, giving you energy for the coming day. You gain an expertise die to both Athletics and Acrobatics checks for the duration.</p><p dir=\"ltr\"><strong>Endurance.</strong> This light meal fills you with energy to burn without weighing you down. Whenever you would make a Constitution saving throw to resist the fatigue from a forced march, add an expertise die to the roll.</p><p dir=\"ltr\"><strong>Memory.</strong> This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</p><p dir=\"ltr\">You may impart these benefits to a number of creatures (including yourself) equal to your proficiency bonus per short rest, though you need enough Supply to account for each individual. A creature may only benefit from one of these effects at a time.</p>",
 				"target": {
 					"type": "",
 					"quantity": 1
@@ -88,7 +88,7 @@
 				}
 			}
 		},
-		"description": "<p id=\"docs-internal-guid-2958e2a4-7fff-ac28-d54b-be169050da83\" dir=\"ltr\">Also at 2nd level, you may magically imbue the food and drink you craft with your magic, granting you or your allies the benefits of your magical intention and bolstering them physically or mentally. If you spend an hour preparing a meal/drink using your cook&rsquo;s utensils or brewer&rsquo;s supplies, choose one of the following effects (this action may be performed as part of a short or long rest). Creatures who consume this dish benefit from the chosen effect for the next 8 hours:</p>\n<p dir=\"ltr\"><strong>Athleticism.</strong> This rich meal bolsters the body, giving you energy for the coming day. You gain an expertise die to both Athletics and Acrobatics checks for the duration.</p>\n<p dir=\"ltr\"><strong>Endurance.</strong> This light meal fills you with energy to burn without weighing you down. Whenever you would make a Constitution saving throw to resist the fatigue from a forced march, add an expertise die to the roll.</p>\n<p dir=\"ltr\"><strong>Memory.</strong> This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</p>\n<p dir=\"ltr\">You may impart these benefits to a number of creatures (including yourself) equal to your proficiency bonus per short rest, though you need enough Supply to account for each individual. A creature may only benefit from one of these effects at a time.</p>",
+		"description": "<p id=\"docs-internal-guid-2958e2a4-7fff-ac28-d54b-be169050da83\" dir=\"ltr\">Also at 2nd level, you may magically imbue the food and drink you craft with your magic, granting you or your allies the benefits of your magical intention and bolstering them physically or mentally. If you spend an hour preparing a meal/drink using your cook&rsquo;s utensils or brewer&rsquo;s supplies, choose one of the following effects (this action may be performed as part of a short or long rest). Creatures who consume this dish benefit from the chosen effect for the next 8 hours:</p><p dir=\"ltr\"><strong>Athleticism.</strong> This rich meal bolsters the body, giving you energy for the coming day. You gain an expertise die to both Athletics and Acrobatics checks for the duration.</p><p dir=\"ltr\"><strong>Endurance.</strong> This light meal fills you with energy to burn without weighing you down. Whenever you would make a Constitution saving throw to resist the fatigue from a forced march, add an expertise die to the roll.</p><p dir=\"ltr\"><strong>Memory.</strong> This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</p><p dir=\"ltr\">You may impart these benefits to a number of creatures (including yourself) equal to your proficiency bonus per short rest, though you need enough Supply to account for each individual. A creature may only benefit from one of these effects at a time.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "toilAndTrouble",
@@ -107,15 +107,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{
@@ -158,7 +159,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-262a7eaf-7fff-041f-130d-8463da08f7f3\">This rich meal bolsters the body, giving you energy for the coming day. You gain an expertise die to both Athletics and Acrobatics checks for the duration.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -227,7 +228,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-362d507b-7fff-2063-f522-6a3874f6f866\">This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -271,7 +272,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-362d507b-7fff-2063-f522-6a3874f6f866\">This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -316,7 +317,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-362d507b-7fff-2063-f522-6a3874f6f866\">This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -360,7 +361,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-362d507b-7fff-2063-f522-6a3874f6f866\">This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		},
@@ -404,7 +405,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p><span id=\"docs-internal-guid-362d507b-7fff-2063-f522-6a3874f6f866\">This meal seeks to nourish the mind as well as the body, letting you recall more information from your studies. Choose a lore skill (Culture, Engineering, History, Nature, or Religion). You gain proficiency in that skill (or a specialty of your choice if you are already proficient) and an expertise die for skill checks using that skill.</span></p>",
+			"description": "<p></p>",
 			"statuses": [],
 			"folder": null
 		}

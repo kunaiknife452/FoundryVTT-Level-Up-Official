@@ -51,7 +51,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 17th level, you gain a token from the gods. While you are wearing the token, you are immune to fatigue and the blinded, deafened, and poisoned conditions. In addition, you can spend 1 exertion to use your Blessed Prowess feature on any ability check, and you don&rsquo;t need to spend exertion to use Sacred Boons. Finally, when you roll initiative, you can roll your martial arts die and regain that much exertion.</p>\n<p>If your Eternal Favor token is destroyed, the gods bestow another token upon you after you complete an arduous task to prove you are still worthy.</p>",
+		"description": "<p>At 17th level, you gain a token from the gods. While you are wearing the token, you are immune to fatigue and the blinded, deafened, and poisoned conditions. In addition, you can spend 1 exertion to use your Blessed Prowess feature on any ability check, and you don&rsquo;t need to spend exertion to use Sacred Boons. Finally, when you roll initiative, you can roll your martial arts die and regain that much exertion.</p><p>If your Eternal Favor token is destroyed, the gods bestow another token upon you after you complete an arduous task to prove you are still worthy.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -70,15 +70,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "wgzskw2o28mseo2v"

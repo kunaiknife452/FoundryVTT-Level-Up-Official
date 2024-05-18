@@ -793,7 +793,7 @@
 				}
 			}
 		},
-		"description": "<p>Starting at 17th level, when you make an unarmed strike, you score critical hits on a roll of 19&ndash;20. If you already have a feature that increases the range of your critical hits, your critical hit range increases by 1 (maximum 17&ndash;20). In addition, when you use a bonus action to make an unarmed strike, the attack deals an additional damage die.</p>\n<p>When your unarmed strike reduces a creature to 0 hit points, you can spend 3 exertion to utterly destroy the target&rsquo;s body and soul. The target can&rsquo;t be restored to life by any means short of a @UUID[Compendium.a5e.a5e-spells.Item.pe52jryde7ljobzq]{Wish} spell.</p>\n<p>When you hit a creature with two or more unarmed strikes in the same turn, you can spend 3 exertion to force it to make a Constitution saving throw. On a failed save, the target suffers one effect you choose from the list below. For each successful unarmed strike after the second, you can spend 1 exertion to deal one additional effect. For example, if you hit with four unarmed attacks, you can spend 5 exertion to deal three effects. You can&rsquo;t choose the same effect more than once, and a successful saving throw negates all effects.</p>\n<ul>\n<li>The target takes extra damage equal to twice your martial arts die.</li>\n<li>The target is blinded and deafened for 1 minute.</li>\n<li>The target is paralyzed for 1 minute. At the start of each of its turns, the target can repeat the saving throw, ending the effect on a success.</li>\n<li>The target is knocked prone and becomes poisoned for 1 minute.</li>\n<li>Features, spells, and traits that would restore the target&rsquo;s hit points have no effect on the target until the start of your next turn.</li>\n<li>The target loses a spell slot from its highest available level.</li>\n<li>The target loses 6 exertion.</li>\n<li>The target can&rsquo;t use bonus actions, legendary actions, or reactions until the start of your next turn.</li>\n<li>The target gains a level of fatigue.</li>\n</ul>",
+		"description": "<p>Starting at 17th level, when you make an unarmed strike, you score critical hits on a roll of 19&ndash;20. If you already have a feature that increases the range of your critical hits, your critical hit range increases by 1 (maximum 17&ndash;20). In addition, when you use a bonus action to make an unarmed strike, the attack deals an additional damage die.</p><p>When your unarmed strike reduces a creature to 0 hit points, you can spend 3 exertion to utterly destroy the target&rsquo;s body and soul. The target can&rsquo;t be restored to life by any means short of a @UUID[Compendium.a5e.a5e-spells.Item.pe52jryde7ljobzq]{Wish} spell.</p><p>When you hit a creature with two or more unarmed strikes in the same turn, you can spend 3 exertion to force it to make a Constitution saving throw. On a failed save, the target suffers one effect you choose from the list below. For each successful unarmed strike after the second, you can spend 1 exertion to deal one additional effect. For example, if you hit with four unarmed attacks, you can spend 5 exertion to deal three effects. You can&rsquo;t choose the same effect more than once, and a successful saving throw negates all effects.</p><ul><li>The target takes extra damage equal to twice your martial arts die.</li><li>The target is blinded and deafened for 1 minute.</li><li>The target is paralyzed for 1 minute. At the start of each of its turns, the target can repeat the saving throw, ending the effect on a success.</li><li>The target is knocked prone and becomes poisoned for 1 minute.</li><li>Features, spells, and traits that would restore the target&rsquo;s hit points have no effect on the target until the start of your next turn.</li><li>The target loses a spell slot from its highest available level.</li><li>The target loses 6 exertion.</li><li>The target can&rsquo;t use bonus actions, legendary actions, or reactions until the start of your next turn.</li><li>The target gains a level of fatigue.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -812,15 +812,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "iohnbdsz69k87wbn"

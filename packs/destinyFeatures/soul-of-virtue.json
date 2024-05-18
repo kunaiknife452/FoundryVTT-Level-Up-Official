@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Your persistent pursuit of goodness for its own sake is rewarded with miraculous power. You gain a @UUID[Compendium.a5e.a5e-class-features.Item.my42mip0qc35rcp2]{Lay on Hands} pool as a herald of your level, and may use it to heal wounds and remove conditions just as a herald would. If you already have such a pool, its size doubles.</p>\n<p>In addition, you gain the Good alignment trait, and you emit a strong good aura for the purposes of any feature, spell, or trait that detects or affects Good creatures.</p>",
+		"description": "<p>Your persistent pursuit of goodness for its own sake is rewarded with miraculous power. You gain a @UUID[Compendium.a5e.a5e-class-features.Item.my42mip0qc35rcp2]{Lay on Hands} pool as a herald of your level, and may use it to heal wounds and remove conditions just as a herald would. If you already have such a pool, its size doubles.</p><p>In addition, you gain the Good alignment trait, and you emit a strong good aura for the purposes of any feature, spell, or trait that detects or affects Good creatures.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -41,15 +41,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

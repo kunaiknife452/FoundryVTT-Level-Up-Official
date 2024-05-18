@@ -68,7 +68,7 @@
 				]
 			}
 		},
-		"description": "<p>Beginning at 7th level, while you have a prophecy die, you can spend 2 exertion as a reaction to see invisible creatures and objects as per the @UUID[Compendium.a5e.a5e-spells.Item.i7sh0e2wqmql4cac]{See Invisibility} spell. This effect lasts for the duration of your prophecy die.</p>\n<p>Additionally, your prophecy die now starts as a d8 and the maximum size of your prophecy die increases to a d10.</p>",
+		"description": "<p>Beginning at 7th level, while you have a prophecy die, you can spend 2 exertion as a reaction to see invisible creatures and objects as per the @UUID[Compendium.a5e.a5e-spells.Item.i7sh0e2wqmql4cac]{See Invisibility} spell. This effect lasts for the duration of your prophecy die.</p><p>Additionally, your prophecy die now starts as a d8 and the maximum size of your prophecy die increases to a d10.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -87,15 +87,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

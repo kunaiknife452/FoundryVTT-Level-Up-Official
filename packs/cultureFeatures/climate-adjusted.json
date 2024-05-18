@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You are acclimated to the extreme weather common to your home. Choose one:&nbsp; &nbsp;</p>\n<ul>\n<li>Arctic: You gain an expertise die saving throws against cold, wind, and water spells and similar effects.</li>\n<li>Tropical: You gain an expertise die saving throws against fire, radiant, and water spells and similar effects.</li>\n</ul>",
+		"description": "<p>You are acclimated to the extreme weather common to your home. Choose one:&nbsp; &nbsp;</p><ul><li>Arctic: You gain an expertise die saving throws against cold, wind, and water spells and similar effects.</li><li>Tropical: You gain an expertise die saving throws against fire, radiant, and water spells and similar effects.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

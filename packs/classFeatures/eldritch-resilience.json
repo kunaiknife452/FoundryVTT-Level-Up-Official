@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have honed your ability to maintain concentration under the worst circumstances, and slowly laced your body with magical energy to supplement it.</p>\n<p>Starting at 11th level, you gain proficiency in Constitution saving throws used to maintain concentration.</p>",
+		"description": "<p>You have honed your ability to maintain concentration under the worst circumstances, and slowly laced your body with magical energy to supplement it.</p><p>Starting at 11th level, you gain proficiency in Constitution saving throws used to maintain concentration.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "theRuinStrider",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

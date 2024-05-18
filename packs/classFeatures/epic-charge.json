@@ -66,7 +66,7 @@
 				}
 			}
 		},
-		"description": "<p>At 18th level, you can use an action and move at least 20 feet to make an epic charge. While making an epic charge, you can move through the spaces of creatures and objects of up to one size larger than you without provoking opportunity attacks. When you move into a creature&rsquo;s space it makes a Dexterity saving throw against your maneuver DC (with disadvantage if it is your size or smaller), taking 36 (8d8) bludgeoning damage and falling prone on a failed save, or half as much damage and remaining standing on a success.</p>\n<p>Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>",
+		"description": "<p>At 18th level, you can use an action and move at least 20 feet to make an epic charge. While making an epic charge, you can move through the spaces of creatures and objects of up to one size larger than you without provoking opportunity attacks. When you move into a creature&rsquo;s space it makes a Dexterity saving throw against your maneuver DC (with disadvantage if it is your size or smaller), taking 36 (8d8) bludgeoning damage and falling prone on a failed save, or half as much damage and remaining standing on a success.</p><p>Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg2",
@@ -85,15 +85,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [
 		{

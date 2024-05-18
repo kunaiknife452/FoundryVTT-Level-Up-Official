@@ -65,7 +65,7 @@
 				}
 			}
 		},
-		"description": "<p>Starting at 10th level, after you deal damage with a melee weapon to mundane objects or structures of Large size or smaller, roll a d20. On a roll of 15 or more, that object or structure is destroyed.</p>\n<p>Additionally, when you attack an object or structure that can only be damaged by specific means (such as a @UUID[Compendium.a5e.a5e-spells.Item.gt3stogmnxaya7ek]{Forcecage}), you can spend 2 exertion to have your melee weapon attack count as that specific mean.</p>",
+		"description": "<p>Starting at 10th level, after you deal damage with a melee weapon to mundane objects or structures of Large size or smaller, roll a d20. On a roll of 15 or more, that object or structure is destroyed.</p><p>Additionally, when you attack an object or structure that can only be damaged by specific means (such as a @UUID[Compendium.a5e.a5e-spells.Item.gt3stogmnxaya7ek]{Forcecage}), you can spend 2 exertion to have your melee weapon attack count as that specific mean.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -84,15 +84,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

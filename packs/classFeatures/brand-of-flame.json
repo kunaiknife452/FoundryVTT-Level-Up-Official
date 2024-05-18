@@ -95,7 +95,7 @@
 						"threshold": 6
 					}
 				},
-				"description": "<p>The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames.&nbsp;</p>\n<p>The curse lasts for a number of minutes equal to half your proficiency bonus.</p>",
+				"description": "<p>The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames.&nbsp;</p><p>The curse lasts for a number of minutes equal to half your proficiency bonus.</p>",
 				"descriptionOutputs": [
 					"action"
 				],
@@ -113,7 +113,7 @@
 				}
 			}
 		},
-		"description": "<p dir=\"ltr\">Also at 6th level, as a bonus action, you may place a blessing or curse of fire on a creature you can see within 30 feet of you. The blessing or curse lasts for a number of minutes equal to half your proficiency bonus.</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><strong>Blessing of Fire.</strong> The creature gains resistance to fire and its melee attacks deal an additional 1d6 points of fire damage.&nbsp;</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><strong>Curse of Fire.</strong> The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames.&nbsp;</p>\n</li>\n</ul>\n<p dir=\"ltr\">You may use Brand of Flame a number of times equal to half your proficiency bonus, regaining all uses on completion of a long rest.</p>\n<p>&nbsp;</p>",
+		"description": "<p dir=\"ltr\">Also at 6th level, as a bonus action, you may place a blessing or curse of fire on a creature you can see within 30 feet of you. The blessing or curse lasts for a number of minutes equal to half your proficiency bonus.</p><ul><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\"><strong>Blessing of Fire.</strong> The creature gains resistance to fire and its melee attacks deal an additional 1d6 points of fire damage.&nbsp;</p></li><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\"><strong>Curse of Fire.</strong> The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames.&nbsp;</p></li></ul><p dir=\"ltr\">You may use Brand of Flame a number of times equal to half your proficiency bonus, regaining all uses on completion of a long rest.</p><p>&nbsp;</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -132,12 +132,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},
@@ -146,7 +146,7 @@
 	"effects": [
 		{
 			"icon": "icons/magic/symbols/rune-sigil-red-orange.webp",
-			"origin": "Item.Kjoe5RcGasHVB4uO",
+			"origin": "Item.brs5ieevwfasrb6u",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -187,7 +187,7 @@
 		},
 		{
 			"icon": "icons/magic/symbols/rune-sigil-red-orange.webp",
-			"origin": "Item.Kjoe5RcGasHVB4uO",
+			"origin": "Item.brs5ieevwfasrb6u",
 			"flags": {
 				"a5e": {
 					"sort": 0,
@@ -216,7 +216,7 @@
 				"startRound": null,
 				"startTurn": null
 			},
-			"description": "<p>The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames. </p>\n<p>The curse lasts for a number of minutes equal to half your proficiency bonus.</p>",
+			"description": "<p>The creature loses any resistance to fire damage it had, and if it is immune to fire, it is treated as resistant instead. Any time the creature takes fire damage, it also takes an additional 1d6 of ongoing fire damage until it or one of its allies spends an action to extinguish the flames. </p><p>The curse lasts for a number of minutes equal to half your proficiency bonus.</p>",
 			"statuses": [],
 			"folder": null
 		}

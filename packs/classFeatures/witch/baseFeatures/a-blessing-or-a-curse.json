@@ -55,7 +55,7 @@
 				}
 			}
 		},
-		"description": "<p>At 5th level, you gain the ability to manipulate the strands of fortune and fate. You may do so a number of times equal to your proficiency bonus, regaining expended uses on a long rest. Choose one of the following:</p>\n<h3>Witch&rsquo;s Blessing</h3>\n<p>When a creature you can see fails an ability check, attack roll, or saving throw, you may use your reaction to apply a bonus equal to 1d4 + your spellcasting ability modifier, potentially changing the result of the roll.</p>\n<h3>Witch&rsquo;s Curse</h3>\n<p>When a creature you can see succeeds on an ability check, attack roll, or saving throws, you may use your reaction to apply a penalty equal to 1d4 + your spellcasting ability modifier.</p>",
+		"description": "<p>At 5th level, you gain the ability to manipulate the strands of fortune and fate. You may do so a number of times equal to your proficiency bonus, regaining expended uses on a long rest. Choose one of the following:</p><h3>Witch&rsquo;s Blessing</h3><p>When a creature you can see fails an ability check, attack roll, or saving throw, you may use your reaction to apply a bonus equal to 1d4 + your spellcasting ability modifier, potentially changing the result of the roll.</p><h3>Witch&rsquo;s Curse</h3><p>When a creature you can see succeeds on an ability check, attack roll, or saving throws, you may use your reaction to apply a penalty equal to 1d4 + your spellcasting ability modifier.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "mysteriousAndMarvelousMiscellanea",
@@ -79,22 +79,31 @@
 				"label": "A Blessing or a Curse",
 				"features": {
 					"options": [
-						"Compendium.a5e.a5e-class-features.Item.8icd91l5z34orf66",
-						"Compendium.a5e.a5e-class-features.Item.5xuo47w64m4cow6c"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.8icd91l5z34orf66",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.5xuo47w64m4cow6c",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
-					"total": 1
+					"total": 1,
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

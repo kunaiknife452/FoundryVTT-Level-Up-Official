@@ -43,7 +43,7 @@
 				}
 			}
 		},
-		"description": "<p dir=\"ltr\">At 17th level, you can perform a special ritual to give a community a head-start on recovering from a natural disaster, war, monster attack, or other large-scale event. To perform the ritual, you must spend 8 hours in uninterrupted work in a single location and it costs 1000 gp in material components. When the ritual completes, you may specify up to 1,000 targets of @UUID[Compendium.a5e.a5e-spells.Item.pblaa5w3f6tuqxuj]{Mending} effects, up to 50 targets of @UUID[Compendium.a5e.a5e-spells.Item.fe2d3gkhdwtibizq]{Purify Food and Drink} effects, and up to 5 @UUID[Compendium.a5e.a5e-spells.Item.tk8q47k7yjntw4c2]{Fabricate} effects.</p>\n<p dir=\"ltr\">In addition, you may choose one structure that has suffered damage, such as an Inn, Tower, or Main Gate and fully repair it using rubble or nearby raw materials. A massive castle, long road, or city walls may only be partially repaired by this ability, subject to Narrator discretion. All of the effects must take place within 1 mile of your position. Once you have used this feature, you can&rsquo;t do so again for 7 days.</p>",
+		"description": "<p dir=\"ltr\">At 17th level, you can perform a special ritual to give a community a head-start on recovering from a natural disaster, war, monster attack, or other large-scale event. To perform the ritual, you must spend 8 hours in uninterrupted work in a single location and it costs 1000 gp in material components. When the ritual completes, you may specify up to 1,000 targets of @UUID[Compendium.a5e.a5e-spells.Item.pblaa5w3f6tuqxuj]{Mending} effects, up to 50 targets of @UUID[Compendium.a5e.a5e-spells.Item.fe2d3gkhdwtibizq]{Purify Food and Drink} effects, and up to 5 @UUID[Compendium.a5e.a5e-spells.Item.tk8q47k7yjntw4c2]{Fabricate} effects.</p><p dir=\"ltr\">In addition, you may choose one structure that has suffered damage, such as an Inn, Tower, or Main Gate and fully repair it using rubble or nearby raw materials. A massive castle, long road, or city walls may only be partially repaired by this ability, subject to Narrator discretion. All of the effects must take place within 1 mile of your position. Once you have used this feature, you can&rsquo;t do so again for 7 days.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitItinerant",
@@ -62,15 +62,16 @@
 		"prerequisite": "Archetype Shepherd, Cleric 17",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 20th level your movement speed increases by 5 feet, your carry weight is doubled, you gain proficiency with an additional 2 skills of your choice, and your high and long jump distances both increase by a number of feet equal to your Charisma modifier.</p>\n<p>In addition, you and your party have advantage on Prestige checks.</p>",
+		"description": "<p>At 20th level your movement speed increases by 5 feet, your carry weight is doubled, you gain proficiency with an additional 2 skills of your choice, and your high and long jump distances both increase by a number of feet equal to your Charisma modifier.</p><p>In addition, you and your party have advantage on Prestige checks.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "heroesOldAndNew",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

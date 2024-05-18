@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 14th level, choose one of the following.</p>\n<p><em><strong>Takes One to Know One.</strong></em> You have advantage on saving throws made against enchantment spells and illusion spells.</p>\n<p><em><strong>Well-Worn Deception.</strong></em> You can cast an enchantment or illusion spell using a spell slot that is one or more levels lower by spending 1 favor point. For example, you could cast @UUID[Compendium.a5e.a5e-spells.Item.f0lq2ogke9k8f1v9]{Mislead} (a 5th-level illusion spell) by using a 4th-level spell slot and 1 favor point or with a 3rd-level spell slot and 2 favor points. Once you have used this feature a number of times equal to your proficiency bonus, you cannot do so again until you finish a long rest.</p>",
+		"description": "<p>At 14th level, choose one of the following.</p><p><em><strong>Takes One to Know One.</strong></em> You have advantage on saving throws made against enchantment spells and illusion spells.</p><p><em><strong>Well-Worn Deception.</strong></em> You can cast an enchantment or illusion spell using a spell slot that is one or more levels lower by spending 1 favor point. For example, you could cast @UUID[Compendium.a5e.a5e-spells.Item.f0lq2ogke9k8f1v9]{Mislead} (a 5th-level illusion spell) by using a 4th-level spell slot and 1 favor point or with a 3rd-level spell slot and 2 favor points. Once you have used this feature a number of times equal to your proficiency bonus, you cannot do so again until you finish a long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg3",
@@ -39,24 +39,34 @@
 				"features": {
 					"total": 1,
 					"options": [
-						"Compendium.a5e.a5e-class-features.Item.n2cdnwgsbglqiaip",
-						"Compendium.a5e.a5e-class-features.Item.4e91mgopt1xiuj7p"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.n2cdnwgsbglqiaip",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.4e91mgopt1xiuj7p",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

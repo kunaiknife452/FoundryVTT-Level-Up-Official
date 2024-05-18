@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p class=\"preFade fadeIn\">When you choose this archetype at level 2, you gain the benefits of a persistent arcane shield. This magical protective aura grants you a +1 bonus to your Armor Class. The arcane shield only operates while you are awake and conscious.</p>\n<p class=\"preFade fadeIn\">At level 10, the AC bonus increases to +2, and at level 14 it increases to +3.</p>",
+		"description": "<p>When you choose this archetype at level 2, you gain the benefits of a persistent arcane shield. This magical protective aura grants you a +1 bonus to your Armor Class. The arcane shield only operates while you are awake and conscious.</p><p>At level 10, the AC bonus increases to +2, and at level 14 it increases to +3.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

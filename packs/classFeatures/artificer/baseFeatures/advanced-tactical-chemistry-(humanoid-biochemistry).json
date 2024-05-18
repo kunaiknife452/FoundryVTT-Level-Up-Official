@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 9th level you&rsquo;ve mastered and branched out from basic chemistry, discovering a new science to integrate into your tactics. You may add your Intelligence modifier to the saving throw DC of any item you create using Tactical Chemistry.</p>\n<h3>Humanoid Biochemistry</h3>\n<p>You&rsquo;ve learned a great deal of biochemistry and what chemicals you can apply to alleviate many ailments. You can create the following additional items using your Tactical Chemistry feature:</p>\n<p>@UUID[Compendium.a5e.a5e-adventuring-gear.vzy6r3gv8ylwoim7]{Antitoxin}</p>\n<p>@UUID[Compendium.a5e.a5e-adventuring-gear.nees9nzonritxzwe]{Healing Potion (greater)}</p>\n<p>@UUID[Compendium.a5e.a5e-adventuring-gear.x9t8xc1kffdnm5nz]{Laudanum}</p>",
+		"description": "<p>At 9th level you&rsquo;ve mastered and branched out from basic chemistry, discovering a new science to integrate into your tactics. You may add your Intelligence modifier to the saving throw DC of any item you create using Tactical Chemistry.</p><h3>Humanoid Biochemistry</h3><p>You&rsquo;ve learned a great deal of biochemistry and what chemicals you can apply to alleviate many ailments. You can create the following additional items using your Tactical Chemistry feature:</p><p>@UUID[Compendium.a5e.a5e-adventuring-gear.vzy6r3gv8ylwoim7]{Antitoxin}</p><p>@UUID[Compendium.a5e.a5e-adventuring-gear.nees9nzonritxzwe]{Healing Potion (greater)}</p><p>@UUID[Compendium.a5e.a5e-adventuring-gear.x9t8xc1kffdnm5nz]{Laudanum}</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg0",
@@ -33,15 +33,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

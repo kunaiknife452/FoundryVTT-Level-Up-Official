@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p><span style=\"color: #191813; font-family: Signika, sans-serif; font-size: 14px;\">When you hit a creature with your Eldritch Blast or when a creature fails its saving throw against it, you can push the creature up to 10 feet away from you in a straight line.</span></p>",
+		"description": "<p>When you hit a creature with your Eldritch Blast or when a creature fails its saving throw against it, you can push the creature up to 10 feet away from you in a straight line.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

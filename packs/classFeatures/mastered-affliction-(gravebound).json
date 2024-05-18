@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p id=\"docs-internal-guid-512d42c1-7fff-e003-eafb-38be67b19b27\" dir=\"ltr\">At 14th level, while you realize that you will never be free of your artifact&rsquo;s curse, you are so accustomed to it that attempts to make it worse skate off of you. You gain one of the following benefits based on your chosen affliction:</p>\n<ul>\n<li dir=\"ltr\"><strong>Unmoored:</strong> You are immune to the Confused condition.</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Paranoid:</strong> You are immune to the Frightened condition.</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Troubled:</strong> You cannot be put to sleep magically and you are immune to being harmed or terrorized in your dreams (such as with the @UUID[Compendium.a5e.a5e-spells.Item.jo2vztvypvhqxh5u]{Dream} spell). You also ignore the effects of having one level of fatigue, though if you gain a second, both (and any additional) levels affect you normally.</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Fettered:</strong> You are immune to the Slowed condition.</li>\n<li dir=\"ltr\" role=\"presentation\"><strong>Gravebound:</strong> If you are killed, a spellcaster does not have to spend material component costs to raise you from the dead with @UUID[Compendium.a5e.a5e-spells.Item.0k5zymq9q95l8jwa]{Revivify}, @UUID[Compendium.a5e.a5e-spells.Item.9zhsri19dkhm9mcf]{Raise Dead}, or similar magic.</li>\n</ul>",
+		"description": "<p id=\"docs-internal-guid-512d42c1-7fff-e003-eafb-38be67b19b27\" dir=\"ltr\">At 14th level, while you realize that you will never be free of your artifact&rsquo;s curse, you are so accustomed to it that attempts to make it worse skate off of you. You gain one of the following benefits based on your chosen affliction:</p><ul><li dir=\"ltr\"><strong>Unmoored:</strong> You are immune to the Confused condition.</li><li dir=\"ltr\" role=\"presentation\"><strong>Paranoid:</strong> You are immune to the Frightened condition.</li><li dir=\"ltr\" role=\"presentation\"><strong>Troubled:</strong> You cannot be put to sleep magically and you are immune to being harmed or terrorized in your dreams (such as with the @UUID[Compendium.a5e.a5e-spells.Item.jo2vztvypvhqxh5u]{Dream} spell). You also ignore the effects of having one level of fatigue, though if you gain a second, both (and any additional) levels affect you normally.</li><li dir=\"ltr\" role=\"presentation\"><strong>Fettered:</strong> You are immune to the Slowed condition.</li><li dir=\"ltr\" role=\"presentation\"><strong>Gravebound:</strong> If you are killed, a spellcaster does not have to spend material component costs to raise you from the dead with @UUID[Compendium.a5e.a5e-spells.Item.0k5zymq9q95l8jwa]{Revivify}, @UUID[Compendium.a5e.a5e-spells.Item.9zhsri19dkhm9mcf]{Raise Dead}, or similar magic.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitCarryTheDarkness",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

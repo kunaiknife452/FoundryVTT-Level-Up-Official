@@ -49,7 +49,7 @@
 				}
 			}
 		},
-		"description": "<p>Also at level 10, you can draw on additional reserves of magic when you need them most. When you become bloodied, you may use your reaction to immediately recover spell slots as though you had just used your @UUID[Compendium.a5e.a5e-class-features.Item.iqlgotutphoratct]{Arcane Recovery}. Additionally, until you begin your next long rest, any abjuration spells you cast using a spell slot behave as though they were up-cast using a spell slot of one spell-level higher (maximum 9th-level) than the one actually used.</p>\n<p>Once you have used this feature, you cannot use it again until you complete a long rest. Using this feature does not consume your use of Arcane Recovery.</p>",
+		"description": "<p>Also at level 10, you can draw on additional reserves of magic when you need them most. When you become bloodied, you may use your reaction to immediately recover spell slots as though you had just used your @UUID[Compendium.a5e.a5e-class-features.Item.iqlgotutphoratct]{Arcane Recovery}. Additionally, until you begin your next long rest, any abjuration spells you cast using a spell slot behave as though they were up-cast using a spell slot of one spell-level higher (maximum 9th-level) than the one actually used.</p><p>Once you have used this feature, you cannot use it again until you complete a long rest. Using this feature does not consume your use of Arcane Recovery.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -68,12 +68,12 @@
 		"prerequisite": "",
 		"requiresBloodied": true,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.017,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},
@@ -82,7 +82,7 @@
 	"effects": [
 		{
 			"icon": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
-			"origin": "Item.E0SwxVNjkyTLOMrh",
+			"origin": "Item.dpgd7ttporu0i7vs",
 			"flags": {
 				"a5e": {
 					"sort": 0,

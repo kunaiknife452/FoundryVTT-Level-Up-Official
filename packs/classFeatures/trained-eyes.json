@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You gain darkvision out to a range of 30 feet, or if you already have it, the range of your darkvision increases by 30 feet.</p>\n<p>Additionally, you gain an expertise die to perceive, detect and locate traps.</p>",
+		"description": "<p>You gain darkvision out to a range of 30 feet, or if you already have it, the range of your darkvision increases by 30 feet.</p><p>Additionally, you gain an expertise die to perceive, detect and locate traps.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "theRuinStrider",
@@ -56,15 +56,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

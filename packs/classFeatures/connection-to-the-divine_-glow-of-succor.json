@@ -38,7 +38,7 @@
 				"img": "icons/magic/holy/barrier-shield-winged-blue.webp"
 			}
 		},
-		"description": "<p dir=\"ltr\">At 6th level, your dualistic abilities continue to develop. When you chose your path, you designate a number of creatures equal to your proficiency bonus. You and the selected creatures benefit as follows:</p>\n<h3 dir=\"ltr\">Glow of Succor</h3>\n<p dir=\"ltr\">If you choose Path of the Light, any healing performed by you or one of the selected creatures in the area of your glow while it is active is increased by an amount equal to your intelligence modifier.</p>",
+		"description": "<p dir=\"ltr\">At 6th level, your dualistic abilities continue to develop. When you chose your path, you designate a number of creatures equal to your proficiency bonus. You and the selected creatures benefit as follows:</p><h3 dir=\"ltr\">Glow of Succor</h3><p dir=\"ltr\">If you choose Path of the Light, any healing performed by you or one of the selected creatures in the area of your glow while it is active is increased by an amount equal to your intelligence modifier.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitItinerant",
@@ -57,15 +57,16 @@
 		"prerequisite": "Archetype Mystic, Esper 6",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

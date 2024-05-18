@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Elves with the gift of Mystic Rapport have&nbsp;the following traits:</p>\n<p><strong>Arcane Sensitivity.</strong> You gain&nbsp;proficiency in Arcana.</p>\n<p><strong>Arcane Empathy. </strong>You can speak&nbsp;telepathically to a creature within 30 feet&nbsp;of you that you can see. Though this&nbsp;grants the creature no ability to respond&nbsp;telepathically, they can understand you if&nbsp;you share a language. You can speak in&nbsp;this way to one creature at a time.</p>",
+		"description": "<p>Elves with the gift of Mystic Rapport have&nbsp;the following traits:</p><p><strong>Arcane Sensitivity.</strong> You gain&nbsp;proficiency in Arcana.</p><p><strong>Arcane Empathy. </strong>You can speak&nbsp;telepathically to a creature within 30 feet&nbsp;of you that you can see. Though this&nbsp;grants the creature no ability to respond&nbsp;telepathically, they can understand you if&nbsp;you share a language. You can speak in&nbsp;this way to one creature at a time.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,24 +37,35 @@
 				"label": "Mystic Rapport",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.m89pkpo5k93wgynw",
-						"Compendium.a5e.a5e-heritage-features.Item.gt3u39fxdtwt721o"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.m89pkpo5k93wgynw",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.gt3u39fxdtwt721o",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

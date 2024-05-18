@@ -74,7 +74,7 @@
 				]
 			}
 		},
-		"description": "<p><span id=\"docs-internal-guid-3467270e-7fff-9bff-76c4-cc628ab14e6e\">At 14th level, you have truly mastered the art of preparing even the most elaborate meals, bringing your allies together and making them stronger. You always have the spell @UUID[Compendium.a5e.a5e-spells.Item.1fhdzbsc3lhg7402]{Heroes' Feast} prepared, and you may cast it without material components or expending a spell slot once per long rest.</span></p>",
+		"description": "<p></p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "toilAndTrouble",
@@ -93,15 +93,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

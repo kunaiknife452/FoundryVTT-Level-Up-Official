@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 13th level, choose one of the following options.</p>\n<p><em><strong>Cajoling Words.</strong></em> You may reroll one failed Persuasion check. Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>\n<p><em><strong>Prepared Speech.</strong></em> After observing a creature for at least 10 minutes, you can choose to gain advantage on a Deception, Intimidation, or Persuasion check against it. Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>",
+		"description": "<p>At 13th level, choose one of the following options.</p><p><em><strong>Cajoling Words.</strong></em> You may reroll one failed Persuasion check. Once you have used this feature, you cannot use it again until you finish a short or long rest.</p><p><em><strong>Prepared Speech.</strong></em> After observing a creature for at least 10 minutes, you can choose to gain advantage on a Deception, Intimidation, or Persuasion check against it. Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg3",
@@ -39,24 +39,34 @@
 				"features": {
 					"total": 1,
 					"options": [
-						"Compendium.a5e.a5e-class-features.Item.hf293haxxp91xxtk",
-						"Compendium.a5e.a5e-class-features.Item.wuvbidvrwknhprhz"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.hf293haxxp91xxtk",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.wuvbidvrwknhprhz",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

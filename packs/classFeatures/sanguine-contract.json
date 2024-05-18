@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>When you take this archetype at 1st level, your signature on a certain metaphysical compact grants you a pernicious boon. Choose one of the following:</p>\n<p>@UUID[Compendium.a5e.a5e-class-features.ijfhr2n6bxczqg7v]{Dark Blessing}</p>\n<p>@UUID[Compendium.a5e.a5e-class-features.vwk7xlbwtbjul4kf]{Diabolical Curse}</p>",
+		"description": "<p>When you take this archetype at 1st level, your signature on a certain metaphysical compact grants you a pernicious boon. Choose one of the following:</p><p>@UUID[Compendium.a5e.a5e-class-features.ijfhr2n6bxczqg7v]{Dark Blessing}</p><p>@UUID[Compendium.a5e.a5e-class-features.vwk7xlbwtbjul4kf]{Diabolical Curse}</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,15 +35,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"folder": null,
 	"_id": "ew4y1nx846ekyy9j"

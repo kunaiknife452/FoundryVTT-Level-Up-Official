@@ -47,7 +47,7 @@
 				}
 			}
 		},
-		"description": "<p class=\"a-b-r-La\">At 11th level when you successfully grapple a creature of your size or smaller, you can spend an exertion point to restrain them for the duration of the grapple.</p>",
+		"description": "<p>At 11th level when you successfully grapple a creature of your size or smaller, you can spend an exertion point to restrain them for the duration of the grapple.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "mysteriousAndMarvelousMiscellanea",
@@ -66,15 +66,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

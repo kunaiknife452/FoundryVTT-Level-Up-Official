@@ -17,7 +17,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Horned Lords get their name from their distinctive helms, which normally feature horns or antlers from wild beasts. They are a bridge between the structures of power that make both the civilized world and the natural world run, and they can utilize these connections to call forth the armies of nature to aid their mortal forces. As one of these powerful figures, you gain the following benefits:</p>\n<ul>\n<li>\n<p>You become proficient with metal, light, and medium armor, shields, and helms. You may wear these protective items without violating your druidic oaths or interfering with your druid class features.</p>\n</li>\n<li>\n<p>You gain proficiency with one combat tradition from either Adamant Mountain or Tooth and Claw. For you it counts as a marshal combat tradition.</p>\n</li>\n<li>\n<p>Your @UUID[Compendium.a5e.a5e-class-features.Item.sygit0xifd4lbg3g]{Natural Demeanor} class feature provides both the Leyline Awareness and A Way With Animals benefits. In addition, these benefits also extend to Plant creatures. A Beast or Plant creature encountering you for the first time begins with an attitude toward you one step higher than normal. (Hostile creatures are indifferent, indifferent creatures are friendly, friendly creatures remain friendly.)</p>\n</li>\n</ul>",
+		"description": "<p>Horned Lords get their name from their distinctive helms, which normally feature horns or antlers from wild beasts. They are a bridge between the structures of power that make both the civilized world and the natural world run, and they can utilize these connections to call forth the armies of nature to aid their mortal forces. As one of these powerful figures, you gain the following benefits:</p><ul><li><p>You become proficient with metal, light, and medium armor, shields, and helms. You may wear these protective items without violating your druidic oaths or interfering with your druid class features.</p></li><li><p>You gain proficiency with one combat tradition from either Adamant Mountain or Tooth and Claw. For you it counts as a marshal combat tradition.</p></li><li><p>Your @UUID[Compendium.a5e.a5e-class-features.Item.sygit0xifd4lbg3g]{Natural Demeanor} class feature provides both the Leyline Awareness and A Way With Animals benefits. In addition, these benefits also extend to Plant creatures. A Beast or Plant creature encountering you for the first time begins with an attitude toward you one step higher than normal. (Hostile creatures are indifferent, indifferent creatures are friendly, friendly creatures remain friendly.)</p></li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -62,15 +62,16 @@
 		"prerequisite": "levels in druid (guardian), 3 levels in marshal, Leyline Awareness",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.017,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"_id": "qvtddb1cgnrurz5l"
 }

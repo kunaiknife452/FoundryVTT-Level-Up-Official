@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have further honed your ability to merge elementalism and nature magic.&nbsp;You gain the following benefits:</p>\n<ul>\n<li>Half your elementalist levels count as druid levels for the purpose of determining the options granted by @UUID[Compendium.a5e.a5e-class-features.Item.3jdfihvtbyhbv9ez]{Wild Shape}.</li>\n<li>Half of your druid levels count as elementalist levels for the purpose of determining the effects of your Elemental Defense.</li>\n<li>Your wild shape forms gain a speed boost if you have an appropriate elemental affinity. The form must possess the appropriate movement speed already to use this benefit. If you have multiple elemental affinities, you still may only use one of these benefits each time you use wild shape:\n<ul>\n<li><strong>Earth:</strong> +10 feet to burrow speed and you may always choose to leave a tunnel behind you.</li>\n<li><strong>Air:</strong> +10 feet to flying speed and you may hover even if that is not a normal option for your form.</li>\n<li><strong>Water:</strong> +15 feet to swimming speed.</li>\n<li><strong>Fire:</strong> +10 feet to walking and flying speeds.</li>\n</ul>\n</li>\n</ul>",
+		"description": "<p>You have further honed your ability to merge elementalism and nature magic.&nbsp;You gain the following benefits:</p><ul><li>Half your elementalist levels count as druid levels for the purpose of determining the options granted by @UUID[Compendium.a5e.a5e-class-features.Item.3jdfihvtbyhbv9ez]{Wild Shape}.</li><li>Half of your druid levels count as elementalist levels for the purpose of determining the effects of your Elemental Defense.</li><li>Your wild shape forms gain a speed boost if you have an appropriate elemental affinity. The form must possess the appropriate movement speed already to use this benefit. If you have multiple elemental affinities, you still may only use one of these benefits each time you use wild shape:<ul><li><strong>Earth:</strong> +10 feet to burrow speed and you may always choose to leave a tunnel behind you.</li><li><strong>Air:</strong> +10 feet to flying speed and you may hover even if that is not a normal option for your form.</li><li><strong>Water:</strong> +15 feet to swimming speed.</li><li><strong>Fire:</strong> +10 feet to walking and flying speeds.</li></ul></li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "moarComplete",
@@ -122,15 +122,16 @@
 		"prerequisite": "Elemental Caretaker feat",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.017,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

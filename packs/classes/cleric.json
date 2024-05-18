@@ -5,11 +5,17 @@
 	"img": "icons/commodities/treasure/token-gold-cross.webp",
 	"system": {
 		"schemaVersion": {
-			"version": 0.018,
-			"lastMigration": null
+			"version": 0.019,
+			"lastMigration": {
+				"version": {
+					"schema": 0.018,
+					"foundry": "11.315",
+					"system": "0.18.11"
+				}
+			}
 		},
 		"slug": "",
-		"description": "<h3>Hit Points</h3>\n<p><strong>Hit Dice: </strong>1d8 per cleric level</p>\n<p><strong>Hit Points at 1st Level: </strong>8 + your Constitution modifier</p>\n<p><strong>Hit Points at Higher Levels: </strong>1d8 (or 5) + your Constitution modifier per cleric level after first</p>\n<h3>Proficiencies</h3>\n<p><strong>Armor: </strong>None</p>\n<p><strong>Weapons: </strong>Simple weapons</p>\n<p><strong>Tools:&nbsp;</strong>Choose one from herbalism kit, an artisan tool, or a musical instrument</p>\n<p><strong>Saving Throws:&nbsp;</strong>Wisdom, and either Intelligence or Charisma</p>\n<p><strong>Skills:&nbsp;</strong>Choose two from Culture, History, Insight, Medicine, Persuasion, and Religion</p>\n<h3>Equipment</h3>\n<p>You begin the game with 125 gold which you can spend on your character&rsquo;s starting weapons, armor, and adventuring gear. You can select your own gear or choose one of the following equipment packages. Also consult the Suggested Equipment section of your chosen background.</p>\n<p><strong>Holy Warrior&rsquo;s Set (Cost 122 gold)</strong></p>\n<p>Longbow and quiver with 20 arrows, mace, scale mail, explorer&rsquo;s pack, reliquary divine focus (holy symbol)</p>\n<p><strong>Righteous Combat Set (Cost 87 gold)</strong></p>\n<p>4 javelins, warhammer, 5 wooden stakes, chain shirt, medium shield, emblem divine focus (holy symbol), explorer&rsquo;s pack</p>\n<p><strong>Spiritual Protector&rsquo;s Set (Cost 90 gold)</strong></p>\n<p>Quarterstaff, 2 flasks of holy water, padded leather, healer&rsquo;s satchel, amulet divine focus (holy symbol), priest&rsquo;s pack</p>",
+		"description": "<h3>Hit Points</h3><p><strong>Hit Dice: </strong>1d8 per cleric level</p><p><strong>Hit Points at 1st Level: </strong>8 + your Constitution modifier</p><p><strong>Hit Points at Higher Levels: </strong>1d8 (or 5) + your Constitution modifier per cleric level after first</p><h3>Proficiencies</h3><p><strong>Armor: </strong>None</p><p><strong>Weapons: </strong>Simple weapons</p><p><strong>Tools:&nbsp;</strong>Choose one from herbalism kit, an artisan tool, or a musical instrument</p><p><strong>Saving Throws:&nbsp;</strong>Wisdom, and either Intelligence or Charisma</p><p><strong>Skills:&nbsp;</strong>Choose two from Culture, History, Insight, Medicine, Persuasion, and Religion</p><h3>Equipment</h3><p>You begin the game with 125 gold which you can spend on your character&rsquo;s starting weapons, armor, and adventuring gear. You can select your own gear or choose one of the following equipment packages. Also consult the Suggested Equipment section of your chosen background.</p><p><strong>Holy Warrior&rsquo;s Set (Cost 122 gold)</strong></p><p>Longbow and quiver with 20 arrows, mace, scale mail, explorer&rsquo;s pack, reliquary divine focus (holy symbol)</p><p><strong>Righteous Combat Set (Cost 87 gold)</strong></p><p>4 javelins, warhammer, 5 wooden stakes, chain shirt, medium shield, emblem divine focus (holy symbol), explorer&rsquo;s pack</p><p><strong>Spiritual Protector&rsquo;s Set (Cost 90 gold)</strong></p><p>Quarterstaff, 2 flasks of holy water, padded leather, healer&rsquo;s satchel, amulet divine focus (holy symbol), priest&rsquo;s pack</p>",
 		"classLevels": 1,
 		"hp": {
 			"hitDiceSize": 8,
@@ -106,7 +112,7 @@
 						"violin",
 						"herbalismKit"
 					],
-					"total": 0
+					"total": 1
 				},
 				"proficiencyType": "tool",
 				"label": "Tool Proficiencies",
@@ -165,9 +171,21 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.orhewvz33vmmkfc5",
-						"Compendium.a5e.a5e-class-features.Item.l9kvw4n809k17gsy",
-						"Compendium.a5e.a5e-class-features.Item.axllcphld6abmm1p"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.orhewvz33vmmkfc5",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.l9kvw4n809k17gsy",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.axllcphld6abmm1p",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -197,7 +215,7 @@
 							"quantityOverride": 0
 						}
 					],
-					"total": 0
+					"total": 1
 				},
 				"label": "Starting Equipment",
 				"levelType": "character",
@@ -210,8 +228,16 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.0dwsf82gco1j8ghu",
-						"Compendium.a5e.a5e-class-features.Item.s4iiatrup3e3virw"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.0dwsf82gco1j8ghu",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.s4iiatrup3e3virw",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -228,7 +254,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.319mwkz0dd6sznnv"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.319mwkz0dd6sznnv",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -245,7 +275,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.nghsyyxk1mmuud2x"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.nghsyyxk1mmuud2x",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -262,7 +296,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.zezsezm2e0azb3ty"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.zezsezm2e0azb3ty",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -279,7 +317,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.98ceg9uqvmr74u1z"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.98ceg9uqvmr74u1z",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -296,7 +338,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.2jlxytgjvgjnafvr"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.2jlxytgjvgjnafvr",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -313,7 +359,11 @@
 				"grantType": "feature",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-class-features.Item.cmpu5ulgmrnpa0wx"
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.cmpu5ulgmrnpa0wx",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
 					"options": [],
 					"total": 0
@@ -328,7 +378,7 @@
 			}
 		},
 		"resources": [],
-		"source": "",
+		"source": "adventurersGuide",
 		"spellcasting": {
 			"ability": {
 				"base": "wis",

@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have the following traits:</p>\n<p><strong>Big Feet. </strong>You gain an expertise die on&nbsp;checks and saving throws made to resist&nbsp;being knocked prone.</p>\n<p><strong>Thick Soles. </strong>You are immune to&nbsp;damage from sharp terrain hazards (such&nbsp;as caltrops, broken glass, or the spike&nbsp;growth spell) and ignore difficult terrain&nbsp;caused by them. Additionally, other kinds&nbsp;of difficult terrain reduce your movement&nbsp;speed by 5 feet instead of halving it.</p>",
+		"description": "<p>You have the following traits:</p><p><strong>Big Feet. </strong>You gain an expertise die on&nbsp;checks and saving throws made to resist&nbsp;being knocked prone.</p><p><strong>Thick Soles. </strong>You are immune to&nbsp;damage from sharp terrain hazards (such&nbsp;as caltrops, broken glass, or the spike&nbsp;growth spell) and ignore difficult terrain&nbsp;caused by them. Additionally, other kinds&nbsp;of difficult terrain reduce your movement&nbsp;speed by 5 feet instead of halving it.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,24 +37,35 @@
 				"label": "Tuft Feet",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.q74esgupkpffbt0t",
-						"Compendium.a5e.a5e-heritage-features.Item.kiasnrnp6uspxs48"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.q74esgupkpffbt0t",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.kiasnrnp6uspxs48",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

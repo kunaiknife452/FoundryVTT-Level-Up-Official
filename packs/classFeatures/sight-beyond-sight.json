@@ -68,7 +68,7 @@
 				]
 			}
 		},
-		"description": "<p>Starting at 10th level, while you have a prophecy die, you can spend 3 exertion as an action to see and hear at a distance as per the @UUID[Compendium.a5e.a5e-spells.Item.usz7we3sepg9tv9d]{Clairvoyance} spell. This effect lasts for the duration of your prophecy die.</p>\n<p>Additionally, the maximum size of your prophecy die increases to a d12.</p>",
+		"description": "<p>Starting at 10th level, while you have a prophecy die, you can spend 3 exertion as an action to see and hear at a distance as per the @UUID[Compendium.a5e.a5e-spells.Item.usz7we3sepg9tv9d]{Clairvoyance} spell. This effect lasts for the duration of your prophecy die.</p><p>Additionally, the maximum size of your prophecy die increases to a d12.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg1",
@@ -87,15 +87,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 6th level, you have glanced at the futures&nbsp;countless times, and the endless possibilities have&nbsp;granted your mind resilience against madness. You&nbsp;gain resistance to psychic damage.</p>\n<p>Additionally, you gain an expertise die when making a saving throw to resist the effect of an illusion or when making an ability check to detect an illusion.</p>",
+		"description": "<p>At 6th level, you have glanced at the futures&nbsp;countless times, and the endless possibilities have&nbsp;granted your mind resilience against madness. You&nbsp;gain resistance to psychic damage.</p><p>Additionally, you gain an expertise die when making a saving throw to resist the effect of an illusion or when making an ability check to detect an illusion.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "agentOfTheMagus",
@@ -49,15 +49,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

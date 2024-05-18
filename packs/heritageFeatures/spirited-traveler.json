@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have the following traits:</p>\n<p>Desperate Dash. Once between rests, when you take the Dash action, your movement this turn does not provoke opportunity attacks. During this movement, you gain an expertise die on&nbsp;Acrobatics checks made to avoid hazards&nbsp;and Dexterity saving throws.</p>\n<p>Marathon Runner. The first time between each long rest you would gain a level of fatigue, you do not gain that level&nbsp;of fatigue. You still suffer a level of fatigue&nbsp;from finishing a long rest without any&nbsp;Supply.</p>\n<p>Sojourner&rsquo;s Fortitude. You gain an&nbsp;expertise die on saving throws made to&nbsp;resist fatigue for marching longer than 8&nbsp;hours.</p>",
+		"description": "<p>You have the following traits:</p><p>Desperate Dash. Once between rests, when you take the Dash action, your movement this turn does not provoke opportunity attacks. During this movement, you gain an expertise die on&nbsp;Acrobatics checks made to avoid hazards&nbsp;and Dexterity saving throws.</p><p>Marathon Runner. The first time between each long rest you would gain a level of fatigue, you do not gain that level&nbsp;of fatigue. You still suffer a level of fatigue&nbsp;from finishing a long rest without any&nbsp;Supply.</p><p>Sojourner&rsquo;s Fortitude. You gain an&nbsp;expertise die on saving throws made to&nbsp;resist fatigue for marching longer than 8&nbsp;hours.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -37,25 +37,40 @@
 				"label": "Spirited Traveler",
 				"features": {
 					"base": [
-						"Compendium.a5e.a5e-heritage-features.Item.aizev8xi5oyk4ezo",
-						"Compendium.a5e.a5e-heritage-features.Item.6ob0zh7b8zgi54zf",
-						"Compendium.a5e.a5e-heritage-features.Item.2qms6f3q4qhrxwdd"
-					]
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.aizev8xi5oyk4ezo",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.6ob0zh7b8zgi54zf",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.2qms6f3q4qhrxwdd",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					],
+					"options": [],
+					"total": 0
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"folder": null,

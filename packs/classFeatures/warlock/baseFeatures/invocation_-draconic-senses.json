@@ -14,7 +14,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p class=\"a-b-r-La\">You gain proficiency with Perception. If you are already proficient with Perception, you instead gain an expertise die. You also gain 120 feet of darkvision if you do not already have it and 30 feet of blindsight.</p>",
+		"description": "<p>You gain proficiency with Perception. If you are already proficient with Perception, you instead gain an expertise die. You also gain 120 feet of darkvision if you do not already have it and 30 feet of blindsight.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "mysteriousAndMarvelousMiscellanea",
@@ -33,12 +33,12 @@
 		"prerequisite": "9th level, Dragonsworn archetype",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

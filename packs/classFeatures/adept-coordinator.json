@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>At 7th level, when using Prior Tactics the chosen allies gain an expertise die on their next spell or weapon attack.</p>\n<p>In addition, damage dealt by an attack that benefits from your Pior Tactics counts as magical for the purposes of overcoming damage resistances and immunities.</p>",
+		"description": "<p>At 7th level, when using Prior Tactics the chosen allies gain an expertise die on their next spell or weapon attack.</p><p>In addition, damage dealt by an attack that benefits from your Pior Tactics counts as magical for the purposes of overcoming damage resistances and immunities.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg3",
@@ -34,15 +34,16 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

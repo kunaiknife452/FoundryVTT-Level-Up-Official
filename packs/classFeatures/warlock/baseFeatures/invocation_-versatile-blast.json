@@ -16,7 +16,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You learn an additional Eldritch Blast feature of your choice.</p>\n<p>You can take this invocation a second and third time, each time learning a new Eldritch Blast feature.</p>",
+		"description": "<p>You learn an additional Eldritch Blast feature of your choice.</p><p>You can take this invocation a second and third time, each time learning a new Eldritch Blast feature.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "adventurersGuide",
@@ -35,12 +35,12 @@
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
 		},

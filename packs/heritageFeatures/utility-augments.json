@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>Choose two of the following customizations to enhance your utility frame.</p>\n<p><em>Gear Shift: </em>Your Speed increases by&nbsp;5 feet.</p>\n<p><em>Gyroscopic Balance. </em>You gain an&nbsp;expertise die on saving throws made&nbsp;against being knocked prone.</p>\n<p><em>Immutable Form: </em>You gain&nbsp;advantage on saving throws made&nbsp;against effects that would alter your&nbsp;form.</p>\n<p><em>Insectile Limbs: </em>You have a climb&nbsp;speed of 20 feet, and you gain an&nbsp;expertise die on checks made to&nbsp;climb.</p>\n<p><em>Treads: </em>You ignore difficult terrains caused by ice, snow, sand, or mud, and you gain an expertise die on checks made to balance.</p>",
+		"description": "<p>Choose two of the following customizations to enhance your utility frame.</p><p><em>Gear Shift: </em>Your Speed increases by&nbsp;5 feet.</p><p><em>Gyroscopic Balance. </em>You gain an&nbsp;expertise die on saving throws made&nbsp;against being knocked prone.</p><p><em>Immutable Form: </em>You gain&nbsp;advantage on saving throws made&nbsp;against effects that would alter your&nbsp;form.</p><p><em>Insectile Limbs: </em>You have a climb&nbsp;speed of 20 feet, and you gain an&nbsp;expertise die on checks made to&nbsp;climb.</p><p><em>Treads: </em>You ignore difficult terrains caused by ice, snow, sand, or mud, and you gain an expertise die on checks made to balance.</p>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "gpg0",
@@ -38,28 +38,50 @@
 				"label": "Utility Augments",
 				"features": {
 					"options": [
-						"Compendium.a5e.a5e-heritage-features.Item.pd7z5g3vyix9px0y",
-						"Compendium.a5e.a5e-heritage-features.Item.ul5abuhqtep7hiuz",
-						"Compendium.a5e.a5e-heritage-features.Item.zo5auue435pwc6ji",
-						"Compendium.a5e.a5e-heritage-features.Item.010cc4k4lrg32xd7",
-						"Compendium.a5e.a5e-heritage-features.Item.8f77rf0eaf6gj5hy"
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.pd7z5g3vyix9px0y",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.ul5abuhqtep7hiuz",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.zo5auue435pwc6ji",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.010cc4k4lrg32xd7",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						},
+						{
+							"uuid": "Compendium.a5e.a5e-heritage-features.Item.8f77rf0eaf6gj5hy",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
 					],
-					"total": 2
+					"total": 2,
+					"base": []
 				}
 			}
 		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},

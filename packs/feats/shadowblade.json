@@ -15,7 +15,7 @@
 			"requiresUnarmored": false
 		},
 		"actions": {},
-		"description": "<p>You have been trained in the ways of both stealthy violence and athletic perfection, honing you into a lethal instrument of incredibly precise violence. You gain the following benefits:</p>\n<ul>\n<li>Your Dexterity or Wisdom score increases by 1, to a maximum of 20.</li>\n<li>Sabers, Dueling Daggers, Hand Crossbows, Rapiers, and Shortbows are Adept weapons for you.</li>\n<li>You can use Sneak Attack with unarmed attacks and adept weapons.</li>\n<li>You gain proficiency with an additional combat tradition from the adept or rogue list.</li>\n</ul>",
+		"description": "<p>You have been trained in the ways of both stealthy violence and athletic perfection, honing you into a lethal instrument of incredibly precise violence. You gain the following benefits:</p><ul><li>Your Dexterity or Wisdom score increases by 1, to a maximum of 20.</li><li>Sabers, Dueling Daggers, Hand Crossbows, Rapiers, and Shortbows are Adept weapons for you.</li><li>You can use Sneak Attack with unarmed attacks and adept weapons.</li><li>You gain proficiency with an additional combat tradition from the adept or rogue list.</li></ul>",
 		"favorite": false,
 		"secretDescription": "",
 		"source": "thematicToolkitBurningGloom",
@@ -55,15 +55,16 @@
 		"prerequisite": "3 levels in Adept, 3 levels in Rogue",
 		"requiresBloodied": false,
 		"schemaVersion": {
-			"version": 0.018,
+			"version": 0.019,
 			"lastMigration": {
 				"version": {
-					"schema": 0.016,
+					"schema": 0.018,
 					"foundry": "11.315",
-					"system": "0.17.41"
+					"system": "0.18.11"
 				}
 			}
-		}
+		},
+		"classes": ""
 	},
 	"effects": [],
 	"flags": {},
