@@ -4,7 +4,6 @@
     import { TJSDocument } from "#runtime/svelte/store/fvtt/document";
 
     import FormSection from "../components/LegacyFormSection.svelte";
-    // import NavigationBar from "../components/navigation/NavigationBar.svelte";
     import PartyViewerActorSummary from "../components/partyViewer/PartyViewerActorSummary.svelte";
     import PartyViewerAttributesHeader from "../components/partyViewer/PartyViewerAttributesHeader.svelte";
     import PartyViewerCoreHeader from "../components/partyViewer/PartyViewerCoreHeader.svelte";
@@ -24,6 +23,14 @@
 
     //     await game.settings.set("a5e", "parties", $partiesStore);
     // }
+
+    function getAnyMemberHasArtifactCharges() {
+        return ($partyMembers ?? []).some((actor) => {
+            const actorData = get(actor);
+
+            return actorData?.system?.spellResources?.artifactCharges?.max;
+        });
+    }
 
     function getAnyMemberHasExertionPool() {
         return ($partyMembers ?? []).some((actor) => {
@@ -80,14 +87,16 @@
         if ($showActorImagesInPartyViewer) tableElements.push("img", "name");
         else tableElements.push("name");
 
-        // Conditionally add cells for inspiration, exertion, spell points, and spell slots.
+        // Conditionally add cells for inspiration, exertion, artifact charges, spell points, and spell slots.
         if (partyHasInspiration) tableElements.push("inspiration");
         if (partyHasExertionPool) tableElements.push("exertion");
+        if (partyHasArtifactCharges) tableElements.push("artifactCharges");
         if (partyHasSpellPointPool) tableElements.push("spellPoints");
         if (highestSpellSlotLevel) tableElements.push("spellSlots");
 
         // Add a section to show the "no resources" message when there's nothing to display.
         if (
+            !partyHasArtifactCharges &&
             !partyHasExertionPool &&
             !partyHasSpellPointPool &&
             !highestSpellSlotLevel
@@ -149,14 +158,16 @@
             poolWidth = "3.25rem";
         }
 
-        // Conditionally add cells for inspiration, exertion, spell points, and spell slots.
+        // Conditionally add cells for inspiration, exertion, artifact charges, spell points, and spell slots.
         if (partyHasInspiration) tableElements.push(inspirationWidth);
         if (partyHasExertionPool) tableElements.push(poolWidth);
+        if (partyHasArtifactCharges) tableElements.push(poolWidth);
         if (partyHasSpellPointPool) tableElements.push(poolWidth);
         if (highestSpellSlotLevel) tableElements.push("min-content");
 
         // Add a section to show the "no resources" message when there's nothing to display.
         if (
+            !partyHasArtifactCharges &&
             !partyHasExertionPool &&
             !partyHasSpellPointPool &&
             !highestSpellSlotLevel
@@ -209,13 +220,13 @@
         return ($partyMembers ?? []).reduce((highestSlotLevel, actor) => {
             const actorData = get(actor);
 
-            Object.entries(
-                actorData?.system?.spellResources?.slots ?? {},
-            ).forEach(([slotLevel, { max }]) => {
-                if (slotLevel > highestSlotLevel && max && max > 0) {
-                    highestSlotLevel = slotLevel;
-                }
-            });
+            Object.entries(actorData?.system?.spellResources?.slots ?? {}).forEach(
+                ([slotLevel, { max }]) => {
+                    if (slotLevel > highestSlotLevel && max && max > 0) {
+                        highestSlotLevel = slotLevel;
+                    }
+                },
+            );
 
             return highestSlotLevel;
         }, 0);
@@ -242,18 +253,12 @@
 
     async function onDropDocument(event) {
         if (!game.user.isGM) {
-            ui.notifications.warn(
-                "You do not have permission to edit this party.",
-            );
-
+            ui.notifications.warn("You do not have permission to edit this party.");
             return;
         }
 
         try {
-            const { uuid } = JSON.parse(
-                event.dataTransfer.getData("text/plain"),
-            );
-
+            const { uuid } = JSON.parse(event.dataTransfer.getData("text/plain"));
             const document = await fromUuid(uuid);
 
             if (document?.documentName === "Actor") onDropActor(uuid);
@@ -297,14 +302,12 @@
     }
 
     async function togglePartyLock() {
-        const parties = Object.entries($partiesStore ?? {}).map(
-            ([id, partyData]) => ({
-                id,
-                label: partyData.name || "New Party",
-                actors: partyData.actors ?? [],
-                isLocked: partyData.isLocked ?? false,
-            }),
-        );
+        const parties = Object.entries($partiesStore ?? {}).map(([id, partyData]) => ({
+            id,
+            label: partyData.name || "New Party",
+            actors: partyData.actors ?? [],
+            isLocked: partyData.isLocked ?? false,
+        }));
 
         if (parties.length) {
             const p = $partiesStore[parties[0]?.id];
@@ -319,20 +322,15 @@
 
         highestPassiveScores = getHighestPassiveScoresForParty();
         highestSpellSlotLevel = getHighestSpellSlotLevel();
+        partyHasArtifactCharges = getAnyMemberHasArtifactCharges();
         partyHasExertionPool = getAnyMemberHasExertionPool();
         partyHasInspiration = getAnyMemberHasInspiration();
         partyHasSpellPointPool = getAnyMemberHasSpellPointPool();
         totalPartyWealth = getTotalPartyWealth();
 
-        gridAreaDefinition = getGridAreaDefinition(
-            currentViewMode,
-            partyIsLocked,
-        );
+        gridAreaDefinition = getGridAreaDefinition(currentViewMode, partyIsLocked);
 
-        gridSizeDefinition = getGridSizeDefinition(
-            currentViewMode,
-            partyIsLocked,
-        );
+        gridSizeDefinition = getGridSizeDefinition(currentViewMode, partyIsLocked);
     }
 
     // function updateCurrentParty(event) {
@@ -356,14 +354,12 @@
     let partiesStore = settings.getStore("parties");
 
     let currentParty = derived(partiesStore, ($partiesStore) => {
-        const parties = Object.entries($partiesStore ?? {}).map(
-            ([id, partyData]) => ({
-                id,
-                label: partyData.name || "New Party",
-                actors: partyData.actors ?? [],
-                isLocked: partyData.isLocked ?? false,
-            }),
-        );
+        const parties = Object.entries($partiesStore ?? {}).map(([id, partyData]) => ({
+            id,
+            label: partyData.name || "New Party",
+            actors: partyData.actors ?? [],
+            isLocked: partyData.isLocked ?? false,
+        }));
 
         if (parties.length) {
             return $partiesStore[parties[0]?.id];
@@ -387,6 +383,7 @@
 
     let highestPassiveScores = getHighestPassiveScoresForParty();
     let highestSpellSlotLevel = getHighestSpellSlotLevel();
+    let partyHasArtifactCharges = getAnyMemberHasArtifactCharges();
     let partyHasExertionPool = getAnyMemberHasExertionPool();
     let partyHasInspiration = getAnyMemberHasInspiration();
     let partyHasSpellPointPool = getAnyMemberHasSpellPointPool();
@@ -395,15 +392,9 @@
     $: currentViewMode = viewModes[0][0];
     $: partyIsLocked = getIsLocked($partyMembers, $currentParty);
 
-    $: gridAreaDefinition = getGridAreaDefinition(
-        currentViewMode,
-        partyIsLocked,
-    );
+    $: gridAreaDefinition = getGridAreaDefinition(currentViewMode, partyIsLocked);
 
-    $: gridSizeDefinition = getGridSizeDefinition(
-        currentViewMode,
-        partyIsLocked,
-    );
+    $: gridSizeDefinition = getGridSizeDefinition(currentViewMode, partyIsLocked);
 
     const showActorImagesInPartyViewer = settings.getStore(
         "showActorImagesInPartyViewer",
@@ -412,20 +403,15 @@
     const unsubscribe = partyMembers.subscribe((_) => {
         highestPassiveScores = getHighestPassiveScoresForParty();
         highestSpellSlotLevel = getHighestSpellSlotLevel();
+        partyHasArtifactCharges = getAnyMemberHasArtifactCharges();
         partyHasExertionPool = getAnyMemberHasExertionPool();
         partyHasInspiration = getAnyMemberHasInspiration();
         partyHasSpellPointPool = getAnyMemberHasSpellPointPool();
         totalPartyWealth = getTotalPartyWealth();
 
-        gridAreaDefinition = getGridAreaDefinition(
-            currentViewMode,
-            partyIsLocked,
-        );
+        gridAreaDefinition = getGridAreaDefinition(currentViewMode, partyIsLocked);
 
-        gridSizeDefinition = getGridSizeDefinition(
-            currentViewMode,
-            partyIsLocked,
-        );
+        gridSizeDefinition = getGridSizeDefinition(currentViewMode, partyIsLocked);
     });
 
     const { isGM } = game.user;
@@ -481,9 +467,7 @@
                         ? 'sheet-lock--locked fa-lock'
                         : 'fa-unlock'}"
                     on:click={togglePartyLock}
-                    data-tooltip={partyIsLocked
-                        ? "Unlock this party"
-                        : "Lock this party"}
+                    data-tooltip={partyIsLocked ? "Unlock this party" : "Lock this party"}
                     data-tooltip-direction="UP"
                 />
             {/if}
@@ -493,6 +477,7 @@
             this={getViewModeComponent(currentViewMode)}
             propData={{
                 highestSpellSlotLevel,
+                partyHasArtifactCharges,
                 partyHasExertionPool,
                 partyHasInspiration,
                 partyHasSpellPointPool,
@@ -510,6 +495,7 @@
                     {currentViewMode}
                     {highestPassiveScores}
                     {highestSpellSlotLevel}
+                    {partyHasArtifactCharges}
                     {partyHasExertionPool}
                     {partyHasInspiration}
                     {partyHasSpellPointPool}
@@ -518,8 +504,7 @@
                     --grid-areas={gridAreaDefinition}
                     --grid-template={gridSizeDefinition}
                     on:actor-updated={({ detail }) => updatePartyData(detail)}
-                    on:remove-actor={({ detail }) =>
-                        removeActorFromParty(detail)}
+                    on:remove-actor={({ detail }) => removeActorFromParty(detail)}
                 />
             {/each}
         </ul>
