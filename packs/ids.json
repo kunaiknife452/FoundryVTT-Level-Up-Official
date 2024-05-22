@@ -3015,12 +3015,12 @@
 		"seal-of-the-pact_-genie's-curse": "9vqb8vid2oms4ybk",
 		"scholarly-inspiration": "e1igphq3svnvagl4",
 		"scholarly-acquaintance": "8mnttob3hnqjywzq",
-		"scholarly-acquaintance-(friend-to-all)": "9607d91fqqvqtvpc",
-		"scholarly-acquaintance-(apprenticed)": "tylsv140t1q0ygxw",
-		"scholarly-acquaintance-(always-knows-something-relevant)": "6fsra0qyj59qei1t",
+		"friend-to-all": "9607d91fqqvqtvpc",
+		"apprenticed": "tylsv140t1q0ygxw",
+		"always-knows-something-relevant": "6fsra0qyj59qei1t",
 		"scholar-archetype": "g6rn0z7a9ap2ormm",
 		"scholar's-studies": "hwvg960u7r646yx2",
-		"scholar's-discoveries": "msqiaadyn4lilf8b",
+		"discoveries": "msqiaadyn4lilf8b",
 		"scattering-charge": "ktq0moq0wsbem929",
 		"sacred-space": "6rgo2gii03blmjw8",
 		"rise-or-rest": "k4ozqimnkufjhapa",
@@ -3072,8 +3072,8 @@
 		"down-but-not-out": "rhss1phncxxc1s69",
 		"devoted-champion": "wzakgc7f12shjvfs",
 		"defensive-studies": "luapp6zqydhkeemn",
-		"defensive-studies-(precision-strikes)": "v4pkjilh484jph6i",
-		"defensive-studies-(mystic-apprentice)": "okthtwyohmh0eoa5",
+		"precision-strikes-(scholar)": "v4pkjilh484jph6i",
+		"mystic-apprentice": "okthtwyohmh0eoa5",
 		"deceptive-duplicate": "su44imos3mfpgehm",
 		"curse-of-the-coward": "m60c938v1nsvip1d",
 		"come-the-conqueror": "gai9q4qqlj5fhxmy",
@@ -4640,7 +4640,8 @@
 		"horizon-scanner": "xgp3g8f7d8nzdg32",
 		"explorer's-ken": "phhf1fhdw3rgbqy6",
 		"early-explorer": "1gm1nwc2y13i2g5n",
-		"always-forward": "ghem2ushpx94kfn7"
+		"always-forward": "ghem2ushpx94kfn7",
+		"scholar's-discoveries": "7pc9o1wg43cm7eqm"
 	},
 	"cultureFeatures": {
 		"aggressive-(warhordling)": "k5dqyx7k76mk01st",
@@ -8061,7 +8062,19 @@
 		"leopard-seal": "ywl0tj8bwaqyqh4g",
 		"elephant-seal": "vqqswu0ni4cha5c0",
 		"akhlut": "9c6a6x5rxtgh7y7v",
-		"akhlut-pod-leader": "2xsnvp24aspx3qmw"
+		"akhlut-pod-leader": "2xsnvp24aspx3qmw",
+		"elemental-companion_-water": "b2kw190l2s78e1tf",
+		"elemental-companion_-water-(specialty)": "oyjol1u7ts51giz4",
+		"elemental-companion_-water-(elder)": "0du1qgq0hlu7cxps",
+		"elemental-companion_-fire": "jr53gn9xqwawz7jt",
+		"elemental-companion_-fire-(specialty)": "kfieb6wyf3bxe2de",
+		"elemental-companion_-fire-(elder)": "lo48asf7tfzui32k",
+		"elemental-companion_-earth": "ftpbrn35wlec13a3",
+		"elemental-companion_-earth-(specialty)": "nzq7hhhyxgscfpz5",
+		"elemental-companion_-earth-(elder)": "7nwu9ftpw7be5pt9",
+		"elemental-companion_-air": "vg41r1za8hqvzajq",
+		"elemental-companion_-air-(specialty)": "93upq923g2jyy6tl",
+		"elemental-companion_-air-(elder)": "5bq8ktverikmxuxv"
 	},
 	"paragonGifts": {
 		"ancestral-resistance-aasimar-(planetouched-paragon)": "6bt39wd2gzfhnz9t",
@@ -10999,6 +11012,7 @@
 		"herald": "jaxdq1hah0d634sr",
 		"savant": "4v8u52zi1b2flv9f",
 		"elementalist": "5srmhn9wigfqsav4",
-		"artificer": "1gyltqcjks6iyihg"
+		"artificer": "1gyltqcjks6iyihg",
+		"scholar": "2pm8ysi5mz7gl1a7"
 	}
 }
