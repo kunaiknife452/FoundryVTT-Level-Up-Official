@@ -358,7 +358,7 @@ export default class ActorGrantsManger extends Map<string, ActorGrant> {
 
       let hp: number;
       if (leveledHpType === 'roll' && hpFormula) {
-        const roll = await new Roll(hpFormula).roll({ async: true });
+        const roll = await new Roll(hpFormula).roll();
         hp = roll.total;
 
         this.#createRolledHpCard(options.cls, roll);
@@ -390,9 +390,8 @@ export default class ActorGrantsManger extends Map<string, ActorGrant> {
   #createRolledHpCard(cls: typeof Item, roll: any) {
     const title = `Hit Dice Roll - ${cls.name}`;
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       rolls: [roll],
       flags: {

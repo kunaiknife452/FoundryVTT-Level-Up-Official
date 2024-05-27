@@ -16,8 +16,6 @@ import AbilityCheckConfigDialog from '../../apps/dialogs/ActorAbilityConfigDialo
 import AbilityCheckRollDialog from '../../apps/dialogs/AbilityCheckRollDialog.svelte';
 import ActorHpConfigDialog from '../../apps/dialogs/ActorHpConfigDialog.svelte';
 import ActorInitConfigDialog from '../../apps/dialogs/ActorInitConfigDialog.svelte';
-import ActorManueverConfigDialog from '../../apps/dialogs/ActorManueverConfigDialog.svelte';
-import ActorSpellConfigDialog from '../../apps/dialogs/ActorSpellConfigDialog.svelte';
 import ArmorClassConfigDialog from '../../apps/dialogs/ArmorClassConfigDialog.svelte';
 import AttackBonusConfigDialog from '../../apps/dialogs/AttackBonusConfigDialog.svelte';
 import DamageBonusConfigDialog from '../../apps/dialogs/DamageBonusConfigDialog.svelte';
@@ -78,7 +76,6 @@ export default class BaseActorA5e extends Actor {
       initiative: ActorInitConfigDialog,
       initiativeBonus: InitiativeBonusConfigDialog,
       languages: DetailsConfigDialog,
-      maneuvers: ActorManueverConfigDialog,
       maneuverTraditions: DetailsConfigDialog,
       movement: MovementConfigDialog,
       movementBonus: MovementBonusConfigDialog,
@@ -89,7 +86,6 @@ export default class BaseActorA5e extends Actor {
       weight: DetailsConfigDialog,
       skill: SkillConfigDialog,
       skillBonus: SkillBonusConfigDialog,
-      spells: ActorSpellConfigDialog,
       terrain: DetailsConfigDialog,
       tools: DetailsConfigDialog,
       types: DetailsConfigDialog,
@@ -120,11 +116,13 @@ export default class BaseActorA5e extends Actor {
    */
   get temporaryEffects() {
     const effects = [];
+
     for (const effect of this.allApplicableEffects()) {
       if (effect.active && (effect.isTemporary || effect?.flags?.a5e?.transferType === 'onUse')) {
         effects.push(effect);
       }
     }
+
     return effects.sort((a, b) => a.name.localeCompare(b.name));
   }
 
@@ -635,11 +633,11 @@ export default class BaseActorA5e extends Actor {
 
     if (temp) {
       updates['system.attributes.hp'] = {
-        temp: Math.clamped(temp - damage, 0, temp),
-        value: Math.clamped(value + temp - damage, 0, value)
+        temp: Math.clamp(temp - damage, 0, temp),
+        value: Math.clamp(value + temp - damage, 0, value)
       };
     } else {
-      updates['system.attributes.hp.value'] = Math.clamped(value - damage, 0, value);
+      updates['system.attributes.hp.value'] = Math.clamp(value - damage, 0, value);
     }
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
@@ -672,7 +670,7 @@ export default class BaseActorA5e extends Actor {
       updates['system.attributes.hp.temp'] = tempTotal;
     }
 
-    updates['system.attributes.hp.value'] = Math.clamped(value + healingTotal, value, max);
+    updates['system.attributes.hp.value'] = Math.clamp(value + healingTotal, value, max);
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
       const actor = this;
@@ -723,7 +721,7 @@ export default class BaseActorA5e extends Actor {
 
       updates['system.attributes.hp.temp'] = healing;
     } else {
-      updates['system.attributes.hp.value'] = Math.clamped(value + healing, value, max);
+      updates['system.attributes.hp.value'] = Math.clamp(value + healing, value, max);
     }
 
     if (game.settings.get('a5e', 'enableCascadingDamageAndHealing')) {
@@ -884,7 +882,7 @@ export default class BaseActorA5e extends Actor {
     const updatePath = `system.resources.${resource}.value`;
 
     // Recharge Roll
-    const rechargeRoll = await new Roll(formula, this.getRollData()).evaluate({ async: true });
+    const rechargeRoll = await new Roll(formula, this.getRollData()).evaluate();
 
     // TODO: Chat cards - Make the message prettier
     rechargeRoll.toMessage();
@@ -897,7 +895,7 @@ export default class BaseActorA5e extends Actor {
       const rechargeAmountRoll = await new Roll(
         rechargeAmount,
         this.getRollData()
-      ).evaluate({ async: true });
+      ).evaluate();
 
       // TODO: Add the roll back in when the custom recharge amount config is added.
       // rechargeAmountRoll.toMessage();
@@ -950,9 +948,8 @@ export default class BaseActorA5e extends Actor {
     const rolls = await rollPreparationManager.prepareRolls();
 
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       rolls: rolls.map(({ roll }) => roll),
       rollMode: visibilityMode ?? game.settings.get('core', 'rollMode'),
@@ -1074,9 +1071,8 @@ export default class BaseActorA5e extends Actor {
     const rolls = await rollPreparationManager.prepareRolls();
 
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       rolls: rolls.map(({ roll }) => roll),
       rollMode: visibilityMode ?? game.settings.get('core', 'rollMode'),
@@ -1202,9 +1198,8 @@ export default class BaseActorA5e extends Actor {
     const rolls = await rollPreparationManager.prepareRolls();
 
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       rolls: rolls.map(({ roll }) => roll),
       rollMode: visibilityMode ?? game.settings.get('core', 'rollMode'),
@@ -1675,5 +1670,99 @@ export default class BaseActorA5e extends Actor {
 
     if (applyBloodied) automateHpConditions(this, changed, userId, 'bloodied');
     if (applyUnconscious) automateHpConditions(this, changed, userId, 'unconscious');
+  }
+
+  // -------------------------------------------------------------
+  // Functionality Patches
+  // -------------------------------------------------------------
+  async toggleStatusEffect(statusId, options = {}) {
+    const { active, overlay = false } = options;
+
+    const status = CONFIG.statusEffects.find((e) => e.id === statusId);
+    if (!status) throw new Error(`Invalid status ID "${statusId}" provided to Actor#toggleStatusEffect`);
+
+    const existing = [];
+    const existingEffects = [];
+
+    // Find the effect with the static _id of the status effect
+    if (status._id) {
+      const effect = this.effects.get(status._id);
+      if (effect) {
+        existing.push(effect.id);
+        existingEffects.push(effect);
+      }
+    }
+
+    // If no static _id, find all single-status effects that have this status
+    else {
+      for (const effect of this.effects) {
+        const { statuses } = effect;
+        if ((statuses.size === 1) && statuses.has(status.id)) {
+          existingEffects.push(effect);
+          existing.push(effect.id);
+        }
+      }
+    }
+
+    // Handle multi-leveled effects
+    if (['fatigue', 'exhaustion', 'strife'].includes(statusId)) {
+      const delta = active ? 1 : -1;
+      const currLevel = this.system.attributes[statusId];
+      const maxLevel = CONFIG.A5E.multiLevelConditionsMaxLevel[statusId] ?? 7;
+      if (delta === 1 && currLevel >= maxLevel) return undefined;
+      if (delta === -1 && currLevel <= 0) return undefined;
+
+      const changeKey = statusId === 'fatigue' && game.settings.get('a5e', 'replaceFatigueAndStrife')
+        ? 'exhaustion'
+        : statusId;
+
+      const changes = Object.entries(CONFIG.A5E.multiLevelConditions[changeKey] ?? {})
+        .reduce((acc, [level, change]) => {
+          if (level > currLevel + delta) return acc;
+          acc.push(...change);
+          return acc;
+        }, []);
+
+      // Update actor values
+      const actorValue = active ? Math.min(currLevel + 1, maxLevel) : Math.max(currLevel - 1, 0);
+
+      this.update({
+        [`system.attributes.${statusId}`]: actorValue,
+        'flags.a5e.autoApplyFSConditions': false
+      });
+
+      // Delete Existing effect
+      if (existing.length && currLevel === 1 && !active) {
+        await this.deleteEmbeddedDocuments('ActiveEffect', existing);
+        return false;
+      }
+
+      // Update the existing effect
+      if (existing.length && currLevel > 0) {
+        const effect = existingEffects[0];
+        const doc = await effect.update({ changes });
+        return doc;
+      }
+
+      // Create a new effect
+      if (active) {
+        const effect = await ActiveEffect.implementation.fromStatusEffect(statusId);
+        effect.updateSource({ changes });
+        return ActiveEffect.implementation.create(effect, { parent: this, keepId: true });
+      }
+    }
+
+    // Remove the existing effects unless the status effect is forced active
+    if (existing.length) {
+      if (active) return true;
+      await this.deleteEmbeddedDocuments('ActiveEffect', existing);
+      return false;
+    }
+
+    // Create a new effect unless the status effect is forced inactive
+    if (!active && (active !== undefined)) return undefined;
+    const effect = await ActiveEffect.implementation.fromStatusEffect(statusId);
+    if (overlay) effect.updateSource({ 'flags.core.overlay': true });
+    return ActiveEffect.implementation.create(effect, { parent: this, keepId: true });
   }
 }

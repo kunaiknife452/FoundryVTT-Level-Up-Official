@@ -1,7 +1,7 @@
 <script>
     import { getContext } from "svelte";
 
-    import FormSection from "../components/LegacyFormSection.svelte";
+    import FieldWrapper from "../components/FieldWrapper.svelte";
     import RadioGroup from "../components/RadioGroup.svelte";
 
     import TemplatePreparationManager from "../../managers/TemplatePreparationManager";
@@ -42,7 +42,7 @@
     />
 
     {#if scalingMode === "cantrip"}
-        <FormSection
+        <FieldWrapper
             hint="This increment will be applied automatically based on your caster level."
         >
             <section class="row u-flex-wrap">
@@ -69,9 +69,9 @@
                     </div>
                 {/each}
             </section>
-        </FormSection>
+        </FieldWrapper>
     {:else if scalingMode === "spellLevel"}
-        <FormSection>
+        <FieldWrapper>
             <section class="row u-flex-wrap">
                 {#each properties as property}
                     <div
@@ -118,9 +118,9 @@
                     <span class="levels">Levels</span>
                 </div>
             </section>
-        </FormSection>
+        </FieldWrapper>
     {:else if ["artifactCharges", "spellPoints", "actionUses", "itemUses"].includes(scalingMode)}
-        <FormSection>
+        <FieldWrapper>
             <section class="row u-flex-wrap">
                 {#each properties as property}
                     <div
@@ -168,7 +168,7 @@
                     </span>
                 </div>
             </section>
-        </FormSection>
+        </FieldWrapper>
     {/if}
 </form>
 

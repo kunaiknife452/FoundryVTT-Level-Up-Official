@@ -1,6 +1,8 @@
 import simplifyOperatorTerms from './simplifyOperatorTerms';
 
 export default function simplifyDiceTerms(terms) {
+  const Terms = foundry.dice.terms;
+
   // Do not attempt to simplify terms for rolls that feature muliplication or division
   if (terms.some((term) => term.operator === '*' || term.operator === '/')) return terms;
 
@@ -13,11 +15,11 @@ export default function simplifyDiceTerms(terms) {
     const previousTerm = terms[index - 1];
 
     // Ignore OperatorTerms, as we'll be grabbing these alongside loose dice terms
-    if (term instanceof OperatorTerm) return newTerms;
+    if (term instanceof Terms.OperatorTerm) return newTerms;
 
     // If the term is preceded by a subtraction operator, or the term is not a die, do not attempt
     // any further simplification. Simply return the term and the preceding operator.
-    if (!(term instanceof DiceTerm) || previousTerm.operator === '-') {
+    if (!(term instanceof Terms.DiceTerm) || previousTerm.operator === '-') {
       newTerms.push(previousTerm, term);
       return newTerms;
     }
@@ -33,7 +35,7 @@ export default function simplifyDiceTerms(terms) {
         const combinedCount = newTerms[i].number + term.number;
         const combinedResults = [...newTerms[i].results, ...term.results];
 
-        const newTerm = new Die({
+        const newTerm = new Terms.Die({
           faces: term.faces,
           number: combinedCount,
           results: combinedResults,
@@ -58,7 +60,7 @@ export default function simplifyDiceTerms(terms) {
       const combinedCount = newTerms[similarDieIndex].number + term.number;
       const combinedResults = [...newTerms[similarDieIndex].results, ...term.results];
 
-      const newTerm = new Die({
+      const newTerm = new Terms.Die({
         faces: term.faces,
         number: combinedCount,
         results: combinedResults

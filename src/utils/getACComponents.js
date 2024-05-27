@@ -57,10 +57,10 @@ export default function getACComponents(actor) {
   // Add override component
   if (baseChanges.override.formula) {
     const formulaTerms = new Roll(baseChanges.override.formula, actor.getRollData())
-      .evaluate({ async: false }).terms;
+      .evaluateSync().terms;
 
     const formula = simplifyOperatorTerms(formulaTerms ?? []).reduce((acc, term) => {
-      if (term instanceof OperatorTerm) return `${acc} ${term.operator} `;
+      if (term instanceof foundry.dice.terms.OperatorTerm) return `${acc} ${term.operator} `;
       acc += `${term.total}`;
       if (term.options?.flavor) acc += `[${term.options.flavor}]`;
       return acc;
@@ -72,7 +72,7 @@ export default function getACComponents(actor) {
   // Finalize the formula string
   const acFormula = simplifyOperatorTerms(
     new Roll(components.join(' '), actor.getRollData())
-      .evaluate({ async: false })
+      .evaluateSync()
       .terms ?? []
   );
 

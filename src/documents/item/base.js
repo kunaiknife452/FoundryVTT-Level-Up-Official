@@ -52,7 +52,7 @@ export default class BaseItemA5e extends Item {
 
   async shareItemDescription(action) {
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this }),
       flags: {
         a5e: {
@@ -62,7 +62,6 @@ export default class BaseItemA5e extends Item {
           actionName: action?.name,
           actionDescription: action?.descriptionOutputs?.includes('action')
             ? await TextEditor.enrichHTML(action.description, {
-              async: true,
               secrets: this.isOwner,
               relativeTo: this,
               rollData: this?.actor?.getRollData(this) ?? {}
@@ -70,7 +69,6 @@ export default class BaseItemA5e extends Item {
             : null,
           itemDescription: action?.descriptionOutputs?.includes('item') ?? true
             ? await TextEditor.enrichHTML(this.system.description, {
-              async: true,
               secrets: this.isOwner,
               relativeTo: this,
               rollData: this?.actor?.getRollData(this) ?? {}
@@ -78,7 +76,6 @@ export default class BaseItemA5e extends Item {
             : null,
           unidentifiedDescription: action?.descriptionOutputs?.includes('item') ?? true
             ? await TextEditor.enrichHTML(this.system.unidentifiedDescription, {
-              async: true,
               secrets: this.isOwner,
               relativeTo: this,
               rollData: this?.actor?.getRollData(this) ?? {}
@@ -148,7 +145,7 @@ export default class BaseItemA5e extends Item {
   }
 
   async _preUpdate(data, options, user) {
-    super._onUpdate(data, options, user);
+    super._preUpdate(data, options, user);
   }
 
   async _onCreate(data, options, userId) {
@@ -166,24 +163,31 @@ export default class BaseItemA5e extends Item {
     super._onDelete(data, options, user);
   }
 
-  static async _onCreateDocuments(items, context) {
-    if (!(context.parent instanceof Actor)) return Item._onCreateDocuments(items, context);
+  static async _onCreateOperation(documents, operation, user) {
+    if (game.user.id !== user.id) return Item._onCreateOperation(documents, operation, user);
+
+    // eslint-disable-next-line no-undef
+    const parent = fromUuidSync(operation.parentUuid) ?? {};
+    if (!(parent instanceof Actor)) {
+      return Item._onCreateOperation(documents, operation, user);
+    }
+
     const toCreate = [];
-    items.forEach((item) => {
+    documents.forEach((item) => {
       item.effects.forEach((effect) => {
         const isPassive = effect.flags?.a5e?.transferType === 'passive';
         if (!isPassive) return;
 
-        const effectData = effect.toJSON();
+        const effectData = effect.toObject();
         effectData.origin = item.uuid;
         toCreate.push(effectData);
       });
     });
 
-    if (!toCreate.length) return [];
+    if (!toCreate.length) return Item._onCreateOperation(documents, operation, user);
     const cls = getDocumentClass('ActiveEffect');
-    cls.createDocuments(toCreate, context);
+    await cls.createDocuments(toCreate, operation);
 
-    return Item._onCreateDocuments(items, context);
+    return Item._onCreateOperation(documents, operation, user);
   }
 }

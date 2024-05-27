@@ -30,7 +30,25 @@
 		},
 		"concentration": false,
 		"featureType": "heritage",
-		"grants": {},
+		"grants": {
+			"yTWnT5b09FQHSLg5": {
+				"grantType": "feature",
+				"level": 1,
+				"levelType": "character",
+				"optional": false,
+				"_id": "yTWnT5b09FQHSLg5",
+				"label": "Premonition",
+				"features": {
+					"base": [
+						{
+							"uuid": "Compendium.a5e.a5e-class-features.Item.p3kung5mqpo30nbi",
+							"limitedReselection": true,
+							"selectionLimit": 1
+						}
+					]
+				}
+			}
+		},
 		"prerequisite": "",
 		"requiresBloodied": false,
 		"schemaVersion": {

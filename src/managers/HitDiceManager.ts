@@ -138,13 +138,12 @@ export default class HitDiceManager {
   ): Promise<{ hookData: any, chatData: any }> {
     const { attributes } = this.#actor.system;
 
-    const roll = await new Roll(formula).roll({ async: true });
+    const roll = await new Roll(formula).roll();
 
     const title = localize('A5E.HitDiceChatHeader', { dieSize: dieSize.toUpperCase() });
     const chatData = {
-      user: game.user?.id,
+      author: game.user?.id,
       speaker: ChatMessage.getSpeaker({ actor: this.#actor }),
-      type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       sound: CONFIG.sounds.dice,
       rolls: [roll],
       flags: {

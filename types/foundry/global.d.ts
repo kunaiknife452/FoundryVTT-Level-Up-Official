@@ -1,3 +1,10 @@
+// import * as abstract from './common/abstract/module.d.mts';
+// import * as constants from './common/constants.d.mts';
+// import * as config from './common/config.d.mts';
+// import * as data from './common/data/data.d.mts';
+// import * as documents from './common/documents/_module.d.mts';
+// import * as utils from './common/utils/module.d.mts';
+
 declare const CONFIG: any;
 declare const CONST: any;
 

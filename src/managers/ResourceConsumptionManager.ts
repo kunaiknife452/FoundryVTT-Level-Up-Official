@@ -72,7 +72,7 @@ export default class ResourceConsumptionManager {
     );
 
     if (!max) return;
-    const newValue = Math.clamped(actionUses.value - quantity, 0, max);
+    const newValue = Math.clamp(actionUses.value - quantity, 0, max);
 
     this.#updates.item[`system.actions.${this.#actionId}.uses.value`] = newValue;
   }
@@ -102,7 +102,7 @@ export default class ResourceConsumptionManager {
     );
 
     if (!max) return;
-    this.#updates.item['system.uses.value'] = Math.clamped(value - quantity, 0, max);
+    this.#updates.item['system.uses.value'] = Math.clamp(value - quantity, 0, max);
   }
 
   // @ts-ignore

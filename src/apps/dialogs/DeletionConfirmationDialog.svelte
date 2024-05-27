@@ -2,7 +2,7 @@
     import { getContext } from "svelte";
 
     import Checkbox from "../components/Checkbox.svelte";
-    import FormSection from "../components/LegacyFormSection.svelte";
+    import FieldWrapper from "../components/FieldWrapper.svelte";
 
     export let { dialog, itemDocument, hideDeleteSection } =
         getContext("#external").application;
@@ -23,7 +23,7 @@
 
 <form>
     {#if !hideDeleteSection}
-        <FormSection
+        <FieldWrapper
             hint="You can reenable this dialog at any time by turning off the 'Hide Deletion Confirmation Dialog' system setting."
         >
             <Checkbox
@@ -33,7 +33,7 @@
                     hideDeleteConfirmation = detail;
                 }}
             />
-        </FormSection>
+        </FieldWrapper>
     {/if}
 
     <div class="button-container">

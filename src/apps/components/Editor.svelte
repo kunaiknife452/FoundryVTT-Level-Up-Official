@@ -5,7 +5,6 @@
     export let document;
     export let content;
     export let updatePath;
-    export let async = false;
 
     const descriptionTypes = {
         secretDescription: "A5E.NoSecretDescription",
@@ -19,6 +18,10 @@
         $document.update({
             [updatePath]: content === "" ? "" : content,
         });
+    }
+
+    async function getEnrichedContent() {
+        return await TextEditor.enrichHTML($document[updatePath]);
     }
 
     let newLabel;
@@ -36,9 +39,9 @@
     const options = { mceConfig: editorOptions };
 
     $: (content = content || newLabel) || localize("A5E.NoDescription");
-    $: enrichedContent = TextEditor.enrichHTML($document[updatePath], {
-        async,
-    });
+    $: enrichedContent = Promise.resolve(getEnrichedContent())
+        .then((content) => content)
+        .catch(() => "Error Enriching Content");
 </script>
 
 <div class="editor">

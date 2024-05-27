@@ -3,7 +3,7 @@
     import { derived, get } from "svelte/store";
     import { TJSDocument } from "#runtime/svelte/store/fvtt/document";
 
-    import FormSection from "../components/LegacyFormSection.svelte";
+    import FieldWrapper from "../components/FieldWrapper.svelte";
     import PartyViewerActorSummary from "../components/partyViewer/PartyViewerActorSummary.svelte";
     import PartyViewerAttributesHeader from "../components/partyViewer/PartyViewerAttributesHeader.svelte";
     import PartyViewerCoreHeader from "../components/partyViewer/PartyViewerCoreHeader.svelte";
@@ -446,12 +446,13 @@
     </FormSection> -->
 
     {#if $partyMembers.length}
-        <FormSection
-            --background="none"
-            --gap="0.75rem"
-            --margin="0.375rem 0 0.375rem"
-            --padding="0"
-            --wrap="no-wrap"
+        <FieldWrapper
+            --a5e-field-wrapper-direction="row"
+            --a5e-field-wrapper-item-alignment="center"
+            --a5e-field-wrapper-gap="0.75rem"
+            --a5e-field-wrapper-margin="0.375rem 0 0.375rem"
+            --a5e-field-wrapper-padding="0"
+            --a5e-field-wrapper-wrap="no-wrap"
         >
             <RadioGroup
                 allowDeselect={false}
@@ -471,7 +472,7 @@
                     data-tooltip-direction="UP"
                 />
             {/if}
-        </FormSection>
+        </FieldWrapper>
 
         <svelte:component
             this={getViewModeComponent(currentViewMode)}
@@ -553,6 +554,7 @@
         height: 100%;
         width: fit-content;
         padding: 0 0.125rem;
+        margin-bottom: 0.25rem;
         margin-right: auto;
         font-size: var(--a5e-text-size-md);
         color: #999;

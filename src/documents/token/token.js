@@ -14,43 +14,44 @@ export default class TokenA5e extends Token {
    * @private
    */
   _getStatusEffectChoices() {
-    const token = this;
-    const doc = token.document;
-
-    // Get statuses which are active for the token actor
-    const actor = token.actor || null;
-    const statuses = actor ? actor.effects.reduce((obj, effect) => {
-      // eslint-disable-next-line no-restricted-syntax
-      for (const id of effect.statuses) {
-        obj[id] = { id, overlay: !!effect.getFlag('core', 'overlay') };
-      }
-      return obj;
-    }, {}) : {};
-
-    // Prepare the list of effects from the configured defaults and any additional
-    // effects present on the Token
-    const tokenEffects = foundry.utils.deepClone(doc.effects) || [];
-    if (doc.overlayEffect) tokenEffects.push(doc.overlayEffect);
-    return CONFIG.statusEffects.concat(tokenEffects).reduce((obj, e) => {
-      const src = e.icon ?? e;
-      if (src in obj) return obj;
-      const status = statuses[e.id] || {};
-      const isActive = !!status.id || doc.effects.includes(src);
-      const isOverlay = !!status.overlay || doc.overlayEffect === src;
-      const label = e.name ?? e.label;
-      obj[src] = {
-        id: e.id ?? '',
-        title: label ? game.i18n.localize(label) : null,
-        src,
-        isActive,
-        isOverlay,
-        cssClass: [
-          isActive ? 'active' : null,
-          isOverlay ? 'overlay' : null
-        ].filterJoin(' ')
+    // Include all HUD-enabled status effects
+    const choices = {};
+    for (const status of CONFIG.statusEffects) {
+      if (status.hud === false) continue;
+      choices[status.id] = {
+        _id: status._id,
+        id: status.id,
+        title: game.i18n.localize(status.name),
+        src: status.img,
+        isActive: false,
+        isOverlay: false
       };
-      return obj;
-    }, {});
+    }
+
+    // Update the status of effects which are active for the token actor
+    const activeEffects = this.actor?.effects || [];
+    for (const effect of activeEffects) {
+      for (const statusId of effect.statuses) {
+        const status = choices[statusId];
+        if (!status) continue;
+        if (status._id) {
+          if (status._id !== effect.id) continue;
+        } else if (effect.statuses.size !== 1) continue;
+        status.isActive = true;
+        if (effect.getFlag('core', 'overlay')) status.isOverlay = true;
+        break;
+      }
+    }
+
+    // Flag status CSS class
+    for (const status of Object.values(choices)) {
+      status.cssClass = [
+        status.isActive ? 'active' : null,
+        status.isOverlay ? 'overlay' : null
+      ].filterJoin(' ');
+    }
+
+    return choices;
   }
 
   _getActiveConditions() {
@@ -60,128 +61,23 @@ export default class TokenA5e extends Token {
     }, []);
   }
 
-  _addStatusEffect({ id, src }, { overlay = false } = {}) {
-    const effect = id && this.actor ? CONFIG.statusEffects.find((e) => e.id === id) : src;
-
+  _addStatusEffect({ id, src }, { overlay } = {}) {
     if (['fatigue', 'exhaustion', 'strife'].includes(id)) {
-      return this._handleMultiLevelEffectsAdd(effect);
+      return this.actor.toggleStatusEffect(id, { active: true, overlay });
     }
 
     const activeConditions = this._getActiveConditions();
     if (activeConditions.includes(id)) return this._removeStatusEffect({ id, src }, { overlay });
-    return this.toggleEffect(effect, { active: true, overlay });
+    return this.actor.toggleStatusEffect(id, { active: true, overlay });
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  _removeStatusEffect({ id, src }, { overlay = false } = {}) {
-    const effect = id && this.actor ? CONFIG.statusEffects.find((e) => e.id === id) : src;
-    if (typeof effect !== 'object') return null;
-
+  _removeStatusEffect({ id, src }, { overlay } = {}) {
     if (['fatigue', 'exhaustion', 'strife'].includes(id)) {
-      return this._handleMultiLevelEffectsRemove(effect);
+      return this.actor.toggleStatusEffect(id, { active: false, overlay });
     }
 
-    const subConditions = CONFIG.statusEffects.reduce((acc, c) => {
-      if (!c?.statuses?.length) return acc;
-
-      c.statuses.forEach((s) => {
-        acc[s] ??= [];
-        acc[s].push(c.id);
-      });
-      return acc;
-    }, {});
-
-    const activeConditions = this._getActiveConditions();
-    const { existing, associated } = this.actor.effects.reduce((arr, e) => {
-      if (e.statuses.size === 1 && e.statuses.has(id)) { arr.existing.push(e.id); }
-
-      effect?.statuses?.forEach((s) => {
-        if (e.statuses.size === 1 && e.statuses.has(s)) {
-          const difference = subConditions[s]?.filter((c) => activeConditions.includes(c));
-
-          if (difference?.length > 1) return;
-          arr.associated.push(e.id);
-        }
-      });
-
-      return arr;
-    }, { existing: [], associated: [] });
-
-    if (!existing.length && !associated.length) return null;
-
-    return this.actor.deleteEmbeddedDocuments(
-      'ActiveEffect',
-      [...existing, ...associated]
-    );
-  }
-
-  async _handleMultiLevelEffectsAdd(effect) {
-    if (!effect) return;
-
-    const key = effect.id;
-    const currentLevel = this.actor.system.attributes?.[key];
-    const maxLevel = CONFIG.A5E.multiLevelConditionsMaxLevel[key] ?? 7;
-    if (currentLevel >= maxLevel) return;
-
-    // Find if effect exists
-    const existingEffect = this.actor.effects.reduce((arr, e) => {
-      if (e.statuses.size === 1 && e.statuses.has(effect.id)) arr.push(e);
-      return arr;
-    }, [])?.[0];
-
-    const changeKey = key === 'fatigue' && game.settings.get('a5e', 'replaceFatigueAndStrife')
-      ? 'exhaustion' : key;
-    const changes = Object.entries(CONFIG.A5E.multiLevelConditions[changeKey] ?? {})
-      .reduce((arr, [level, c]) => {
-        if (level > currentLevel + 1) return arr;
-        arr.push(...c);
-        return arr;
-      }, []);
-
-    if (!existingEffect) {
-      const newEffect = foundry.utils.deepClone(effect);
-      newEffect.changes = changes;
-      this.toggleEffect(newEffect, { active: true, overlay: false });
-    } else existingEffect.update({ changes });
-
-    // Update actor to reflect new level
-    await this.actor.update({
-      [`system.attributes.${key}`]: Math.min(currentLevel + 1, maxLevel),
-      'flags.a5e.autoApplyFSConditions': false
-    });
-  }
-
-  async _handleMultiLevelEffectsRemove(effect) {
-    if (!effect) return;
-
-    const key = effect.id;
-    const currentLevel = this.actor.system.attributes?.[key];
-    if (currentLevel <= 0) return;
-
-    // Find if effect exists
-    const existingEffect = this.actor.effects.reduce((arr, e) => {
-      if (e.statuses.size === 1 && e.statuses.has(effect.id)) arr.push(e);
-      return arr;
-    }, [])?.[0];
-
-    const changeKey = key === 'fatigue' && game.settings.get('a5e', 'replaceFatigueAndStrife')
-      ? 'exhaustion' : key;
-    const changes = Object.entries(CONFIG.A5E.multiLevelConditions[changeKey] ?? {})
-      .reduce((arr, [level, c]) => {
-        if (level > currentLevel - 1) return arr;
-        arr.push(...c);
-        return arr;
-      }, []);
-
-    if (existingEffect && currentLevel > 1) {
-      existingEffect.update({ changes });
-    } else this.toggleEffect(effect, { active: false, overlay: false });
-
-    // Update actor to reflect new level
-    await this.actor.update({
-      [`system.attributes.${key}`]: Math.max(currentLevel - 1, 0),
-      'flags.a5e.autoApplyFSConditions': false
-    });
+    return this.actor.toggleStatusEffect(id, { active: false, overlay });
   }
 
   /** @inheritdoc */
@@ -204,9 +100,9 @@ export default class TokenA5e extends Token {
     const { value, max, temp } = this.document.actor.system.attributes.hp;
 
     // Allocate percentages of the total
-    const tempPct = Math.clamped(temp, 0, max) / max;
-    const valuePct = Math.clamped(value, 0, max) / max;
-    const colorPct = Math.clamped(value, 0, max) / max;
+    const tempPct = Math.clamp(temp, 0, max) / max;
+    const valuePct = Math.clamp(value, 0, max) / max;
+    const colorPct = Math.clamp(value, 0, max) / max;
 
     // Determine colors to use
     const blk = 0x000000;
@@ -217,7 +113,7 @@ export default class TokenA5e extends Token {
     const { w } = this;
     let h = Math.max((canvas.dimensions.size / 12), 8);
     if (this.document.height >= 2) h *= 1.6;
-    const bs = Math.clamped(h / 8, 1, 2);
+    const bs = Math.clamp(h / 8, 1, 2);
     const bs1 = bs + 1;
 
     // Overall bar container
@@ -321,7 +217,7 @@ export default class TokenA5e extends Token {
 
     if (!src) return null;
 
-    const texture = await loadTexture(src, { fallback: 'icons/svg/aura.svg' });
+    const texture = await loadTexture(src, { fallback: 'icons/svg/hazard.svg' });
     const icon = new PIXI.Sprite(texture);
 
     if (isOverlay) {
@@ -361,6 +257,7 @@ export default class TokenA5e extends Token {
 
     const icon = await this._drawEffect(src, tint, true);
     if (icon) icon.alpha = 0.8;
+    this.effects.overlay = icon ?? null;
     return icon;
   }
 

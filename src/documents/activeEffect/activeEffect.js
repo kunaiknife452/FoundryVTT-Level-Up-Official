@@ -13,7 +13,7 @@ export default class ActiveEffectA5e extends ActiveEffect {
   // -------------------------------------------------------
   //  Static Properties
   // -------------------------------------------------------
-  static FALLBACK_ICON = 'icons/svg/aura.svg';
+  static FALLBACK_IMG = 'icons/svg/hazard.svg';
 
   static PHASES = ['applyAEs', 'afterDerived'];
 
@@ -22,14 +22,6 @@ export default class ActiveEffectA5e extends ActiveEffect {
   // -------------------------------------------------------
   //  Getters
   // -------------------------------------------------------
-  /**
-   * Convenience access to the ActiveEffect's icon field
-   * @returns {String}
-   */
-  get img() {
-    return this.icon || ActiveEffectA5e.FALLBACK_ICON;
-  }
-
   /**
    * @returns {Boolean}
    */
@@ -282,7 +274,7 @@ export default class ActiveEffectA5e extends ActiveEffect {
     this.#updateCanvas();
     if (this.parent?.documentName === 'Item') return;
 
-    this.#addSubConditions(data, userId);
+    this.#handleSubConditions(data, userId, true);
   }
 
   _preUpdate(data, options, userId) {
@@ -382,12 +374,15 @@ export default class ActiveEffectA5e extends ActiveEffect {
 
     this.parent.effectPhases = null;
     this.parent.reset();
+    this.#handleSubConditions({}, userId, false);
   }
 
-  #addSubConditions(data, userId) {
+  async #handleSubConditions(data, userId, active) {
     if (game.user.id !== userId) return;
-    const statuses = data.statuses ?? [];
+
+    const statuses = data.statuses ?? [...this?.statuses ?? []];
     const subConditions = new Set();
+
     statuses.forEach((statusId) => {
       const statusEffect = CONFIG.statusEffects.find((e) => e.id === statusId);
       if (!statusEffect) return;
@@ -396,18 +391,17 @@ export default class ActiveEffectA5e extends ActiveEffect {
     });
 
     if (!subConditions.size) return;
-    const token = this.parent?.getActiveTokens()?.[0];
-    if (!token) return;
+    const actor = this.parent;
+    if (!actor) return;
 
-    subConditions.forEach((c) => {
-      if (this.parent?.statuses?.has(c)) return;
+    subConditions.forEach(async (c) => {
       const effect = CONFIG.statusEffects.find((e) => e.id === c);
       if (!effect) return;
 
-      if (data.statuses?.[0]) {
-        foundry.utils.setProperty(effect, 'flags.a5e.source', data.statuses[0]);
-      }
-      token.document.toggleActiveEffect(effect, { active: true });
+      const newEffect = await actor.toggleStatusEffect(effect.id, { active });
+      if (!newEffect) return;
+
+      newEffect.update({ 'flags.a5e.source': statuses[0] });
     });
   }
 
@@ -630,7 +624,7 @@ export default class ActiveEffectA5e extends ActiveEffect {
   static createDefaultEffect(parentDocument) {
     const data = {
       name: localize('A5E.effects.new'),
-      icon: this.FALLBACK_ICON,
+      icon: this.FALLBACK_IMG,
       flags: { a5e: { sort: 0 } }
     };
     return super.create(data, { parent: parentDocument });
