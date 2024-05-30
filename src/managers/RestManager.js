@@ -219,11 +219,11 @@ export default class RestManager {
     const restoreSpellPointsOnShortRest = flags?.restoreSpellPointsOnShortRest ?? true;
     const restoreSpellSlotsOnShortRest = flags?.restoreSpellSlotsOnShortRest ?? false;
 
-    if (this.#type === 'extended' || restoreSpellPointsOnShortRest) {
+    if (this.#type === 'long' || this.#type === 'extended' || restoreSpellPointsOnShortRest) {
       this.#updates.actor['system.spellResources.points.current'] = Math.max(spellResources.points.max, 0);
     }
 
-    if (this.#type === 'extended' || restoreSpellSlotsOnShortRest) {
+    if (this.#type === 'long' || this.#type === 'extended' || restoreSpellSlotsOnShortRest) {
       Object.entries(spellResources.slots ?? {}).forEach(([level, { max }]) => {
         this.#updates.actor[`system.spellResources.slots.${level}.current`] = Math.max(max, 0);
       });

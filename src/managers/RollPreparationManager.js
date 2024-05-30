@@ -125,10 +125,7 @@ export default class RollPreparationManager {
     const critThreshold = _roll.critThreshold ?? 20;
     const roll = await new Roll(rollFormula).evaluate();
     const label = localize(CONFIG.A5E.attackTypes[_roll?.attackType ?? 'meleeWeaponAttack']);
-    const isCrit = false;
-    if (roll.dice[0] !== undefined) {
-      const isCrit = roll.dice[0].total >= critThreshold;
-    }
+    const isCrit = roll.dice[0].total >= critThreshold;
 
     return {
       attackType: _roll.attackType,

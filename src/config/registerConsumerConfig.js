@@ -11,10 +11,10 @@ export default function registerConsumerConfig(A5E) {
     secondaryResource: { path: 'resources.secondary.value', label: 'A5E.ResourcesSecondary', type: 'value' },
     tertiaryResource: { path: 'resources.tertiary.value', label: 'A5E.ResourcesTertiary', type: 'value' },
     quaternaryResource: { path: 'resources.quaternary.value', label: 'A5E.ResourcesQuaternary', type: 'value' },
-    quaternaryResource: { path: 'resources.quinary.value', label: 'A5E.ResourcesQuinary', type: 'value' },
-    quaternaryResource: { path: 'resources.senary.value', label: 'A5E.ResourcesSenary', type: 'value' },
-    quaternaryResource: { path: 'resources.septenary.value', label: 'A5E.ResourcesSeptenary', type: 'value' },
-    quaternaryResource: { path: 'resources.octonary.value', label: 'A5E.ResourcesOctonary', type: 'value' }
+    quinaryResource: { path: 'resources.quinary.value', label: 'A5E.ResourcesQuinary', type: 'value' },
+    senaryResource: { path: 'resources.senary.value', label: 'A5E.ResourcesSenary', type: 'value' },
+    septenaryResource: { path: 'resources.septenary.value', label: 'A5E.ResourcesSeptenary', type: 'value' },
+    octonaryResource: { path: 'resources.octonary.value', label: 'A5E.ResourcesOctonary', type: 'value' }
 
   };
 
