@@ -26,7 +26,7 @@ export default async function automateHpConditions(actor, changes, userId, condi
     ? (value <= (max / 2)) && (value > 0)
     : (value <= 0);
   const overlay = ['defeated', 'dead'].includes();
-  const hasCondition = actor.statuses.has(conditionId); conditionId
+  const hasCondition = actor.statuses.has(conditionId);
 
   // TODO: Call hook to recharge uses on bloodied
 
