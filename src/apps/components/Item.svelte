@@ -81,12 +81,11 @@
         return data;
     }
 
-    $: containerItems = (item?.containerItems?.documents ?? []).reduce((acc, [k, v]) => {
-        const i = fromUuidSync(v.uuid);
+    $: containerItems = (item?.items ?? []).reduce((acc, i) => {
         if (!i) return acc;
         if (i.parent?.id !== $actor.id) return acc;
 
-        acc.push([k, i]);
+        acc.push([i?.id ?? foundry.utils.randomId(), i]);
         return acc;
     }, []);
 
@@ -95,9 +94,9 @@
         .catch((err) => (description = err));
 
     $: sheetIsLocked = !$actor.isOwner ? true : $actor.flags?.a5e?.sheetIsLocked ?? true;
-
     $: showActionList = determineActionListVisibility(action, item, sheetIsLocked);
-
+    $: showContainerItems =
+        item.getFlag("a5e", "showContainer") ?? containerItems.length > 0;
     $: summaryData = getSummaryData(item, action);
 </script>
 
@@ -149,6 +148,10 @@
             showActionList = !showActionList;
             item.setFlag("a5e", "showActionList", showActionList);
         }}
+        on:toggleContainer={() => {
+            showContainerItems = !showContainerItems;
+            item.setFlag("a5e", "showContainer", showContainerItems);
+        }}
     />
 
     {#if $actor.isOwner}
@@ -183,7 +186,7 @@
     </ul>
 {/if}
 
-{#if containerItems.length}
+{#if showContainerItems}
     <ul class="a5e-item-list a5e-item-list--sub-items">
         {#each containerItems as [id, child] (id)}
             <svelte:self item={child} />

@@ -333,6 +333,12 @@ A5E.carryCapacityMultiplier = {
   titan: 16
 };
 
+A5E.capacityTypes = {
+  bulk: 'A5E.CapacityTypeBulk',
+  count: 'A5E.CapacityTypeCount',
+  weight: 'A5E.CapacityTypeWeight'
+};
+
 /**
  *
  */

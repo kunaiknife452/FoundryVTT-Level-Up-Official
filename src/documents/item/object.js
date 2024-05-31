@@ -1,13 +1,21 @@
 import ItemA5e from './item';
 
-import SubObjectManager from '../../managers/subItems/SubObjectManager';
-
-import SubObjectField from '../../dataModels/fields/SubObjectField';
+import ContainerManager from '../../managers/ContainerManager';
 
 export default class ObjectItemA5e extends ItemA5e {
   get weight() {
-    // TODO: Container Rework - Implement weight for containers
+    if (this.system.objectType === 'container') {
+      return (this.containerItems?.weight ?? 0) + this.system.weight;
+    }
+
     return this.system.weight;
+  }
+
+  get container() {
+    if (!this.system.containerId) return null;
+    if (this.isEmbedded) return this.actor.items.get(this.system.containerId);
+    if (this.pack) return game.packs.get(this.pack).getDocument(this.system.containerId);
+    return game.items.get(this.system.containerId);
   }
 
   // TODO: Container Rework - Add a solid fix at some point
@@ -29,30 +37,21 @@ export default class ObjectItemA5e extends ItemA5e {
     return names.join(', ');
   }
 
+  get items() {
+    if (this.system.objectType !== 'container') return [];
+    return this.containerItems?.items ?? [];
+  }
+
   prepareBaseData() {
     super.prepareBaseData();
 
     if (this.system.objectType === 'container') {
-      // Add Data model for container items
-      this.system.items = Object.entries(this.system.items ?? {}).reduce((acc, [key, data]) => {
-        acc[key] = new SubObjectField(data);
-        return acc;
-      }, {});
+      this.containerItems = new ContainerManager(this);
     }
   }
 
   prepareDerivedData() {
     super.prepareDerivedData();
-
-    if (this.system.objectType === 'container') this.prepareContainer();
-  }
-
-  prepareContainer() {
-    foundry.utils.setProperty(this, 'containerItems', new SubObjectManager(
-      this,
-      'items',
-      { validate: (obj) => obj.type === 'object' }
-    ));
   }
 
   /**
@@ -63,7 +62,7 @@ export default class ObjectItemA5e extends ItemA5e {
     if (this.system.objectType !== 'container') return super.duplicateItem();
 
     if (!this.actor) return null;
-    const container = await SubObjectManager.createContainerOnActor(this.parent, this);
+    const container = await ContainerManager.createContainerOnActor(this.parent, this);
     return container;
   }
 
@@ -131,6 +130,7 @@ export default class ObjectItemA5e extends ItemA5e {
     });
   }
 
+  // TODO: Container Rework - Move to manager
   async updateContainer(containerUuid) {
     if (containerUuid === this.uuid) return;
 
@@ -139,13 +139,13 @@ export default class ObjectItemA5e extends ItemA5e {
       if (!container) return;
 
       await this.update({ 'system.containerId': '' });
-      await container.containerItems.delete(this.uuid);
+      await container.containerItems.remove(this.uuid);
       return;
     }
 
     // Remove from old container
     const oldContainer = await fromUuid(this.system.containerId);
-    if (oldContainer) await oldContainer.containerItems.delete(this.uuid);
+    if (oldContainer) await oldContainer.containerItems.remove(this.uuid);
 
     const container = await fromUuid(containerUuid);
     if (!container
@@ -190,7 +190,17 @@ export default class ObjectItemA5e extends ItemA5e {
     super._onCreate(data, options, userId);
     if (userId !== game.userId) return;
 
-    // Clean containerId
+    if (this.system.objectType === 'container') {
+      if (this.parent?.documentName === 'Actor') {
+        await ContainerManager.createContainerOnActor(this.parent, this);
+      } else if (this.pack) {
+        // Do nothing
+      } else {
+        await ContainerManager.createContainerOnSidebar(this);
+      }
+    }
+
+    // Clean containerId on object creation
     const container = await fromUuid(this.system.containerId);
     if (!container) await this.update({ 'system.containerId': '' });
 
