@@ -37,7 +37,7 @@ export default class ObjectItemA5e extends ItemA5e {
     return names.join(', ');
   }
 
-  get items() {
+  get contents() {
     if (this.system.objectType !== 'container') return [];
     return this.containerItems?.items ?? [];
   }
