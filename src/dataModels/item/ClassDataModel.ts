@@ -3,6 +3,8 @@ import SchemaDataModel from '../template/SchemaDataModel';
 
 export default class ClassDataModel extends A5EDataModel.mixin(SchemaDataModel) {
   static defineSchema() {
+    // TODO: Types - Remove when types are fixed
+    // @ts-ignore
     const { fields } = foundry.data;
 
     return this.mergeSchema(super.defineSchema(), {
@@ -113,16 +115,14 @@ export default class ClassDataModel extends A5EDataModel.mixin(SchemaDataModel) 
           reference: new fields.SchemaField(
             Array.from({ length: 20 }, (_, i) => i + 1)
               .reduce((acc, level) => {
-                acc[level] = new fields.StringField({ nullable: false, initial: 0, min: 0 });
+                acc[level] = new fields.StringField({ required: true, initial: '' });
                 return acc;
               }, {})
           ),
-          type: new fields.StringField({
-            nullable: false,
-            initial: '',
-            choices: ['number', 'dice', 'string']
-          })
-        })
+          recovery: new fields.StringField({ nullable: false, initial: 'longRest' }),
+          slug: new fields.StringField({ nullable: false, initial: '' })
+        }),
+        { nullable: false, initial: [] }
       ),
       source: new fields.StringField({ nullable: false, initial: '' }),
       spellcasting: new fields.SchemaField({

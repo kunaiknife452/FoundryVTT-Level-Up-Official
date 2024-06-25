@@ -1,14 +1,20 @@
+import type ClassItemA5e from '../documents/item/class';
+
+import getDeterministicBonus from '../dice/getDeterministicBonus';
+
 interface ClassResource {
   name: string;
-  reference: { [level: number]: string | number };
-  slug?: string;
-  type: 'number' | 'dice' | 'string';
+  reference: { [level: number]: string };
+  recovery: string;
+  slug: string;
 }
 
 export default class ClassResourceManager extends Map<string, ClassResource> {
-  private item: typeof Item;
+  private item: ClassItemA5e;
 
-  constructor(item: typeof Item) {
+  rollData: Record<string, number | string> = {};
+
+  constructor(item: ClassItemA5e) {
     super();
 
     this.item = item;
@@ -17,41 +23,53 @@ export default class ClassResourceManager extends Map<string, ClassResource> {
     const classResourceData: ClassResource[] = this.item.system.resources ?? [];
     classResourceData.forEach((data: ClassResource) => {
       const classResource = data;
-      const slug = classResource.name.slugify();
-      // const isValid = this.validateResource(classResource);
-      // TODO: Class Documents - Clean up the resource data if it's invalid and try again
+      const slug = classResource.slug || classResource.name.slugify();
 
       this.set(slug, classResource);
     });
+
+    // Prepare level based resources
+    this.prepareResources();
   }
 
-  validateResource(resource: ClassResource): boolean {
-    const warnings: string[] = [];
+  prepareResources() {
+    const level = this.item.system.classLevels;
+    [...this.entries()].forEach(([slug, resource]) => {
+      const rawValue = resource.reference?.[level] || '';
 
-    Object.values(resource.reference ?? {}).forEach((value) => {
-      if (resource.type === 'number' && typeof value !== 'number') {
-        warnings.push(`Resource ${resource.name} reference value must be a number`);
+      let value: number | string | null = null;
+
+      try {
+        const doc = this.item.isEmbedded ? this.item.parent ?? this.item : this.item;
+
+        value = getDeterministicBonus(
+          rawValue as string,
+          // TODO: Types - Remove when types are fixed
+          // @ts-ignore
+          doc.getRollData(this.item),
+          { strict: true }
+        );
+      } catch (e) {
+        value = rawValue as string;
       }
 
-      if (resource.type === 'dice' && typeof value !== 'number') {
-        warnings.push(`Resource ${resource.name} reference value must be a number`);
-      }
-
-      if (resource.type === 'string' && typeof value !== 'string') {
-        warnings.push(`Resource ${resource.name} reference value must be a string`);
-      }
+      if (!value) value = 0;
+      this.rollData[slug] = value;
     });
+  }
 
-    if (warnings.length > 0) {
-      ui.notifications.warn(warnings.join('<br>'));
-      return false;
+  // @ts-ignore
+  async add(data: ClassResource = {}) {
+    if (!data?.name) {
+      const count = [...this]
+        .reduce((acc, [, { name }]) => (name === 'New Resource' ? acc + 1 : acc), 0);
+
+      if (count > 0) data.name = `New Resource ${count + 1}`;
+      else data.name = 'New Resource';
     }
 
-    return true;
-  }
-
-  async add(data: ClassResource) {
-    delete data.slug;
+    if (!data?.recovery) data.recovery = 'longRest';
+    if (!data?.reference) data.reference = {};
 
     await this.item.update({
       'system.resources': [
@@ -64,7 +82,7 @@ export default class ClassResourceManager extends Map<string, ClassResource> {
   async remove(slug: string) {
     await this.item.update({
       'system.resources': this.item.system.resources
-        .filter((resource: ClassResource) => resource.name.slugify() !== slug)
+        .filter((resource: ClassResource) => resource.slug || resource.name.slugify() !== slug)
     });
   }
 
