@@ -1,0 +1,95 @@
+{
+	"name": "Third Eye",
+	"type": "feature",
+	"img": "icons/magic/perception/third-eye-blue-red.webp",
+	"system": {
+		"ac": {
+			"baseFormula": "",
+			"formula": "",
+			"grantsDisadvantage": false,
+			"maxDex": 0,
+			"minStr": 0,
+			"mode": 2,
+			"requiresNoShield": false,
+			"requiresUnarmored": false
+		},
+		"actions": {},
+		"description": "<p>At 15th level you open your third eye. You gain 60 feet of darkvision if you do not already have it. If you already have darkvision, the rand of your darkvision increases by 30 feet. You can see through magical darkness with this darkvision. In addition, you may choose one the following spells: <em style=\"mso-bidi-font-style: normal;\">detect magic, detect evil and good, detect poison and disease, </em>or<em style=\"mso-bidi-font-style: normal;\"> see invisibility</em>. You gain the benefits of this spell, no spell slot or concentration required, unlimited duration, and the effect cannot be dispelled, though it can be suppressed by an antimagic field.</p>",
+		"favorite": false,
+		"secretDescription": "",
+		"source": "mysteriousAndMarvelousMiscellanea",
+		"uses": {
+			"value": 0,
+			"max": "",
+			"per": "",
+			"recharge": {
+				"formula": "1d6",
+				"threshold": 6
+			}
+		},
+		"concentration": false,
+		"featureType": "class",
+		"grants": {
+			"Al9PIp8lfciNSpVC": {
+				"grantType": "senses",
+				"level": 1,
+				"levelType": "character",
+				"optional": true,
+				"_id": "Al9PIp8lfciNSpVC",
+				"label": "No Darkvision",
+				"bonus": "60",
+				"senses": {
+					"base": [
+						"darkvision"
+					],
+					"options": [],
+					"total": 0
+				},
+				"img": "",
+				"unit": "feet",
+				"context": {
+					"otherwiseBlind": false
+				}
+			},
+			"gvM02L0q2mG1yQnp": {
+				"grantType": "senses",
+				"level": 1,
+				"levelType": "character",
+				"optional": true,
+				"_id": "Al9PIp8lfciNSpVC",
+				"label": "Have Darkvision",
+				"bonus": "30",
+				"senses": {
+					"base": [
+						"darkvision"
+					],
+					"options": [],
+					"total": 0
+				},
+				"img": "",
+				"unit": "feet",
+				"context": {
+					"otherwiseBlind": false
+				},
+				"name": "undefined (Copy)"
+			}
+		},
+		"prerequisite": "",
+		"requiresBloodied": false,
+		"schemaVersion": {
+			"version": 0.019,
+			"lastMigration": {
+				"version": {
+					"schema": 0.018,
+					"foundry": "11.315",
+					"system": "0.18.11"
+				}
+			}
+		},
+		"classes": ""
+	},
+	"effects": [],
+	"flags": {},
+	"folder": null,
+	"_id": "cdhxn05f8c9k96g7"
+}

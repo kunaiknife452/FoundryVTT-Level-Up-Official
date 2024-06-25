@@ -549,14 +549,33 @@ export default class BaseActorA5e extends Actor {
   */
   prepareMovement() {
     const { movement } = this.system.attributes;
+
+    const movementKeys = Object.keys(movement);
+    const deferApplication = [];
+
     for (const [type, { distance }] of Object.entries(movement)) {
       const bonusFormula = this.BonusesManager.getMovementBonusFormula(type);
       if (!bonusFormula) continue;
+
+      if (movementKeys.some((k) => bonusFormula.includes(k))) {
+        deferApplication.push(type);
+        continue;
+      }
 
       const bonus = getDeterministicBonus(bonusFormula, this.getRollData());
       if (!bonus) continue;
       this.system.attributes.movement[type].distance = distance + bonus;
     }
+
+    // Apply deferred bonuses
+    deferApplication.forEach((type) => {
+      const bonusFormula = this.BonusesManager.getMovementBonusFormula(type);
+      if (!bonusFormula) return;
+
+      const bonus = getDeterministicBonus(bonusFormula, this.getRollData());
+      if (!bonus) return;
+      this.system.attributes.movement[type].distance = movement[type].distance + bonus;
+    });
   }
 
   /**
@@ -564,6 +583,10 @@ export default class BaseActorA5e extends Actor {
   */
   prepareSenses() {
     const { senses } = this.system.attributes;
+
+    const sensesKeys = Object.keys(senses);
+    const deferApplication = [];
+
     for (const [type, { distance }] of Object.entries(senses)) {
       const bonusFormula = this.BonusesManager.getSensesBonusFormula(type);
       if (!bonusFormula) continue;
@@ -574,10 +597,25 @@ export default class BaseActorA5e extends Actor {
         continue;
       }
 
+      if (sensesKeys.some((k) => bonusFormula.includes(k))) {
+        deferApplication.push(type);
+        continue;
+      }
+
       const bonus = getDeterministicBonus(bonusFormula, this.getRollData());
       if (!bonus) continue;
       this.system.attributes.senses[type].distance = distance + bonus;
     }
+
+    // Apply deferred bonuses
+    deferApplication.forEach((type) => {
+      const bonusFormula = this.BonusesManager.getSensesBonusFormula(type);
+      if (!bonusFormula) return;
+
+      const bonus = getDeterministicBonus(bonusFormula, this.getRollData());
+      if (!bonus) return;
+      this.system.attributes.senses[type].distance = senses[type].distance + bonus;
+    });
   }
 
   /**

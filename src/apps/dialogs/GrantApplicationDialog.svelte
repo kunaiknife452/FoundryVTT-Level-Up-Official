@@ -162,7 +162,7 @@
                 <ClassHitPointsSelection {cls} classLevel={clsLevel} bind:clsReturnData />
             {/if}
 
-            {#if cls.system.classLevels === 1 && cls.system.spellcasting.ability.options.length}
+            {#if clsLevel === 1 && cls.system.spellcasting.ability.options.length}
                 <Section heading="Spellcasting Config">
                     <RadioGroup
                         options={spellCastingOptions}
